@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>最新发布树莓派2Wi-Fi自动连接实战(适合初学者) | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="&amp;#13;话说天地会珠海分舵在上几天才刚给大家分享了个海外资讯说树莓派2已经发布且Windows10加盟之类的资讯，具体请查看《海外优秀资讯抢先看8 - Windows 10 for Raspberry Pi 2》，如果大家手快的可能已经上手了一台爱机了。如果你对树莓派和Linux操作系统还不是很熟悉的话，本文可能适合你，它会手把手的教你如何把树莓派的WiFi自动连接给配置好。让你的树莓派拥有网络">
+<meta name="keywords" content="Linux,树莓派2代">
+<meta property="og:type" content="article">
+<meta property="og:title" content="最新发布树莓派2Wi-Fi自动连接实战(适合初学者)">
+<meta property="og:url" content="http://yoursite.com/2015/02/13/e6-9c-80-e6-96-b0-e5-8f-91-e5-b8-83-e6-a0-91-e8-8e-93-e6-b4-be2wi-fi-e8-87-aa-e5-8a-a8-e8-bf-9e-e6-8e-a5-e5-ae-9e-e6-88-98-28-e9-80-82-e5-90-88-e5-88-9d-e5-ad-a6-e8-80-85-29/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="&amp;#13;话说天地会珠海分舵在上几天才刚给大家分享了个海外资讯说树莓派2已经发布且Windows10加盟之类的资讯，具体请查看《海外优秀资讯抢先看8 - Windows 10 for Raspberry Pi 2》，如果大家手快的可能已经上手了一台爱机了。如果你对树莓派和Linux操作系统还不是很熟悉的话，本文可能适合你，它会手把手的教你如何把树莓派的WiFi自动连接给配置好。让你的树莓派拥有网络">
+<meta property="og:image" content="http://img.blog.csdn.net/20150213092254805?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1YmFpdGlhbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2017-07-16T06:45:09.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="最新发布树莓派2Wi-Fi自动连接实战(适合初学者)">
+<meta name="twitter:description" content="&amp;#13;话说天地会珠海分舵在上几天才刚给大家分享了个海外资讯说树莓派2已经发布且Windows10加盟之类的资讯，具体请查看《海外优秀资讯抢先看8 - Windows 10 for Raspberry Pi 2》，如果大家手快的可能已经上手了一台爱机了。如果你对树莓派和Linux操作系统还不是很熟悉的话，本文可能适合你，它会手把手的教你如何把树莓派的WiFi自动连接给配置好。让你的树莓派拥有网络">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20150213092254805?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1YmFpdGlhbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-e6-9c-80-e6-96-b0-e5-8f-91-e5-b8-83-e6-a0-91-e8-8e-93-e6-b4-be2wi-fi-e8-87-aa-e5-8a-a8-e8-bf-9e-e6-8e-a5-e5-ae-9e-e6-88-98-28-e9-80-82-e5-90-88-e5-88-9d-e5-ad-a6-e8-80-85-29" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/02/13/e6-9c-80-e6-96-b0-e5-8f-91-e5-b8-83-e6-a0-91-e8-8e-93-e6-b4-be2wi-fi-e8-87-aa-e5-8a-a8-e8-bf-9e-e6-8e-a5-e5-ae-9e-e6-88-98-28-e9-80-82-e5-90-88-e5-88-9d-e5-ad-a6-e8-80-85-29/" class="article-date">
+  <time datetime="2015-02-13T05:41:00.000Z" itemprop="datePublished">2015-02-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      最新发布树莓派2Wi-Fi自动连接实战(适合初学者)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div id="article_content" class="article_content">&#13;<br><br><img src="http://img.blog.csdn.net/20150213092254805?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1YmFpdGlhbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br><br>话说天地会珠海分舵在上几天才刚给大家分享了个海外资讯说树莓派2已经发布且Windows10加盟之类的资讯，具体请查看《<a href="http://blog.csdn.net/zhubaitian/article/details/43451763" target="_blank" rel="external">海外优秀资讯抢先看8 - Windows 10 for Raspberry Pi 2</a>》，如果大家手快的可能已经上手了一台爱机了。如果你对树莓派和Linux操作系统还不是很熟悉的话，本文可能适合你，它会手把手的教你如何把树莓派的WiFi自动连接给配置好。<br><br>让你的树莓派拥有网络的访问，这当然是一件重大且让人兴奋的事情了。但是对于树莓派这些嵌入式设备来说，你该不会想编译进去一个太耗资源的GUI应用并加载来对Wi-Fi进行连接的，毕竟我们现在用的不是PC设备，资源是很宝贵的。除此之外其实还有几种其他方法来让你的树莓派在启动的时候就连接上Wi-Fi的。<br><br>开始之前你需要做一些如下的准备工作：<br><br><em>   准备好<a href="http://www.amazon.com/Edimax-EW-7811Un-150Mbps-Raspberry-Supports/dp/B003MTTJOY" target="_blank" rel="external">Wi-Fi USB adapter</a>
+</em>   无线路由<br><em>   有效的网络环境<br><br>如果你的树莓派机子的操作系统还不是最新的话，那现在也许就是时候对它进行升级了。<br><pre name="code" class="plain">sudo apt-get update<br>sudo apt-get upgrade</pre><br>跟着请关闭你的树莓派机子<br><pre name="code" class="plain"><span style="font-family: 'Open Sans', Helvetica, Arial, sans-serif;">sudo shutdow</span><span style="font-family: 'Open Sans', Helvetica, Arial, sans-serif;">n -h now</span></pre><br><br>插上你的Wi-Fi适配器然后启动你的树莓派爱机<br><br>配置你的网络连接的其中一个方法就是去手动配置你的网卡接口配置文件。使用你用的比较顺手的一个文件编辑器(哥习惯的是vi)来打开该接口设置文件：<br><pre name="code" class="plain">sudo vi /etc/network/interfaces</pre><br>把该配置文件修改成DHCP连接模式如下所示：<pre name="code" class="plain">1 auto lo<br>2<br>3 iface lo inet loopback<br>4 iface eth0 inet dhcp<br>5<br>6 allow-hotplug wlan0<br>7 iface wlan0 inet dhcp<br>8 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf<br>9 iface default inet dhcp</pre><br><span style="color: rgb(81, 81, 81); font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 30px;">下一步你需要做的就是去提供你的WiFi网络连接信息。请打开你的WPA配置文件如下：</span><br><pre name="code" class="plain">sudo vi /etc/wpa_supplicant/wpa_supplicant.conf</pre><br><span style="color: rgb(81, 81, 81); font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 30px;">下面给出了我的一个配置示例以供参考：</span><br><pre name="code" class="plain"> 1 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev<br> 2 update_config=1<br> 3 network={<br> 4   ssid=”ENTER NETWORK NAME”<br> 5   proto=WPA<br> 6   key_mgmt=WPA-PSK<br> 7   pairwise=TKIP<br> 8   psk=”ENTER WPA KEY”<br> 9   auth_alg=OPEN<br>10 }</pre><span style="color: rgb(81, 81, 81); font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 30px;">如果你不想使用DHCP或者说你想要设置多个网络连接的话，那么你就需要一些额外的设置。比如你需要做如下修改：</span><pre name="code" class="plain">iface wlan0 inet dhcp =&gt; iface wlan0 inet manual</pre><br>并且做如下修改：<pre name="code" class="plain">wpa-conf =&gt; wpa-roam</pre><br><span style="color: rgb(81, 81, 81); font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 30px;">下面同时给出了一个静态IP配置的示例：</span><pre name="code" class="plain">1 auto lo<br> 2<br> 3 iface lo inet loopback<br> 4 iface eth0 inet dhcp<br> 5<br> 6 allow-hotplug wlan0<br> 7 iface wlan0 inet manual<br> 8 wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf<br> 9 iface default inet dhcp<br>10<br>11 # For ssid ‘work’:<br>12 iface work inet static<br>13 address XXX.XXX.X.X<br>14 network XXX.XXX.X.X<br>15 gateway XXX.XXX.X.X</pre><br><span style="color: rgb(81, 81, 81); font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 30px;">你将需要在你的WPA设置中输入你的工作网络信息：</span><pre name="code" class="plain"> 1 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev<br> 2 update_config=1<br> 3 network={<br> 4   ssid=”ENTER NETWORK NAME”<br> 5   proto=WPA<br> 6   key_mgmt=WPA-PSK<br> 7   pairwise=TKIP<br> 8   psk=”ENTER WPA KEY”<br> 9   auth_alg=OPEN<br>10 }<br>11 network={<br>12   ssid=”work”<br>13   proto=WPA<br>14   key_mgmt=WPA-PSK<br>15   pairwise=TKIP<br>16   psk=”ENTER WPA KEY”<br>17   auth_alg=OPEN<br>18 }</pre>然后重启：<pre name="code" class="plain">sudo shutdown -r now</pre><br><span style="color: rgb(81, 81, 81); font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 30px;">如果你的设置是正确的话那么你现在的网络连接应该就是OK的了。你可以通过以下命令来进行验证：</span><pre name="code" class="plain">ifconfig</pre><br><span style="color: rgb(81, 81, 81); font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 30px;">在你的wlan0这个输出中你会看到一个分配的IP如下所示： ‘inet addr:XXX.XXX.XXX.XXX’</span><br><br>如果你想在不用重启的情况下就进行验证的话，你可以先通过以下方式释放已有的网络连接：<br><br><pre name="code" class="plain">sudo ifdown wlan0</pre><br><span style="color: rgb(81, 81, 81); font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 30px;">然后通过以下命令来使用新配置进行连接：</span><br><pre name="code" class="plain">sudo ifup wlan0</pre><br><br>## WICD-CURSES<br><br>除了以上的方法之外，还有另外一个备受争议的方法来使用wicd-curses工具来进行网络设置。该工具会提供一个命令行界面(天地会珠海分舵注：使用的应该就是老牌的curses库)来让你选择一个Wi-Fi连接，当然它还允许你选择其中一个网络来进行自动连接以及进行DNS/网络地址/网络/网关等配置了。请运行下面命令进行安装：<br><pre name="code" class="plain">sudo apt-get install wicd-curses<br>sudo wicd-curses</pre><br><br>你可以通过键盘来进行导航来查看不同菜单的众多选项。<br><br>如果你真的对使用命令行很反感，你当然也可以通过以下命令来安装一个GUI界面来进行配置了：<br><pre name="code" class="plain">sudo apt-get install wicd<br>sudo apt-get wpagui</pre><br>然后启动你的GUI配置界面：<br><pre name="code" class="plain">startx</pre><br><span style="color: rgb(81, 81, 81); font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 30px;">在界面的网络菜单下你会看到一个叫wpa_config或者Wicd Network管理器的选项来让你管理你的配置。</span><br><br>—————-完——————–<br><br><span style="color: rgb(51, 51, 51); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13.3333330154419px; line-height: 24px;">英文原文引用：<a href="https://www.bitpi.co/2015/02/12/autoconnect-wifi-raspberry-pi/" target="_blank" rel="external">https://www.bitpi.co/2015/02/12/autoconnect-wifi-raspberry-pi/</a></span><br><table border="1" cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" style="background: rgb(250, 191, 143);"><br><br><strong><span style="color: rgb(54, 46, 43);">作</span><span style="color: rgb(54, 46, 43);">/译者</span></strong><br></td><td valign="top" style="background: rgb(250, 191, 143);"><br><br><strong><span style="color: rgb(54, 46, 43);">微信知识共享公众号</span></strong><br></td><td valign="top" style="background: rgb(250, 191, 143);"><br><br><em>*<span style="color: rgb(54, 46, 43);">CSDN</span></em></td></tr></tbody></table></em><br><tr><td valign="top" style="background: rgb(227, 228, 228);"><br><br><span style="color: rgb(54, 46, 43);">天地会珠海分舵</span><br></td><td valign="top"><br><br><span style="color: rgb(54, 46, 43);">TechGoGoGo</span><br></td><td valign="top"><br><br><span style="color: rgb(54, 46, 43);"><a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a></span><br></td></tr><tr><td valign="top" style="background: rgb(251, 212, 180);"><br><br><span style="color: rgb(54, 46, 43);">优秀资源推荐</span><br></td><td valign="top" style="background: rgb(251, 212, 180);"><br><br><span style="color: rgb(54, 46, 43);">地址</span><br></td><td valign="top" style="background: rgb(251, 212, 180);"><br><br><span style="color: rgb(54, 46, 43);">点评</span><br></td></tr><tr><td valign="top" style="background: rgb(227, 228, 228);"><br><br><span style="color: rgb(54, 46, 43);">DoctorQ</span><span style="color: rgb(54, 46, 43);">博客</span><br></td><td valign="top"><br><br><span style="color: rgb(54, 46, 43);"><a href="http://testerhome.com/doctorq/topics" target="_blank" rel="external"><span style="color: rgb(106, 57, 6);">http://testerhome.com/doctorq/topics</span></a></span><br></td><td valign="top"><br><br><span style="color: rgb(54, 46, 43);">安卓自动化领域才俊</span><span style="color: rgb(54, 46, 43);">           </span><br></td></tr><tr><td valign="top" style="background: rgb(227, 228, 228);"><br><br><span style="color: rgb(54, 46, 43);">金阳光测试</span><br></td><td valign="top"><br><br><span style="color: rgb(54, 46, 43);">官网：</span><span style="color: rgb(54, 46, 43);"><a href="http://www.goldensunshine.cc/" target="_blank" rel="external">www.goldensunshine.cc</a></span><br></td><td valign="top"><br><br><span style="color: rgb(54, 46, 43);">更多请百度搜：“金阳光”</span><br></td></tr></div>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/02/13/e6-9c-80-e6-96-b0-e5-8f-91-e5-b8-83-e6-a0-91-e8-8e-93-e6-b4-be2wi-fi-e8-87-aa-e5-8a-a8-e8-bf-9e-e6-8e-a5-e5-ae-9e-e6-88-98-28-e9-80-82-e5-90-88-e5-88-9d-e5-ad-a6-e8-80-85-29/" data-id="cj56dkqra00dsyqu2ht3oqzfk" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/树莓派2代/">树莓派2代</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/02/13/e5-9c-a8-e7-ba-bfyoutube-e8-a7-86-e9-a2-91-e4-b8-8b-e8-bd-bd-ef-bc-8c-e4-bf-ae-e6-94-b9-e6-96-87-e6-9c-ac-ef-bc-8c-e5-89-aa-e5-88-87-e5-88-b6-e4-bd-9c-e5-8a-a8-e7-94-bb-e7-9a-84-e6-9c-80-e6-96-b0-e6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          在线Youtube视频下载，修改文本，剪切制作动画的最新方法
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/02/12/e4-b8-94-e7-9c-8b-e5-a6-82-e4-bd-95-e4-bb-a5-e7-b2-be-e8-87-b4-e7-9a-84-e6-96-b9-e5-bc-8f-e5-b1-95-e7-8e-b0-ef-bc-8c-e8-a7-a3-e6-9e-90-e5-92-8c-e5-88-86-e6-9e-90github-e4-b8-8a-e8-af-ad-e8-a8-80-e7-9/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">且看如何以精致的方式展现，解析和分析GitHub上语言的发展趋势</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/">Hacker News</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/Swift/">Swift</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/测试自动化/">测试自动化</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/《从0到1》/">《从0到1》</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/《从0到1》/创业/">创业</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/">产品</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/">创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/技术/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/设计/">设计</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/资讯/">资讯</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/风投/">风投</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/技术/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/设计/">设计</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/">创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/创业/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/资讯/">资讯</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/风投/">风投</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/技术/设计/">设计</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/资讯/">资讯</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/设计/">设计</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/设计/资讯/">资讯</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/风投/">风投</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ABR/">ABR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ADB/">ADB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/API/">API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Altair/">Altair</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHut/">GitHut</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GoDaddy/">GoDaddy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5/">HTML5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hacker-News/">Hacker News</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IoT/">IoT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JanOS/">JanOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenVPN/">OpenVPN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Phonegap/">Phonegap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React-Native/">React Native</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RethinkDB/">RethinkDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Silver/">Silver</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Startup/">Startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swift/">Swift</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ThinkDB/">ThinkDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/facebook/">facebook</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/">ios</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ownCloud/">ownCloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/paul-graham/">paul-graham</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/saas/">saas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sandstorm/">sandstorm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssl/">ssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows-10/">windows 10</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wireshark/">wireshark</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress/">wordpress</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/youtube/">youtube</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/三个木桶模型/">三个木桶模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/三星/">三星</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/主题/">主题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/云/">云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网/">互联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网创业/">互联网创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/产品/">产品</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/产品设计/">产品设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/从0到1/">从0到1</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/信息/">信息</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业/">创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业-先行者优势/">创业-先行者优势</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业使命/">创业使命</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业家/">创业家</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业教父/">创业教父</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业环境/">创业环境</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创意/">创意</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创投/">创投</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/初创企业/">初创企业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/利基应用/">利基应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/利益相关者/">利益相关者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/加密/">加密</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原生应用/">原生应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/命令行/">命令行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/大数据/">大数据</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/天使投资/">天使投资</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安全技术/">安全技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/展销/">展销</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/广播/">广播</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/应用/">应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/微软/">微软</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/技术趋势/">技术趋势</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/抓包/">抓包</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/智能设备/">智能设备</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派/">树莓派</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派2代/">树莓派2代</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模型/">模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模式/">模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/监控技术/">监控技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/破解/">破解</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/硅谷/">硅谷</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/私有云/">私有云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/科技/">科技</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/端口转发/">端口转发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/简书/">简书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程语言/">编程语言</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网络安全/">网络安全</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自主博客/">自主博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/芯片/">芯片</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虹膜扫描/">虹膜扫描</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/视频编辑/">视频编辑</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/跨平台/">跨平台</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/跨平台应用开发/">跨平台应用开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/迭代/">迭代</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/隐私/">隐私</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/项目构建/">项目构建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/风投/">风投</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/黑客/">黑客</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ABR/" style="font-size: 10px;">ABR</a> <a href="/tags/ADB/" style="font-size: 10px;">ADB</a> <a href="/tags/API/" style="font-size: 10px;">API</a> <a href="/tags/Altair/" style="font-size: 10px;">Altair</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/GitHut/" style="font-size: 10px;">GitHut</a> <a href="/tags/GoDaddy/" style="font-size: 10px;">GoDaddy</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTML5/" style="font-size: 11.43px;">HTML5</a> <a href="/tags/Hacker-News/" style="font-size: 10px;">Hacker News</a> <a href="/tags/IoT/" style="font-size: 10px;">IoT</a> <a href="/tags/JanOS/" style="font-size: 10px;">JanOS</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/OpenVPN/" style="font-size: 10px;">OpenVPN</a> <a href="/tags/Phonegap/" style="font-size: 10px;">Phonegap</a> <a href="/tags/React-Native/" style="font-size: 10px;">React Native</a> <a href="/tags/RethinkDB/" style="font-size: 11.43px;">RethinkDB</a> <a href="/tags/Silver/" style="font-size: 10px;">Silver</a> <a href="/tags/Startup/" style="font-size: 10px;">Startup</a> <a href="/tags/Swift/" style="font-size: 10px;">Swift</a> <a href="/tags/ThinkDB/" style="font-size: 10px;">ThinkDB</a> <a href="/tags/docker/" style="font-size: 12.86px;">docker</a> <a href="/tags/facebook/" style="font-size: 11.43px;">facebook</a> <a href="/tags/ios/" style="font-size: 10px;">ios</a> <a href="/tags/ownCloud/" style="font-size: 10px;">ownCloud</a> <a href="/tags/paul-graham/" style="font-size: 10px;">paul-graham</a> <a href="/tags/saas/" style="font-size: 15.71px;">saas</a> <a href="/tags/sandstorm/" style="font-size: 15.71px;">sandstorm</a> <a href="/tags/ssl/" style="font-size: 10px;">ssl</a> <a href="/tags/windows-10/" style="font-size: 10px;">windows 10</a> <a href="/tags/wireshark/" style="font-size: 10px;">wireshark</a> <a href="/tags/wordpress/" style="font-size: 10px;">wordpress</a> <a href="/tags/youtube/" style="font-size: 10px;">youtube</a> <a href="/tags/三个木桶模型/" style="font-size: 11.43px;">三个木桶模型</a> <a href="/tags/三星/" style="font-size: 10px;">三星</a> <a href="/tags/主题/" style="font-size: 10px;">主题</a> <a href="/tags/云/" style="font-size: 14.29px;">云</a> <a href="/tags/互联网/" style="font-size: 14.29px;">互联网</a> <a href="/tags/互联网创业/" style="font-size: 12.86px;">互联网创业</a> <a href="/tags/产品/" style="font-size: 17.14px;">产品</a> <a href="/tags/产品设计/" style="font-size: 10px;">产品设计</a> <a href="/tags/从0到1/" style="font-size: 18.57px;">从0到1</a> <a href="/tags/信息/" style="font-size: 10px;">信息</a> <a href="/tags/创业/" style="font-size: 20px;">创业</a> <a href="/tags/创业-先行者优势/" style="font-size: 10px;">创业-先行者优势</a> <a href="/tags/创业使命/" style="font-size: 10px;">创业使命</a> <a href="/tags/创业家/" style="font-size: 10px;">创业家</a> <a href="/tags/创业教父/" style="font-size: 10px;">创业教父</a> <a href="/tags/创业环境/" style="font-size: 11.43px;">创业环境</a> <a href="/tags/创意/" style="font-size: 12.86px;">创意</a> <a href="/tags/创投/" style="font-size: 10px;">创投</a> <a href="/tags/初创企业/" style="font-size: 10px;">初创企业</a> <a href="/tags/利基应用/" style="font-size: 10px;">利基应用</a> <a href="/tags/利益相关者/" style="font-size: 10px;">利益相关者</a> <a href="/tags/加密/" style="font-size: 11.43px;">加密</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/原生应用/" style="font-size: 10px;">原生应用</a> <a href="/tags/命令行/" style="font-size: 10px;">命令行</a> <a href="/tags/大数据/" style="font-size: 10px;">大数据</a> <a href="/tags/天使投资/" style="font-size: 10px;">天使投资</a> <a href="/tags/安全技术/" style="font-size: 10px;">安全技术</a> <a href="/tags/展销/" style="font-size: 11.43px;">展销</a> <a href="/tags/广播/" style="font-size: 10px;">广播</a> <a href="/tags/应用/" style="font-size: 11.43px;">应用</a> <a href="/tags/微软/" style="font-size: 10px;">微软</a> <a href="/tags/技术趋势/" style="font-size: 10px;">技术趋势</a> <a href="/tags/抓包/" style="font-size: 10px;">抓包</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/智能设备/" style="font-size: 10px;">智能设备</a> <a href="/tags/树莓派/" style="font-size: 11.43px;">树莓派</a> <a href="/tags/树莓派2代/" style="font-size: 10px;">树莓派2代</a> <a href="/tags/模型/" style="font-size: 10px;">模型</a> <a href="/tags/模式/" style="font-size: 10px;">模式</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/监控技术/" style="font-size: 10px;">监控技术</a> <a href="/tags/破解/" style="font-size: 10px;">破解</a> <a href="/tags/硅谷/" style="font-size: 10px;">硅谷</a> <a href="/tags/私有云/" style="font-size: 10px;">私有云</a> <a href="/tags/科技/" style="font-size: 10px;">科技</a> <a href="/tags/端口转发/" style="font-size: 10px;">端口转发</a> <a href="/tags/简书/" style="font-size: 10px;">简书</a> <a href="/tags/编程语言/" style="font-size: 10px;">编程语言</a> <a href="/tags/网络安全/" style="font-size: 10px;">网络安全</a> <a href="/tags/自主博客/" style="font-size: 10px;">自主博客</a> <a href="/tags/芯片/" style="font-size: 10px;">芯片</a> <a href="/tags/虹膜扫描/" style="font-size: 10px;">虹膜扫描</a> <a href="/tags/视频编辑/" style="font-size: 10px;">视频编辑</a> <a href="/tags/跨平台/" style="font-size: 11.43px;">跨平台</a> <a href="/tags/跨平台应用开发/" style="font-size: 10px;">跨平台应用开发</a> <a href="/tags/迭代/" style="font-size: 10px;">迭代</a> <a href="/tags/隐私/" style="font-size: 10px;">隐私</a> <a href="/tags/项目构建/" style="font-size: 10px;">项目构建</a> <a href="/tags/风投/" style="font-size: 10px;">风投</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/04/13/create-new-business-model/">开辟新战场，打造新的商业模式</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/31/10-secret-facts-about-apples-product-design/">苹果产品设计中鲜为人知的10个细节</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/23/nodeos-the-javascript-based-operating-system/">NodeOS:一个用JavaScript写出来的操作系统</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/14/five-things-you-need-to-know-about-hadoop-v-apache-spark/">2分钟读懂大数据框架Hadoop和Spark的异同</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/13/its-actually-open-source-software-thats-eating-the-world-1/">究竟是谁在吞噬着这个世界</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
