@@ -293,140 +293,6 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/02/05/e6-b5-b7-e5-a4-96-e4-bc-98-e7-a7-80-e8-b5-84-e8-ae-af-e6-8a-a2-e5-85-88-e7-9c-8b11-3aandroid-e7-9a-84inbox-e5-a6-82-e4-bd-95-e5-81-9a-e5-88-b070-25-e4-bb-a3-e7-a0-81-e8-83-bd-e8-b7-a8android-2fios-2f/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="kzlathander">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="科技向前冲">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/02/05/e6-b5-b7-e5-a4-96-e4-bc-98-e7-a7-80-e8-b5-84-e8-ae-af-e6-8a-a2-e5-85-88-e7-9c-8b11-3aandroid-e7-9a-84inbox-e5-a6-82-e4-bd-95-e5-81-9a-e5-88-b070-25-e4-bb-a3-e7-a0-81-e8-83-bd-e8-b7-a8android-2fios-2f/" itemprop="url">海外优秀资讯抢先看11:Android的Inbox如何做到70%代码能跨Android/iOS/Web 平台的秘密武器</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-02-05T13:34:00+08:00">
-                2015-02-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
-                    <span itemprop="name">Hacker News</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <div id="article_content" class="article_content">&#13;<br><br><img src="http://img.blog.csdn.net/20150205100513404?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1YmFpdGlhbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br><br><span style="white-space: pre;">    </span>众所周知当今写一个应用你需要有大的访问量的话必然要跨多个平台，移动端你起码需要覆盖android和ios平台，而你又不能忽略PC端的用户。如果你不考虑原生应用带来的性能和UI适配度，你当然可以基于浏览器核心来使用流行的Javascript+HTML5+Phonegap等封装成一个跨平台应用。但是Google的Gmail团队是个有追求的团队，它当然不会牺牲各个平台的性能和原生应用的UI适配度来做出compromise了。<br><br><span style="white-space: pre;">    </span>那么如果给每个平台开发原生应用的话，对于google自身的安卓来说，当然需要用到的开发语言技术是Java了，而对于iOS来说，如果Swift没有被口水淹死而得以应用之前当然是Objective C了，对于Web,那毫无疑问使用技术将会是JavaScript/CSS/HTML5。<br><br><span style="white-space: pre;">    </span>如果Inbox是微软做的话，我相信他们的开发团队毫无疑问会选择他们家的Xamarin基于C#,.net和Mono的跨平台开发框架来完成这方面的工作以达到一劳永逸的效果了。而对于Google来说，它当然不屑于用微软的框架，他们拥有自己的一套工具来实现跨平台。<br><br><span style="white-space: pre;">    </span>Google的做法是使用使用一些工具实现了70%的代码跨平台复用。Inbox在各个平台使用的是相同的后台代码逻辑，但前端的UI因平台相关性会有所不同。Google 有自己的一套工具让他们只需要在安卓上使用Java开发一套后台代码逻辑，然后就可以将它们转换成对应的Objective-c和Javascript来适应iOS和Web浏览器：<br><br><em>   JavaScript的转换由Google Web Toolkit SDK来完成
-</em>   Objective-C的转换由<a href="http://j2objc.org/" target="_blank" rel="external">J2ObjC</a>来胜任<div><span style="white-space: pre;">    </span>J2ObjC其实早在2013年就已经出来的了，但是Google真正很大程度在自己的项目中派上用场却是在Inbox这个项目上面。期解决了Google跨平台移动开发的这个严重问题，同时也适配了高傲的google就算在开发跨平台应用依然是安卓先行的理念。</div><div><span style="white-space: pre;">    </span>至于Inbox项目具体是如何在跨平台中达到70%的代码共享的详细细节，请大家查看以下链接，本文只是希望能做到一个抛砖引玉的作用，或者让你作为一杯早茶或者下午茶来在空闲时小抿一口而已。<a href="http://arstechnica.com/information-technology/2014/11/how-google-inbox-shares-70-of-its-code-across-android-ios-and-the-web/" target="_blank" rel="external">http://arstechnica.com/information-technology/2014/11/how-google-inbox-shares-70-of-its-code-across-android-ios-and-the-web/</a></div><div><br></div><div><table border="1" cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" style="background: rgb(250, 191, 143);"><br><br><strong>转载请尊重原创/译</strong><br></td><td valign="top" style="background: rgb(250, 191, 143);"><br><br><strong>微信公众号</strong><br></td><td valign="top" style="background: rgb(250, 191, 143);"><br><br><strong>CSDN</strong><br></td></tr><tr><td valign="top" style="background: rgb(227, 228, 228);"><br><br><strong>天地会珠海分舵</strong><br></td><td valign="top"><br><br>服务号:TechGoGoGo<br></td><td valign="top"><br><br><u><a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a></u><br></td></tr><tr><td valign="top" style="background: rgb(251, 212, 180);"><br><br><strong>优秀资源推荐</strong><br></td><td valign="top" style="background: rgb(251, 212, 180);"><br><br><strong>地址</strong><br></td><td valign="top" style="background: rgb(251, 212, 180);"><br><br><strong>点评</strong><br></td></tr><tr><td valign="top" style="background: rgb(227, 228, 228);"><br><br>DoctorQ博客<br></td><td valign="top"><br><br><a href="http://testerhome.com/doctorq/topics" target="_blank" rel="external">http://testerhome.com/doctorq/topics</a><br><br></td><td valign="top"><br><br>安卓自动化领域才俊，技术分享先驱，<br></td></tr></tbody></table><br></div></div>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/02/04/e6-b5-b7-e5-a4-96-e4-bc-98-e7-a7-80-e8-b5-84-e8-ae-af-e6-8a-a2-e5-85-88-e7-9c-8b10-ef-bc-9a-e4-b8-96-e7-95-8c-e8-91-97-e5-90-8d-e8-bd-af-e4-bb-b6-e7-bc-ba-e9-99-b7-e5-af-bc-e8-87-b4-e7-9a-84-e7-81-be/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1641,6 +1507,153 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/01/31/e6-b5-b7-e5-a4-96-e4-bc-98-e7-a7-80-e8-b5-84-e8-ae-af-e6-8a-a2-e5-85-88-e7-9c-8b1-e7-a7-81-e6-9c-89-e5-ba-94-e7-94-a8-e4-ba-91-e5-b9-b3-e5-8f-b0sandstorm-e4-b9-8b-e5-bc-95-e8-8d-90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/01/31/e6-b5-b7-e5-a4-96-e4-bc-98-e7-a7-80-e8-b5-84-e8-ae-af-e6-8a-a2-e5-85-88-e7-9c-8b1-e7-a7-81-e6-9c-89-e5-ba-94-e7-94-a8-e4-ba-91-e5-b9-b3-e5-8f-b0sandstorm-e4-b9-8b-e5-bc-95-e8-8d-90/" itemprop="url">海外优秀资讯抢先看1 - 私有应用云平台SandStorm之引荐</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-01-31T13:38:00+08:00">
+                2015-01-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br><br>Sandstorm is an open source project aiming to fundamentally change the way we use web apps, led by ex-Google-engineer <a href="https://plus.google.com/+KentonVarda" target="_blank" rel="external">Kenton Varda</a> .<br><br><span style="color:#3366ff;">Sandstorm是一个开源的项目，它的目的是要从根本上改变我们使用WebApp的方式。该项目是由前谷歌工程师Kenton Varda所领导开发的。</span><br><br>Sandstorm makes running your own personal server as easy as running your phone. You can install apps like e-mail, document editors, blogging software, and more, using a simple app-store-like interface. No config files, no command lines; everything is done through your web browser.<br><br><span style="color:#3366ff;">Sandstorm让你运行你的个人服务器就像运行你个人手机一样的方便。你可以使用一个类似AppStore的界面很简单的就能安装上如email，文档编辑器，博客软件等等。在此过程中你并不需要做任何的配置文件设定，也不需要执行任何的命令行，你只需要在你的网络浏览器上就能完成所有的管理操作。</span><br><br>In other words, Sandstorm gives you the experience you are used to getting from services like GMail or Dropbox, but using the software you choose, on servers you control. This means:<br><br><span style="color:#3366ff;">换一句话说，Sandstorm给予了你像你平时使用GMail和Dropbox一样的体验，兼且让你在你的服务器上选择你需要使用的是什么应用，控制权完全在兄弟你的手上掌握着。 这就意味着：</span><br><br><em>   All your data is stored in one place, rather than fragmented across the internet.
+
+</em>   <span style="color:#3366ff;">你的应用的所有数据都是存储在同一个位置上,而不是散步在网络的其他你自己都不知道在哪的角落上，比如Dropbox,鬼知道它的数据是存储在哪里的，你自己完全没有控制权的。</span><br><br><em>   Apps do not disappear if the developer stops supporting them.
+
+</em>   <span style="color:#3366ff;">你的应用不会消失掉，就算开发人员停止开发的支持。因为这个服务器是完全可以让你自己进行控制的</span><br><br><em>   The developer of an app cannot spy on you, perform experiments on you, or mine your data for advertising purposes.
+
+</em>   <span style="color:#3366ff;">应用开发人员不能对你进行窥探，也不能拿你做小白鼠来获取使用经验，甚至不能像国内那些js一样把偷取你的数据来给你做广告用去了。</span><br><br>Previously, only people with advanced knowledge of systems administration could maintain their own server, but with Sandstorm anyone can do it. Want proof?<br><br><span style="color:#3366ff;">此前，只有那些拥有牛逼系统管理技术的人才能维护他们自己的服务器，但这一切都将会因为Sandstorm这个比牛逼还牛逼(大象逼?)的东东的出现而改变。下面哥给你证明验证下如何？</span><br><a href="https://demo.sandstorm.io/demo" target="_blank" rel="external"><img src="https://sandstorm.io/trythedemo.png" alt="Try the demo."></a><br><br>Sandstorm isn’t just easy to use, it’s also innovative. We are building common features and powerful tools directly into the platform for apps to leverage:<br><br><span style="color:#3366ff;">Sandstorm不仅仅使用方便，而且是非常有创意的哦。我们正在直接在平台里面构建一些通用的功能和非常厉害强悍的工具来给你的应用进行使用：</span><br><br><em>   Each app runs in a secure sandbox, so a bad app cannot harm the rest of your server.
+
+</em>   <span style="color:#3366ff;">每一个应用都是运行在一个安全的沙箱里面，所以一个有问题的应用就不能跳出该沙箱来跑到你的另外的应用中去玩特洛伊。</span><br><br><em>   Sandstorm provides a unified login system, so you don’t have to log into each app separately.
+
+</em>   <span style="color:#3366ff;">Sandstorm提供了一个统一登陆系统，这样你就不用在你的服务器上每使用一个应用就登录一次了。</span><br><br><em>   Apps can easily integrate with our unified sharing model rather than rolling their own. In fact, Sandstorm’s sandboxing model makes it possible to securely share any app instance, even if the app itself does not implement sharing at all.
+
+</em>   <span style="color:#3366ff;">应用可以很方便的去跟我们的统一进程共享模型进行集成，而不需要自己两外开一套IPC机制。事实上Sandstorm的沙箱机制让应用之间进行安全的数据共享成为可能，即使该应用自身并没有实现任何数据共享机制。</span><br><br><em>   Apps are given infrastructure for federation, so that they can – securely, with your permission, but also easily, via the web interface – discover and talk to each other and to other servers.
+
+</em>   <span style="color:#3366ff;">Sandstorm给所有运行在上面的应用提供了一起合作互动的基础设施，这就让你可以做到 – 在你的监督允许下让不同的应用甚至不同的服务器之间可以安全的而又很方便的通过网络界面来进行互相发现和通信。</span><div><span style="font-family:Benton Sans, Helvetica, sans-serif;color:#3366ff;"><span style="font-size: 16px; line-height: 26px;"></span></span><table cellspacing="0" cellpadding="0" width="539" class="                          " style="color: rgb(54, 46, 43); font-family: Arial; font-size: 14.3999996185303px; line-height: 26px; margin: 0px 0px 10px; padding: 0px; border-collapse: collapse; width: 668px; max-width: 100%; word-wrap: break-word !important;"><tbody style="margin: 0px; padding: 0px; max-width: 100%; word-wrap: break-word !important;"><tr style="margin: 0px; padding: 0px; max-width: 100%; word-wrap: break-word !important;"><td valign="top" width="111" height="13" style="border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; padding: 4px; word-break: break-all; max-width: 100%; word-wrap: break-word !important; background-color: rgb(190, 192, 191);"><br><br><span style="margin: 0px; padding: 0px; max-width: 100%; word-wrap: break-word !important;"><strong>作者</strong></span><br></td><td valign="top" width="112" height="13" style="border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; padding: 4px; word-break: break-all; max-width: 100%; word-wrap: break-word !important; background-color: rgb(190, 192, 191);"><br><br><span style="margin: 0px; padding: 0px; max-width: 100%; word-wrap: break-word !important;"><strong>自主博客</strong></span><br></td><td valign="top" width="111" height="13" style="border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; padding: 4px; word-break: break-all; max-width: 100%; word-wrap: break-word !important; background-color: rgb(190, 192, 191);"><br><br><span style="margin: 0px; padding: 0px; max-width: 100%; word-wrap: break-word !important;"><strong>微信</strong></span><br></td><td valign="top" width="112" height="13" style="border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; padding: 4px; word-break: break-all; max-width: 100%; word-wrap: break-word !important; background-color: rgb(190, 192, 191);"><br><br><span style="margin: 0px; padding: 0px; max-width: 100%; font-family: Helvetica; letter-spacing: 0px; word-wrap: break-word !important;"><strong>CSDN</strong></span><br></td></tr><tr style="margin: 0px; padding: 0px; max-width: 100%; word-wrap: break-word !important;"><td valign="top" width="111" height="39" style="border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; padding: 4px; word-break: break-all; max-width: 100%; word-wrap: break-word !important; background-color: rgb(227, 228, 228);"><br><br><span style="margin: 0px; padding: 0px; max-width: 100%; word-wrap: break-word !important;">天地会珠海分舵</span><br></td><td valign="top" width="112" height="39" style="border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; padding: 4px; word-break: break-all; max-width: 100%; word-wrap: break-word !important;"><br><br><span style="margin: 0px; padding: 0px; max-width: 100%; font-size: 11px; font-family: Helvetica; letter-spacing: 0px; word-wrap: break-word !important;"><a href="http://techgogogo.com/" target="_blank" rel="external">http://techgogogo.com</a></span><br><br></td><td valign="top" width="111" height="39" style="border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; padding: 4px; word-break: break-all; max-width: 100%; word-wrap: break-word !important;"><br><br><span style="margin: 0px; padding: 0px; max-width: 100%; word-wrap: break-word !important;">服务号</span><span style="margin: 0px; padding: 0px; max-width: 100%; font-size: 10px; font-family: Helvetica; letter-spacing: 0px; word-wrap: break-word !important;">:TechGoGoGo</span><br><br><span style="margin: 0px; padding: 0px; max-width: 100%; word-wrap: break-word !important;">扫描码</span><span style="margin: 0px; padding: 0px; max-width: 100%; font-size: 10px; font-family: Helvetica; letter-spacing: 0px; word-wrap: break-word !important;">:</span><br><br><img src="http://mmbiz.qpic.cn/mmbiz/KYJTqcL56vuJuQArNAk7nsLW8hpxia6kjor2IEvib9RAQTEzzEPa4UngfjpT1GKIIKCnb7ib0IViaWEV7VFFiaAkkjg/640?tp=webp" alt=""><br></td><td valign="top" width="112" height="39" style="border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; padding: 4px; word-break: break-all; max-width: 100%; word-wrap: break-word !important;"><br><br><span style="margin: 0px; padding: 0px; max-width: 100%; color: rgb(0, 0, 0); font-size: 11px; font-family: Helvetica; letter-spacing: 0px; word-wrap: break-word !important;"><a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a></span><br><div><br></div></td></tr></tbody></table></div></div>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
   </section>
 
   
@@ -1691,7 +1704,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">235</span>
+                <span class="site-state-item-count">234</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
