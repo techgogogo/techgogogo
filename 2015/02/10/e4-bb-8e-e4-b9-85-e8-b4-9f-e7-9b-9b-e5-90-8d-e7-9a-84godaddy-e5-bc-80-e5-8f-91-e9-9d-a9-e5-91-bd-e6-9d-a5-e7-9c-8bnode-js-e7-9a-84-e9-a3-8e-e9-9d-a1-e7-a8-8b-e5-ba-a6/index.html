@@ -1,16 +1,104 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+
+
+
   
-  <title>从久负盛名的GoDaddy开发革命来看Node.js的风靡程度 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;#13;英文原文连接：http://venturebeat.com/2015/02/09/godaddy-nodejitsu/   网站主机托管公司GoDaddy将要进一步通过新的开发工具来提升自身能力。最新消息称，GoDaddy公司正在收购Nodejitsu公司的谈判当中，这是一家通过使用当今流行的服务器端JavaScript框架Node.js进行应用托管和节点打包注册服务的初创公司。这笔交易">
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.proxy.ustclug.org/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="GoDaddy,Node.js," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="&amp;#13;英文原文连接：http://venturebeat.com/2015/02/09/godaddy-nodejitsu/   网站主机托管公司GoDaddy将要进一步通过新的开发工具来提升自身能力。最新消息称，GoDaddy公司正在收购Nodejitsu公司的谈判当中，这是一家通过使用当今流行的服务器端JavaScript框架Node.js进行应用托管和节点打包注册服务的初创公司。这笔交易">
 <meta name="keywords" content="GoDaddy,Node.js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="从久负盛名的GoDaddy开发革命来看Node.js的风靡程度">
 <meta property="og:url" content="http://yoursite.com/2015/02/10/e4-bb-8e-e4-b9-85-e8-b4-9f-e7-9b-9b-e5-90-8d-e7-9a-84godaddy-e5-bc-80-e5-8f-91-e9-9d-a9-e5-91-bd-e6-9d-a5-e7-9c-8bnode-js-e7-9a-84-e9-a3-8e-e9-9d-a1-e7-a8-8b-e5-ba-a6/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="科技向前冲">
 <meta property="og:description" content="&amp;#13;英文原文连接：http://venturebeat.com/2015/02/09/godaddy-nodejitsu/   网站主机托管公司GoDaddy将要进一步通过新的开发工具来提升自身能力。最新消息称，GoDaddy公司正在收购Nodejitsu公司的谈判当中，这是一家通过使用当今流行的服务器端JavaScript框架Node.js进行应用托管和节点打包注册服务的初创公司。这笔交易">
 <meta property="og:image" content="http://img.blog.csdn.net/20150210124619990?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1YmFpdGlhbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20150210124659036?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1YmFpdGlhbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
@@ -19,221 +107,621 @@
 <meta name="twitter:title" content="从久负盛名的GoDaddy开发革命来看Node.js的风靡程度">
 <meta name="twitter:description" content="&amp;#13;英文原文连接：http://venturebeat.com/2015/02/09/godaddy-nodejitsu/   网站主机托管公司GoDaddy将要进一步通过新的开发工具来提升自身能力。最新消息称，GoDaddy公司正在收购Nodejitsu公司的谈判当中，这是一家通过使用当今流行的服务器端JavaScript框架Node.js进行应用托管和节点打包注册服务的初创公司。这笔交易">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20150210124619990?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1YmFpdGlhbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'kzlathander'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2015/02/10/e4-bb-8e-e4-b9-85-e8-b4-9f-e7-9b-9b-e5-90-8d-e7-9a-84godaddy-e5-bc-80-e5-8f-91-e9-9d-a9-e5-91-bd-e6-9d-a5-e7-9c-8bnode-js-e7-9a-84-e9-a3-8e-e9-9d-a1-e7-a8-8b-e5-ba-a6/"/>
+
+
+
+
+
+  <title>从久负盛名的GoDaddy开发革命来看Node.js的风靡程度 | 科技向前冲</title>
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">科技向前冲</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-e4-bb-8e-e4-b9-85-e8-b4-9f-e7-9b-9b-e5-90-8d-e7-9a-84godaddy-e5-bc-80-e5-8f-91-e9-9d-a9-e5-91-bd-e6-9d-a5-e7-9c-8bnode-js-e7-9a-84-e9-a3-8e-e9-9d-a1-e7-a8-8b-e5-ba-a6" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/02/10/e4-bb-8e-e4-b9-85-e8-b4-9f-e7-9b-9b-e5-90-8d-e7-9a-84godaddy-e5-bc-80-e5-8f-91-e9-9d-a9-e5-91-bd-e6-9d-a5-e7-9c-8bnode-js-e7-9a-84-e9-a3-8e-e9-9d-a1-e7-a8-8b-e5-ba-a6/" class="article-date">
-  <time datetime="2015-02-10T05:50:00.000Z" itemprop="datePublished">2015-02-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
+        <p class="site-subtitle"></p>
+      
   </div>
 
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      从久负盛名的GoDaddy开发革命来看Node.js的风靡程度
-    </h1>
+</div>
+
+<nav class="site-nav">
   
 
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-startup">
+          <a href="/categories/创业" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-fire"></i> <br />
+            
+            创业
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-pm">
+          <a href="/categories/产品" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-mobile-phone"></i> <br />
+            
+            产品
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-oversea">
+          <a href="/categories/Hacker-News" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-leaf"></i> <br />
+            
+            海外
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-innovation">
+          <a href="/categories/创新" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />
+            
+            创新
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/02/10/e4-bb-8e-e4-b9-85-e8-b4-9f-e7-9b-9b-e5-90-8d-e7-9a-84godaddy-e5-bc-80-e5-8f-91-e9-9d-a9-e5-91-bd-e6-9d-a5-e7-9c-8bnode-js-e7-9a-84-e9-a3-8e-e9-9d-a1-e7-a8-8b-e5-ba-a6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">从久负盛名的GoDaddy开发革命来看Node.js的风靡程度</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-02-10T13:50:00+08:00">
+                2015-02-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
       
         <div id="article_content" class="article_content">&#13;<br><br><span style="font-family: SimSun; font-size: 14px;"><span style="line-height: 22px; text-indent: 24px;"><em><span style="color:#666666;">英文原文连接：<a href="http://venturebeat.com/2015/02/09/godaddy-nodejitsu/" target="_blank" rel="external">http://venturebeat.com/2015/02/09/godaddy-nodejitsu/</a></span></em></span></span><br><br><span style="font-family: SimSun; font-size: 14px;"><span style="line-height: 22px; text-indent: 24px;"><em><img src="http://img.blog.csdn.net/20150210124619990?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1YmFpdGlhbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="">
 </em></span></span><br><br><span style="font-family: SimSun; font-size: 14px;"><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;">  网站主机托管公司GoDaddy将要进一步通过新的开发工具来提升自身能力。最新消息称，<a href="https://www.godaddy.com/" target="_blank" rel="external">GoDaddy</a>公司正在收购<a href="https://www.nodejitsu.com/" target="_blank" rel="external">Nodejitsu</a>公司的谈判当中，这是一家通过使用当今流行的<a href="http://venturebeat.com/2014/03/12/nodes-new-leader-tj-fontaine-explains-why-version-0-12-will-blow-developers-minds/" target="_blank" rel="external">服务器端JavaScript框架Node.js</a>进行应用托管和节点打包注册服务的初创公司。这笔交易暂时还没有敲定，据可靠消息来源称，该公司正试图在本周的Node峰会上宣布这项收购案。不过也有消息人士表示，其似乎在本周无法敲定这笔交易。</span></span><br><br><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;"><span style="font-family: SimSun; font-size: 14px;">  实际上，也许该收购可以为GoDaddy公司带来一些效益，包括在大量的节点用户群体，同行的网站主机托管公司以及付费用户中提升其影响力和战士其实力。</span></span><br><br><span style="font-family: SimSun; font-size: 14px;"><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;">  GoDaddy这段时间其实更多是因为举行让人索然无味的以美女赛车手Danica Patrick压轴的商业超级杯而为人所知，而不是因为提出了什么高超的编码知识。如今它正在<a href="http://venturebeat.com/2013/09/05/godaddy-grows-up/" target="_blank" rel="external">试图挽回其声誉</a>，希望不仅仅是作为一个网站”存储盒子“(</span><span style="line-height: 22px; text-indent: 24px;"><span style="color: rgb(255, 0, 0);">天地会珠海分舵注：因为它提供的是网站托管服务，所以这里比方成把网站装在一个盒子里面</span></span><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;">)服务提供商的角色来和同行的资金充足的1and1之类的大头来进行竞争。但是，并非所有的技术人员都会看中其服务，许多开发人员更容易转向云托管，比如Linode和DigitalOcean，更不用说竞争激烈的云服务提供商，像亚马逊网络服务。</span></span><br><br><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;"><span style="font-family: SimSun; font-size: 14px;">  Nodejitsu公司的收购可以添加其即时名气，其客户群也是可以利用的资源，包括康泰纳仕和Segment公司等。</span></span><br><br><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;"><span style="color: rgb(35, 31, 32); line-height: 24px;"><span style="font-family: SimSun; font-size: 14px;">  同时，围绕Node.js的市场正在不断扩大和完善功能，这让很多初创公司如<a href="http://venturebeat.com/2014/05/27/a-new-node-js-company-nodesource-opens-its-virtual-doors/" target="_blank" rel="external">NodeSource</a>,<a href="http://venturebeat.com/2013/09/18/can-this-startup-steal-node-from-joyent-vcs-bet-8m-on-it/" target="_blank" rel="external">Strongloop</a>, 和<a href="http://venturebeat.com/2014/02/11/former-node-leader-takes-big-money-launches-node-startup/" target="_blank" rel="external">npm</a>，甚至Node赞助商<a href="http://www.joyent.com/" target="_blank" rel="external">Joyent</a> 自身都投身其中。与此同时更多其他的公司包括<a href="http://venturebeat.com/2011/08/16/linkedin-node/" target="_blank" rel="external">LinkedIn</a> 和<a href="http://venturebeat.com/2012/01/24/why-walmart-is-using-node-js/" target="_blank" rel="external">Walmart</a>都已经在它们的系统中引进更多的Node技术。</span></span></span><br><br><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;"><span style="color: rgb(35, 31, 32); line-height: 24px;"><span style="font-family: SimSun; font-size: 14px;"><img src="http://img.blog.csdn.net/20150210124659036?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1YmFpdGlhbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br></span></span></span><br><br><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;"><span style="color: rgb(35, 31, 32); line-height: 24px;"><span style="font-family: SimSun; font-size: 14px;">  GoDaddy拒绝对该报道进行任何的评论。而Nodejitsu的代表也没有立刻对媒体的报道进行反馈。</span></span></span><br><br><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;"><span style="color: rgb(35, 31, 32); line-height: 24px;"><span style="font-family: SimSun; font-size: 14px;">  所以很明显GoDaddy内部至少有一部分人是知道Node的动向的。在2013年的时候该公司开放了其Node集群服务的源码，让工程师们可以“在0停机时间或者说对客户端造成0影响的情况下更新你的服务器后台，“这大家可以从该项目的<a href="https://github.com/godaddy/node-cluster-service" target="_blank" rel="external">GitHub项目页面</a>看到。</span></span></span><br><br><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;"><span style="color: rgb(35, 31, 32); line-height: 24px;"><span style="font-family: SimSun; font-size: 14px;">”我们近段时间将会在Node.js上取得重大的进展，且我们将要继续加大投资来推动其向前发展，” GoDaddy的工程副总裁Antonio Silviera当时在他的<a href="http://acarlos.net/post/62164462584/open-sourcing-node-js-projects" target="_blank" rel="external">个人博客</a>上言道。</span></span></span><br><br><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;"><span style="color: rgb(35, 31, 32); line-height: 24px;"><span style="font-family: SimSun; font-size: 14px;">  总部设在纽约的Nodejitsu是在2010创立的。根据该公司的<a href="https://angel.co/nodejitsu" target="_blank" rel="external">初创天使投资名单</a>显示，初创投资成员包括Bloomberg Beta，First Round Capital, General Catalyst Partners, RRE Ventures, SV Angel, William Fink, Bob Pasker, 以及Lenny Pruss。</span></span></span><br><br><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;"><span style="color: rgb(35, 31, 32); line-height: 24px;"><span style="font-family: SimSun; font-size: 14px;">—————完———————-</span></span></span><br><br><span style="color: rgb(51, 51, 51); line-height: 22px; text-indent: 24px;"><span style="color: rgb(35, 31, 32); line-height: 24px;"><span style="font-family: SimSun; font-size: 14px;"></span></span></span><br><table border="1" cellspacing="0" cellpadding="0" style="color: rgb(54, 46, 43); font-family: Arial; font-size: 14px; line-height: 26px;"><tbody><tr><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background: rgb(250, 191, 143);"><br><br><strong>作/译者</strong><br></td><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background: rgb(250, 191, 143);"><br><br><strong>微信知识共享公众号</strong><br></td><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background: rgb(250, 191, 143);"><br><br><strong>CSDN</strong><br></td></tr><tr><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background: rgb(227, 228, 228);"><br><br>天地会珠海分舵<br></td><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><br><br>TechGoGoGo<br></td><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><br><br><a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></td></tr><tr><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background: rgb(251, 212, 180);"><br><br>优秀资源推荐<br></td><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background: rgb(251, 212, 180);"><br><br>地址<br></td><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background: rgb(251, 212, 180);"><br><br>点评<br></td></tr><tr><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background: rgb(227, 228, 228);"><br><br>DoctorQ博客<br></td><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><br><br><a href="http://testerhome.com/doctorq/topics" target="_blank" rel="external">http://testerhome.com/doctorq/topics</a><br></td><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><br><br>安卓自动化领域才俊<br></td></tr><tr><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background: rgb(227, 228, 228);"><br><br>金阳光测试<br></td><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><br><br><a href="http://www.chuanke.com/s1983382.html" target="_blank" rel="external">http://www.chuanke.com/s1983382.html</a><br></td><td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><br><br>更多请百度搜：“金阳光测试”<br></td></tr></tbody></table></div>
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/02/10/e4-bb-8e-e4-b9-85-e8-b4-9f-e7-9b-9b-e5-90-8d-e7-9a-84godaddy-e5-bc-80-e5-8f-91-e9-9d-a9-e5-91-bd-e6-9d-a5-e7-9c-8bnode-js-e7-9a-84-e9-a3-8e-e9-9d-a1-e7-a8-8b-e5-ba-a6/" data-id="cj56dkqkc003ryqu26s6kowk5" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GoDaddy/">GoDaddy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
 
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/GoDaddy/" rel="tag"># GoDaddy</a>
+          
+            <a href="/tags/Node-js/" rel="tag"># Node.js</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/02/10/e4-bc-98-e7-a7-80-e4-b8-aa-e4-ba-ba-e5-85-8d-e8-b4-b9-e7-a7-81-e6-9c-89-e4-ba-91owncloud8-0-e7-bb-88-e4-ba-8e-e5-8f-91-e5-b8-83-e4-ba-ae-e7-9c-bc-e6-96-b0-e5-8a-9f-e8-83-bd-e5-88-9d-e6-8e-a2-e7-a/" rel="next" title="优秀个人免费私有云OwnCloud 8.0终于发布 - 亮眼新功能初探简介">
+                <i class="fa fa-chevron-left"></i> 优秀个人免费私有云OwnCloud 8.0终于发布 - 亮眼新功能初探简介
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/02/11/e8-b0-a2-e7-bb-9d-e8-89-b3-e7-85-a7-e9-97-a8-e6-89-8b-e6-8a-8a-e6-89-8b-e6-95-99-e4-bd-a0-e6-8a-8a-e5-bd-93-e4-bb-8a-e6-9c-80hit-e7-9a-84-e5-ae-b6-e5-ba-ad-e7-9b-91-e6-8e-a7ipcamera-e5-8f-98-e5-b/" rel="prev" title="谢绝艳照门 - 手把手教你把当今最hit的家庭监控IP Camera变得网络安全起来">
+                谢绝艳照门 - 手把手教你把当今最hit的家庭监控IP Camera变得网络安全起来 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
     </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
-  
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
-<nav id="article-nav">
-  
-    <a href="/2015/02/11/e8-b0-a2-e7-bb-9d-e8-89-b3-e7-85-a7-e9-97-a8-e6-89-8b-e6-8a-8a-e6-89-8b-e6-95-99-e4-bd-a0-e6-8a-8a-e5-bd-93-e4-bb-8a-e6-9c-80hit-e7-9a-84-e5-ae-b6-e5-ba-ad-e7-9b-91-e6-8e-a7ipcamera-e5-8f-98-e5-b/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
+  </div>
+
+
+        </div>
         
-          谢绝艳照门 - 手把手教你把当今最hit的家庭监控IP Camera变得网络安全起来
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="kzlathander" />
+          <p class="site-author-name" itemprop="name">kzlathander</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">235</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">95</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
         
       </div>
-    </a>
-  
-  
-    <a href="/2015/02/10/e4-bc-98-e7-a7-80-e4-b8-aa-e4-ba-ba-e5-85-8d-e8-b4-b9-e7-a7-81-e6-9c-89-e4-ba-91owncloud8-0-e7-bb-88-e4-ba-8e-e5-8f-91-e5-b8-83-e4-ba-ae-e7-9c-bc-e6-96-b0-e5-8a-9f-e8-83-bd-e5-88-9d-e6-8e-a2-e7-a/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">优秀个人免费私有云OwnCloud 8.0终于发布 - 亮眼新功能初探简介</div>
-    </a>
-  
-</nav>
+    </main>
 
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
   
-</article>
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kzlathander</span>
+</div>
 
-</section>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
         
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/">Hacker News</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/Swift/">Swift</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/测试自动化/">测试自动化</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/《从0到1》/">《从0到1》</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/《从0到1》/创业/">创业</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/">产品</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/">创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/技术/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/设计/">设计</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/资讯/">资讯</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/风投/">风投</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/技术/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/设计/">设计</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/">创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/创业/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/资讯/">资讯</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/风投/">风投</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/技术/设计/">设计</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/资讯/">资讯</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/设计/">设计</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/设计/资讯/">资讯</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/风投/">风投</a></li></ul>
-    </div>
-  </div>
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ABR/">ABR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ADB/">ADB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/API/">API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Altair/">Altair</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHut/">GitHut</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GoDaddy/">GoDaddy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5/">HTML5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hacker-News/">Hacker News</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IoT/">IoT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JanOS/">JanOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenVPN/">OpenVPN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Phonegap/">Phonegap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React-Native/">React Native</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RethinkDB/">RethinkDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Silver/">Silver</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Startup/">Startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swift/">Swift</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ThinkDB/">ThinkDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/facebook/">facebook</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/">ios</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ownCloud/">ownCloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/paul-graham/">paul-graham</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/saas/">saas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sandstorm/">sandstorm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssl/">ssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows-10/">windows 10</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wireshark/">wireshark</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress/">wordpress</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/youtube/">youtube</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/三个木桶模型/">三个木桶模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/三星/">三星</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/主题/">主题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/云/">云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网/">互联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网创业/">互联网创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/产品/">产品</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/产品设计/">产品设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/从0到1/">从0到1</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/信息/">信息</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业/">创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业-先行者优势/">创业-先行者优势</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业使命/">创业使命</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业家/">创业家</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业教父/">创业教父</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业环境/">创业环境</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创意/">创意</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创投/">创投</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/初创企业/">初创企业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/利基应用/">利基应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/利益相关者/">利益相关者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/加密/">加密</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原生应用/">原生应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/命令行/">命令行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/大数据/">大数据</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/天使投资/">天使投资</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安全技术/">安全技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/展销/">展销</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/广播/">广播</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/应用/">应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/微软/">微软</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/技术趋势/">技术趋势</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/抓包/">抓包</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/智能设备/">智能设备</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派/">树莓派</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派2代/">树莓派2代</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模型/">模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模式/">模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/监控技术/">监控技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/破解/">破解</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/硅谷/">硅谷</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/私有云/">私有云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/科技/">科技</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/端口转发/">端口转发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/简书/">简书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程语言/">编程语言</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网络安全/">网络安全</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自主博客/">自主博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/芯片/">芯片</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虹膜扫描/">虹膜扫描</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/视频编辑/">视频编辑</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/跨平台/">跨平台</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/跨平台应用开发/">跨平台应用开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/迭代/">迭代</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/隐私/">隐私</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/项目构建/">项目构建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/风投/">风投</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/黑客/">黑客</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/ABR/" style="font-size: 10px;">ABR</a> <a href="/tags/ADB/" style="font-size: 10px;">ADB</a> <a href="/tags/API/" style="font-size: 10px;">API</a> <a href="/tags/Altair/" style="font-size: 10px;">Altair</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/GitHut/" style="font-size: 10px;">GitHut</a> <a href="/tags/GoDaddy/" style="font-size: 10px;">GoDaddy</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTML5/" style="font-size: 11.43px;">HTML5</a> <a href="/tags/Hacker-News/" style="font-size: 10px;">Hacker News</a> <a href="/tags/IoT/" style="font-size: 10px;">IoT</a> <a href="/tags/JanOS/" style="font-size: 10px;">JanOS</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/OpenVPN/" style="font-size: 10px;">OpenVPN</a> <a href="/tags/Phonegap/" style="font-size: 10px;">Phonegap</a> <a href="/tags/React-Native/" style="font-size: 10px;">React Native</a> <a href="/tags/RethinkDB/" style="font-size: 11.43px;">RethinkDB</a> <a href="/tags/Silver/" style="font-size: 10px;">Silver</a> <a href="/tags/Startup/" style="font-size: 10px;">Startup</a> <a href="/tags/Swift/" style="font-size: 10px;">Swift</a> <a href="/tags/ThinkDB/" style="font-size: 10px;">ThinkDB</a> <a href="/tags/docker/" style="font-size: 12.86px;">docker</a> <a href="/tags/facebook/" style="font-size: 11.43px;">facebook</a> <a href="/tags/ios/" style="font-size: 10px;">ios</a> <a href="/tags/ownCloud/" style="font-size: 10px;">ownCloud</a> <a href="/tags/paul-graham/" style="font-size: 10px;">paul-graham</a> <a href="/tags/saas/" style="font-size: 15.71px;">saas</a> <a href="/tags/sandstorm/" style="font-size: 15.71px;">sandstorm</a> <a href="/tags/ssl/" style="font-size: 10px;">ssl</a> <a href="/tags/windows-10/" style="font-size: 10px;">windows 10</a> <a href="/tags/wireshark/" style="font-size: 10px;">wireshark</a> <a href="/tags/wordpress/" style="font-size: 10px;">wordpress</a> <a href="/tags/youtube/" style="font-size: 10px;">youtube</a> <a href="/tags/三个木桶模型/" style="font-size: 11.43px;">三个木桶模型</a> <a href="/tags/三星/" style="font-size: 10px;">三星</a> <a href="/tags/主题/" style="font-size: 10px;">主题</a> <a href="/tags/云/" style="font-size: 14.29px;">云</a> <a href="/tags/互联网/" style="font-size: 14.29px;">互联网</a> <a href="/tags/互联网创业/" style="font-size: 12.86px;">互联网创业</a> <a href="/tags/产品/" style="font-size: 17.14px;">产品</a> <a href="/tags/产品设计/" style="font-size: 10px;">产品设计</a> <a href="/tags/从0到1/" style="font-size: 18.57px;">从0到1</a> <a href="/tags/信息/" style="font-size: 10px;">信息</a> <a href="/tags/创业/" style="font-size: 20px;">创业</a> <a href="/tags/创业-先行者优势/" style="font-size: 10px;">创业-先行者优势</a> <a href="/tags/创业使命/" style="font-size: 10px;">创业使命</a> <a href="/tags/创业家/" style="font-size: 10px;">创业家</a> <a href="/tags/创业教父/" style="font-size: 10px;">创业教父</a> <a href="/tags/创业环境/" style="font-size: 11.43px;">创业环境</a> <a href="/tags/创意/" style="font-size: 12.86px;">创意</a> <a href="/tags/创投/" style="font-size: 10px;">创投</a> <a href="/tags/初创企业/" style="font-size: 10px;">初创企业</a> <a href="/tags/利基应用/" style="font-size: 10px;">利基应用</a> <a href="/tags/利益相关者/" style="font-size: 10px;">利益相关者</a> <a href="/tags/加密/" style="font-size: 11.43px;">加密</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/原生应用/" style="font-size: 10px;">原生应用</a> <a href="/tags/命令行/" style="font-size: 10px;">命令行</a> <a href="/tags/大数据/" style="font-size: 10px;">大数据</a> <a href="/tags/天使投资/" style="font-size: 10px;">天使投资</a> <a href="/tags/安全技术/" style="font-size: 10px;">安全技术</a> <a href="/tags/展销/" style="font-size: 11.43px;">展销</a> <a href="/tags/广播/" style="font-size: 10px;">广播</a> <a href="/tags/应用/" style="font-size: 11.43px;">应用</a> <a href="/tags/微软/" style="font-size: 10px;">微软</a> <a href="/tags/技术趋势/" style="font-size: 10px;">技术趋势</a> <a href="/tags/抓包/" style="font-size: 10px;">抓包</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/智能设备/" style="font-size: 10px;">智能设备</a> <a href="/tags/树莓派/" style="font-size: 11.43px;">树莓派</a> <a href="/tags/树莓派2代/" style="font-size: 10px;">树莓派2代</a> <a href="/tags/模型/" style="font-size: 10px;">模型</a> <a href="/tags/模式/" style="font-size: 10px;">模式</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/监控技术/" style="font-size: 10px;">监控技术</a> <a href="/tags/破解/" style="font-size: 10px;">破解</a> <a href="/tags/硅谷/" style="font-size: 10px;">硅谷</a> <a href="/tags/私有云/" style="font-size: 10px;">私有云</a> <a href="/tags/科技/" style="font-size: 10px;">科技</a> <a href="/tags/端口转发/" style="font-size: 10px;">端口转发</a> <a href="/tags/简书/" style="font-size: 10px;">简书</a> <a href="/tags/编程语言/" style="font-size: 10px;">编程语言</a> <a href="/tags/网络安全/" style="font-size: 10px;">网络安全</a> <a href="/tags/自主博客/" style="font-size: 10px;">自主博客</a> <a href="/tags/芯片/" style="font-size: 10px;">芯片</a> <a href="/tags/虹膜扫描/" style="font-size: 10px;">虹膜扫描</a> <a href="/tags/视频编辑/" style="font-size: 10px;">视频编辑</a> <a href="/tags/跨平台/" style="font-size: 11.43px;">跨平台</a> <a href="/tags/跨平台应用开发/" style="font-size: 10px;">跨平台应用开发</a> <a href="/tags/迭代/" style="font-size: 10px;">迭代</a> <a href="/tags/隐私/" style="font-size: 10px;">隐私</a> <a href="/tags/项目构建/" style="font-size: 10px;">项目构建</a> <a href="/tags/风投/" style="font-size: 10px;">风投</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/04/13/create-new-business-model/">开辟新战场，打造新的商业模式</a>
-          </li>
-        
-          <li>
-            <a href="/2016/01/31/10-secret-facts-about-apples-product-design/">苹果产品设计中鲜为人知的10个细节</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/23/nodeos-the-javascript-based-operating-system/">NodeOS:一个用JavaScript写出来的操作系统</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/14/five-things-you-need-to-know-about-hadoop-v-apache-spark/">2分钟读懂大数据框架Hadoop和Spark的异同</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/13/its-actually-open-source-software-thats-eating-the-world-1/">究竟是谁在吞噬着这个世界</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>

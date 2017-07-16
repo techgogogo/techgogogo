@@ -1,141 +1,528 @@
 <!DOCTYPE html>
-<html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.proxy.ustclug.org/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="科技向前冲">
 <meta property="og:url" content="http://yoursite.com/page/18/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="科技向前冲">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="科技向前冲">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'kzlathander'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/18/"/>
+
+
+
+
+
+  <title>科技向前冲</title>
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">科技向前冲</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a55-e6-83-b3-e6-b3-95-e5-88-b0-e5-88-9b-e4-b8" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/12/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a55-e6-83-b3-e6-b3-95-e5-88-b0-e5-88-9b-e4-b8/" class="article-date">
-  <time datetime="2015-03-12T00:59:00.000Z" itemprop="datePublished">2015-03-12</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
+        <p class="site-subtitle"></p>
+      
   </div>
 
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/12/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a55-e6-83-b3-e6-b3-95-e5-88-b0-e5-88-9b-e4-b8/">往企业家蜕变的过程中该如何拥抱失败 5 - 想法到创业创意的蜕变</a>
-    </h1>
+</div>
+
+<nav class="site-nav">
   
 
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-startup">
+          <a href="/categories/创业" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-fire"></i> <br />
+            
+            创业
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-pm">
+          <a href="/categories/产品" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-mobile-phone"></i> <br />
+            
+            产品
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-oversea">
+          <a href="/categories/Hacker-News" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-leaf"></i> <br />
+            
+            海外
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-innovation">
+          <a href="/categories/创新" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />
+            
+            创新
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/12/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a55-e6-83-b3-e6-b3-95-e5-88-b0-e5-88-9b-e4-b8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/12/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a55-e6-83-b3-e6-b3-95-e5-88-b0-e5-88-9b-e4-b8/" itemprop="url">往企业家蜕变的过程中该如何拥抱失败 5 - 想法到创业创意的蜕变</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-12T08:59:00+08:00">
+                2015-03-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150311164429810" alt="好点子和坏点子"><br><br>## 想法到创意的蜕变<br><br><em> </em> <em><br><br>我敢负责任的说你肯定碰到过这种情况: 当你在参加一个无聊透顶的活动时，当你在安静的享受着蒸气浴时，当你处于塞车长龙之中时，“嘭!”，你的大脑突然被一个”从所未有的想法”给砸中。对于这个”全球性问题”，你简直不敢相信你竟然是第一个想出如此精美绝伦的解决方案的人。开始，你会畏手畏脚的不敢把你的”天才想法”给说出来。但事实上你内心的兴奋感终究不会让你把这个秘密保守太久。<br><br>同事和朋友不是对你的想法嗤之以鼻就是对你想法践踏的一无是处，随便举出几个已存在的与该想法靠边的山寨公司就来将你打发; 导师拿你宣称的对你的产品有需求的市场进行揶揄; 家人对你该如何筹集资金的问题进行穷追猛打。霎时间，泡沫即将破裂，但，请别，别放弃。如果你曾经在调研你的点子，竞争对手，和市场方面有个失败的经历的话，也许下面列出的策略能帮你把你的想法具体化成一个能够进行创业的创意:
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150311164429810" alt="好点子和坏点子"><br><br>## 想法到创意的蜕变<br><br><em> </em> <em><br><br>我敢负责任的说你肯定碰到过这种情况: 当你在参加一个无聊透顶的活动时，当你在安静的享受着蒸气浴时，当你处于塞车长龙之中时，“嘭!”，你的大脑突然被一个”从所未有的想法”给砸中。对于这个”全球性问题”，你简直不敢相信你竟然是第一个想出如此精美绝伦的解决方案的人。开始，你会畏手畏脚的不敢把你的”天才想法”给说出来。但事实上你内心的兴奋感终究不会让你把这个秘密保守太久。<br><br>同事和朋友不是对你的想法嗤之以鼻就是对你想法践踏的一无是处，随便举出几个已存在的与该想法靠边的山寨公司就来将你打发; 导师拿你宣称的对你的产品有需求的市场进行揶揄; 家人对你该如何筹集资金的问题进行穷追猛打。霎时间，泡沫即将破裂，但，请别，别放弃。如果你曾经在调研你的点子，竞争对手，和市场方面有个失败的经历的话，也许下面列出的策略能帮你把你的想法具体化成一个能够进行创业的创意:
 
 </em>   参加一些由和你想法相近的项目成员举办的网上的创业，企业，和生意相关的活动，并和更多的导师或者商业顾问勾搭上。<br><br><em>   分析你的市场和竞争对手。现在的风向是不是青睐你的点子？你是否有违反相应的约定，商标，或者专利？调研为什么之前同行业的某某公司最终做死了，他们犯了什么错误？你又如何能比他们做得更好。打个电话给这些公司的创始人并收集他们对市场和你的点子的反馈。
 
 </em>   寻找一些你的产品的真正潜在用户，带人家出去喝杯咖啡谈一谈。他们是否立刻就能对你的点子进行心领神会？你的点子是否真的解决了他们的痛点，还是说这仅仅是个”还行”的点子？他们会掏钱包买你的产品吗？<br><br><em>   编写好一个简单扼要的一分钟产品演讲，并对那些对你绝对诚实的朋友和同学进行演说，收集他们的反馈。<br><br>－－－－－未完待续－－－－－<br><br>原文: <a href="http://fi.co/posts/13841" target="_blank" rel="external">http://fi.co/posts/13841</a>
 
 </em> <em> </em><br><br>作者：天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>微博：<a href="http://weibo.com/techgogogo" target="_blank" rel="external">http://weibo.com/techgogogo</a><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/12/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a55-e6-83-b3-e6-b3-95-e5-88-b0-e5-88-9b-e4-b8/" data-id="cj56dkqr100d4yqu26qxao5er" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a54-e8-b5-8c-e7-a5-9e-e5-8f-91-e5-93-a5-e7-9a" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/12/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a54-e8-b5-8c-e7-a5-9e-e5-8f-91-e5-93-a5-e7-9a/" class="article-date">
-  <time datetime="2015-03-12T00:58:00.000Z" itemprop="datePublished">2015-03-12</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/12/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a54-e8-b5-8c-e7-a5-9e-e5-8f-91-e5-93-a5-e7-9a/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/12/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a54-e8-b5-8c-e7-a5-9e-e5-8f-91-e5-93-a5-e7-9a/">往企业家蜕变的过程中该如何拥抱失败 4 - 赌神发哥的创业学</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/12/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a54-e8-b5-8c-e7-a5-9e-e5-8f-91-e5-93-a5-e7-9a/" itemprop="url">往企业家蜕变的过程中该如何拥抱失败 4 - 赌神发哥的创业学</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-12T08:58:00+08:00">
+                2015-03-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150311134901319" alt="赌神 VS 企业家"><br><br>## 赌神发哥的杀手锏<br><br><em> </em> <em><br><br>(<strong>天地会珠海分舵注</strong>：成功的企业家有如高明的赌徒。高明的赌徒要数我们耳熟能详的赌神高进。本节所描述的成功的企业家应该拥有的3个特质跟赌神高进在《赌神》的表现不谋而合。
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150311134901319" alt="赌神 VS 企业家"><br><br>## 赌神发哥的杀手锏<br><br><em> </em> <em><br><br>(<strong>天地会珠海分舵注</strong>：成功的企业家有如高明的赌徒。高明的赌徒要数我们耳熟能详的赌神高进。本节所描述的成功的企业家应该拥有的3个特质跟赌神高进在《赌神》的表现不谋而合。
 
 </em>   赌神2开头描述了赌神高进的妻儿遭到了仇笑痴的迫害而亡，这好比一个企业家在迈向成功时所碰到的失败，碰到的风浪。<br><br><em>   导演王晶镜头上描述的赌神高进，特别是步入赌场时穿着风衣慢步行走有如君临天下的赌神高进，显示出的就是一个企业家应该拥有的<strong>舍我其谁的自信</strong>和<strong>能屈能伸</strong>的个性。
 
@@ -144,178 +531,542 @@
 </em>   <strong>舍我其谁的自信</strong>: 健康向上的自信心会让你更容易迈向成功。你将会面对一些将你的方案打击的体无完肤尸骨无全面目全非的恶毒的否定派。请坚信你的产品就是这个世界所需要的，且你就是提供该产品的正确的人选。<br><br><em>   <strong>创新思维</strong>： 海纳百川的开放的思想等同于创新的思维，且作为一个企业家你需要持续的寻找最新的问题解决方法，策略，以及通向伟大的创意。请保持一个开放的思想来挖掘出崭新的创意和流程。<br><br>－－－－－未完待续－－－－－<br><br>原文: <a href="http://fi.co/posts/13841" target="_blank" rel="external">http://fi.co/posts/13841</a>
 
 </em> <em> </em><br><br>作者：天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>微博：<a href="http://weibo.com/techgogogo" target="_blank" rel="external">http://weibo.com/techgogogo</a><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/12/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a54-e8-b5-8c-e7-a5-9e-e5-8f-91-e5-93-a5-e7-9a/" data-id="cj56dkqqz00d0yqu2p70u674e" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a53-e5-88-9b-e4-b8-9a-e6-9c-aa-e5-8a-a8-ef-bc" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/11/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a53-e5-88-9b-e4-b8-9a-e6-9c-aa-e5-8a-a8-ef-bc/" class="article-date">
-  <time datetime="2015-03-10T16:39:00.000Z" itemprop="datePublished">2015-03-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/11/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a53-e5-88-9b-e4-b8-9a-e6-9c-aa-e5-8a-a8-ef-bc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/11/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a53-e5-88-9b-e4-b8-9a-e6-9c-aa-e5-8a-a8-ef-bc/">往企业家蜕变的过程中该如何拥抱失败 3 - 创业未动，学习先行</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/11/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a53-e5-88-9b-e4-b8-9a-e6-9c-aa-e5-8a-a8-ef-bc/" itemprop="url">往企业家蜕变的过程中该如何拥抱失败 3 - 创业未动，学习先行</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-11T00:39:00+08:00">
+                2015-03-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views">&gt; 学习如何在创业道路上驾驶<br>&gt; <img src="http://img.blog.csdn.net/20150310232537622" alt="学习如何在创业道路上驾驶"><br><br>## 创业未动，学习先行<br><br><em> </em> <em><br><br>“学开车和成为一个企业家其实有很多共同点。“博客<a href="http://ctt.ec/uqP7Z" target="_blank" rel="external">#失败的企业家</a>引用道，作者跟着解析这个引证，“学车你必须要花点时间进去，但是一旦你上手了，你就可以把你的驾驶技能应用到其他的车辆驾驶上面了。类比创业，一旦你搞清楚了创业运作的基本点，紧跟着的创业冒险之旅所碰到的问题就相对来说更容易解决了！“<br><br>从行业专业术语到种种亦真亦幻的观念，个中隐含着一个企业家应该遵循的种种规章制度。成为一个企业家就意味着要切换到快车道行驶，所以请确保你可以在这个旅程中能正确辨识路边的“标识“。来自都柏林创业者学院的主任<a href="http://fi.co/posts/1791" target="_blank" rel="external">John P. Muldoon</a>和Flaretag的合伙创始人以及CEO <a href="http://fi.co/posts/374" target="_blank" rel="external">Daniel Arroyo</a>给大家提供了4个策略来让你未雨绸缪：<br><br>1.  <strong>扩大并更新你的创业术语词汇量</strong>: 去看最好的创业书记和贸易杂志。<br><br>2.  <strong>把自己置身于一班天才之中</strong>:  尽你所能和足够多的人脉广的爆表的那些人进行联系交流。有经验的创业领头羊都会尊重创业初期所碰到的挣扎。有那么多人愿意帮忙其实是个很让人惊喜的事情。你该乐于和一群比你聪明的人一块共事。<br><br>3.  <strong>放开怀抱迎接你的导师</strong>:别将你自己限制在如学校般仅仅花一个学期的时间来跟你的创业导师进行交流。从创业到功成名就，大部分创业家都会获得至少3个顾问来指引他们走完整个旅程。把偶尔一块喝杯咖啡这种形式的交流转变成旷日持久的邮件互动以及大量的实质性的讨论。Daniel引用道: “关系可以帮你找到支撑你开创出一个成功事业的所有必须资源 - 投资人，顾问，以及至好的雇员 。“<br><br>4.  <strong>一些需要精确定义的事项</strong>: 定义你的客户，成本，以及品牌故事的时候需要具体化。仔细想想，然后再决定，“成本计算是否精确？哪些人将会是我的客户？开始这个事业所需要的指导方针是什么？“<br><br>－－－－－未完待续－－－－－<br><br>原文: <a href="http://fi.co/posts/13841" target="_blank" rel="external">http://fi.co/posts/13841</a>
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views">&gt; 学习如何在创业道路上驾驶<br>&gt; <img src="http://img.blog.csdn.net/20150310232537622" alt="学习如何在创业道路上驾驶"><br><br>## 创业未动，学习先行<br><br><em> </em> <em><br><br>“学开车和成为一个企业家其实有很多共同点。“博客<a href="http://ctt.ec/uqP7Z" target="_blank" rel="external">#失败的企业家</a>引用道，作者跟着解析这个引证，“学车你必须要花点时间进去，但是一旦你上手了，你就可以把你的驾驶技能应用到其他的车辆驾驶上面了。类比创业，一旦你搞清楚了创业运作的基本点，紧跟着的创业冒险之旅所碰到的问题就相对来说更容易解决了！“<br><br>从行业专业术语到种种亦真亦幻的观念，个中隐含着一个企业家应该遵循的种种规章制度。成为一个企业家就意味着要切换到快车道行驶，所以请确保你可以在这个旅程中能正确辨识路边的“标识“。来自都柏林创业者学院的主任<a href="http://fi.co/posts/1791" target="_blank" rel="external">John P. Muldoon</a>和Flaretag的合伙创始人以及CEO <a href="http://fi.co/posts/374" target="_blank" rel="external">Daniel Arroyo</a>给大家提供了4个策略来让你未雨绸缪：<br><br>1.  <strong>扩大并更新你的创业术语词汇量</strong>: 去看最好的创业书记和贸易杂志。<br><br>2.  <strong>把自己置身于一班天才之中</strong>:  尽你所能和足够多的人脉广的爆表的那些人进行联系交流。有经验的创业领头羊都会尊重创业初期所碰到的挣扎。有那么多人愿意帮忙其实是个很让人惊喜的事情。你该乐于和一群比你聪明的人一块共事。<br><br>3.  <strong>放开怀抱迎接你的导师</strong>:别将你自己限制在如学校般仅仅花一个学期的时间来跟你的创业导师进行交流。从创业到功成名就，大部分创业家都会获得至少3个顾问来指引他们走完整个旅程。把偶尔一块喝杯咖啡这种形式的交流转变成旷日持久的邮件互动以及大量的实质性的讨论。Daniel引用道: “关系可以帮你找到支撑你开创出一个成功事业的所有必须资源 - 投资人，顾问，以及至好的雇员 。“<br><br>4.  <strong>一些需要精确定义的事项</strong>: 定义你的客户，成本，以及品牌故事的时候需要具体化。仔细想想，然后再决定，“成本计算是否精确？哪些人将会是我的客户？开始这个事业所需要的指导方针是什么？“<br><br>－－－－－未完待续－－－－－<br><br>原文: <a href="http://fi.co/posts/13841" target="_blank" rel="external">http://fi.co/posts/13841</a>
 
 </em> <em> </em><br><br>作者：天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>微博：<a href="http://weibo.com/techgogogo" target="_blank" rel="external">http://weibo.com/techgogogo</a><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/11/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a53-e5-88-9b-e4-b8-9a-e6-9c-aa-e5-8a-a8-ef-bc/" data-id="cj56dkqqy00cxyqu286m999cd" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a52-e6-89-93-e5-b7-a5vs-e5-88-9b-e4-b8-9a" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/10/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a52-e6-89-93-e5-b7-a5vs-e5-88-9b-e4-b8-9a/" class="article-date">
-  <time datetime="2015-03-10T14:34:00.000Z" itemprop="datePublished">2015-03-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/10/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a52-e6-89-93-e5-b7-a5vs-e5-88-9b-e4-b8-9a/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/10/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a52-e6-89-93-e5-b7-a5vs-e5-88-9b-e4-b8-9a/">往企业家蜕变的过程中该如何拥抱失败 2 - 打工 VS 创业</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/10/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a52-e6-89-93-e5-b7-a5vs-e5-88-9b-e4-b8-9a/" itemprop="url">往企业家蜕变的过程中该如何拥抱失败 2 - 打工 VS 创业</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-10T22:34:00+08:00">
+                2015-03-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br>## 打工 VS 创业<br><br><em> </em> <em><br><br>一旦一个人被一家公司聘用时往往自豪感就会油然而生。声名显赫的金漆招牌，舒适宜人的隔间，令人头晕目弦的头衔，这些都会让你感受到犹如人生赢家般的兴奋。但是，随着岁月的流逝，你渐渐开始察觉到你在该企业中所扮演的真正角色 - 无非就是整个公司运作机器中的一个小小的齿轮而已。这样的日子一天天漫无边际的循环反覆着，无聊感渐渐来袭，往日的兴奋感不知道在哪一天已荡然无存: 悄悄的我走了，正如我悄悄的来；我挥一挥衣袖，不带走一片云彩。<br><br>&gt; 打工和创业是如何度过一天的<br>&gt; <img src="http://img.blog.csdn.net/20150310213246664" alt="打工和创业是如何度过一天的"><br><br>相对而言，创业冒险之旅在初期却显得非常不一样。初期，你将直面不确定性，困惑，甚至恐惧。然后随着生意慢慢的发展起来，你会因解决了过程中碰到的种种困难的障碍而获得慢慢的充实感。你在掌控着你自己的人生，而你的所有努力都会直接对你的公司产生影响。以下是我们另外一篇文章“<a href="http://blog.csdn.net/zhubaitian/article/details/44159931" target="_blank" rel="external">从一名打工者蜕变成一名企业家的五步曲</a>“中给出来的三个创业小窍门：<br><br>1.  <strong>找出你的特长</strong>: 为了能够打造出一块经得起岁月考验的品牌，你的生意应该是源于你的长处和你的激情。<br><br>2.  <strong>启动一个“项目“</strong>: 伟大的点子都是培育出来的，而不是天生的。启动一个完全可支配的一次性“项目“，然后写下几个不同的变种。别爱上你的项目 - 相反，去找到应该扼杀这个项目的各种原因。<br><br>3.  <strong>调研和反馈</strong>: 尽量获取足够多的关于你的项目的反馈信息。用创业者学院Adeo Ressi的说法：“没有人会去偷你那愚蠢的点子了。“<br><br>－－－－－未完待续－－－－－<br><br>原文: <a href="http://fi.co/posts/13841" target="_blank" rel="external">http://fi.co/posts/13841</a>
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br>## 打工 VS 创业<br><br><em> </em> <em><br><br>一旦一个人被一家公司聘用时往往自豪感就会油然而生。声名显赫的金漆招牌，舒适宜人的隔间，令人头晕目弦的头衔，这些都会让你感受到犹如人生赢家般的兴奋。但是，随着岁月的流逝，你渐渐开始察觉到你在该企业中所扮演的真正角色 - 无非就是整个公司运作机器中的一个小小的齿轮而已。这样的日子一天天漫无边际的循环反覆着，无聊感渐渐来袭，往日的兴奋感不知道在哪一天已荡然无存: 悄悄的我走了，正如我悄悄的来；我挥一挥衣袖，不带走一片云彩。<br><br>&gt; 打工和创业是如何度过一天的<br>&gt; <img src="http://img.blog.csdn.net/20150310213246664" alt="打工和创业是如何度过一天的"><br><br>相对而言，创业冒险之旅在初期却显得非常不一样。初期，你将直面不确定性，困惑，甚至恐惧。然后随着生意慢慢的发展起来，你会因解决了过程中碰到的种种困难的障碍而获得慢慢的充实感。你在掌控着你自己的人生，而你的所有努力都会直接对你的公司产生影响。以下是我们另外一篇文章“<a href="http://blog.csdn.net/zhubaitian/article/details/44159931" target="_blank" rel="external">从一名打工者蜕变成一名企业家的五步曲</a>“中给出来的三个创业小窍门：<br><br>1.  <strong>找出你的特长</strong>: 为了能够打造出一块经得起岁月考验的品牌，你的生意应该是源于你的长处和你的激情。<br><br>2.  <strong>启动一个“项目“</strong>: 伟大的点子都是培育出来的，而不是天生的。启动一个完全可支配的一次性“项目“，然后写下几个不同的变种。别爱上你的项目 - 相反，去找到应该扼杀这个项目的各种原因。<br><br>3.  <strong>调研和反馈</strong>: 尽量获取足够多的关于你的项目的反馈信息。用创业者学院Adeo Ressi的说法：“没有人会去偷你那愚蠢的点子了。“<br><br>－－－－－未完待续－－－－－<br><br>原文: <a href="http://fi.co/posts/13841" target="_blank" rel="external">http://fi.co/posts/13841</a>
 
 </em> <em> </em><br><br>作者：天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>微博：<a href="http://weibo.com/techgogogo" target="_blank" rel="external">http://weibo.com/techgogogo</a><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/10/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a52-e6-89-93-e5-b7-a5vs-e5-88-9b-e4-b8-9a/" data-id="cj56dkqqx00ctyqu2r6rym9kf" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a51-e5-89-8d-e8-a8-80" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/10/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a51-e5-89-8d-e8-a8-80/" class="article-date">
-  <time datetime="2015-03-09T16:39:00.000Z" itemprop="datePublished">2015-03-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/10/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a51-e5-89-8d-e8-a8-80/">往企业家蜕变的过程中该如何拥抱失败 1 - 前言</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150310003108483" alt="失败的企业家"><br><strong>从打工者到企业家的蜕变并非是一件不可能的创举，但随之而来的确实会有相应的阻力和失败。</strong><br><br>古语有云，失败乃成功之母。失败，就是为了成功的验证一个假设的可行性。这种观念在漫画网站<a href="http://www.entrepreneurfail.com/" target="_blank" rel="external">#失败的企业家</a>中通过搞笑的描述进行了阐述。鉴于个人经验之谈，创业家<a href="https://www.linkedin.com/in/kritivichare" target="_blank" rel="external">Kriti Vichare</a>和<a href="https://www.linkedin.com/in/shivrajv" target="_blank" rel="external">Shivraj Vichare</a>对创业者在其创业生涯中每天所碰到的各种限制问题是深有体会的。<br><br>&gt; “这都是由我们以前在创业期间做过的和看到过的愚蠢的事情所启发的。如果你是个企业家，那么我很肯定你已经面对过这些问题 - 漫无边际的日子，充满不定因素的日子，充满不可预知的日子。所以把这些当看漫画一样微笑着面对吧，事实上你并不孤独，想想外面其他人其实也在经历着这些日子，这会带给你前进的动力的!“<br><br>无论你是处在将要辞职以专注于创业的阶段，还是处于寻找资金投入的阶段，我们都提供了相应的信息来征服<a href="http://www.entrepreneurfail.com/" target="_blank" rel="external">#失败的企业家</a>在下面列出来的所有困难。<br><br>请点击<a href="http://ctt.ec/EbhS5" target="_blank" rel="external">#失败的企业家</a>这个话题标签来分享你所碰到过的失败经验到推特上吧。<br><img src="http://img.blog.csdn.net/20150310003356355" alt="工作满意度对比图"><br><br>－－－－－未完待续－－－－－<br><br>原文: <a href="http://fi.co/posts/13841" target="_blank" rel="external">http://fi.co/posts/13841</a><br><br><em> </em> *<br><br>作者：天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>微博：<a href="http://weibo.com/techgogogo" target="_blank" rel="external">http://weibo.com/techgogogo</a><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+    <div>
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/10/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a51-e5-89-8d-e8-a8-80/" data-id="cj56dkqqw00cqyqu2nct7mh6a" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e4-bb-8e-e4-b8-80-e5-90-8d-e6-89-93-e5-b7-a5-e8-80-85-e8-9c-95-e5-8f-98-e6-88-90-e4-b8-80-e5-90-8d-e4-bc-81-e4-b8-9a-e5-ae-b6-e7-9a-84-e4-ba-94-e6-ad-a5-e6-9b-b2" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/09/e4-bb-8e-e4-b8-80-e5-90-8d-e6-89-93-e5-b7-a5-e8-80-85-e8-9c-95-e5-8f-98-e6-88-90-e4-b8-80-e5-90-8d-e4-bc-81-e4-b8-9a-e5-ae-b6-e7-9a-84-e4-ba-94-e6-ad-a5-e6-9b-b2/" class="article-date">
-  <time datetime="2015-03-09T15:08:00.000Z" itemprop="datePublished">2015-03-09</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/创业/">创业</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/10/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a51-e5-89-8d-e8-a8-80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/09/e4-bb-8e-e4-b8-80-e5-90-8d-e6-89-93-e5-b7-a5-e8-80-85-e8-9c-95-e5-8f-98-e6-88-90-e4-b8-80-e5-90-8d-e4-bc-81-e4-b8-9a-e5-ae-b6-e7-9a-84-e4-ba-94-e6-ad-a5-e6-9b-b2/">从一名打工者蜕变成一名企业家的五步曲</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/10/e5-be-80-e4-bc-81-e4-b8-9a-e5-ae-b6-e8-9c-95-e5-8f-98-e7-9a-84-e8-bf-87-e7-a8-8b-e4-b8-ad-e8-af-a5-e5-a6-82-e4-bd-95-e6-8b-a5-e6-8a-b1-e5-a4-b1-e8-b4-a51-e5-89-8d-e8-a8-80/" itemprop="url">往企业家蜕变的过程中该如何拥抱失败 1 - 前言</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-10T00:39:00+08:00">
+                2015-03-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150309224932492" alt="成功2015"><br><br>无数打工者每天皆梦想能于某天开创自己的公司。其总觉得自己拥有着进入一个领域并打造出一个成功的事业所需的正确的技能或者正确的创业点子。但，这些人到现在都还是只是在脑袋里意淫着而已，他们并没有真正的付诸行动去开始追求他们的创业点子。这又是为何呢？<br><br>如果你有一个可以创业的点子但又没有真正放手去干，那是因为什么原因拖了你后腿呢？<br><br>对于很多有抱负的企业家来说，缺乏如何启动一个可以催生出一家公司的项目的蓝图，让他们举步维艰。大部分人甚至不知道如何举出第一步，剩下一部分人却又不确定这种职业生涯是否是他们自己想要的。<br><br>下面这些我们设计的信息图就是旨在带你走一遍从一个员工蜕变成一个企业家究竟有哪些需要经历的过程。请将其作为检验你的创业点子的指导方针，并以此找出究竟创业是不是你自己应该走的正确的道路。<br><img src="http://img.blog.csdn.net/20150309205719130" alt="引言"><br><br># 跨出公司大门(辞职)五步曲<br><br><strong>– 如何从一名员工蜕变成一名企业家 –</strong><br><br><strong>准备辞职开公司去了？且慢！</strong><br><br>创业者学院(Founder Institute)鼓励雄心壮志的准企业家们应该在辞职<strong>之前</strong>先要在现实世界中评估他们的目标并验证他们的创业点子。<br><br><img src="http://img.blog.csdn.net/20150309211839924" alt="第一步"><br><br>## 第一步 - 你是否有把它当成你的职业生涯来看待<br><br><em> </em> <em><br><br>创业是一个职业生涯和生活方式的选择。所以请确保你的出发点是正确的。为了追求金钱和权力是不大可能导致成功的。<br><br>### 成为一个企业家的好的出发点
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150310003108483" alt="失败的企业家"><br><strong>从打工者到企业家的蜕变并非是一件不可能的创举，但随之而来的确实会有相应的阻力和失败。</strong><br><br>古语有云，失败乃成功之母。失败，就是为了成功的验证一个假设的可行性。这种观念在漫画网站<a href="http://www.entrepreneurfail.com/" target="_blank" rel="external">#失败的企业家</a>中通过搞笑的描述进行了阐述。鉴于个人经验之谈，创业家<a href="https://www.linkedin.com/in/kritivichare" target="_blank" rel="external">Kriti Vichare</a>和<a href="https://www.linkedin.com/in/shivrajv" target="_blank" rel="external">Shivraj Vichare</a>对创业者在其创业生涯中每天所碰到的各种限制问题是深有体会的。<br><br>&gt; “这都是由我们以前在创业期间做过的和看到过的愚蠢的事情所启发的。如果你是个企业家，那么我很肯定你已经面对过这些问题 - 漫无边际的日子，充满不定因素的日子，充满不可预知的日子。所以把这些当看漫画一样微笑着面对吧，事实上你并不孤独，想想外面其他人其实也在经历着这些日子，这会带给你前进的动力的!“<br><br>无论你是处在将要辞职以专注于创业的阶段，还是处于寻找资金投入的阶段，我们都提供了相应的信息来征服<a href="http://www.entrepreneurfail.com/" target="_blank" rel="external">#失败的企业家</a>在下面列出来的所有困难。<br><br>请点击<a href="http://ctt.ec/EbhS5" target="_blank" rel="external">#失败的企业家</a>这个话题标签来分享你所碰到过的失败经验到推特上吧。<br><img src="http://img.blog.csdn.net/20150310003356355" alt="工作满意度对比图"><br><br>－－－－－未完待续－－－－－<br><br>原文: <a href="http://fi.co/posts/13841" target="_blank" rel="external">http://fi.co/posts/13841</a><br><br><em> </em> *<br><br>作者：天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>微博：<a href="http://weibo.com/techgogogo" target="_blank" rel="external">http://weibo.com/techgogogo</a><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/09/e4-bb-8e-e4-b8-80-e5-90-8d-e6-89-93-e5-b7-a5-e8-80-85-e8-9c-95-e5-8f-98-e6-88-90-e4-b8-80-e5-90-8d-e4-bc-81-e4-b8-9a-e5-ae-b6-e7-9a-84-e4-ba-94-e6-ad-a5-e6-9b-b2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/09/e4-bb-8e-e4-b8-80-e5-90-8d-e6-89-93-e5-b7-a5-e8-80-85-e8-9c-95-e5-8f-98-e6-88-90-e4-b8-80-e5-90-8d-e4-bc-81-e4-b8-9a-e5-ae-b6-e7-9a-84-e4-ba-94-e6-ad-a5-e6-9b-b2/" itemprop="url">从一名打工者蜕变成一名企业家的五步曲</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-09T23:08:00+08:00">
+                2015-03-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150309224932492" alt="成功2015"><br><br>无数打工者每天皆梦想能于某天开创自己的公司。其总觉得自己拥有着进入一个领域并打造出一个成功的事业所需的正确的技能或者正确的创业点子。但，这些人到现在都还是只是在脑袋里意淫着而已，他们并没有真正的付诸行动去开始追求他们的创业点子。这又是为何呢？<br><br>如果你有一个可以创业的点子但又没有真正放手去干，那是因为什么原因拖了你后腿呢？<br><br>对于很多有抱负的企业家来说，缺乏如何启动一个可以催生出一家公司的项目的蓝图，让他们举步维艰。大部分人甚至不知道如何举出第一步，剩下一部分人却又不确定这种职业生涯是否是他们自己想要的。<br><br>下面这些我们设计的信息图就是旨在带你走一遍从一个员工蜕变成一个企业家究竟有哪些需要经历的过程。请将其作为检验你的创业点子的指导方针，并以此找出究竟创业是不是你自己应该走的正确的道路。<br><img src="http://img.blog.csdn.net/20150309205719130" alt="引言"><br><br># 跨出公司大门(辞职)五步曲<br><br><strong>– 如何从一名员工蜕变成一名企业家 –</strong><br><br><strong>准备辞职开公司去了？且慢！</strong><br><br>创业者学院(Founder Institute)鼓励雄心壮志的准企业家们应该在辞职<strong>之前</strong>先要在现实世界中评估他们的目标并验证他们的创业点子。<br><br><img src="http://img.blog.csdn.net/20150309211839924" alt="第一步"><br><br>## 第一步 - 你是否有把它当成你的职业生涯来看待<br><br><em> </em> <em><br><br>创业是一个职业生涯和生活方式的选择。所以请确保你的出发点是正确的。为了追求金钱和权力是不大可能导致成功的。<br><br>### 成为一个企业家的好的出发点
 
 </em>   你对去解决一个重要的问题充满激情<br><em>   你对应该如何解决该问题有着独到的市场知识
 </em>   你想改变世界<br><br>### 请扪心自问<br><br><em>   你为什么想要成为一个企业家?
@@ -333,48 +1084,139 @@
 
 </em> <em> </em><br><br>对于向潜在投资人做宣讲来吸引投资，迭代完善，寻找客户，以及接受既有正面也有反面的反馈的这些过程，你是否真能做到乐在其中？请看下面“是“与“非“的答案。<br><br>### 下一步<br><br><em>   <strong>非</strong>:  如果你并不喜欢这个过程的话，那么请立刻从新分析究竟成为一个企业家是否真的是你想要的。
 </em>   <strong>是</strong>: 继续从其他企业家那里获得更多的反馈来迭代完善你的创意。开始寻找顾问并启动打造你的产品的流程。<strong>你走对路了！</strong><br><br>原文: <a href="http://fi.co/posts/12121" target="_blank" rel="external">http://fi.co/posts/12121</a><br><br><em> </em> *<br><br>作者：天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>微博：<a href="http://weibo.com/techgogogo" target="_blank" rel="external">http://weibo.com/techgogogo</a><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/09/e4-bb-8e-e4-b8-80-e5-90-8d-e6-89-93-e5-b7-a5-e8-80-85-e8-9c-95-e5-8f-98-e6-88-90-e4-b8-80-e5-90-8d-e4-bc-81-e4-b8-9a-e5-ae-b6-e7-9a-84-e4-ba-94-e6-ad-a5-e6-9b-b2/" data-id="cj56dkqk3003lyqu2dnpoq402" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e6-9c-80-e6-96-b0htmlbroadcastchannelapi-e5-bc-95-e8-8d-90" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/07/e6-9c-80-e6-96-b0htmlbroadcastchannelapi-e5-bc-95-e8-8d-90/" class="article-date">
-  <time datetime="2015-03-07T07:30:00.000Z" itemprop="datePublished">2015-03-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/07/e6-9c-80-e6-96-b0htmlbroadcastchannelapi-e5-bc-95-e8-8d-90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/07/e6-9c-80-e6-96-b0htmlbroadcastchannelapi-e5-bc-95-e8-8d-90/">最新HTML BroadcastChannel API引荐</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/07/e6-9c-80-e6-96-b0htmlbroadcastchannelapi-e5-bc-95-e8-8d-90/" itemprop="url">最新HTML BroadcastChannel API引荐</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-07T15:30:00+08:00">
+                2015-03-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150307152721145" alt="这里写图片描述"><br><br># HTML BroadcastChannel API<br><br><em> </em> <em><br><br>当前浏览器中只有Firefox38唯一能支持BroadcastChannel API(在编写本文的时间点)，而Firefox38官方宣称要到2015年5月份才会发布正式版本。这套新的API将会打开一个新的充满可能性的世界，解决我们已有的从postMessage API所继承过来的众多限制。<br><br>BroadcastChannel API作为WHATWG living HTML标准的一部分可以在<a href="https://html.spec.whatwg.org/multipage/comms.html#broadcasting-to-other-browsing-contexts" target="_blank" rel="external">这里</a>进行详细信息查看。<br><br># 什么是BroadcastChannel API?
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150307152721145" alt="这里写图片描述"><br><br># HTML BroadcastChannel API<br><br><em> </em> <em><br><br>当前浏览器中只有Firefox38唯一能支持BroadcastChannel API(在编写本文的时间点)，而Firefox38官方宣称要到2015年5月份才会发布正式版本。这套新的API将会打开一个新的充满可能性的世界，解决我们已有的从postMessage API所继承过来的众多限制。<br><br>BroadcastChannel API作为WHATWG living HTML标准的一部分可以在<a href="https://html.spec.whatwg.org/multipage/comms.html#broadcasting-to-other-browsing-contexts" target="_blank" rel="external">这里</a>进行详细信息查看。<br><br># 什么是BroadcastChannel API?
 
 </em> <em> </em><br><br>BroadcastChannel API 允许同一原始域和用户代理下的所有窗口,iFrames等进行交互。也就是说，如果用户打开了同一个网站的的两个标签窗口，如果网站内容发生了变化，那么两个窗口会同时得到更新通知。<br><br>还是不明觉厉？就拿Facebook作为例子吧，假如你现在已经打开了Facebook的一个窗口，但是你此时还没有登录，此时你又打开另外一个窗口进行登录，那么你就可以通知其他窗口/标签页去告诉它们一个用户已经登录了并请求它们进行相应的页面更新。<br><br>本质上说BroadcastChannel API 允许我们在我们不使用sockets和timers的情况下同样可以打造出一个能够自我感知状态变化的应用，这对于一个发布/订阅形式的系统效果尤佳。<br><br># BroadcastChannel API 实战进行时<br><br>## 创建一个新的 BroadcastChannel<br><br><em> </em> <em><br><br>创建一个新的BroadcastChannel API 是一个易如反掌的事情。你需要做的仅仅是把通道名称作为一个参数传给BroadcastChannel的构造函数然后把它的引用保存到一个变量上面而已。<br><br>    <span class="hljs-keyword">let</span> cast = <span class="hljs-keyword">new</span> BroadcastChannel(<span class="hljs-string">‘mychannel’</span>);`<br><br>    ## 发送一个消息通知
 
@@ -386,90 +1228,283 @@
     </em> <em> </em><br><br>    假定你非常在意Javascript的性能且很介意资源消耗情况(特别是在使用手机的情况下)。 幸运的是在BroadcastChannel里面拥有一个内嵌的方法来让你关闭这些连接。<br><br>    <pre class="prettyprint">`cast.<span class="hljs-keyword">close</span>(); <span class="hljs-regexp">//</span> Close <span class="hljs-keyword">our</span> connection <span class="hljs-keyword">and</span> let the garbage collection free up the memory that was used<br><br>## 浏览器支持<br><br><em> </em> <em><br><br>如前所述，当前只有Firefox版本38会支持BroadcastChannel API。假定其他浏览器将很有可能也会紧紧追随的话，毕竟，这套API是非常有用的。那么对我们编写这方面的普通应用和游戏应用，我们将会如鱼得水(紧密的浏览器支持的出现)<br><br>要注意的是，从一个使用者的角度来看的话你(当前)是基本上好不到相关的技术支持的。但，这里有个<a href="https://gist.github.com/inexorabletash/52f437d1451d12145264" target="_blank" rel="external">浏览器插件</a>可以让你现在就使用上BroadcastChannel API，然而，毕竟现在还没有浏览器真正实现该功能的支持，我们只有翘首以待了。<br><br>原文：<a href="http://ilikekillnerds.com/2015/03/all-about-the-html-broadcastchannel-api/" target="_blank" rel="external">http://ilikekillnerds.com/2015/03/all-about-the-html-broadcastchannel-api/</a>
 
 </em> <em> </em><br><br>作者：天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>微博：<a href="http://weibo.com/techgogogo" target="_blank" rel="external">http://weibo.com/techgogogo</a><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></pre></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/07/e6-9c-80-e6-96-b0htmlbroadcastchannelapi-e5-bc-95-e8-8d-90/" data-id="cj56dkqrb00dvyqu25bnf238b" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/API/">API</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/facebook/">facebook</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/广播/">广播</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-e9-bb-91-e5-ae-a2-e6-89-be-e5-88-b0-e4-b8-80-e4-b8-aa-e7-a0-b4-e8-a7-a3-e8-99-b9-e8-86-9c-e7-94-9f-e7-89-a9-e5-ae-89-e5-85-a8-e7-b3-bb-e7-bb-9f-e7-9a-84-e7-ae-80-e5-8d-95-e6-96-b9-e6-b3-95" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/07/e9-bb-91-e5-ae-a2-e6-89-be-e5-88-b0-e4-b8-80-e4-b8-aa-e7-a0-b4-e8-a7-a3-e8-99-b9-e8-86-9c-e7-94-9f-e7-89-a9-e5-ae-89-e5-85-a8-e7-b3-bb-e7-bb-9f-e7-9a-84-e7-ae-80-e5-8d-95-e6-96-b9-e6-b3-95/" class="article-date">
-  <time datetime="2015-03-07T05:40:00.000Z" itemprop="datePublished">2015-03-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/07/e9-bb-91-e5-ae-a2-e6-89-be-e5-88-b0-e4-b8-80-e4-b8-aa-e7-a0-b4-e8-a7-a3-e8-99-b9-e8-86-9c-e7-94-9f-e7-89-a9-e5-ae-89-e5-85-a8-e7-b3-bb-e7-bb-9f-e7-9a-84-e7-ae-80-e5-8d-95-e6-96-b9-e6-b3-95/">快讯:黑客找到一个破解虹膜生物安全系统的简单方法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <div id="article_content" class="article_content"><br><br>&nbsp;<br><div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150307133726358" alt="这里写图片描述"><br><br>尽管生物扫描技术依然存在不少如信息隐私安全和人身隐私安全方面令人担忧的地方，关系到个人唯一身份识别信息如视网膜，虹膜，指纹和DNA方面的生物安全系统依然在欣欣向荣的往前发展以使得我们可以过上更好的生活。<br><br>在过去几年，指纹安全识别系统被广泛应用到如智能手机和司法系统应用上面来记录用户信息和作为用户唯一身份识别方法。广大的安全研究工作者对它所带给人们的担忧都曾经视而不见，而现今，虹膜扫描安全系统却承认自己被打得一败涂地(这该是多么讽刺的一件事情)。<br><br>别怕！其实破解的方式并不是如大家在电影上所看到的由黑客把有权限的人的眼球给挖出来拿在手上放到扫描系统中进行扫描。而是，黑客们现在终于找到一个简单的方法通过使用受害人的照片来绕过虹膜生物安全系统。<br><br>来自著名的”计算机恐慌俱乐部(CCC)“别名为Starbug的安全研究工作者Jan Krissler，过去曾经从在一个记者招待会上通过“普通相机”拍摄的一个德国国防联邦部长的照片中提取出她的指纹，其宣称这种技术同样可以应用到破解虹膜生物安全系统上面。<br><br>更详细的信息请查看以下链接:<a href="http://cybersecoverview.com/away.php?article=1507-hacker-finds-a-simple-way-to-fool-iris-biometric-security-systems" target="_blank" rel="external">http://cybersecoverview.com/away.php?article=1507-hacker-finds-a-simple-way-to-fool-iris-biometric-security-systems</a><br><br><em> </em> *<br><br>作者/译者：天地会珠海分舵 | 微信公众号：TechGoGoGo | 微博：<a href="http://weibo.com/techgogogo" target="_blank" rel="external">http://weibo.com/techgogogo</a> | CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br><br></div><br><script type="text/javascript">// &lt;![CDATA[<br>$(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘    <li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>// ]]&gt;</script><br><br></div>
+    <div>
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/07/e9-bb-91-e5-ae-a2-e6-89-be-e5-88-b0-e4-b8-80-e4-b8-aa-e7-a0-b4-e8-a7-a3-e8-99-b9-e8-86-9c-e7-94-9f-e7-89-a9-e5-ae-89-e5-85-a8-e7-b3-bb-e7-bb-9f-e7-9a-84-e7-ae-80-e5-8d-95-e6-96-b9-e6-b3-95/" data-id="cj56dkqtp00ixyqu22zm4znhl" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安全技术/">安全技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/科技/">科技</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/虹膜扫描/">虹膜扫描</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-rethinkdb-e5-88-9b-e5-a7-8b-e4-ba-ba-e6-95-99-e4-bd-a0-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-81-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/04/rethinkdb-e5-88-9b-e5-a7-8b-e4-ba-ba-e6-95-99-e4-bd-a0-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-81-1/" class="article-date">
-  <time datetime="2015-03-04T00:59:00.000Z" itemprop="datePublished">2015-03-04</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/产品/">产品</a>►<a class="article-category-link" href="/categories/产品/创业/">创业</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/07/e9-bb-91-e5-ae-a2-e6-89-be-e5-88-b0-e4-b8-80-e4-b8-aa-e7-a0-b4-e8-a7-a3-e8-99-b9-e8-86-9c-e7-94-9f-e7-89-a9-e5-ae-89-e5-85-a8-e7-b3-bb-e7-bb-9f-e7-9a-84-e7-ae-80-e5-8d-95-e6-96-b9-e6-b3-95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/04/rethinkdb-e5-88-9b-e5-a7-8b-e4-ba-ba-e6-95-99-e4-bd-a0-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-81-1/">RethinkDB创始人教你如何打造一个伟大的产品</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/07/e9-bb-91-e5-ae-a2-e6-89-be-e5-88-b0-e4-b8-80-e4-b8-aa-e7-a0-b4-e8-a7-a3-e8-99-b9-e8-86-9c-e7-94-9f-e7-89-a9-e5-ae-89-e5-85-a8-e7-b3-bb-e7-bb-9f-e7-9a-84-e7-ae-80-e5-8d-95-e6-96-b9-e6-b3-95/" itemprop="url">快讯:黑客找到一个破解虹膜生物安全系统的简单方法</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-07T13:40:00+08:00">
+                2015-03-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150301235133927" alt="这里写图片描述"><br><br># 关于作者<br><br><em> </em> <em><br><br><em>我叫Slava Akhmechet，本人是 <a href="http://www.rethinkdb.com/" target="_blank" rel="external">RethinkDB</a> 的创始人之一，RethinkDB是开源，分布式数据库，旨在帮助开发人员与运营商在打造实时应用时处理无结构数据</em><br><br># 如何打造一个伟大的产品
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content"><br><br>&nbsp;<br><div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150307133726358" alt="这里写图片描述"><br><br>尽管生物扫描技术依然存在不少如信息隐私安全和人身隐私安全方面令人担忧的地方，关系到个人唯一身份识别信息如视网膜，虹膜，指纹和DNA方面的生物安全系统依然在欣欣向荣的往前发展以使得我们可以过上更好的生活。<br><br>在过去几年，指纹安全识别系统被广泛应用到如智能手机和司法系统应用上面来记录用户信息和作为用户唯一身份识别方法。广大的安全研究工作者对它所带给人们的担忧都曾经视而不见，而现今，虹膜扫描安全系统却承认自己被打得一败涂地(这该是多么讽刺的一件事情)。<br><br>别怕！其实破解的方式并不是如大家在电影上所看到的由黑客把有权限的人的眼球给挖出来拿在手上放到扫描系统中进行扫描。而是，黑客们现在终于找到一个简单的方法通过使用受害人的照片来绕过虹膜生物安全系统。<br><br>来自著名的”计算机恐慌俱乐部(CCC)“别名为Starbug的安全研究工作者Jan Krissler，过去曾经从在一个记者招待会上通过“普通相机”拍摄的一个德国国防联邦部长的照片中提取出她的指纹，其宣称这种技术同样可以应用到破解虹膜生物安全系统上面。<br><br>更详细的信息请查看以下链接:<a href="http://cybersecoverview.com/away.php?article=1507-hacker-finds-a-simple-way-to-fool-iris-biometric-security-systems" target="_blank" rel="external">http://cybersecoverview.com/away.php?article=1507-hacker-finds-a-simple-way-to-fool-iris-biometric-security-systems</a><br><br><em> </em> *<br><br>作者/译者：天地会珠海分舵 | 微信公众号：TechGoGoGo | 微博：<a href="http://weibo.com/techgogogo" target="_blank" rel="external">http://weibo.com/techgogogo</a> | CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br><br></div><br><script type="text/javascript">// &lt;![CDATA[<br>$(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘    <li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>// ]]&gt;</script><br><br></div>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/04/rethinkdb-e5-88-9b-e5-a7-8b-e4-ba-ba-e6-95-99-e4-bd-a0-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-81-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/04/rethinkdb-e5-88-9b-e5-a7-8b-e4-ba-ba-e6-95-99-e4-bd-a0-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-81-1/" itemprop="url">RethinkDB创始人教你如何打造一个伟大的产品</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-04T08:59:00+08:00">
+                2015-03-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/" itemprop="url" rel="index">
+                    <span itemprop="name">产品</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150301235133927" alt="这里写图片描述"><br><br># 关于作者<br><br><em> </em> <em><br><br><em>我叫Slava Akhmechet，本人是 <a href="http://www.rethinkdb.com/" target="_blank" rel="external">RethinkDB</a> 的创始人之一，RethinkDB是开源，分布式数据库，旨在帮助开发人员与运营商在打造实时应用时处理无结构数据</em><br><br># 如何打造一个伟大的产品
 
 </em> <em> </em><br><br>假如你认可“<a href="http://www.defmacro.org/2013/07/23/startup-lessons.html" target="_blank" rel="external">销售定乾坤</a>”的原则，那么如果我说大部分初创企业在还没有把它们伟大的产品推向市场进行销售之前就已经把钱给烧光而铩羽而归的话，元芳，你怎么看呢？假如你面向的是一个爆炸性快速增长的市场，你需要找到一个打造一个伟大产品的方式的话，元芳，你又怎么看呢？[1]<br><br>打造一个伟大的产品是很困难的，如果你没有一个很好的去分析产品和功能的一个可行模型的话会让这种困难更雪上加霜。如果没有这个模型，你将会永无停歇的受困于产品功能点的漩涡中，这就好比在黑暗中摸索着靠感觉进行射击。当然不排除有那么一小部分人可以命中目标获得成功，因为他们从一开始就有着异于常人的对产品的直觉。但是，大部分我们这种普通人都不会一开始就具备这种超能力。<br><br>我一开始时对产品的直觉就非常糟糕(更糟的是自己并没有察觉到)。在过去的3年时间里，当我每天盯着我们的用户矩阵图查看，试图创造出一个反馈循环(feedback loop)来训练自己的大脑来找到如何打造一个好产品的模式。幸运的是最终我终于变得非常擅长于预测判断一个功能点对产品造成的冲击，所以我从当时就开始去考虑建立一个模型来尝试把我所领悟到的这方面的知识给捕捉下来分享给大家。<br><br># 三个木桶模型<br><br><em> </em> <em><br><br>产品管理最重要的方面是要把一个产品的功能分门别类地放到3个不同的木桶里面去: 颠覆性的功能(足以改变游戏规则的功能)，不可或缺的功能(必须的但又不会带来很大收益的功能)，无关痛痒的功能(只能让用户“哦“一声的功能)。在我刚开始尝试创业的时候，产品的所有功能在我眼里基本都是差不多重要的。但随着时间的流逝，“三个木桶模型“在我的脑袋中逐渐成型，时至今日，我已经可以每碰到一个功能就能把它自动在上面提及的3个木桶中进行分门别类了。<br><br>举例说明。假如你现在正在打造一个新的移动手机产品。首先，该手机必须要能打电话吧，不然的话你这根本不能被称作为一台手机，鬼才会买了。但是反过来说就不行 - 人们不会因为你的手机提供打电话功能就会购买你的手机，因为市场上哪个手机不提供打电话功能呢。所以在这个范畴中，能够打电话这个功能在你的产品中就应该放在“不可或缺“这个木桶里面去。<br><br>另一方面，假如你的手机产品还可以将正在播放的视频投射出来，这其他手机可没有这个功能，所以该功能就应该放在“颠覆性“这个木桶中，因为该功能将会让大部分的用户尖叫。但另一种可能性是，有可能大部分用户对这种功能并不上心，那么该功能就应该放在“无关痛痒“这个木桶里面去了。<br><br>以上示例给大家介绍了给定的功能所应该归类到的3个木桶:
 
@@ -484,48 +1519,150 @@
 </em> <em> </em><br><br>假设你现在已经可以将你已建立好的对产品的直觉用来把“三个木桶模型“应用到你所处的行业中，你已经可以轻易(且正确地)把功能点归类到不同的木桶里面，那么你已经比大部分产品经理优秀了。但，这还不够。你要知道这个方法其实是存在一定的瑕疵的：<br><br><em>   如果你仅仅是通过凭空臆测的直觉来对功能点进行分类的话，那么你将很容易在犯错误之后，被你脑海中另一把声音的花言巧语所说服而自以为做了个正确的决定。
 </em>   当你在打造该产品的时候，你势必需要对每个大大小小的决定都事必躬亲，因为其他人根本没有东西作为指引。<br><em>   你的攻城狮们将会充满挫败感，因为他们会认为你凭空臆测所做的决定是毫无根据的。
 </em>   在该产品出来之前你势必需要很多其他人来给你提供帮助 - 记者，投资人，潜在雇员，以及客户。去说服这些人将会非常的困难，因为你做的这些决定都是凭直觉的。<br><br>解决这些问题的一个很好的办法就是去把你的产品使命给定义出来。你可以把它想像成是一个接受以指定功能点作为参数然后返回值是三个木桶之一的一个函数。一个好的函数的定义必须是简洁的，可读性强的，可复用的。理想的状态下，在阅读了这个产品使命后，你的团队中的大部分成员都可以像你一样能够自行把功能点归类到对应的木桶里面。<br><br>以下就是我们为RethinkDB想到的一个成效斐然的充满幽默感的产品使命定义：<br><br>&gt; <strong>数据库工具应与魔术无异</strong><br>&gt;<br>&gt;   提供开发人员梦寐以求的开发工具来帮助他们构建实时和数据驱动的网络应用来令他们感到惊喜和不可思议。并给打造伟大软件产品的过程带来纯粹的趣味性和简单化。<br><br>表面上看这两个句子其实好像言之无物，但如果你挖深点的话，这个产品使命其实是充满浓厚的信息量的。它告诉人们我们正在打造的是一个数据库产品；它告诉人们我们首先是将该产品当作一个开发工具来对待的，这就让开发者相关的功能(比如数据库的查询语言)和软件运行相关的功能(比如监控)之间的紧张关系得到缓解。要知道我们所有的颠覆性的功能都是围绕着解决开发者问题而展开的。我们把数据库该如何运行方面的功能点看做是不可或缺的功能。该产品使命解析了我们对用户应该如何使用RethinkDB的期望(用它来构建实时的，数据驱动的网络应用)。该产品使命还让大家了解到我们对特定功能会实现到什么程度(惊喜和不可思议)。对于开发人员来说，足够好是不够的。这些人每天都会把大量的时间投入到我们的产品使用上面 - 我们需要让他们在这个过程中感受到愉悦。该产品使命还暗示了我们将会接受更多的复杂的实现来让我们的用户活得更加轻松。它指引我们去实现让开发者能编写出新型的而不是已经存在的应用的功能。它拥有着自我意识并体现了作为一个团队的我们所拥有的一种健康的幽默感。这就让大众对我们究竟是一个什么样的团队有个大致的认知了。<br><br>有了这个产品使命之后，我们就可以使用它来验证所提议的各种功能点了。再在此基础上加上一些团队共享的知识后，我们的团队成员就能独立的用大体一致的方法来将功能点进行分类了。<br><br>在想到这个产品使命之前我们花了三年的时间来去搞得足够清楚我们究竟在搞什么飞机。如果我们在第一天就定义好这个使命得话，我们的开发时间可能可以缩半，也许更多。当你在打造一个产品的时候，产品使命应该是你首先需要搞定的。如果你有足够好的心智模型(mental model)来编写出一个可以鼓舞你公司所有人的产品使命的话，其他事情也就自然而然的可以迎刃而解了。<br><br><em>［1］我这里的意思并不是想暗示说找到一个好的市场会比打造一个产品容易。事实上，这两者应该反过来，相比找到一个好的市场，产品管理是显得相当的容易的事情，所以这里我才打算先把这个问题跟解决掉而已。要成功，除了需要一个伟大的产品和快速增长的市场之外，还有很多其他的方面，如发布，经济学，受管制的市场，以及其他。但是一个初创企业因为这些原因而以失败告终的情况比起因为选择了一个小众市场或者没有办法及时的往市场推出一个伟大产品而把企业作死的情况简直是小巫见大巫了。</em><br><br><em>[2] 现实中常有发生的是人们确实会因为手机的独特颜色和外壳而进行购买。但这里我们忽略这种微妙的方面，我们先去关注大的方面。</em><br><br>———完———-<br><br><em> </em> *<br><br>英文原文：<a href="http://www.defmacro.org/2013/09/26/products.html" target="_blank" rel="external">http://www.defmacro.org/2013/09/26/products.html</a><br><br>作/译者：Slava Akhmechet/天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/04/rethinkdb-e5-88-9b-e5-a7-8b-e4-ba-ba-e6-95-99-e4-bd-a0-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-81-1/" data-id="cj56dkqwh00pjyqu2raqsnpxv" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RethinkDB/">RethinkDB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/产品/">产品</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/应用/">应用</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-rethinkdb-e5-88-9b-e5-a7-8b-e4-ba-ba-e6-95-99-e4-bd-a0-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-81" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/04/rethinkdb-e5-88-9b-e5-a7-8b-e4-ba-ba-e6-95-99-e4-bd-a0-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-81/" class="article-date">
-  <time datetime="2015-03-04T00:59:00.000Z" itemprop="datePublished">2015-03-04</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/产品/">产品</a>►<a class="article-category-link" href="/categories/产品/创业/">创业</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/04/rethinkdb-e5-88-9b-e5-a7-8b-e4-ba-ba-e6-95-99-e4-bd-a0-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/04/rethinkdb-e5-88-9b-e5-a7-8b-e4-ba-ba-e6-95-99-e4-bd-a0-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-81/">RethinkDB创始人教你如何打造一个伟大的产品</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/04/rethinkdb-e5-88-9b-e5-a7-8b-e4-ba-ba-e6-95-99-e4-bd-a0-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-81/" itemprop="url">RethinkDB创始人教你如何打造一个伟大的产品</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-04T08:59:00+08:00">
+                2015-03-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/" itemprop="url" rel="index">
+                    <span itemprop="name">产品</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150301235133927" alt="这里写图片描述"><br><br># 关于作者<br><br><em> </em> <em><br><br><em>我叫Slava Akhmechet，本人是 <a href="http://www.rethinkdb.com/" target="_blank" rel="external">RethinkDB</a> 的创始人之一，RethinkDB是开源，分布式数据库，旨在帮助开发人员与运营商在打造实时应用时处理无结构数据</em><br><br># 如何打造一个伟大的产品
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150301235133927" alt="这里写图片描述"><br><br># 关于作者<br><br><em> </em> <em><br><br><em>我叫Slava Akhmechet，本人是 <a href="http://www.rethinkdb.com/" target="_blank" rel="external">RethinkDB</a> 的创始人之一，RethinkDB是开源，分布式数据库，旨在帮助开发人员与运营商在打造实时应用时处理无结构数据</em><br><br># 如何打造一个伟大的产品
 
 </em> <em> </em><br><br>假如你认可“<a href="http://www.defmacro.org/2013/07/23/startup-lessons.html" target="_blank" rel="external">销售定乾坤</a>”的原则，那么如果我说大部分初创企业在还没有把它们伟大的产品推向市场进行销售之前就已经把钱给烧光而铩羽而归的话，元芳，你怎么看呢？假如你面向的是一个爆炸性快速增长的市场，你需要找到一个打造一个伟大产品的方式的话，元芳，你又怎么看呢？[1]<br><br>打造一个伟大的产品是很困难的，如果你没有一个很好的去分析产品和功能的一个可行模型的话会让这种困难更雪上加霜。如果没有这个模型，你将会永无停歇的受困于产品功能点的漩涡中，这就好比在黑暗中摸索着靠感觉进行射击。当然不排除有那么一小部分人可以命中目标获得成功，因为他们从一开始就有着异于常人的对产品的直觉。但是，大部分我们这种普通人都不会一开始就具备这种超能力。<br><br>我一开始时对产品的直觉就非常糟糕(更糟的是自己并没有察觉到)。在过去的3年时间里，当我每天盯着我们的用户矩阵图查看，试图创造出一个反馈循环(feedback loop)来训练自己的大脑来找到如何打造一个好产品的模式。幸运的是最终我终于变得非常擅长于预测判断一个功能点对产品造成的冲击，所以我从当时就开始去考虑建立一个模型来尝试把我所领悟到的这方面的知识给捕捉下来分享给大家。<br><br># 三个木桶模型<br><br><em> </em> <em><br><br>产品管理最重要的方面是要把一个产品的功能分门别类地放到3个不同的木桶里面去: 颠覆性的功能(足以改变游戏规则的功能)，不可或缺的功能(必须的但又不会带来很大收益的功能)，无关痛痒的功能(只能让用户“哦“一声的功能)。在我刚开始尝试创业的时候，产品的所有功能在我眼里基本都是差不多重要的。但随着时间的流逝，“三个木桶模型“在我的脑袋中逐渐成型，时至今日，我已经可以每碰到一个功能就能把它自动在上面提及的3个木桶中进行分门别类了。<br><br>举例说明。假如你现在正在打造一个新的移动手机产品。首先，该手机必须要能打电话吧，不然的话你这根本不能被称作为一台手机，鬼才会买了。但是反过来说就不行 - 人们不会因为你的手机提供打电话功能就会购买你的手机，因为市场上哪个手机不提供打电话功能呢。所以在这个范畴中，能够打电话这个功能在你的产品中就应该放在“不可或缺“这个木桶里面去。<br><br>另一方面，假如你的手机产品还可以将正在播放的视频投射出来，这其他手机可没有这个功能，所以该功能就应该放在“颠覆性“这个木桶中，因为该功能将会让大部分的用户尖叫。但另一种可能性是，有可能大部分用户对这种功能并不上心，那么该功能就应该放在“无关痛痒“这个木桶里面去了。<br><br>以上示例给大家介绍了给定的功能所应该归类到的3个木桶:
 
@@ -540,131 +1677,305 @@
 </em> <em> </em><br><br>假设你现在已经可以将你已建立好的对产品的直觉用来把“三个木桶模型“应用到你所处的行业中，你已经可以轻易(且正确地)把功能点归类到不同的木桶里面，那么你已经比大部分产品经理优秀了。但，这还不够。你要知道这个方法其实是存在一定的瑕疵的：<br><br><em>   如果你仅仅是通过凭空臆测的直觉来对功能点进行分类的话，那么你将很容易在犯错误之后，被你脑海中另一把声音的花言巧语所说服而自以为做了个正确的决定。
 </em>   当你在打造该产品的时候，你势必需要对每个大大小小的决定都事必躬亲，因为其他人根本没有东西作为指引。<br><em>   你的攻城狮们将会充满挫败感，因为他们会认为你凭空臆测所做的决定是毫无根据的。
 </em>   在该产品出来之前你势必需要很多其他人来给你提供帮助 - 记者，投资人，潜在雇员，以及客户。去说服这些人将会非常的困难，因为你做的这些决定都是凭直觉的。<br><br>解决这些问题的一个很好的办法就是去把你的产品使命给定义出来。你可以把它想像成是一个接受以指定功能点作为参数然后返回值是三个木桶之一的一个函数。一个好的函数的定义必须是简洁的，可读性强的，可复用的。理想的状态下，在阅读了这个产品使命后，你的团队中的大部分成员都可以像你一样能够自行把功能点归类到对应的木桶里面。<br><br>以下就是我们为RethinkDB想到的一个成效斐然的充满幽默感的产品使命定义：<br><br>&gt; <strong>数据库工具应与魔术无异</strong><br>&gt;<br>&gt;   提供开发人员梦寐以求的开发工具来帮助他们构建实时和数据驱动的网络应用来令他们感到惊喜和不可思议。并给打造伟大软件产品的过程带来纯粹的趣味性和简单化。<br><br>表面上看这两个句子其实好像言之无物，但如果你挖深点的话，这个产品使命其实是充满浓厚的信息量的。它告诉人们我们正在打造的是一个数据库产品；它告诉人们我们首先是将该产品当作一个开发工具来对待的，这就让开发者相关的功能(比如数据库的查询语言)和软件运行相关的功能(比如监控)之间的紧张关系得到缓解。要知道我们所有的颠覆性的功能都是围绕着解决开发者问题而展开的。我们把数据库该如何运行方面的功能点看做是不可或缺的功能。该产品使命解析了我们对用户应该如何使用RethinkDB的期望(用它来构建实时的，数据驱动的网络应用)。该产品使命还让大家了解到我们对特定功能会实现到什么程度(惊喜和不可思议)。对于开发人员来说，足够好是不够的。这些人每天都会把大量的时间投入到我们的产品使用上面 - 我们需要让他们在这个过程中感受到愉悦。该产品使命还暗示了我们将会接受更多的复杂的实现来让我们的用户活得更加轻松。它指引我们去实现让开发者能编写出新型的而不是已经存在的应用的功能。它拥有着自我意识并体现了作为一个团队的我们所拥有的一种健康的幽默感。这就让大众对我们究竟是一个什么样的团队有个大致的认知了。<br><br>有了这个产品使命之后，我们就可以使用它来验证所提议的各种功能点了。再在此基础上加上一些团队共享的知识后，我们的团队成员就能独立的用大体一致的方法来将功能点进行分类了。<br><br>在想到这个产品使命之前我们花了三年的时间来去搞得足够清楚我们究竟在搞什么飞机。如果我们在第一天就定义好这个使命得话，我们的开发时间可能可以缩半，也许更多。当你在打造一个产品的时候，产品使命应该是你首先需要搞定的。如果你有足够好的心智模型(mental model)来编写出一个可以鼓舞你公司所有人的产品使命的话，其他事情也就自然而然的可以迎刃而解了。<br><br><em>［1］我这里的意思并不是想暗示说找到一个好的市场会比打造一个产品容易。事实上，这两者应该反过来，相比找到一个好的市场，产品管理是显得相当的容易的事情，所以这里我才打算先把这个问题跟解决掉而已。要成功，除了需要一个伟大的产品和快速增长的市场之外，还有很多其他的方面，如发布，经济学，受管制的市场，以及其他。但是一个初创企业因为这些原因而以失败告终的情况比起因为选择了一个小众市场或者没有办法及时的往市场推出一个伟大产品而把企业作死的情况简直是小巫见大巫了。</em><br><br><em>[2] 现实中常有发生的是人们确实会因为手机的独特颜色和外壳而进行购买。但这里我们忽略这种微妙的方面，我们先去关注大的方面。</em><br><br>———完———-<br><br><em> </em> *<br><br>英文原文：<a href="http://www.defmacro.org/2013/09/26/products.html" target="_blank" rel="external">http://www.defmacro.org/2013/09/26/products.html</a><br><br>作/译者：Slava Akhmechet/天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/04/rethinkdb-e5-88-9b-e5-a7-8b-e4-ba-ba-e6-95-99-e4-bd-a0-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-81/" data-id="cj56dkqwc00pcyqu2qiohhzfb" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RethinkDB/">RethinkDB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/产品/">产品</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/应用/">应用</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+  </section>
+
   
-</article>
-
-
-  
-
-
-  <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/page/17/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="page-number" href="/page/17/">17</a><span class="page-number current">18</span><a class="page-number" href="/page/19/">19</a><a class="page-number" href="/page/20/">20</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/19/">__('next') &raquo;</a>
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/17/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><span class="page-number current">18</span><a class="page-number" href="/page/19/">19</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/19/"><i class="fa fa-angle-right"></i></a>
   </nav>
-</section>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
         
-          <aside id="sidebar">
+          
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/">Hacker News</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/Swift/">Swift</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/测试自动化/">测试自动化</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/《从0到1》/">《从0到1》</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/《从0到1》/创业/">创业</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/">产品</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/">创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/技术/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/设计/">设计</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/资讯/">资讯</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/风投/">风投</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/技术/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/设计/">设计</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/">创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/创业/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/资讯/">资讯</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/风投/">风投</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/技术/设计/">设计</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/资讯/">资讯</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/设计/">设计</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/设计/资讯/">资讯</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/风投/">风投</a></li></ul>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
 
-
-  
+  <aside id="sidebar" class="sidebar">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ABR/">ABR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ADB/">ADB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/API/">API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Altair/">Altair</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHut/">GitHut</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GoDaddy/">GoDaddy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5/">HTML5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hacker-News/">Hacker News</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IoT/">IoT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JanOS/">JanOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenVPN/">OpenVPN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Phonegap/">Phonegap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React-Native/">React Native</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RethinkDB/">RethinkDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Silver/">Silver</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Startup/">Startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swift/">Swift</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ThinkDB/">ThinkDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/facebook/">facebook</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/">ios</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ownCloud/">ownCloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/paul-graham/">paul-graham</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/saas/">saas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sandstorm/">sandstorm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssl/">ssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows-10/">windows 10</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wireshark/">wireshark</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress/">wordpress</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/youtube/">youtube</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/三个木桶模型/">三个木桶模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/三星/">三星</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/主题/">主题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/云/">云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网/">互联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网创业/">互联网创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/产品/">产品</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/产品设计/">产品设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/从0到1/">从0到1</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/信息/">信息</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业/">创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业-先行者优势/">创业-先行者优势</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业使命/">创业使命</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业家/">创业家</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业教父/">创业教父</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业环境/">创业环境</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创意/">创意</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创投/">创投</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/初创企业/">初创企业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/利基应用/">利基应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/利益相关者/">利益相关者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/加密/">加密</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原生应用/">原生应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/命令行/">命令行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/大数据/">大数据</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/天使投资/">天使投资</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安全技术/">安全技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/展销/">展销</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/广播/">广播</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/应用/">应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/微软/">微软</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/技术趋势/">技术趋势</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/抓包/">抓包</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/智能设备/">智能设备</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派/">树莓派</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派2代/">树莓派2代</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模型/">模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模式/">模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/监控技术/">监控技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/破解/">破解</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/硅谷/">硅谷</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/私有云/">私有云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/科技/">科技</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/端口转发/">端口转发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/简书/">简书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程语言/">编程语言</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网络安全/">网络安全</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自主博客/">自主博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/芯片/">芯片</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虹膜扫描/">虹膜扫描</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/视频编辑/">视频编辑</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/跨平台/">跨平台</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/跨平台应用开发/">跨平台应用开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/迭代/">迭代</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/隐私/">隐私</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/项目构建/">项目构建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/风投/">风投</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/黑客/">黑客</a></li></ul>
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="kzlathander" />
+          <p class="site-author-name" itemprop="name">kzlathander</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">235</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">95</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
     </div>
-  </div>
+  </aside>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/ABR/" style="font-size: 10px;">ABR</a> <a href="/tags/ADB/" style="font-size: 10px;">ADB</a> <a href="/tags/API/" style="font-size: 10px;">API</a> <a href="/tags/Altair/" style="font-size: 10px;">Altair</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/GitHut/" style="font-size: 10px;">GitHut</a> <a href="/tags/GoDaddy/" style="font-size: 10px;">GoDaddy</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTML5/" style="font-size: 11.43px;">HTML5</a> <a href="/tags/Hacker-News/" style="font-size: 10px;">Hacker News</a> <a href="/tags/IoT/" style="font-size: 10px;">IoT</a> <a href="/tags/JanOS/" style="font-size: 10px;">JanOS</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/OpenVPN/" style="font-size: 10px;">OpenVPN</a> <a href="/tags/Phonegap/" style="font-size: 10px;">Phonegap</a> <a href="/tags/React-Native/" style="font-size: 10px;">React Native</a> <a href="/tags/RethinkDB/" style="font-size: 11.43px;">RethinkDB</a> <a href="/tags/Silver/" style="font-size: 10px;">Silver</a> <a href="/tags/Startup/" style="font-size: 10px;">Startup</a> <a href="/tags/Swift/" style="font-size: 10px;">Swift</a> <a href="/tags/ThinkDB/" style="font-size: 10px;">ThinkDB</a> <a href="/tags/docker/" style="font-size: 12.86px;">docker</a> <a href="/tags/facebook/" style="font-size: 11.43px;">facebook</a> <a href="/tags/ios/" style="font-size: 10px;">ios</a> <a href="/tags/ownCloud/" style="font-size: 10px;">ownCloud</a> <a href="/tags/paul-graham/" style="font-size: 10px;">paul-graham</a> <a href="/tags/saas/" style="font-size: 15.71px;">saas</a> <a href="/tags/sandstorm/" style="font-size: 15.71px;">sandstorm</a> <a href="/tags/ssl/" style="font-size: 10px;">ssl</a> <a href="/tags/windows-10/" style="font-size: 10px;">windows 10</a> <a href="/tags/wireshark/" style="font-size: 10px;">wireshark</a> <a href="/tags/wordpress/" style="font-size: 10px;">wordpress</a> <a href="/tags/youtube/" style="font-size: 10px;">youtube</a> <a href="/tags/三个木桶模型/" style="font-size: 11.43px;">三个木桶模型</a> <a href="/tags/三星/" style="font-size: 10px;">三星</a> <a href="/tags/主题/" style="font-size: 10px;">主题</a> <a href="/tags/云/" style="font-size: 14.29px;">云</a> <a href="/tags/互联网/" style="font-size: 14.29px;">互联网</a> <a href="/tags/互联网创业/" style="font-size: 12.86px;">互联网创业</a> <a href="/tags/产品/" style="font-size: 17.14px;">产品</a> <a href="/tags/产品设计/" style="font-size: 10px;">产品设计</a> <a href="/tags/从0到1/" style="font-size: 18.57px;">从0到1</a> <a href="/tags/信息/" style="font-size: 10px;">信息</a> <a href="/tags/创业/" style="font-size: 20px;">创业</a> <a href="/tags/创业-先行者优势/" style="font-size: 10px;">创业-先行者优势</a> <a href="/tags/创业使命/" style="font-size: 10px;">创业使命</a> <a href="/tags/创业家/" style="font-size: 10px;">创业家</a> <a href="/tags/创业教父/" style="font-size: 10px;">创业教父</a> <a href="/tags/创业环境/" style="font-size: 11.43px;">创业环境</a> <a href="/tags/创意/" style="font-size: 12.86px;">创意</a> <a href="/tags/创投/" style="font-size: 10px;">创投</a> <a href="/tags/初创企业/" style="font-size: 10px;">初创企业</a> <a href="/tags/利基应用/" style="font-size: 10px;">利基应用</a> <a href="/tags/利益相关者/" style="font-size: 10px;">利益相关者</a> <a href="/tags/加密/" style="font-size: 11.43px;">加密</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/原生应用/" style="font-size: 10px;">原生应用</a> <a href="/tags/命令行/" style="font-size: 10px;">命令行</a> <a href="/tags/大数据/" style="font-size: 10px;">大数据</a> <a href="/tags/天使投资/" style="font-size: 10px;">天使投资</a> <a href="/tags/安全技术/" style="font-size: 10px;">安全技术</a> <a href="/tags/展销/" style="font-size: 11.43px;">展销</a> <a href="/tags/广播/" style="font-size: 10px;">广播</a> <a href="/tags/应用/" style="font-size: 11.43px;">应用</a> <a href="/tags/微软/" style="font-size: 10px;">微软</a> <a href="/tags/技术趋势/" style="font-size: 10px;">技术趋势</a> <a href="/tags/抓包/" style="font-size: 10px;">抓包</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/智能设备/" style="font-size: 10px;">智能设备</a> <a href="/tags/树莓派/" style="font-size: 11.43px;">树莓派</a> <a href="/tags/树莓派2代/" style="font-size: 10px;">树莓派2代</a> <a href="/tags/模型/" style="font-size: 10px;">模型</a> <a href="/tags/模式/" style="font-size: 10px;">模式</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/监控技术/" style="font-size: 10px;">监控技术</a> <a href="/tags/破解/" style="font-size: 10px;">破解</a> <a href="/tags/硅谷/" style="font-size: 10px;">硅谷</a> <a href="/tags/私有云/" style="font-size: 10px;">私有云</a> <a href="/tags/科技/" style="font-size: 10px;">科技</a> <a href="/tags/端口转发/" style="font-size: 10px;">端口转发</a> <a href="/tags/简书/" style="font-size: 10px;">简书</a> <a href="/tags/编程语言/" style="font-size: 10px;">编程语言</a> <a href="/tags/网络安全/" style="font-size: 10px;">网络安全</a> <a href="/tags/自主博客/" style="font-size: 10px;">自主博客</a> <a href="/tags/芯片/" style="font-size: 10px;">芯片</a> <a href="/tags/虹膜扫描/" style="font-size: 10px;">虹膜扫描</a> <a href="/tags/视频编辑/" style="font-size: 10px;">视频编辑</a> <a href="/tags/跨平台/" style="font-size: 11.43px;">跨平台</a> <a href="/tags/跨平台应用开发/" style="font-size: 10px;">跨平台应用开发</a> <a href="/tags/迭代/" style="font-size: 10px;">迭代</a> <a href="/tags/隐私/" style="font-size: 10px;">隐私</a> <a href="/tags/项目构建/" style="font-size: 10px;">项目构建</a> <a href="/tags/风投/" style="font-size: 10px;">风投</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/04/13/create-new-business-model/">开辟新战场，打造新的商业模式</a>
-          </li>
-        
-          <li>
-            <a href="/2016/01/31/10-secret-facts-about-apples-product-design/">苹果产品设计中鲜为人知的10个细节</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/23/nodeos-the-javascript-based-operating-system/">NodeOS:一个用JavaScript写出来的操作系统</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/14/five-things-you-need-to-know-about-hadoop-v-apache-spark/">2分钟读懂大数据框架Hadoop和Spark的异同</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/13/its-actually-open-source-software-thats-eating-the-world-1/">究竟是谁在吞噬着这个世界</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
         
       </div>
-      <footer id="footer">
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kzlathander</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>

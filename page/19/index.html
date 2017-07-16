@@ -1,501 +1,1616 @@
 <!DOCTYPE html>
-<html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.proxy.ustclug.org/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="科技向前冲">
 <meta property="og:url" content="http://yoursite.com/page/19/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="科技向前冲">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="科技向前冲">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'kzlathander'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/19/"/>
+
+
+
+
+
+  <title>科技向前冲</title>
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">科技向前冲</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-817-e4-ba-a7-e5-93-81-e4-bd-bf-e5-91-bd-e9-aa-8c-e8-af-81-e6-b3-95" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/03/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-817-e4-ba-a7-e5-93-81-e4-bd-bf-e5-91-bd-e9-aa-8c-e8-af-81-e6-b3-95/" class="article-date">
-  <time datetime="2015-03-03T14:29:00.000Z" itemprop="datePublished">2015-03-03</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
+        <p class="site-subtitle"></p>
+      
   </div>
 
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/03/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-817-e4-ba-a7-e5-93-81-e4-bd-bf-e5-91-bd-e9-aa-8c-e8-af-81-e6-b3-95/">如何打造一个伟大的产品7 - 产品使命验证法</a>
-    </h1>
+</div>
+
+<nav class="site-nav">
   
 
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-startup">
+          <a href="/categories/创业" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-fire"></i> <br />
+            
+            创业
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-pm">
+          <a href="/categories/产品" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-mobile-phone"></i> <br />
+            
+            产品
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-oversea">
+          <a href="/categories/Hacker-News" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-leaf"></i> <br />
+            
+            海外
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-innovation">
+          <a href="/categories/创新" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />
+            
+            创新
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/03/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-817-e4-ba-a7-e5-93-81-e4-bd-bf-e5-91-bd-e9-aa-8c-e8-af-81-e6-b3-95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/03/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-817-e4-ba-a7-e5-93-81-e4-bd-bf-e5-91-bd-e9-aa-8c-e8-af-81-e6-b3-95/" itemprop="url">如何打造一个伟大的产品7 - 产品使命验证法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-03T22:29:00+08:00">
+                2015-03-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150303221245863" alt="这里写图片描述"><br><br># 产品使命验证法<br><br><em> </em> <em><br><br>假设你现在已经可以将你已建立好的对产品的直觉用来把“三个木桶模型“应用到你所处的行业中，你已经可以轻易(且正确地)把功能点归类到不同的木桶里面，那么你已经比大部分产品经理优秀了。但，这还不够。你要知道这个方法其实是存在一定的瑕疵的：
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150303221245863" alt="这里写图片描述"><br><br># 产品使命验证法<br><br><em> </em> <em><br><br>假设你现在已经可以将你已建立好的对产品的直觉用来把“三个木桶模型“应用到你所处的行业中，你已经可以轻易(且正确地)把功能点归类到不同的木桶里面，那么你已经比大部分产品经理优秀了。但，这还不够。你要知道这个方法其实是存在一定的瑕疵的：
 
 </em>   如果你仅仅是通过凭空臆测的直觉来对功能点进行分类的话，那么你将很容易在犯错误之后，被你脑海中另一把声音的花言巧语所说服而自以为做了个正确的决定。<br><em>   当你在打造该产品的时候，你势必需要对每个大大小小的决定都事必躬亲，因为其他人根本没有东西作为指引。
 </em>   你的攻城狮们将会充满挫败感，因为他们会认为你凭空臆测所做的决定是毫无根据的。<br><em>   在该产品出来之前你势必需要很多其他人来给你提供帮助 - 记者，投资人，潜在雇员，以及客户。去说服这些人将会非常的困难，因为你做的这些决定都是凭直觉的。<br><br>解决这些问题的一个很好的办法就是去把你的产品使命给定义出来。你可以把它想像成是一个接受以指定功能点作为参数然后返回值是三个木桶之一的一个函数。一个好的函数的定义必须是简洁的，可读性强的，可复用的。理想的状态下，在阅读了这个产品使命后，你的团队中的大部分成员都可以像你一样能够自行把功能点归类到对应的木桶里面。<br><br>以下就是我们为RethinkDB想到的一个成效斐然的充满幽默感的产品使命定义：<br><br>&gt; <strong>数据库工具应与魔术无异</strong><br>&gt;<br>&gt;   提供开发人员梦寐以求的开发工具来帮助他们构建实时和数据驱动的网络应用来令他们感到惊喜和不可思议。并给打造伟大软件产品的过程带来纯粹的趣味性和简单化。<br><br>表面上看这两个句子其实好像言之无物，但如果你挖深点的话，这个产品使命其实是充满浓厚的信息量的。它告诉人们我们正在打造的是一个数据库产品；它告诉人们我们首先是将该产品当作一个开发工具来对待的，这就让开发者相关的功能(比如数据库的查询语言)和软件运行相关的功能(比如监控)之间的紧张关系得到缓解。要知道我们所有的gamechagners级别的功能都是围绕着解决开发者问题而展开的。我们把数据库该如何运行方面的功能点看做是showstopper级别的功能。该产品使命解析了我们对用户应该如何使用RethinkDB的预期(用它来构建实时的，数据驱动的网络应用)。该产品使命还让大家了解到我们对特定功能会实现到什么程度(惊喜和不可思议)。对于开发人员来说，足够好是不够的。这些人每天都会把大量的时间投入到我们的产品使用上面 - 我们需要让他们在这个过程中感受到愉悦。该产品使命还暗示了我们将会接受更多的复杂的实现来让我们的用户活得更加轻松。它指引我们去实现让开发者能编写出新型的而不是已经存在的应用的功能。它拥有着自我意识并体现了作为一个团队的我们所拥有的一种健康的幽默感。这就让大众对我们究竟是一个什么样的团队有个大致的认知了。<br><br>有了这个产品使命之后，我们就可以使用它来验证所提议的各种功能点了。再在此基础上加上一些团队共享的知识后，我们的团队成员就能独立的用大体一致的方法来将功能点进行分类了。<br><br>在想到这个产品使命之前我们花了三年的时间来去搞得足够清楚我们究竟在搞什么飞机。如果我们在第一天就定义好这个使命得话，我们的开发时间可能可以缩半，也许更多。当你在打造一个产品的时候，产品使命应该是你首先需要搞定的。如果你有足够好的心智模型(mental model)来编写出一个可以鼓舞你公司所有人的产品使命的话，其他事情也就自然而然的可以迎刃而解了。<br><br>———完———-
 
 </em> <em> </em><br><br>英文原文：<a href="http://www.defmacro.org/2013/09/26/products.html" target="_blank" rel="external">http://www.defmacro.org/2013/09/26/products.html</a><br><br>作/译者：Slava Akhmechet/天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/03/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-817-e4-ba-a7-e5-93-81-e4-bd-bf-e5-91-bd-e9-aa-8c-e8-af-81-e6-b3-95/" data-id="cj56dkqp700b0yqu2wi51g0ky" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/产品/">产品</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业使命/">创业使命</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-816-e8-81-9a-e5-90-88-e6-80-a7gamechangers-e5-8a-9f-e8-83-bd-e7-82-b9-e4-b8-8d-e5-8f-af-e5-8f-96" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/03/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-816-e8-81-9a-e5-90-88-e6-80-a7gamechangers-e5-8a-9f-e8-83-bd-e7-82-b9-e4-b8-8d-e5-8f-af-e5-8f-96/" class="article-date">
-  <time datetime="2015-03-02T17:04:00.000Z" itemprop="datePublished">2015-03-03</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/03/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-816-e8-81-9a-e5-90-88-e6-80-a7gamechangers-e5-8a-9f-e8-83-bd-e7-82-b9-e4-b8-8d-e5-8f-af-e5-8f-96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/03/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-816-e8-81-9a-e5-90-88-e6-80-a7gamechangers-e5-8a-9f-e8-83-bd-e7-82-b9-e4-b8-8d-e5-8f-af-e5-8f-96/">如何打造一个伟大的产品6 - 聚合性gamechangers功能点不可取</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/03/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-816-e8-81-9a-e5-90-88-e6-80-a7gamechangers-e5-8a-9f-e8-83-bd-e7-82-b9-e4-b8-8d-e5-8f-af-e5-8f-96/" itemprop="url">如何打造一个伟大的产品6 - 聚合性gamechangers功能点不可取</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-03T01:04:00+08:00">
+                2015-03-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content"><br><br>&nbsp;<br><div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150303001219715" alt="这里写图片描述"><br><br># 聚合性gamechangers功能点不可取<br><br><em> </em> <em><br><br>这里开始讨论下我们之前没有讨论过的关于“三个木桶模型“的一些微妙之处。有些独立的功能点自身其实并没有足够的吸引力的，但是一旦和其他功能点聚合在一起就会立刻摇身一变成为gamechangers级别的功能。比如，假设你现在在为你的手机产品设计一套图的的图片。这会是一个gamechangers级别的功能点吗？很有可能不是。那么单独的一套独特的漂亮颜色组合模版呢？这看起来也不像是一个gamechangers级别的功能。那么配套上一个独特类型的手机外壳呢？你应该很难想象一个人会因为一个漂亮的手机外壳就去买个手机吧？这不成了买椟还珠的番外篇了？那么如果你把上面这些功能都放在同一个产品中呢？一个独特的设计方向就冒出来了，一个拥有新奇的图标设计，独特的颜色组合模版，配套的别具一格的手机外壳这样的一个聚合功能听起来就足够成为一个gamechagners级别的功能来吸引足够多的消费者了。<br><br>用功能点聚合的方式去打造出一个聚合的gamechagners功能是非常危险的一个选择，原因有三：
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content"><br><br>&nbsp;<br><div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150303001219715" alt="这里写图片描述"><br><br># 聚合性gamechangers功能点不可取<br><br><em> </em> <em><br><br>这里开始讨论下我们之前没有讨论过的关于“三个木桶模型“的一些微妙之处。有些独立的功能点自身其实并没有足够的吸引力的，但是一旦和其他功能点聚合在一起就会立刻摇身一变成为gamechangers级别的功能。比如，假设你现在在为你的手机产品设计一套图的的图片。这会是一个gamechangers级别的功能点吗？很有可能不是。那么单独的一套独特的漂亮颜色组合模版呢？这看起来也不像是一个gamechangers级别的功能。那么配套上一个独特类型的手机外壳呢？你应该很难想象一个人会因为一个漂亮的手机外壳就去买个手机吧？这不成了买椟还珠的番外篇了？那么如果你把上面这些功能都放在同一个产品中呢？一个独特的设计方向就冒出来了，一个拥有新奇的图标设计，独特的颜色组合模版，配套的别具一格的手机外壳这样的一个聚合功能听起来就足够成为一个gamechagners级别的功能来吸引足够多的消费者了。<br><br>用功能点聚合的方式去打造出一个聚合的gamechagners功能是非常危险的一个选择，原因有三：
 
 </em>   首先，你很难去选择究竟哪些功能点的聚合是/不是一个gamechangers级别的功能点。<br><em>   其次，去实现聚合的gamechangers功能点的代价是非常昂贵的 - 相比之前你只需要为一个gamechangers功能点做出一些正确的决定，你现在却需要为好几个功能点做出大量的正确的决定。
 </em>   最后，这让你很容易说服自己只要再增加一个功能点，你就会成功的获得一个gamechangers级别的聚合功能。<br>所以说，打造一个伟大的产品已经非常困难了，现在又加上这些微妙的情况就更是雪上加霜了。<br><br>不可否认其实还是不少产品是采取这种方式获得成功的，但是，如果可能的话，尽量避免这种情况。如果你真的没得选择只能采用聚合功能点的方式来形成gamechagners级别的组合功能，那很有可能预示着你现在所处的市场其实已经非常成熟。好吧，那没有办法只能这样做了，但是也许你也是时候深刻的自我反省下了 - 这真是一个值得你投入进去的市场吗？还是你应该去寻找下一个你可以相对更容易做出创新的市场会来得更合理些呢？<br><br>———未完待续———-<br><br><em> </em> *<br><br>英文原文：<a href="http://www.defmacro.org/2013/09/26/products.html" target="_blank" rel="external">http://www.defmacro.org/2013/09/26/products.html</a><br>作/译者：Slava Akhmechet/天地会珠海分舵<br>微信公众号：TechGoGoGo<br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br><br></div><br><script type="text/javascript">// &lt;![CDATA[<br>$(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘    <li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>// ]]&gt;</script><br><br></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/03/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-816-e8-81-9a-e5-90-88-e6-80-a7gamechangers-e5-8a-9f-e8-83-bd-e7-82-b9-e4-b8-8d-e5-8f-af-e5-8f-96/" data-id="cj56dkqp400avyqu2zwaomshv" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/产品/">产品</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/产品设计/">产品设计</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-815-e5-88-ab-e8-a3-85-e9-94-99-e4-ba-86-e6-9c-a8-e6-a1-b6" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-815-e5-88-ab-e8-a3-85-e9-94-99-e4-ba-86-e6-9c-a8-e6-a1-b6/" class="article-date">
-  <time datetime="2015-03-02T15:56:00.000Z" itemprop="datePublished">2015-03-02</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-815-e5-88-ab-e8-a3-85-e9-94-99-e4-ba-86-e6-9c-a8-e6-a1-b6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-815-e5-88-ab-e8-a3-85-e9-94-99-e4-ba-86-e6-9c-a8-e6-a1-b6/">如何打造一个伟大的产品5 - 别装错了木桶</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-815-e5-88-ab-e8-a3-85-e9-94-99-e4-ba-86-e6-9c-a8-e6-a1-b6/" itemprop="url">如何打造一个伟大的产品5 - 别装错了木桶</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-02T23:56:00+08:00">
+                2015-03-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150302234751764" alt="这里写图片描述"><br><br># 买家，利益相关者和权威人士<br><br><em> </em> <em><br><br>你越早熟悉你所处产业的历史，技术现状，潜在用户的想法，以及竞争对手的前进方向的话，你就越快的能对该产业描绘出一幅清晰的的蓝图，就能越早的为你的产品构画出一个独一无二的愿景。但是需要小心的是，在跟不同的人进行探讨的时候，有时会很轻易的就采纳了一些错误的人的建议的。<br><br>假如你决定了去以对讲机的形式去设计你的移动电话，瞄准的目标客户群体是建筑工人，并且你决定销售出去最好的方法是以自上而下的方式方式先去搞定建筑经理。如果你先去和建筑工人谈的话，可能他们会被对讲机的花哨的图标和一个独特的颜色皮肤所吸引，那么你就会认为这些独特的设计在你的手机产品中应该是属于gamechangers级别的功能了。但是别忘记了，买不买你这对讲机不是建筑工人说了算，而是包工头，是建筑经理才又权利给你开支票的哦。对于包工头来说，漂亮的设计是不错，但这并对他来说并不是一个gamechangers级别的功能。因为这些漂亮的图标并没有帮助他比以前更好的去把他的事业推上另外一个台阶。<br><br>在复杂的企业营销中，你必须要小心翼翼的留意各个团体的情况并伺候好各个利益相关者以使得他们满意。如果建筑工人对包工头的决定是有着巨大的影响的话，那么多花时间在这些独特的皮肤和图标设计上也许不是个坏事。否则，你将会是浪费资源。<br><br>这种需要考虑好各个团体和利益相关者的情况其实就算在一般的消费品中也是一样存在的。假如你所设计的是一款豪华版的手机，且它比其他市场上的手机都要贵的话，你就需要考虑好你的客户是否需要说服他老婆才能掏钱包买这种奢侈品呢？是否大部分家庭都是共同决定是否对奢侈品进行购买呢？还是家庭成员是各自独立决定是否进行购买的？如果他们需要说服他们的老婆才能进行购买的话，你是否有考虑过增加一个额外的功能让老婆们更容易接受更容易被说服呢？好好想想吧！<br><br>需要小心杂音 。学会分辨出哪些是会购买你的产品的用户，哪些只是对你的产品做出评论的人。创业初期根据产业权威人士给出的对产品功能点的反馈去设计出一个产品是很有诱惑力的。但是一个产品功能所以成为gamechangers级别是因为掏钱包购买它的用户认为它确实是gamechangers级别的功能，否则，该功能只能算是一个distractions级别的功能而已。行业权威人士对你了解该行业的状况会起到非常重要的作用，但是他们往往不会是购买你的产品的用户。如果你是完全围绕着他们的反馈来打造你的产品的话，你会最终发觉你的产品根本卖不出去。<br><br>由此可见，你如果不能体验像你的目标用户一样生活，一样食用，一样呼吸的话，你是不可能打造出一个伟大的产品的。你需要精确的定位出哪些是你的用户，他们碰到的问题是什么，他们会怎么看待你的产品，以及谁将会帮助他们做出购买决定。你的直觉需要精确的反射出你的客户是如何感知你的产品的。“三个木桶模型“的功能分类只有在你能正确的预知你的真实目标客户对该功能点的反应的基础上才会起作用，否则你根本不能确定该功能点究竟是应该放在哪个木桶里面，那么你将会是在浪费着你的生命。<br><br>———未完待续———-
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150302234751764" alt="这里写图片描述"><br><br># 买家，利益相关者和权威人士<br><br><em> </em> <em><br><br>你越早熟悉你所处产业的历史，技术现状，潜在用户的想法，以及竞争对手的前进方向的话，你就越快的能对该产业描绘出一幅清晰的的蓝图，就能越早的为你的产品构画出一个独一无二的愿景。但是需要小心的是，在跟不同的人进行探讨的时候，有时会很轻易的就采纳了一些错误的人的建议的。<br><br>假如你决定了去以对讲机的形式去设计你的移动电话，瞄准的目标客户群体是建筑工人，并且你决定销售出去最好的方法是以自上而下的方式方式先去搞定建筑经理。如果你先去和建筑工人谈的话，可能他们会被对讲机的花哨的图标和一个独特的颜色皮肤所吸引，那么你就会认为这些独特的设计在你的手机产品中应该是属于gamechangers级别的功能了。但是别忘记了，买不买你这对讲机不是建筑工人说了算，而是包工头，是建筑经理才又权利给你开支票的哦。对于包工头来说，漂亮的设计是不错，但这并对他来说并不是一个gamechangers级别的功能。因为这些漂亮的图标并没有帮助他比以前更好的去把他的事业推上另外一个台阶。<br><br>在复杂的企业营销中，你必须要小心翼翼的留意各个团体的情况并伺候好各个利益相关者以使得他们满意。如果建筑工人对包工头的决定是有着巨大的影响的话，那么多花时间在这些独特的皮肤和图标设计上也许不是个坏事。否则，你将会是浪费资源。<br><br>这种需要考虑好各个团体和利益相关者的情况其实就算在一般的消费品中也是一样存在的。假如你所设计的是一款豪华版的手机，且它比其他市场上的手机都要贵的话，你就需要考虑好你的客户是否需要说服他老婆才能掏钱包买这种奢侈品呢？是否大部分家庭都是共同决定是否对奢侈品进行购买呢？还是家庭成员是各自独立决定是否进行购买的？如果他们需要说服他们的老婆才能进行购买的话，你是否有考虑过增加一个额外的功能让老婆们更容易接受更容易被说服呢？好好想想吧！<br><br>需要小心杂音 。学会分辨出哪些是会购买你的产品的用户，哪些只是对你的产品做出评论的人。创业初期根据产业权威人士给出的对产品功能点的反馈去设计出一个产品是很有诱惑力的。但是一个产品功能所以成为gamechangers级别是因为掏钱包购买它的用户认为它确实是gamechangers级别的功能，否则，该功能只能算是一个distractions级别的功能而已。行业权威人士对你了解该行业的状况会起到非常重要的作用，但是他们往往不会是购买你的产品的用户。如果你是完全围绕着他们的反馈来打造你的产品的话，你会最终发觉你的产品根本卖不出去。<br><br>由此可见，你如果不能体验像你的目标用户一样生活，一样食用，一样呼吸的话，你是不可能打造出一个伟大的产品的。你需要精确的定位出哪些是你的用户，他们碰到的问题是什么，他们会怎么看待你的产品，以及谁将会帮助他们做出购买决定。你的直觉需要精确的反射出你的客户是如何感知你的产品的。“三个木桶模型“的功能分类只有在你能正确的预知你的真实目标客户对该功能点的反应的基础上才会起作用，否则你根本不能确定该功能点究竟是应该放在哪个木桶里面，那么你将会是在浪费着你的生命。<br><br>———未完待续———-
 
 </em> <em> </em><br><br>英文原文：<a href="http://www.defmacro.org/2013/09/26/products.html" target="_blank" rel="external">http://www.defmacro.org/2013/09/26/products.html</a><br><br>作/译者：Slava Akhmechet/天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-815-e5-88-ab-e8-a3-85-e9-94-99-e4-ba-86-e6-9c-a8-e6-a1-b6/" data-id="cj56dkqor00asyqu2z7iggmhd" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/产品/">产品</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/利益相关者/">利益相关者</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-814-e5-a6-82-e4-bd-95-e9-a9-be-e9-a9-ad-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-814-e5-a6-82-e4-bd-95-e9-a9-be-e9-a9-ad-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b/" class="article-date">
-  <time datetime="2015-03-02T14:27:00.000Z" itemprop="datePublished">2015-03-02</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-814-e5-a6-82-e4-bd-95-e9-a9-be-e9-a9-ad-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-814-e5-a6-82-e4-bd-95-e9-a9-be-e9-a9-ad-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b/">如何打造一个伟大的产品4 - 如何驾驭三个木桶模型</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-814-e5-a6-82-e4-bd-95-e9-a9-be-e9-a9-ad-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b/" itemprop="url">如何打造一个伟大的产品4 - 如何驾驭三个木桶模型</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-02T22:27:00+08:00">
+                2015-03-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150302214635878" alt="这里写图片描述"><br><br># 如何驾驭三个木桶模型<br><br><em> </em> <em><br><br>打造一个产品最考技巧的是需要去学习究竟如何才能把一个产品的各个功能点进行分门别类的放到“三个木桶模型“里面的三个木桶里面，然后还要知道什么时候这些木桶是已经装满了。返回之前提过的一个例子，究竟一个内嵌的投影模块对手机产品来说是属于gamechangers级别的功能还是distractions级别的功能呢？如果是gamechangers级别的话，那么这个功能是否已经足够捕获大量用户的芳心呢？或者你还需要结合另外一个gamechangers级别的功能才能做到这一点呢？如果此时你把手机的通话质量提升50个百分比的话，那么这个改进会成为一个gamechangers级别的提升吗？还是依然只是showstoppers级别而已？那么200个百分比的提升呢？还有就是你究竟需要在showstoppers这个木桶中装多少个功能点才能打造出一个引人注目的产品呢？<br><br>因为我对手机市场并不熟悉，所以我并不能给这些问题给出对应的答案。如果是在我擅长的无结构数据这个行业的话，我可以非常轻易的把碰到的任意一个功能归类到其对应的木桶上面。虽然有时我会范些错误，但这没有多大问题，只要我比我的竞争对手少犯错误就行了。<br><br>建立这种直觉的方法就是和大量的人进行交谈。去和潜在用户聊。他们是怎么想的呢？去和你圈子中曾经创业失败的人去聊。你可以从他们的失败中获得什么经验呢？去和你的竞争对手聊。他们是怎么解决碰到的问题的呢？去和大公司的工程师聊。他们又会告诉你当前技术状态的什么信息呢？去喝相近行业的其他创业者聊，和投资人聊，和记者聊，和学生聊，和教授聊，甚至和持反对意见的人聊。要在一个圈子中获得灵敏的触觉最好的方法就是把你自己投身到该行业里面并和你能接触到的尽量多的人进行交谈。<br><br>———未完待续———-
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150302214635878" alt="这里写图片描述"><br><br># 如何驾驭三个木桶模型<br><br><em> </em> <em><br><br>打造一个产品最考技巧的是需要去学习究竟如何才能把一个产品的各个功能点进行分门别类的放到“三个木桶模型“里面的三个木桶里面，然后还要知道什么时候这些木桶是已经装满了。返回之前提过的一个例子，究竟一个内嵌的投影模块对手机产品来说是属于gamechangers级别的功能还是distractions级别的功能呢？如果是gamechangers级别的话，那么这个功能是否已经足够捕获大量用户的芳心呢？或者你还需要结合另外一个gamechangers级别的功能才能做到这一点呢？如果此时你把手机的通话质量提升50个百分比的话，那么这个改进会成为一个gamechangers级别的提升吗？还是依然只是showstoppers级别而已？那么200个百分比的提升呢？还有就是你究竟需要在showstoppers这个木桶中装多少个功能点才能打造出一个引人注目的产品呢？<br><br>因为我对手机市场并不熟悉，所以我并不能给这些问题给出对应的答案。如果是在我擅长的无结构数据这个行业的话，我可以非常轻易的把碰到的任意一个功能归类到其对应的木桶上面。虽然有时我会范些错误，但这没有多大问题，只要我比我的竞争对手少犯错误就行了。<br><br>建立这种直觉的方法就是和大量的人进行交谈。去和潜在用户聊。他们是怎么想的呢？去和你圈子中曾经创业失败的人去聊。你可以从他们的失败中获得什么经验呢？去和你的竞争对手聊。他们是怎么解决碰到的问题的呢？去和大公司的工程师聊。他们又会告诉你当前技术状态的什么信息呢？去喝相近行业的其他创业者聊，和投资人聊，和记者聊，和学生聊，和教授聊，甚至和持反对意见的人聊。要在一个圈子中获得灵敏的触觉最好的方法就是把你自己投身到该行业里面并和你能接触到的尽量多的人进行交谈。<br><br>———未完待续———-
 
 </em> <em> </em><br><br>英文原文：<a href="http://www.defmacro.org/2013/09/26/products.html" target="_blank" rel="external">http://www.defmacro.org/2013/09/26/products.html</a><br><br>作/译者：Slava Akhmechet/天地会珠海分舵<br><br>微信公众号：<strong>TechGoGoGo</strong><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-814-e5-a6-82-e4-bd-95-e9-a9-be-e9-a9-ad-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b/" data-id="cj56dkqop00aoyqu26vxwcrg1" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/三个木桶模型/">三个木桶模型</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/产品/">产品</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-813-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b-e5-a6-82-e4-bd-95-e6-8c-87-e5-af-bc-e8-b5" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-813-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b-e5-a6-82-e4-bd-95-e6-8c-87-e5-af-bc-e8-b5/" class="article-date">
-  <time datetime="2015-03-02T13:09:00.000Z" itemprop="datePublished">2015-03-02</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-813-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b-e5-a6-82-e4-bd-95-e6-8c-87-e5-af-bc-e8-b5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-813-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b-e5-a6-82-e4-bd-95-e6-8c-87-e5-af-bc-e8-b5/">如何打造一个伟大的产品3 - 三个木桶模型如何指导资源分配</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-813-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b-e5-a6-82-e4-bd-95-e6-8c-87-e5-af-bc-e8-b5/" itemprop="url">如何打造一个伟大的产品3 - 三个木桶模型如何指导资源分配</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-02T21:09:00+08:00">
+                2015-03-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150302201422728" alt="这里写图片描述"><br><br># 资源分配<br><br><em> </em> <em><br><br>如果你有足够多的时间可以去浪费的话，你当然也可以忽略掉“三个木桶模型“中所提及的那三个产品功能类别，并且通过不停的盲目的迭代以最终获得市场的认可。但是你并没有那么多时间去给你挥霍。你打造出一个伟大产品所需要的时间越长，你就越容易把你的钱给烧光，越容易把你的士气打击的一蹶不振，或者越容易看着市场的机遇在你脚底下偷偷的溜走了。“三个木桶模型“所带来的产品管理模型在此就显得非常的宝贵，因为它让你真正把产品管理当成是一个资源分配的问题来看待。<br><br>如果你把太多的资源投入到distractions类别的功能里面，那么你是浪费资源。这已经显而易见了。<br><br>如果你把过多的资源投入到超过必要的showstoppers类别的功能里面，那么你是在浪费资源！当年iPhone第一代刚出来的时候其实是缺少了拷贝粘贴的功能的，该功能对一些用户来说也许是个showstopper，但是苹果非常正确的决定就算没有该功能也会有足够的用户来购买他们的产品，所以不需要推迟iPhone1的发布。<br><br>如果你在一个showstopper类别的功能已经达到既定的可接受程度的时候还继续投入资源的话，你是在浪费资源！iPhone1刚出来的时候通话质量其实是比较操蛋的，但是已经足够可以通话。大部分用户都选择可以接受。它可以打电话，而且也没有到听不清楚对方说话的糟糕程度。如果当时把通话质量提升10％的话对提升用户购买度意义其实并不是很大。<br><br>如果你在同时开发超过3个gamechangers级别的功能的话，你是在浪费资源！实践证明，几乎没有一个颠覆性的产品是擅长处理很多个问题的。交付出gamechangers级别的功能是有难度的。3个这种级别的功能也许就是你能接受的上限了，就算你的产品可以有一大片的gamechangers级别的功能。<br><br>最后，如果你没有把足够的非常有创意的资源倾注在既定的gamechangers级别的功能上面的话，你是在浪费资源！但是，如果一个gamechangers级别的功能并没有把用户给囧倒的话，那么它就不大可能是一个gamechangers级别的功能了 - 它仅仅是一个distractions级别的功能而已。在这种情况下，你则没有必要进行妥协去浪费资源进去。<br><br>做产品的过程中范些错误还是可以接受的。没有多少产品在真正给用户接受之前是没有犯过错误的。但是大部分初次创业的产品经理却会不停的打破这些做产品必须遵循的规则，也许是因为他们根本就没有意识到这些规则的存在。那么你自己种的苦果只能是你自己来吞了。你比你的竞争对手所犯的错误越少你就越有机会胜出。每一个错误所要付出的代价可能都会是难以置信的巨大的。如果你犯的这些错误足够多的话，你的对手就可以轻松的把你抛出几条街了。<br><br>———未完待续———-
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150302201422728" alt="这里写图片描述"><br><br># 资源分配<br><br><em> </em> <em><br><br>如果你有足够多的时间可以去浪费的话，你当然也可以忽略掉“三个木桶模型“中所提及的那三个产品功能类别，并且通过不停的盲目的迭代以最终获得市场的认可。但是你并没有那么多时间去给你挥霍。你打造出一个伟大产品所需要的时间越长，你就越容易把你的钱给烧光，越容易把你的士气打击的一蹶不振，或者越容易看着市场的机遇在你脚底下偷偷的溜走了。“三个木桶模型“所带来的产品管理模型在此就显得非常的宝贵，因为它让你真正把产品管理当成是一个资源分配的问题来看待。<br><br>如果你把太多的资源投入到distractions类别的功能里面，那么你是浪费资源。这已经显而易见了。<br><br>如果你把过多的资源投入到超过必要的showstoppers类别的功能里面，那么你是在浪费资源！当年iPhone第一代刚出来的时候其实是缺少了拷贝粘贴的功能的，该功能对一些用户来说也许是个showstopper，但是苹果非常正确的决定就算没有该功能也会有足够的用户来购买他们的产品，所以不需要推迟iPhone1的发布。<br><br>如果你在一个showstopper类别的功能已经达到既定的可接受程度的时候还继续投入资源的话，你是在浪费资源！iPhone1刚出来的时候通话质量其实是比较操蛋的，但是已经足够可以通话。大部分用户都选择可以接受。它可以打电话，而且也没有到听不清楚对方说话的糟糕程度。如果当时把通话质量提升10％的话对提升用户购买度意义其实并不是很大。<br><br>如果你在同时开发超过3个gamechangers级别的功能的话，你是在浪费资源！实践证明，几乎没有一个颠覆性的产品是擅长处理很多个问题的。交付出gamechangers级别的功能是有难度的。3个这种级别的功能也许就是你能接受的上限了，就算你的产品可以有一大片的gamechangers级别的功能。<br><br>最后，如果你没有把足够的非常有创意的资源倾注在既定的gamechangers级别的功能上面的话，你是在浪费资源！但是，如果一个gamechangers级别的功能并没有把用户给囧倒的话，那么它就不大可能是一个gamechangers级别的功能了 - 它仅仅是一个distractions级别的功能而已。在这种情况下，你则没有必要进行妥协去浪费资源进去。<br><br>做产品的过程中范些错误还是可以接受的。没有多少产品在真正给用户接受之前是没有犯过错误的。但是大部分初次创业的产品经理却会不停的打破这些做产品必须遵循的规则，也许是因为他们根本就没有意识到这些规则的存在。那么你自己种的苦果只能是你自己来吞了。你比你的竞争对手所犯的错误越少你就越有机会胜出。每一个错误所要付出的代价可能都会是难以置信的巨大的。如果你犯的这些错误足够多的话，你的对手就可以轻松的把你抛出几条街了。<br><br>———未完待续———-
 
 </em> <em> </em><br><br>英文原文：<a href="http://www.defmacro.org/2013/09/26/products.html" target="_blank" rel="external">http://www.defmacro.org/2013/09/26/products.html</a><br><br>作/译者：Slava Akhmechet/天地会珠海分舵<br><br>微信公众号：TechGoGoGo<br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-813-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b-e5-a6-82-e4-bd-95-e6-8c-87-e5-af-bc-e8-b5/" data-id="cj56dkqom00aiyqu2mz13qfhs" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/产品/">产品</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/模型/">模型</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/迭代/">迭代</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-812-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-812-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b/" class="article-date">
-  <time datetime="2015-03-02T11:55:00.000Z" itemprop="datePublished">2015-03-02</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-812-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-812-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b/">如何打造一个伟大的产品2 - 三个木桶模型</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-812-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b/" itemprop="url">如何打造一个伟大的产品2 - 三个木桶模型</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-02T19:55:00+08:00">
+                2015-03-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150302190450769" alt="这里写图片描述"><br><br># 三个木桶模型<br><br><em> </em> <em><br><br>产品管理最重要的方面是要把一个产品的功能分门别类地放到3个不同的木桶里面去: gamechangers(足以改变游戏规则的功能)，showstoppers(必须的但又不会带来很大收益的功能)，distractions(只能让用户“哦“一声的功能)。在我刚开始尝试创业的时候，产品的所有功能在我眼里基本都是差不多重要的。但随着时间的流逝，“三个木桶模型“在我的脑袋中逐渐成型，时至今日，我已经可以每碰到一个功能就能把它自动在上面提及的3个木桶中进行分门别类了。<br><br>举例说明。假如你现在正在打造一个新的移动手机产品。首先，该手机必须要能打电话吧，不然的话你这根本不能被称作为一台手机，鬼才会买了。但是反过来说就不行 - 人们不会因为你的手机提供打电话功能就会购买你的手机，因为市场上哪个手机不提供打电话功能呢。所以在这个范畴中，能够打电话这个功能在你的产品中就应该放在showstoppers这个木桶里面去。<br><br>另一方面，假如你的手机产品还可以将正在播放的视频投射出来，这其他手机可没有这个功能，所以该功能就应该放在gamechangers这个木桶中，因为该功能将会让大部分的用户尖叫。但另一种可能性是，有可能大部分用户对这种功能并不上心，那么该功能就应该放在distractions这个木桶里面去了。<br><br>以上示例给大家介绍了给定的功能所应该归类到的3个木桶:
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150302190450769" alt="这里写图片描述"><br><br># 三个木桶模型<br><br><em> </em> <em><br><br>产品管理最重要的方面是要把一个产品的功能分门别类地放到3个不同的木桶里面去: gamechangers(足以改变游戏规则的功能)，showstoppers(必须的但又不会带来很大收益的功能)，distractions(只能让用户“哦“一声的功能)。在我刚开始尝试创业的时候，产品的所有功能在我眼里基本都是差不多重要的。但随着时间的流逝，“三个木桶模型“在我的脑袋中逐渐成型，时至今日，我已经可以每碰到一个功能就能把它自动在上面提及的3个木桶中进行分门别类了。<br><br>举例说明。假如你现在正在打造一个新的移动手机产品。首先，该手机必须要能打电话吧，不然的话你这根本不能被称作为一台手机，鬼才会买了。但是反过来说就不行 - 人们不会因为你的手机提供打电话功能就会购买你的手机，因为市场上哪个手机不提供打电话功能呢。所以在这个范畴中，能够打电话这个功能在你的产品中就应该放在showstoppers这个木桶里面去。<br><br>另一方面，假如你的手机产品还可以将正在播放的视频投射出来，这其他手机可没有这个功能，所以该功能就应该放在gamechangers这个木桶中，因为该功能将会让大部分的用户尖叫。但另一种可能性是，有可能大部分用户对这种功能并不上心，那么该功能就应该放在distractions这个木桶里面去了。<br><br>以上示例给大家介绍了给定的功能所应该归类到的3个木桶:
 
 </em>   <strong>Gamechanger</strong>: 用户会因为这个功能而乐意去掏钱包的功能。<br><em>   <strong>Showstopper</strong>: 用户不会因为你有该功能而购买，但没有的话他肯定不会买。
 </em>   <strong>Distraction</strong>: 这个功能跟用户是否选择你的产品关系不大。<br><br>实践证明，一个成功的产品会拥有一到三个gamechangers级别的功能，数十个属于showstoppers级别的中庸功能，以及极少数的distractions级别的功能。作为一个创业者，你需要做的事情就是去建立起一个敏锐的直觉来把不同的功能进行分门别类。虽然有时情况依然很微妙(试问一个内嵌的手机投影模块是一个gamechanger功能还是一个distraction功能？)，但，至少“三个木桶模型“给你提供了一个可以实施的出击计划。<br><br>———未完待续———-<br><br><em> </em> <em><br><br>英文原文：<a href="http://www.defmacro.org/2013/09/26/products.html" target="_blank" rel="external">http://www.defmacro.org/2013/09/26/products.html</a><br><br>作/译者：Slava Akhmechet/天地会珠海分舵<br><br>微信公众号：<em>*TechGoGoGo</em></em><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/02/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-812-e4-b8-89-e4-b8-aa-e6-9c-a8-e6-a1-b6-e6-a8-a1-e5-9e-8b/" data-id="cj56dkqol00agyqu2qgtk78pn" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/三个木桶模型/">三个木桶模型</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-85-b3-e4-ba-8e-e6-8a-80-e6-9c-af-e8-b6-8b-e5-8a-bf-e6-94-b9-e5-8f-98-e6-88-91-e4-bb-ac-e9-9c-80-e8-a6-81-e7-9f-a5-e9-81-93-e7-9a-84-e4-ba-94-e4-bb-b6-e4-ba-8b-e6-83-85" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/02/e5-85-b3-e4-ba-8e-e6-8a-80-e6-9c-af-e8-b6-8b-e5-8a-bf-e6-94-b9-e5-8f-98-e6-88-91-e4-bb-ac-e9-9c-80-e8-a6-81-e7-9f-a5-e9-81-93-e7-9a-84-e4-ba-94-e4-bb-b6-e4-ba-8b-e6-83-85/" class="article-date">
-  <time datetime="2015-03-01T16:23:00.000Z" itemprop="datePublished">2015-03-02</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/创业/">创业</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/02/e5-85-b3-e4-ba-8e-e6-8a-80-e6-9c-af-e8-b6-8b-e5-8a-bf-e6-94-b9-e5-8f-98-e6-88-91-e4-bb-ac-e9-9c-80-e8-a6-81-e7-9f-a5-e9-81-93-e7-9a-84-e4-ba-94-e4-bb-b6-e4-ba-8b-e6-83-85/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/02/e5-85-b3-e4-ba-8e-e6-8a-80-e6-9c-af-e8-b6-8b-e5-8a-bf-e6-94-b9-e5-8f-98-e6-88-91-e4-bb-ac-e9-9c-80-e8-a6-81-e7-9f-a5-e9-81-93-e7-9a-84-e4-ba-94-e4-bb-b6-e4-ba-8b-e6-83-85/">关于技术趋势改变我们需要知道的五件事情</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/02/e5-85-b3-e4-ba-8e-e6-8a-80-e6-9c-af-e8-b6-8b-e5-8a-bf-e6-94-b9-e5-8f-98-e6-88-91-e4-bb-ac-e9-9c-80-e8-a6-81-e7-9f-a5-e9-81-93-e7-9a-84-e4-ba-94-e4-bb-b6-e4-ba-8b-e6-83-85/" itemprop="url">关于技术趋势改变我们需要知道的五件事情</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-02T00:23:00+08:00">
+                2015-03-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views">&gt; 译者注：本文发表于1998年3月28日，17年过去了，仍然值得我们深思。<br><br>我怀疑，21世纪将给我们带来的问题，相较于本世纪，或者19世纪，18世纪，17世纪，或者进一步讲，比之前的很多世纪所面对的问题更加令人震惊、眼花缭乱或复杂。不过那些对于新千禧年感到过度焦虑的人们，我在一开始就可以提供一些如何面对它的好建议……下面是Henry David Thoreau告诉我们的：“所有的发明只是对毫无改进的目标提供一些改进过的方法。”歌德告诉我们：“一个人，每天，应该尽量听点儿音乐，读一首诗，看一副画，还有，如果可能，说一些有道理的话。”苏格拉底告诉我们：“混混噩噩的生活不值得过。”Rabbi Hillel告诉我们：“己所不欲，勿施于人。”还有预言家弥伽说的：“主对你的要求只是公平地做事，热爱仁慈，谦卑地与上帝同行。”如果我们有时间（尽管你足够了解啦），我会说耶稣、艾赛亚、默罕默德、斯宾诺萨和莎士比亚告诉我们的话。道理都一样：我们无法逃避自己。人类的窘境从过去到现在一直就是这样，信奉 我们时代的技术变化催生了时代和圣人的、不相关的智慧 是一种欺骗。<br><br>​然而，正如刚才提到的，我十分清楚因为我们生活在一个技术的时代，我们有一些具体的问题，它们是耶稣、Hillel、苏格拉底和弥伽没有、也不能提到的。我没有智慧去说我们应当如何处理这些问题，因此我的贡献必须是界定我们需要了解的事情本身，从而提出问题。我把我的演讲称为《我们需要知道的、关于技术变化方面的五种思想》。以我30年来对技术变化历史的研究为基础，但我不认为这些是学术的、或难懂的思想。它们是每个关心文化稳定与和谐的人都应当知道的，我把它们告诉你，希望你在思考关于宗教信仰的技术影响时，找到它们的有用之处。<br><br># 第一种思想<br><br><em> </em> <em><br><br>第一种思想就是所有的技术变化都是折衷。我喜欢称之为浮士德交易【注1】，技术给予和夺取。这意味着，对于新技术提供的每一个优点，总是有一个相应的缺点。这个缺点可能超过了优点的重要性，或者优点也是物有所值的。现在，这貌似是一个相当明显的思想了，但是很多人相信新技术是纯粹的恩典，你将对此感到惊奇。你只需考虑一下大部分人对于电脑理解上的激情，你就会发现，他们愿意、毫不掩饰地和持续不断地，颂扬电脑的奇迹。你还能发现，他们完全没有提及电脑的任何负面影响。这是一种危险的不平衡，因为技术的成就越大，它的负面影响也就越大。<br><br>考虑一下汽车，对于所有明显的优点而言，它污染了空气，堵塞了城市，降低了自然景观的美丽。或许你会反思药物技术的悖论，它带来了令人惊奇的治疗，但同时，也是某些疾病和残疾的、可论证的根源，在减少身体诊断技巧上发挥了巨大的作用。同样反思一下印刷机所带来的所有智力上和社会上的益处，它的成本也是相应地巨大。印刷机给西方世界带来了诗歌，但是它把诗歌变成了一种吸引人的、优秀的交流形式。它给我们带来了演绎科学，但是它把宗教敏感性简化成了一种稀有的迷信。印刷给我们带来了国家意识的现代概念，但是把爱国主义转化成了一种肮脏的、即使不是致命的情感。甚至我们可以说，用本国语印刷的圣经产生了上帝是英国人、或德国人、或法国人的印象——也就是说，印刷把上帝简化成了一个当地君主的规模。<br><br>或许我能够表达这个思想的、最好的方式就是说 “一种新技术能够做什么” 没有 “一种新技术不能做什么” 重要。的确如此，后者更重要，恰恰因为它是如此频繁地被问到。那么，一个人可能会说，关于技术变化的、一个老练的角度包括了一个人对于由那些没有历史意识的人提出的乌托邦和救世主的愿景的质疑，或者文化所依赖的不稳定平衡。事实上，如果我说了算，要是有人不能说出他或她所了解的字母表的社会和物理影响、机械钟表、印刷机和电信技术的知识，我将禁止这个人讨论新的信息技术。换句话说，要明白伟大技术的成本方面的东西。<br><br>第一种思想就是文化总是为技术付出代价。<br><br># 第二种思想
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views">&gt; 译者注：本文发表于1998年3月28日，17年过去了，仍然值得我们深思。<br><br>我怀疑，21世纪将给我们带来的问题，相较于本世纪，或者19世纪，18世纪，17世纪，或者进一步讲，比之前的很多世纪所面对的问题更加令人震惊、眼花缭乱或复杂。不过那些对于新千禧年感到过度焦虑的人们，我在一开始就可以提供一些如何面对它的好建议……下面是Henry David Thoreau告诉我们的：“所有的发明只是对毫无改进的目标提供一些改进过的方法。”歌德告诉我们：“一个人，每天，应该尽量听点儿音乐，读一首诗，看一副画，还有，如果可能，说一些有道理的话。”苏格拉底告诉我们：“混混噩噩的生活不值得过。”Rabbi Hillel告诉我们：“己所不欲，勿施于人。”还有预言家弥伽说的：“主对你的要求只是公平地做事，热爱仁慈，谦卑地与上帝同行。”如果我们有时间（尽管你足够了解啦），我会说耶稣、艾赛亚、默罕默德、斯宾诺萨和莎士比亚告诉我们的话。道理都一样：我们无法逃避自己。人类的窘境从过去到现在一直就是这样，信奉 我们时代的技术变化催生了时代和圣人的、不相关的智慧 是一种欺骗。<br><br>​然而，正如刚才提到的，我十分清楚因为我们生活在一个技术的时代，我们有一些具体的问题，它们是耶稣、Hillel、苏格拉底和弥伽没有、也不能提到的。我没有智慧去说我们应当如何处理这些问题，因此我的贡献必须是界定我们需要了解的事情本身，从而提出问题。我把我的演讲称为《我们需要知道的、关于技术变化方面的五种思想》。以我30年来对技术变化历史的研究为基础，但我不认为这些是学术的、或难懂的思想。它们是每个关心文化稳定与和谐的人都应当知道的，我把它们告诉你，希望你在思考关于宗教信仰的技术影响时，找到它们的有用之处。<br><br># 第一种思想<br><br><em> </em> <em><br><br>第一种思想就是所有的技术变化都是折衷。我喜欢称之为浮士德交易【注1】，技术给予和夺取。这意味着，对于新技术提供的每一个优点，总是有一个相应的缺点。这个缺点可能超过了优点的重要性，或者优点也是物有所值的。现在，这貌似是一个相当明显的思想了，但是很多人相信新技术是纯粹的恩典，你将对此感到惊奇。你只需考虑一下大部分人对于电脑理解上的激情，你就会发现，他们愿意、毫不掩饰地和持续不断地，颂扬电脑的奇迹。你还能发现，他们完全没有提及电脑的任何负面影响。这是一种危险的不平衡，因为技术的成就越大，它的负面影响也就越大。<br><br>考虑一下汽车，对于所有明显的优点而言，它污染了空气，堵塞了城市，降低了自然景观的美丽。或许你会反思药物技术的悖论，它带来了令人惊奇的治疗，但同时，也是某些疾病和残疾的、可论证的根源，在减少身体诊断技巧上发挥了巨大的作用。同样反思一下印刷机所带来的所有智力上和社会上的益处，它的成本也是相应地巨大。印刷机给西方世界带来了诗歌，但是它把诗歌变成了一种吸引人的、优秀的交流形式。它给我们带来了演绎科学，但是它把宗教敏感性简化成了一种稀有的迷信。印刷给我们带来了国家意识的现代概念，但是把爱国主义转化成了一种肮脏的、即使不是致命的情感。甚至我们可以说，用本国语印刷的圣经产生了上帝是英国人、或德国人、或法国人的印象——也就是说，印刷把上帝简化成了一个当地君主的规模。<br><br>或许我能够表达这个思想的、最好的方式就是说 “一种新技术能够做什么” 没有 “一种新技术不能做什么” 重要。的确如此，后者更重要，恰恰因为它是如此频繁地被问到。那么，一个人可能会说，关于技术变化的、一个老练的角度包括了一个人对于由那些没有历史意识的人提出的乌托邦和救世主的愿景的质疑，或者文化所依赖的不稳定平衡。事实上，如果我说了算，要是有人不能说出他或她所了解的字母表的社会和物理影响、机械钟表、印刷机和电信技术的知识，我将禁止这个人讨论新的信息技术。换句话说，要明白伟大技术的成本方面的东西。<br><br>第一种思想就是文化总是为技术付出代价。<br><br># 第二种思想
 
 </em> <em> </em><br><br>这就导致了第二种思想，新技术的优点和缺点从来不会在人群中均衡地分布。这意味着每一种新技术都会让一部分受益，并给另一部分人带来伤害。甚至有一些人压根就不会被影响。再考虑一下16世纪印刷机的案例，马丁路德【注2】说过“上帝最高的、最大程度上的恩惠的行为，而福音就是这样向前推动的。”把上帝的话放在每一个基督徒的厨房餐桌上、放在大规模生产的书本上，这逐步降低了教会圣统治的权威，加速了神圣罗马教会的分裂。当时的新教徒对这个发展感到欢呼。天主教对此感到忧心忡忡而暴怒。既然我是犹太人，如果我活在那个年代，很可能我也没有什么好办法，因为一场大屠杀是由马丁路德引起的、还是教宗利奥十世【注3】引起的，没有什么区别。<br><br>让我们看另外一个例子，电视，尽管如此，我这里应当立即加上很少有人没有被电视在一到两个方面影响到的情况。在美国，电视的影响要比其它任何地方都要深入，很多人把电视看做是一个恩赐，不只是那些领着高薪水、辉煌的职业生涯的、电视行业里的执行官、技术人员、主任、新闻播音员和表演者。另一方面，从长期看，电视或许也把学校老师的生涯带到了终点，因为学校是印刷机的发明，必须在印刷的字在将来有多大影响的事情上共进退。当然,电视消失是不可能的，但是那些对电视的出现充满激情的学校老师常常让我的脑海显现一幅画面，某个世纪转折点的铁匠不仅仅讴歌汽车，而且相信他的业务会因此而提升。我们现在知道他的业务没有因此而提升；它开始过时了，或许一个聪明的铁匠明白这一点。<br><br>​问题还在这里，它从来没有远离对技术变化有了解的人的想法：具体是哪些人从新技术的发展中受益了？哪一部分团体，哪种类型的人，哪种行业得到了恩惠？当然，哪个团体的人因此受到了伤害？<br><br>当我们思考电脑技术的时候，这些问题应该总是存在于我们的想法里。毫无疑问，电脑已经、并且将来仍然对军队、航空公司、银行或税收机构之类的大型组织产生有利的影响。同样清晰的是，电脑对于物理和其它自然科学的高级研究人员是不可或缺的。但是，电脑技术对于相当一部分人的好处到底到了哪种程度呢？钢铁工人、蔬菜店主、汽车机械师、音乐家、面包师、砖匠、牙医，是的，还有神学家，电脑现在进入了其他大部分人的生活了吗？这些人已经让他们的私人事务更容易地被强大机构访问。他们更容易被追踪和控制；他们受到了更多的检查，越来越对关于他们的一些决定感到困惑。甚至他们被简化成了纯粹的数字对象。他们被垃圾邮件淹没了，他们成为了广告公司和政治机构容易击中的目标。总之，这些人是电脑大革命当中的失败者。当然，包括其它的电脑公司、跨国企业和国家政权在内的胜利者，将鼓励失败者对电脑技术葆有激情。这是胜利者的手腕，因此刚开始的时候，他们告诉失败者，借助个人电脑，每个人都能够让支票本更加清晰、更好地追踪账单，做出更加合理的购物清单。然后，胜利者还告诉他们，在家里投票、在家里购物、在家里得到他们想要的娱乐，是完全有可能的，这样就能让社区生活变得不必要了。当然，如今的胜利者一直在说信息时代，总是暗示我们拥有的信息越多，我们就越能更好地解决重大问题——不仅仅是个人问题，而且还有大规模的社会问题。但是，这一切是真的吗？如果世界上有个孩子在挨饿——的确有挨饿的——那不是因为信息不够多。我们很早就知道如何生产足够多的粮食来喂饱地球上的每个人孩子，可为什么我们还让如此多的孩子挨饿呢？如果我们的街道上有暴力，也不是因为我们的信息不足。无论妇女是否受到虐待，离婚、色情表演和精神疾病是否还在增加，都和信息不足没有任何关系。我敢说，那是因为其它一些东西正在失去，我不认为我不得不告诉观众它是什么。谁知道呢？如果我们被其蒙蔽了双眼而让我们不能真实地看到问题出在哪里，那么这个信息时代或许将成为祸害。这就是为什么我们要经常问问那些激情地谈论电脑技术的人们，你为什么要这样做？你代表了谁的利益？你希望给谁力量？你想从谁那儿扣除力量？<br><br>    ​我不是要归咎于这是谁的错，更不要说谁有险恶动机。我只想说，既然技术让某些人受益了，并且伤害了其他人，那么这就是必须要经常被问到的问题。总之，在技术变化过程中，总是有胜利者和失败者，这就是第二种思想。<br><br># 第三种思想<br><br><em> </em> <em><br><br>下面是第三种。每种技术内部，都包含了一种强大的思想，有时候是两种或三种强大的思想。这些思想经常隐藏在我们的视野之外，因为它们多少有些抽象的特定。但是，这不应该意味着它们不会有实际的影响。<br><br>或许你对这句谚语比较熟悉：一个拿着锤子的人看谁都像钉子。我们可以这样做个延伸：一个拿着铅笔的人看谁都像句子，一个拿着相机的人看谁都像图像，一个持有电脑的人看谁都像数据。我不认为我们需要对这些格言玩文字游戏。但是它们引起我们警觉的是，每种技术都有偏见。像语言文字本身，它总是鼓励我们赞同和尊重某些观点和成就。在没有书写的文化里，人类的记忆最重要了，就像包含了积累的数个世纪的口述智慧的、箴言篇、语录和歌集一样。在旧约《列王记》我们知道了3000句箴言。但是在有了书写的文化里，这种记忆的壮举被视作浪费时间，箴言只不过是不相关的幻想。写作的人钟情于逻辑上的组织和系统化的分析，而不是箴言。电信行业的人热衷于速度，而不是反省。电视行业的人看中及时性，而不是历史。对于电脑行业的人，我们要说什么呢？或许我们能说他们关注信息、而非知识，也绝不是智慧。的确如此，在电脑时代，智慧的概念可能和知识一起消失。<br><br>每种技术都有一套哲学，体现在技术如何让人们使用它们的想法，体现在它让我们用身体做什么，体现在它改变了世界，体现在它放大了我们的感觉，体现在它忽视了我们的情感和智力趋势。这种思想就是伟大的天主教徒预言家马素·麦克鲁汉【注4】所认为的概括和主旨，他创造了著名的句子，“媒介即是讯息（The medium is the message）。【注5】”<br><br># 第四种思想
 
 </em> <em> </em><br><br>技术变化不是添加剂；它是生态上的东东。我能够用类推法更好地作出解释。如果我们把一滴红色染料放入一杯清水里，会发生什么呢？我们是得到了一杯清水和一滴红色染料吗？明显不是这样。我们给每个水分子做了新的染色。这就是我说的生态变化。一种新媒体不会增加什么；它改变了一切。在1500年，在印刷机发明之后，你不会再有 老的欧洲+印刷机，你有了一个不同的欧洲。有了电视之后，美国不再是美国+电视，电视对每场政治运动、每个家庭、每个学校、每座教堂、每顿午餐、每个行业等等，都做了一个新的染色。<br><br>这就是我们为什么要当心技术革新。技术变化的影响总是大范围的，经常是不可预知和不可逆转的。这也是我们为什么要怀疑资本家的原因。理论上，资本家不仅仅是个人风险承担者，而且更重要的，他还是文化风险承担者。他们当中最具创新和勇敢的人希望充分地探索新技术，而不太在意哪些传统在这个过程中被推翻，也不会在意如果没有这种传统，某种文化是否还能起作用。总之，资本家是激进分子。在美国，大部分重要的激进分子一直都是像贝尔、爱迪生、福特、卡内基、沙诺夫【注6】、Goldwyn。这些人毁坏了19世纪，创造了20世纪，这就是为什么我觉得 资本家被认为是保守的 是难以理解的。或许那是因为他们倾向于穿着黑色西服和灰色领带。<br><br>我相信你理解我所说的这一切，我不是为社会主义做辩解。我只是说资本家需要认真地受到观察和约束。可以肯定的是，他们在谈论家庭、婚姻、虔诚和荣誉，但是如果被同意以最充分的经济潜能探索新技术，他们可能会打破让这些思想成为可能的习俗。我在这里只能给出两个例子，引自美国在技术上的遭遇。第一个例子关注教育。我们或许会问，谁对本世纪的美国教育产生了最大的影响？如果你认为是John Dewey或任何其他教育泰斗，我必须说你完全错了。最大影响是那些位于新泽西州纽约郊区的普林斯顿里的、身着灰色西服的默默无闻的人。在那里，他们开发和推广了最为著名的标准化测试的新技术，比如IQ测试、SAT和GRE。他们的测试重新定义了我们一直所说的学习，导致我们重新组织课程以适应测试。<br><br>第二个例子关注我们的政治。现在已经很清楚了，对我们时代的美国政治产生巨大激进影响的人不是政治盲从者，或留着长发、胳肢窝夹着卡尔马克思巨著的学生持异见者。改变美国政治本质的激进分子是身穿黑色西服和灰色领带的企业家，他们管理者美国巨大的电视产业。他们不是故意把政治演说变成一种娱乐形式的，他们不是故意让一个胖子竞选高级政治职位变成不可能的，他们不是故意把政治运动缩减为一场30秒的电视广告。他们尽量在做的一切都是让电视成为一台大范围的、不眠的挣钱机器。这个过程中，他们破坏了真正的政治演说，他们不感到担心。<br><br># 第五种思想<br><br><em> </em> <em><br><br>我现在要谈论第五种思想，也是最后一种思想，那就是媒体正变成神话。我使用这个词语的意义在于，它被法国文学批评家罗兰巴特用到，他用“神话（myth）”这个词语指代一个通常的趋势，那就是我们把技术创新看做好像是上帝赐予的，好像它们是事物自然秩序的一部分。我时不时地问学生，他们是否知道字母表是什么时候发明的。这个问题让他们感到惊讶，好像我在问云和树是什么时候发明的。字母表，他们相信，不是被发明的东西。它们本来就有。人类文化的很多产品都是这样，而且没有比技术更有连续性的。汽车、飞机、电视、电影、报纸，它们已经达到了神化的状态，因为它们被视作自然的馈赠，而不是在一个特定的政治、历史环境下的人工制品。<br><br>当一种技术成为神话时，它常常是危险的，因为它会被自然地接受，因此就不容易敏感到去修改或控制。如果你向普通美国人提议，电视广播直到下午5点才开播，然后在晚上11点停止，或者建议不应该有电视广告，他将认为这个想法是荒唐的。不过，不是因为它不同意你的文化议程（cultural agenda），他认为荒唐的原因在于，他假设你在建议改变固有的东西；就好像你在建议太阳应该在上午10点而不是6点升起。<br><br>无论我在什么时候讨论技术变成神话的能力，我都会想起教皇保罗二世的评论。他说，“科学能够净化宗教里的错误和迷信。宗教能够净化科学里的盲目崇拜和不真实的绝对事物。”<br><br>我的意思是，我们对于技术的热情可以转化成一种盲目崇拜的形式，我们对其恩惠的信仰能够成为不真实的绝对事物。审视技术的最好方法就是做为一个外行的入侵者，记住技术不是上帝计划的一部分，而是人类创新和盲目自大的一部分，它是好是坏完全取决于人们对 技术为我们做了什么和技术对我们做了什么 的意识。<br><br># 结论
 
 </em> <em> </em><br><br>好了，这就是我的关于技术变化的五种思想。首先，我们常常为技术付出代价；技术越伟大，代价就越大。第二，总是有胜利者和失败者，胜利者常常试图说服失败者，说他们才是真正的胜利者。第三，每个伟大技术里面都嵌入了认识论、政治或社会偏见。有时候这种偏见对于我们的优点是有重大意义的。有时候它不是。印刷机消灭了口述的传统；电信技术消灭了空间；电视使词语蒙羞；或许电脑将降低社区生活的重要性，等等。第四，技术变化不是添加剂；它是生态上的，这意味着，它改变了一切，因此重要到了不能完全掌控在比尔盖茨手里。第五，技术越来越成为神话；被感觉为事物自然秩序的一部分，因此更倾向于控制我们更多的生活，而不是给我们带来好处。<br><br>如果我们有更多的时间，我能够提供一些另外的关于技术变化的重要资料，但是目前我支持这些思想，并以此作为结束。过去，我们以梦游的方式经历了技术变化。我们没有喊出来的口号一直都是“技术高于一切”，我们一直愿意改变我们的生活来适应技术的要求，而不是文化的要求。这是一种愚蠢的形式，尤其在大范围的技术变化的年代里。我们需要睁大双眼继续前行，让我们很多人利用技术、而不是被技术所利用。<br><br>注1：魔鬼交易（英语：Deal with the Devil），又称魔鬼条约或浮士德的交易，是西方广泛流传的文化主题。与之相关人物浮士德、梅菲斯特是为人熟知的基督教民间传说人物。<a href="http://zh.wikipedia.org/wiki/" target="_blank" rel="external">http://zh.wikipedia.org/wiki/</a>魔鬼交易<br><br>注2：马丁·路德（德语：Martin Luther，1483年11月10日－1546年2月18日），德国基督教神学家，宗教改革运动的主要发起人，基督教更正派信义宗教会（即路德宗）的开创者，曾是罗马大公教会奥斯定会的修士。提倡因信称义，反对教宗的权威地位。他翻译的德文圣经影响深远，促进了德文的发展。<a href="http://zh.wikipedia.org/wiki/" target="_blank" rel="external">http://zh.wikipedia.org/wiki/</a>馬丁·路德<br><br>注3：教宗利奥十世，或译良十世，（拉丁文：Papa Leo X，1475年12月11日－1521年12月1日），原名Giovanni di Lorenzo de’ Medici，在位期间：1513年3月9日—1521年12月1日）。利奥十世是洛伦佐·德·美第奇的第二个儿子，佛罗伦萨共和国统治者。在他任内的1517年，马丁·路德贴出《九十五条论纲》，引发宗教改革。<a href="http://zh.wikipedia.org/wiki/" target="_blank" rel="external">http://zh.wikipedia.org/wiki/</a>利奥十世<br><br>注4：马歇尔·麦克卢汉,马素·麦克鲁汉（Herbert Marshall McLuhan，C.C.，1911年7月21日－1980年12月31日），是加拿大著名哲学家及教育家，曾在大学教授英国文学、文学批判及传播理论，也是现代传播理论的奠基者，其观点深远影响人类对媒体的认知。<a href="http://zh.wikipedia.org/wiki/" target="_blank" rel="external">http://zh.wikipedia.org/wiki/</a>馬素·麥克魯漢<br><br>注5：“媒介即是讯息”是由加拿大学者马素·麦克鲁汉提出的一个传播学概念，意思是人们理解一个讯息时会受到其传播方式的影响，传播媒介的形式本身早嵌入了该讯息当中，讯息跟其传播媒介之间有着共生关系。<a href="http://zh.wikipedia.org/wiki/" target="_blank" rel="external">http://zh.wikipedia.org/wiki/</a>媒介即是訊息<br><br>注6：大卫·沙诺夫（David Sarnoff，1891年2月27日－1971年12月12日）美国商业无线电和电视的先趋和企业家。被誉为美国广播通讯业之父。<a href="http://zh.wikipedia.org/wiki/" target="_blank" rel="external">http://zh.wikipedia.org/wiki/</a>大衛·沙諾夫<br><br>翻译原文：<a href="http://blog.csdn.net/zhubaitian/article/details/43968117" target="_blank" rel="external">http://blog.csdn.net/zhubaitian/article/details/43968117</a><br><br>微信公众号：<strong>TechGoGoGo</strong><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/02/e5-85-b3-e4-ba-8e-e6-8a-80-e6-9c-af-e8-b6-8b-e5-8a-bf-e6-94-b9-e5-8f-98-e6-88-91-e4-bb-ac-e9-9c-80-e8-a6-81-e7-9f-a5-e9-81-93-e7-9a-84-e4-ba-94-e4-bb-b6-e4-ba-8b-e6-83-85/" data-id="cj56dkqmb0068yqu2amka8n0x" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创意/">创意</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术趋势/">技术趋势</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-811-e5-bc-95-e8-a8-80" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/01/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-811-e5-bc-95-e8-a8-80/" class="article-date">
-  <time datetime="2015-03-01T15:59:00.000Z" itemprop="datePublished">2015-03-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hacker-News/">Hacker News</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/01/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-811-e5-bc-95-e8-a8-80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/01/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-811-e5-bc-95-e8-a8-80/">如何打造一个伟大的产品1 - 引言</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/01/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-811-e5-bc-95-e8-a8-80/" itemprop="url">如何打造一个伟大的产品1 - 引言</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-01T23:59:00+08:00">
+                2015-03-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hacker-News/" itemprop="url" rel="index">
+                    <span itemprop="name">Hacker News</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150301235133927" alt="这里写图片描述"><br><br># 关于作者<br><br><em> </em> <em><br><br><em>我叫Slava Akhmechet，本人是 <a href="http://www.rethinkdb.com/" target="_blank" rel="external">RethinkDB</a> 的创始人之一，RethinkDB是一个设计来帮助开发者和运营团队来处理无结构数据的一个开源的分布式数据库，用户可以使用它来作为数据库来打造自己的应用。</em><br><br># 如何打造一个伟大的产品
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150301235133927" alt="这里写图片描述"><br><br># 关于作者<br><br><em> </em> <em><br><br><em>我叫Slava Akhmechet，本人是 <a href="http://www.rethinkdb.com/" target="_blank" rel="external">RethinkDB</a> 的创始人之一，RethinkDB是一个设计来帮助开发者和运营团队来处理无结构数据的一个开源的分布式数据库，用户可以使用它来作为数据库来打造自己的应用。</em><br><br># 如何打造一个伟大的产品
 
 </em> <em> </em><br><br><em>26 Sep 2013</em><br><br>如果你深信销售就是你产品成功的制胜法宝的话，那么如果我说大部分初创企业在还没有把它们伟大的产品推向市场进行销售之前就已经把钱给烧光而铩羽而归的话，元芳，你怎么看呢？假如你面向的是一个爆炸性快速增长的市场，你需要找到一个打造一个伟大产品的方式的话，元芳，你又怎么看呢？<br><br>打造一个伟大的产品是很困难的，如果你没有一个很好的去分析产品和功能的一个可行模型的话会让这种困难更雪上加霜。如果没有这个模型，你将会永无停歇的受困于产品功能点的漩涡中，这就好比在黑暗中摸索着靠感觉进行射击。当然不排除有那么一小部分人可以命中目标获得成功，因为他们从一开始就有着异于常人的对产品的直觉。但是，大部分我们这种普通人都不会一开始就具备这种超能力。<br><br>我一开始时对产品的直觉就非常糟糕(更糟的是自己并没有察觉到)。在过去的3年时间里，当我每天盯着我们的用户矩阵图查看，试图创造出一个反馈循环(feedback loop)来训练自己的大脑来找到如何打造一个好产品的模式。幸运的是最终我终于变得非常擅长于预测判断一个功能点对产品造成的冲击，所以我从当时就开始去考虑建立一个模型来尝试把我所领悟到的这方面的知识给捕捉下来分享给大家。<br><br><em>［1］我这里的意思并不是想暗示说找到一个好的市场会比打造一个产品容易。事实上，这两者应该反过来，相比找到一个好的市场，产品管理是显得相当的容易的事情，所以这里我才打算先把这个问题跟解决掉而已。要成功，除了需要一个伟大的产品和快速增长的市场之外，还有很多其他的方面，如发布，经济学，受管制的市场，以及其他。但是一个初创企业因为这些原因而以失败告终的情况比起因为选择了一个小众市场或者没有办法及时的往市场推出一个伟大产品而把企业作死的情况简直是小巫见大巫了。</em><br><br>———未完待续———-<br><br>引用英文原文：<a href="http://www.defmacro.org/2013/09/26/products.html" target="_blank" rel="external">http://www.defmacro.org/2013/09/26/products.html</a><br><br>作/译者：天地会珠海分舵<br><br>微信知识共享公众号：<strong>TechGoGoGo</strong><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/01/e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e4-b8-80-e4-b8-aa-e4-bc-9f-e5-a4-a7-e7-9a-84-e4-ba-a7-e5-93-811-e5-bc-95-e8-a8-80/" data-id="cj56dkqoj00aayqu2l96ivcom" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ThinkDB/">ThinkDB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-88-9d-e5-88-9b-e4-bc-81-e4-b8-9a-e4-b8-ba-e4-bd-95-e5-a4-9a-e4-bb-a5-e5-a4-b1-e8-b4-a5-e5-91-8a-e7-bb-88" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/01/e5-88-9d-e5-88-9b-e4-bc-81-e4-b8-9a-e4-b8-ba-e4-bd-95-e5-a4-9a-e4-bb-a5-e5-a4-b1-e8-b4-a5-e5-91-8a-e7-bb-88/" class="article-date">
-  <time datetime="2015-03-01T13:58:00.000Z" itemprop="datePublished">2015-03-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/创业/">创业</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/01/e5-88-9d-e5-88-9b-e4-bc-81-e4-b8-9a-e4-b8-ba-e4-bd-95-e5-a4-9a-e4-bb-a5-e5-a4-b1-e8-b4-a5-e5-91-8a-e7-bb-88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/01/e5-88-9d-e5-88-9b-e4-bc-81-e4-b8-9a-e4-b8-ba-e4-bd-95-e5-a4-9a-e4-bb-a5-e5-a4-b1-e8-b4-a5-e5-91-8a-e7-bb-88/">初创企业为何多以失败告终</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/01/e5-88-9d-e5-88-9b-e4-bc-81-e4-b8-9a-e4-b8-ba-e4-bd-95-e5-a4-9a-e4-bb-a5-e5-a4-b1-e8-b4-a5-e5-91-8a-e7-bb-88/" itemprop="url">初创企业为何多以失败告终</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-01T21:58:00+08:00">
+                2015-03-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br># 关于作者<br><br><em> </em> <em><br><br>我叫Slava Akhmechet，本人是 <a href="http://www.rethinkdb.com/" target="_blank" rel="external">RethinkDB</a> 的创始人之一，RethinkDB是一个设计来帮助开发者和运营团队来处理无结构数据的一个开源的分布式数据库，用户可以使用它来作为数据库来打造自己的应用。<br><br># 你的初创企业为何以失败告终
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br># 关于作者<br><br><em> </em> <em><br><br>我叫Slava Akhmechet，本人是 <a href="http://www.rethinkdb.com/" target="_blank" rel="external">RethinkDB</a> 的创始人之一，RethinkDB是一个设计来帮助开发者和运营团队来处理无结构数据的一个开源的分布式数据库，用户可以使用它来作为数据库来打造自己的应用。<br><br># 你的初创企业为何以失败告终
 
 </em> <em> </em><br><br>29 Jan 2014<br><br>大量的文化智慧告诉我们一个初创企业以失败告终的原因数不胜数。比如没有人想要这样的产品；市场太小；猪一样的队友；经济环境不景气；钱烧光了等等。<br><br>这些说法都是对的，但说的都是结果，并不是原因。<br><br>其实说白了一个初创企业做死了的原因有两个，而这两个原因人们却经常把它们给忽略掉:<br><br><em>   你知道有些东西不对头，但你不知道如何去处理。
 </em>   你知道有些东西不对劲，且你知道如何去处理，但因为你自身的恐惧感你没有去及时处理[1]。<br><br>我在刚开始创业那两年创立的一个公司所犯的错误95％都落在了上面提及的第二点上面。开始几年我花了非常多的时间去跨越这些错误带给我的恐惧，那是我一段精神上极度痛苦的时期。事后诸葛亮的说，也正是当时创立企业的过程给我带来了一些非常好的经验，其中之一就是让我如今有足够的勇气来去解决我认为是错误的事情。<br><br>当然，我现在还是在犯不少的错误，但现在更多的是因为我没有足够的知识背景去解决这些问题 - 这让我非常抓狂。但至少这不再会让我痛恨我自己了。因为我知识不足而失败？嗯，我觉得这还能接受；因为我知道问题所在而没有足够的勇气去解决它而失败？这将会是你一辈子的梦魇！<br><br>下面看看Quora上的一些创业问题：<br><br><em>   我是不是该不跟这班人玩了？我的CEO合伙人到现在还没有给我们募来任何的资金，也没有带来就算丁点的用户。
 </em>   我该如何告知我的合伙人其实他并不是一个称职的合作伙伴？<br><em>   是否需要帮助：该如何处理一个非常懒惰且没心没肺的员工呢？
 </em>   你又是如何对待一个没心没肺的员工的呢？<br><br>大家可以看到，这些问题的作者其实都已经知道问题所在的了，只是它们并没有采取行动！你要知道，当今的世道，去做一件你认为是正确的事情其实是有难度的，是非常困难的！<br><br>每个人都需要一定的时间才能获取这种勇气。这没有问题，只要你别花个几年的时间进去就行了。你越早面对你的恐惧感，你就越早能超越自己。这是你能获得闯进成功大联盟阵营的机会的唯一办法。<br><br><em>[1]另外一个可能性是你并不知道有某些地方存在问题。但这种原因存在的可能性几乎为零。创业者通常都是个偏执狂，如果存在问题的话它们老早就能嗅出来了。</em><br><br><em> </em> <em><br><br>引用英文原文：<a href="http://www.defmacro.org/2014/01/29/why-startups-fail.html" target="_blank" rel="external">http://www.defmacro.org/2014/01/29/why-startups-fail.html</a><br><br>作/译者：天地会珠海分舵<br><br>微信公众号：<em>*TechGoGoGo</em></em><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/01/e5-88-9d-e5-88-9b-e4-bc-81-e4-b8-9a-e4-b8-ba-e4-bd-95-e5-a4-9a-e4-bb-a5-e5-a4-b1-e8-b4-a5-e5-91-8a-e7-bb-88/" data-id="cj56dkqn0007jyqu2mqlzd9fo" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创业/">创业</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-a6-82-e4-bd-95-e5-88-a4-e6-96-ad-e4-bd-a0-e7-9a-84-e5-88-9d-e5-88-9b-e4-bc-81-e4-b8-9a-e6-98-af-e5-90-a6-e6-9c-89-e5-8b-9f-e8-b5-84-e6-bd-9c-e5-8a-9b" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/03/01/e5-a6-82-e4-bd-95-e5-88-a4-e6-96-ad-e4-bd-a0-e7-9a-84-e5-88-9d-e5-88-9b-e4-bc-81-e4-b8-9a-e6-98-af-e5-90-a6-e6-9c-89-e5-8b-9f-e8-b5-84-e6-bd-9c-e5-8a-9b/" class="article-date">
-  <time datetime="2015-03-01T12:25:00.000Z" itemprop="datePublished">2015-03-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/创业/">创业</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/01/e5-a6-82-e4-bd-95-e5-88-a4-e6-96-ad-e4-bd-a0-e7-9a-84-e5-88-9d-e5-88-9b-e4-bc-81-e4-b8-9a-e6-98-af-e5-90-a6-e6-9c-89-e5-8b-9f-e8-b5-84-e6-bd-9c-e5-8a-9b/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/01/e5-a6-82-e4-bd-95-e5-88-a4-e6-96-ad-e4-bd-a0-e7-9a-84-e5-88-9d-e5-88-9b-e4-bc-81-e4-b8-9a-e6-98-af-e5-90-a6-e6-9c-89-e5-8b-9f-e8-b5-84-e6-bd-9c-e5-8a-9b/">如何判断你的初创企业是否有募资潜力</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/03/01/e5-a6-82-e4-bd-95-e5-88-a4-e6-96-ad-e4-bd-a0-e7-9a-84-e5-88-9d-e5-88-9b-e4-bc-81-e4-b8-9a-e6-98-af-e5-90-a6-e6-9c-89-e5-8b-9f-e8-b5-84-e6-bd-9c-e5-8a-9b/" itemprop="url">如何判断你的初创企业是否有募资潜力</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-01T20:25:00+08:00">
+                2015-03-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150301202014006" alt="这里写图片描述"><br><br>你是否曾经考虑过优质的投资商真正寻找一个初创企业时是如何考虑该企业是否真正值得去投钱进去呢？<a href="http://www.rightclickcapital.com/" target="_blank" rel="external">Right Click Capital</a>的合作伙伴和<a href="http://fi.co/apply/sydney/blog" target="_blank" rel="external">Sydney Founder Institute</a>的联合懂事<a href="https://twitter.com/benjaminchong" target="_blank" rel="external">Benjamin Chong</a>在文章“<a href="http://www.brw.com.au/p/business/three_ways_to_test_if_your_start_lRbTuRKjl7Muy4sGAFHBcL" target="_blank" rel="external">3个问题足以验证你的初创企业是否有募资潜力</a>“打造了3个验证性问题来帮助你解决这个问题<br><br>很多企业家都觉得只要他们的企业获得了投资一切问题都能解决了，但是你需要资金跟你的企业是否值得别人投资是两码事。是否值得投资说的是你的初创企业是否有吸引融资来壮大你的生意的潜力。所有的初创企业都需要一定程度的投资资金来生存下去，但并不是所有的都值得去投。<br><br>那么你的初创企业是否值得被投资呢？请看下面Benjamin Chong 针对这个问题是怎么说的。<br><br># 1. 你的初创企业是否真的在解决一个存在的问题？<br><br><em> </em> <em><br><br>当开一个初创公司的时候，你要清醒的认识到在你开始募资之前，你的公司必须给这个世界提供一个真正存在的价值，至少是可以作为提供价值的一部分存在。下面是你需要考虑的一些问题：
+      
+
+      
+        
+          
+            <div id="article_content" class="article_content">&#13;<br>        <div class="markdown_views"><br><br><img src="http://img.blog.csdn.net/20150301202014006" alt="这里写图片描述"><br><br>你是否曾经考虑过优质的投资商真正寻找一个初创企业时是如何考虑该企业是否真正值得去投钱进去呢？<a href="http://www.rightclickcapital.com/" target="_blank" rel="external">Right Click Capital</a>的合作伙伴和<a href="http://fi.co/apply/sydney/blog" target="_blank" rel="external">Sydney Founder Institute</a>的联合懂事<a href="https://twitter.com/benjaminchong" target="_blank" rel="external">Benjamin Chong</a>在文章“<a href="http://www.brw.com.au/p/business/three_ways_to_test_if_your_start_lRbTuRKjl7Muy4sGAFHBcL" target="_blank" rel="external">3个问题足以验证你的初创企业是否有募资潜力</a>“打造了3个验证性问题来帮助你解决这个问题<br><br>很多企业家都觉得只要他们的企业获得了投资一切问题都能解决了，但是你需要资金跟你的企业是否值得别人投资是两码事。是否值得投资说的是你的初创企业是否有吸引融资来壮大你的生意的潜力。所有的初创企业都需要一定程度的投资资金来生存下去，但并不是所有的都值得去投。<br><br>那么你的初创企业是否值得被投资呢？请看下面Benjamin Chong 针对这个问题是怎么说的。<br><br># 1. 你的初创企业是否真的在解决一个存在的问题？<br><br><em> </em> <em><br><br>当开一个初创公司的时候，你要清醒的认识到在你开始募资之前，你的公司必须给这个世界提供一个真正存在的价值，至少是可以作为提供价值的一部分存在。下面是你需要考虑的一些问题：
 
 </em>   你的初创企业需要解决的是什么问题？<br><em>   这是一个真实具体的问题还是一个感知性的问题？
 </em>   有没有潜在用户已经验证你真正的把该问题解决了？<br><em>   该问题的市场规模有多大？&gt; ”在上一个星期，我出席了一个创意讨论，该创意所做的事情是提供一个个人电子设备来帮助人们在商场收银台进行付款。这个创意听上去挺有意思的，只是我并没有看到该创意究竟解决了一个什么问题“<br><br># 2. 你是否拥有一支杀敌制胜的大军
@@ -504,131 +1619,305 @@
 
 </em>   你现在拥有用户或客户吗？<br><em>   用户增长率几何呢？
 </em>   你是否有从你的客户购买你的产品或者服务中获得好的回报？&gt; “投资商需要看到有客户追捧你的产品，这样他们才能确定你的企业是否真的是可行的。是否受到追捧证明了你的产品或者服务是否真的有客户需要。“<br><br><em> </em> <em><br><br>引用英文原文：<a href="http://fi.co/posts/13491" target="_blank" rel="external">http://fi.co/posts/13491</a><br><br>作/译者：天地会珠海分舵<br><br>微信公众号：<em>*TechGoGoGo</em></em><br><br>CSDN：<a href="http://blog.csdn.net/zhubaitian" target="_blank" rel="external">http://blog.csdn.net/zhubaitian</a><br></div>&#13;<br>        <script type="text/javascript">&lt;![CDATA[<br>            $(function () {<br>                $(‘pre.prettyprint code’).each(function () {<br>                    var lines = $(this).text().split(‘n’).length;<br>                    var $numbering = $(‘<ul/>‘).addClass(‘pre-numbering’).hide();<br>                    $(this).addClass(‘has-numbering’).parent().append($numbering);<br>                    for (i = 1; i &lt;= lines; i++) {<br>                        $numbering.append($(‘<li/>‘).text(i));<br>                    };<br>                    $numbering.fadeIn(1700);<br>                });<br>            });<br>        ]]&gt;</script></div>
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/01/e5-a6-82-e4-bd-95-e5-88-a4-e6-96-ad-e4-bd-a0-e7-9a-84-e5-88-9d-e5-88-9b-e4-bc-81-e4-b8-9a-e6-98-af-e5-90-a6-e6-9c-89-e5-8b-9f-e8-b5-84-e6-bd-9c-e5-8a-9b/" data-id="cj56dkqoo00amyqu2v8ix0jej" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Startup/">Startup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/初创企业/">初创企业</a></li></ul>
 
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-  </div>
+  </article>
+
+
+    
+  </section>
+
   
-</article>
-
-
-  
-
-
-  <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/page/18/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><span class="page-number current">19</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/20/">__('next') &raquo;</a>
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/18/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><span class="page-number current">19</span><a class="page-number" href="/page/20/">20</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/20/"><i class="fa fa-angle-right"></i></a>
   </nav>
-</section>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
         
-          <aside id="sidebar">
+          
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/">Hacker News</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/Swift/">Swift</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/测试自动化/">测试自动化</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/《从0到1》/">《从0到1》</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/《从0到1》/创业/">创业</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/">产品</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/">创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/技术/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/设计/">设计</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/资讯/">资讯</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/风投/">风投</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/技术/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/设计/">设计</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/">创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/创业/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/资讯/">资讯</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/风投/">风投</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/技术/设计/">设计</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/资讯/">资讯</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/设计/">设计</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/设计/资讯/">资讯</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/风投/">风投</a></li></ul>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
 
-
-  
+  <aside id="sidebar" class="sidebar">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ABR/">ABR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ADB/">ADB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/API/">API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Altair/">Altair</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHut/">GitHut</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GoDaddy/">GoDaddy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5/">HTML5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hacker-News/">Hacker News</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IoT/">IoT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JanOS/">JanOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenVPN/">OpenVPN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Phonegap/">Phonegap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React-Native/">React Native</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RethinkDB/">RethinkDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Silver/">Silver</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Startup/">Startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swift/">Swift</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ThinkDB/">ThinkDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/facebook/">facebook</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/">ios</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ownCloud/">ownCloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/paul-graham/">paul-graham</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/saas/">saas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sandstorm/">sandstorm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssl/">ssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows-10/">windows 10</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wireshark/">wireshark</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress/">wordpress</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/youtube/">youtube</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/三个木桶模型/">三个木桶模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/三星/">三星</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/主题/">主题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/云/">云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网/">互联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网创业/">互联网创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/产品/">产品</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/产品设计/">产品设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/从0到1/">从0到1</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/信息/">信息</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业/">创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业-先行者优势/">创业-先行者优势</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业使命/">创业使命</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业家/">创业家</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业教父/">创业教父</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业环境/">创业环境</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创意/">创意</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创投/">创投</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/初创企业/">初创企业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/利基应用/">利基应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/利益相关者/">利益相关者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/加密/">加密</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原生应用/">原生应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/命令行/">命令行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/大数据/">大数据</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/天使投资/">天使投资</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安全技术/">安全技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/展销/">展销</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/广播/">广播</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/应用/">应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/微软/">微软</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/技术趋势/">技术趋势</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/抓包/">抓包</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/智能设备/">智能设备</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派/">树莓派</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派2代/">树莓派2代</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模型/">模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模式/">模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/监控技术/">监控技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/破解/">破解</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/硅谷/">硅谷</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/私有云/">私有云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/科技/">科技</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/端口转发/">端口转发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/简书/">简书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程语言/">编程语言</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网络安全/">网络安全</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自主博客/">自主博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/芯片/">芯片</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虹膜扫描/">虹膜扫描</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/视频编辑/">视频编辑</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/跨平台/">跨平台</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/跨平台应用开发/">跨平台应用开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/迭代/">迭代</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/隐私/">隐私</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/项目构建/">项目构建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/风投/">风投</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/黑客/">黑客</a></li></ul>
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="kzlathander" />
+          <p class="site-author-name" itemprop="name">kzlathander</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">235</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">95</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
     </div>
-  </div>
+  </aside>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/ABR/" style="font-size: 10px;">ABR</a> <a href="/tags/ADB/" style="font-size: 10px;">ADB</a> <a href="/tags/API/" style="font-size: 10px;">API</a> <a href="/tags/Altair/" style="font-size: 10px;">Altair</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/GitHut/" style="font-size: 10px;">GitHut</a> <a href="/tags/GoDaddy/" style="font-size: 10px;">GoDaddy</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTML5/" style="font-size: 11.43px;">HTML5</a> <a href="/tags/Hacker-News/" style="font-size: 10px;">Hacker News</a> <a href="/tags/IoT/" style="font-size: 10px;">IoT</a> <a href="/tags/JanOS/" style="font-size: 10px;">JanOS</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/OpenVPN/" style="font-size: 10px;">OpenVPN</a> <a href="/tags/Phonegap/" style="font-size: 10px;">Phonegap</a> <a href="/tags/React-Native/" style="font-size: 10px;">React Native</a> <a href="/tags/RethinkDB/" style="font-size: 11.43px;">RethinkDB</a> <a href="/tags/Silver/" style="font-size: 10px;">Silver</a> <a href="/tags/Startup/" style="font-size: 10px;">Startup</a> <a href="/tags/Swift/" style="font-size: 10px;">Swift</a> <a href="/tags/ThinkDB/" style="font-size: 10px;">ThinkDB</a> <a href="/tags/docker/" style="font-size: 12.86px;">docker</a> <a href="/tags/facebook/" style="font-size: 11.43px;">facebook</a> <a href="/tags/ios/" style="font-size: 10px;">ios</a> <a href="/tags/ownCloud/" style="font-size: 10px;">ownCloud</a> <a href="/tags/paul-graham/" style="font-size: 10px;">paul-graham</a> <a href="/tags/saas/" style="font-size: 15.71px;">saas</a> <a href="/tags/sandstorm/" style="font-size: 15.71px;">sandstorm</a> <a href="/tags/ssl/" style="font-size: 10px;">ssl</a> <a href="/tags/windows-10/" style="font-size: 10px;">windows 10</a> <a href="/tags/wireshark/" style="font-size: 10px;">wireshark</a> <a href="/tags/wordpress/" style="font-size: 10px;">wordpress</a> <a href="/tags/youtube/" style="font-size: 10px;">youtube</a> <a href="/tags/三个木桶模型/" style="font-size: 11.43px;">三个木桶模型</a> <a href="/tags/三星/" style="font-size: 10px;">三星</a> <a href="/tags/主题/" style="font-size: 10px;">主题</a> <a href="/tags/云/" style="font-size: 14.29px;">云</a> <a href="/tags/互联网/" style="font-size: 14.29px;">互联网</a> <a href="/tags/互联网创业/" style="font-size: 12.86px;">互联网创业</a> <a href="/tags/产品/" style="font-size: 17.14px;">产品</a> <a href="/tags/产品设计/" style="font-size: 10px;">产品设计</a> <a href="/tags/从0到1/" style="font-size: 18.57px;">从0到1</a> <a href="/tags/信息/" style="font-size: 10px;">信息</a> <a href="/tags/创业/" style="font-size: 20px;">创业</a> <a href="/tags/创业-先行者优势/" style="font-size: 10px;">创业-先行者优势</a> <a href="/tags/创业使命/" style="font-size: 10px;">创业使命</a> <a href="/tags/创业家/" style="font-size: 10px;">创业家</a> <a href="/tags/创业教父/" style="font-size: 10px;">创业教父</a> <a href="/tags/创业环境/" style="font-size: 11.43px;">创业环境</a> <a href="/tags/创意/" style="font-size: 12.86px;">创意</a> <a href="/tags/创投/" style="font-size: 10px;">创投</a> <a href="/tags/初创企业/" style="font-size: 10px;">初创企业</a> <a href="/tags/利基应用/" style="font-size: 10px;">利基应用</a> <a href="/tags/利益相关者/" style="font-size: 10px;">利益相关者</a> <a href="/tags/加密/" style="font-size: 11.43px;">加密</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/原生应用/" style="font-size: 10px;">原生应用</a> <a href="/tags/命令行/" style="font-size: 10px;">命令行</a> <a href="/tags/大数据/" style="font-size: 10px;">大数据</a> <a href="/tags/天使投资/" style="font-size: 10px;">天使投资</a> <a href="/tags/安全技术/" style="font-size: 10px;">安全技术</a> <a href="/tags/展销/" style="font-size: 11.43px;">展销</a> <a href="/tags/广播/" style="font-size: 10px;">广播</a> <a href="/tags/应用/" style="font-size: 11.43px;">应用</a> <a href="/tags/微软/" style="font-size: 10px;">微软</a> <a href="/tags/技术趋势/" style="font-size: 10px;">技术趋势</a> <a href="/tags/抓包/" style="font-size: 10px;">抓包</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/智能设备/" style="font-size: 10px;">智能设备</a> <a href="/tags/树莓派/" style="font-size: 11.43px;">树莓派</a> <a href="/tags/树莓派2代/" style="font-size: 10px;">树莓派2代</a> <a href="/tags/模型/" style="font-size: 10px;">模型</a> <a href="/tags/模式/" style="font-size: 10px;">模式</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/监控技术/" style="font-size: 10px;">监控技术</a> <a href="/tags/破解/" style="font-size: 10px;">破解</a> <a href="/tags/硅谷/" style="font-size: 10px;">硅谷</a> <a href="/tags/私有云/" style="font-size: 10px;">私有云</a> <a href="/tags/科技/" style="font-size: 10px;">科技</a> <a href="/tags/端口转发/" style="font-size: 10px;">端口转发</a> <a href="/tags/简书/" style="font-size: 10px;">简书</a> <a href="/tags/编程语言/" style="font-size: 10px;">编程语言</a> <a href="/tags/网络安全/" style="font-size: 10px;">网络安全</a> <a href="/tags/自主博客/" style="font-size: 10px;">自主博客</a> <a href="/tags/芯片/" style="font-size: 10px;">芯片</a> <a href="/tags/虹膜扫描/" style="font-size: 10px;">虹膜扫描</a> <a href="/tags/视频编辑/" style="font-size: 10px;">视频编辑</a> <a href="/tags/跨平台/" style="font-size: 11.43px;">跨平台</a> <a href="/tags/跨平台应用开发/" style="font-size: 10px;">跨平台应用开发</a> <a href="/tags/迭代/" style="font-size: 10px;">迭代</a> <a href="/tags/隐私/" style="font-size: 10px;">隐私</a> <a href="/tags/项目构建/" style="font-size: 10px;">项目构建</a> <a href="/tags/风投/" style="font-size: 10px;">风投</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/04/13/create-new-business-model/">开辟新战场，打造新的商业模式</a>
-          </li>
-        
-          <li>
-            <a href="/2016/01/31/10-secret-facts-about-apples-product-design/">苹果产品设计中鲜为人知的10个细节</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/23/nodeos-the-javascript-based-operating-system/">NodeOS:一个用JavaScript写出来的操作系统</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/14/five-things-you-need-to-know-about-hadoop-v-apache-spark/">2分钟读懂大数据框架Hadoop和Spark的异同</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/13/its-actually-open-source-software-thats-eating-the-world-1/">究竟是谁在吞噬着这个世界</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
         
       </div>
-      <footer id="footer">
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kzlathander</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>

@@ -1,15 +1,103 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+
+
+
   
-  <title>都说快速迭代反馈，问题是你的反馈真有效吗？ | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="大家有做过产品的话，无论是成功还是失败，应该都深有感触：往往我们无论什么情况都去综合考虑所有的用户反馈，其实这是不现实，也不正确的。而去满足所有用户的请求更是一个非常愚蠢的行为。当你在开展一个新的项目，特别是当你在接手另外一个产品的开发的时候，往往我们都倾向于先去对所有的用户进行调研，以便找出产品功能该怎么去定位。而我们的做法往往却是往着错误的方向前行的。事实上我们获取用户反馈的过程中反反复复犯的">
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.proxy.ustclug.org/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="大家有做过产品的话，无论是成功还是失败，应该都深有感触：往往我们无论什么情况都去综合考虑所有的用户反馈，其实这是不现实，也不正确的。而去满足所有用户的请求更是一个非常愚蠢的行为。当你在开展一个新的项目，特别是当你在接手另外一个产品的开发的时候，往往我们都倾向于先去对所有的用户进行调研，以便找出产品功能该怎么去定位。而我们的做法往往却是往着错误的方向前行的。事实上我们获取用户反馈的过程中反反复复犯的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="都说快速迭代反馈，问题是你的反馈真有效吗？">
 <meta property="og:url" content="http://yoursite.com/2015/04/03/e9-83-bd-e8-af-b4-e5-bf-ab-e9-80-9f-e8-bf-ad-e4-bb-a3-e5-8f-8d-e9-a6-88-ef-bc-8c-e9-97-ae-e9-a2-98-e6-98-af-e4-bd-a0-e7-9a-84-e5-8f-8d-e9-a6-88-e7-9c-9f-e6-9c-89-e6-95-88-e5-90-97-ef-bc-9f/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="科技向前冲">
 <meta property="og:description" content="大家有做过产品的话，无论是成功还是失败，应该都深有感触：往往我们无论什么情况都去综合考虑所有的用户反馈，其实这是不现实，也不正确的。而去满足所有用户的请求更是一个非常愚蠢的行为。当你在开展一个新的项目，特别是当你在接手另外一个产品的开发的时候，往往我们都倾向于先去对所有的用户进行调研，以便找出产品功能该怎么去定位。而我们的做法往往却是往着错误的方向前行的。事实上我们获取用户反馈的过程中反反复复犯的">
 <meta property="og:image" content="http://techgogogo.com/wp-content/uploads/2015/04/feedback.png">
 <meta property="og:image" content="http://43y3qy2bx0ks2g9x564339n2.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/All-Users.png">
@@ -22,79 +110,283 @@
 <meta name="twitter:title" content="都说快速迭代反馈，问题是你的反馈真有效吗？">
 <meta name="twitter:description" content="大家有做过产品的话，无论是成功还是失败，应该都深有感触：往往我们无论什么情况都去综合考虑所有的用户反馈，其实这是不现实，也不正确的。而去满足所有用户的请求更是一个非常愚蠢的行为。当你在开展一个新的项目，特别是当你在接手另外一个产品的开发的时候，往往我们都倾向于先去对所有的用户进行调研，以便找出产品功能该怎么去定位。而我们的做法往往却是往着错误的方向前行的。事实上我们获取用户反馈的过程中反反复复犯的">
 <meta name="twitter:image" content="http://techgogogo.com/wp-content/uploads/2015/04/feedback.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'kzlathander'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2015/04/03/e9-83-bd-e8-af-b4-e5-bf-ab-e9-80-9f-e8-bf-ad-e4-bb-a3-e5-8f-8d-e9-a6-88-ef-bc-8c-e9-97-ae-e9-a2-98-e6-98-af-e4-bd-a0-e7-9a-84-e5-8f-8d-e9-a6-88-e7-9c-9f-e6-9c-89-e6-95-88-e5-90-97-ef-bc-9f/"/>
+
+
+
+
+
+  <title>都说快速迭代反馈，问题是你的反馈真有效吗？ | 科技向前冲</title>
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">科技向前冲</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-e9-83-bd-e8-af-b4-e5-bf-ab-e9-80-9f-e8-bf-ad-e4-bb-a3-e5-8f-8d-e9-a6-88-ef-bc-8c-e9-97-ae-e9-a2-98-e6-98-af-e4-bd-a0-e7-9a-84-e5-8f-8d-e9-a6-88-e7-9c-9f-e6-9c-89-e6-95-88-e5-90-97-ef-bc-9f" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/03/e9-83-bd-e8-af-b4-e5-bf-ab-e9-80-9f-e8-bf-ad-e4-bb-a3-e5-8f-8d-e9-a6-88-ef-bc-8c-e9-97-ae-e9-a2-98-e6-98-af-e4-bd-a0-e7-9a-84-e5-8f-8d-e9-a6-88-e7-9c-9f-e6-9c-89-e6-95-88-e5-90-97-ef-bc-9f/" class="article-date">
-  <time datetime="2015-04-03T01:59:10.000Z" itemprop="datePublished">2015-04-03</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/创业/">创业</a>
+        <p class="site-subtitle"></p>
+      
   </div>
 
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      都说快速迭代反馈，问题是你的反馈真有效吗？
-    </h1>
+</div>
+
+<nav class="site-nav">
   
 
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-startup">
+          <a href="/categories/创业" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-fire"></i> <br />
+            
+            创业
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-pm">
+          <a href="/categories/产品" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-mobile-phone"></i> <br />
+            
+            产品
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-oversea">
+          <a href="/categories/Hacker-News" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-leaf"></i> <br />
+            
+            海外
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-innovation">
+          <a href="/categories/创新" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />
+            
+            创新
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/03/e9-83-bd-e8-af-b4-e5-bf-ab-e9-80-9f-e8-bf-ad-e4-bb-a3-e5-8f-8d-e9-a6-88-ef-bc-8c-e9-97-ae-e9-a2-98-e6-98-af-e4-bd-a0-e7-9a-84-e5-8f-8d-e9-a6-88-e7-9c-9f-e6-9c-89-e6-95-88-e5-90-97-ef-bc-9f/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">都说快速迭代反馈，问题是你的反馈真有效吗？</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-03T09:59:10+08:00">
+                2015-04-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
       
         <div class="image"><br><div class="image-inner"><a href="http://techgogogo.com/wp-content/uploads/2015/04/feedback.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/feedback.png" alt="feedback"></a></div><br></div><br><div class="row row-main"><section class="col-lg-8 main-section"><br><div class="share hide-sm hide-md"></div><br><article class="content"><br><br>大家有做过产品的话，无论是成功还是失败，应该都深有感触：往往我们无论什么情况都去综合考虑所有的用户反馈，其实这是不现实，也不正确的。而去满足所有用户的请求更是一个非常愚蠢的行为。<br><br>当你在开展一个新的项目，特别是当你在接手另外一个产品的开发的时候，往往我们都倾向于先去对所有的用户进行调研，以便找出产品功能该怎么去定位。而我们的做法往往却是往着错误的方向前行的。事实上我们获取用户反馈的过程中反反复复犯的错误就有那么5个。当前很多成熟的工具都能让我们快速的得到用户的反馈(比如Intercom)，结果我们往往就会因为反馈来得太容易而有点得意忘形而乱开枪，为每个用户的诉求都去提供实现。<br><br>下面我们就好好看下这5个我们常犯的错误以及对应的解决方案。<br><br>&nbsp;<br><br># 1. 细化反馈获取对象<br><br><em> </em> *<br><br>&nbsp;<br><div class="post_image_wrapper"><img src="http://43y3qy2bx0ks2g9x564339n2.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/All-Users.png" alt=""></div><br><div class="post_image_wrapper">上图的英语按从左到右再从上到下的顺序是这样的：</div>
 
@@ -146,141 +438,356 @@
 <h1 id="4-偶发并不代表必然"><a href="#4-偶发并不代表必然" class="headerlink" title="4. 偶发并不代表必然"></a>4. 偶发并不代表必然</h1><div class="post_image_wrapper"><img src="http://43y3qy2bx0ks2g9x564339n2.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/Vocal-Minority.png" alt=""></div><br>俗语有云，偶发并不代表必然。当然，这并不能说一些偶发事件一点都不值得关注了。有些偶发事件其实跟容易去验证其可行性，我们去快速验证下就好了。<br><br>但，当有一天你发现有5个用户同时给你反馈说想在你的日历功能中增加一个事件提醒功能的时候，你不要立刻拍脑袋就去组建人员开始立项。你首要去做的是去确定这5个用户是否代表了所有其他的用户，你要去跟其他经常使用日历功能的用户进行交谈，听听他们是怎么说的。<br><br><strong>解决方案</strong>：先把偶然发生的请求当作一个假设，别急着去实现它，先去验证它是否真存在价值。一旦你发现它真的是一个痛点的时候，也别急于立马去“实现满足用户请求的方案”，你需要再挖深点。这就到了我们下面将要谈的最后这一点了。<br><br>&nbsp;<br><br># 5. 用户往往表达不清楚想要什么<br><br><div class="post_image_wrapper"><img src="http://43y3qy2bx0ks2g9x564339n2.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/horse.png" alt=""></div><br><div class="post_image_wrapper"></div><br><div class="post_image_wrapper"><strong>图左的对话是这样的</strong>：</div><br>&gt; <div class="post_image_wrapper"><strong>团队成员们好</strong>，</div><br>&gt;<br>&gt; <div class="post_image_wrapper">功能需求：你们是在打造一匹快马吗？如果是的话，该马可以在预期计划中造出来吗？</div><br>&gt;<br>&gt; <div class="post_image_wrapper">此致敬礼，Dave</div><br>&gt;<br>&gt; <div class="post_image_wrapper"></div><br>&gt;<br>&gt; <div class="post_image_wrapper"><strong>Dave</strong>,</div><br>&gt;<br>&gt; <div class="post_image_wrapper">你好啊。</div><br>&gt;<br>&gt; <div class="post_image_wrapper">我们已经把你的反馈需求纳入计划中了，我们将会在2015年第一季度把该更快的马交到您的手上。下图是该马的原型。</div><br><div class="post_image_wrapper"></div><br><strong>图右的对话是这样的：</strong><br>&gt; <div class="post_image_wrapper"><strong>团队成员们好</strong>，</div><br>&gt;<br>&gt; <div class="post_image_wrapper">功能需求：你们是在打造一匹快马吗？如果是的话，该马可以在预期计划中造出来吗？</div><br>&gt;<br>&gt; <div class="post_image_wrapper">此致敬礼，Dave</div><br>&gt;<br>&gt; <div class="post_image_wrapper"></div><br>&gt;<br>&gt; <div class="post_image_wrapper">Dave，</div><br>&gt;<br>&gt; <div class="post_image_wrapper">你好啊。很感谢你提出对马的速度的重要性非常感兴趣，你还有其他需要我们可以改进的吗？</div><br>&gt;<br>&gt; <div class="post_image_wrapper"></div><br>&gt;<br>&gt; <div class="post_image_wrapper"><strong>团队成员，</strong></div><br>&gt;<br>&gt; <div class="post_image_wrapper">速度当然是很重要的一点了，但总的来说可靠性和耐力也同样的重要了。一匹可以让我一天能从甘肃跑到北京的马对我来说就最好不过了，不然我要运到北京卖的切糕就过期了…</div><br>“信息传递的过程中很容易产生失真！”，一个很生动的诠释这种情况的例子就是：“当客户用手指指着月亮的时候，我们天真的产品经理往往就会伸出自己的中指好好观察，沉思该用户想表达的究竟是他的手指出了什么问题呢还是客户在伸出中指对自己进行侮辱。而事实上用户真实想要的是月亮”。<br><br>上图的“快马故事”常常被用来描述那些没有认真倾听客户反馈的情况。当中说明了，如果一个客户告诉你他想要一个更快的马的时候，他给你传递的信息就是仅仅告诉你“速度”是马进行运输过程中一个很重要的他想要的功能。然后你就会先入为主的围绕速度这个点展开漫长的开发。返回我们上一点所提到的日历这个例子，如果那几个用户同时提出来说该日历的已有事件功能过于复杂了，你可能就会耗费几个月的时间重新去打造一个流畅用户体验的事件表单功能给这些用户重新体验，几经改版后，最终你发觉其实问题并没有解决。最终你再去找其他所有使用该日历功能的用户获取反馈的时候，你发觉痛点原来并不是来自这些事件表单的复杂度，而是在这些事件的可复用性上面。所以你最终的解决该痛点的办法其实只需要1个星期的时间来提供事件循环和事件复制的功能就完事了。<br><br><strong>解决方案</strong>：请清楚认识到，客户提出的功能需求其实掺杂着他们自己对设计的理解，对你的产品的熟悉程度，以及他们对自己所认为的痛点的理解。他们其实并不清楚你的产品的愿景是什么，你正在完善功能的方案是怎么一回事，以及什么样的技术是最可行的。所以这就是为什么你往往需要在用户的需求上再做一层到两层的抽象提炼，直到发现真正的用户痛点，这样才能让所有的用户都受惠。<br><br>当然，在一些已经成为共识的功能点上面，我们并不需要每次都检查上面的几点用户反馈才能行动，比如在我们中国，你一个日历工具加上个农历功能我相信没有多少用户会反对的。<br><br>但，在其他需要用户协助才能确定的功能上面，请你还是按照上面的几步跟你的客户好好互动并获得有效的反馈进行分析，这会让你的行动变得更理智，更聪明，更敏捷。<br><br>&nbsp;<br><br><em> </em> <em><br><br>参考: <a href="http://blog.intercom.io/5-mistakes-we-all-make-with-product-feedback/" target="_blank" rel="external">http://blog.intercom.io/5-mistakes-we-all-make-with-product-feedback/</a><br><br><strong>版权</strong>:本作品采用[<span style="color: #993300;"><a href="http://creativecommons.org/licenses/by/3.0/cn/" target="_blank" rel="external">创作共用署名3.0中国大陆版许可证</a></span>], 若非授权，转发时切勿删除以下联系信息，否则追究相应责任。<br><br><em>*提醒</em></em>:更多最新文章将首发本人官网<a href="http://blog.csdn.net/zhubaitian/article/details/techgogogo.com" target="_blank" rel="external">www.techgogogo.com</a>和微信公众号:techgogogo。敬请大家期待。<br><br>&nbsp;<br><br>&nbsp;<br><br></article></section></div>
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/03/e9-83-bd-e8-af-b4-e5-bf-ab-e9-80-9f-e8-bf-ad-e4-bb-a3-e5-8f-8d-e9-a6-88-ef-bc-8c-e9-97-ae-e9-a2-98-e6-98-af-e4-bd-a0-e7-9a-84-e5-8f-8d-e9-a6-88-e7-9c-9f-e6-9c-89-e6-95-88-e5-90-97-ef-bc-9f/" data-id="cj56dkqtg00ihyqu263638b9f" class="article-share-link">Share</a>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/04/02/e4-b8-80-e5-bc-a0-e5-9b-be-e8-af-bb-e6-87-82-e7-b2-be-e7-9b-8a-e5-88-9b-e4-b8-9a-e4-b9-8b-e7-b2-be-e9-ab-93/" rel="next" title="一张图读懂精益创业之精髓">
+                <i class="fa fa-chevron-left"></i> 一张图读懂精益创业之精髓
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/04/05/e7-88-86-e6-96-99-ef-bc-9a-e8-8b-b9-e6-9e-9c-e6-9c-80-e6-96-b0-e7-9a-84-e7-9b-b8-e6-9c-ba-e8-ae-be-e8-ae-a1-e6-8a-80-e6-9c-af-e4-b9-9f-e8-ae-b8-e5-b0-86-e4-bc-9a-e9-a2-a0-e8-a6-86-e6-95-b4-e4-b8-aa/" rel="prev" title="爆料：苹果最新的相机设计技术也许将会颠覆整个行业">
+                爆料：苹果最新的相机设计技术也许将会颠覆整个行业 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
       
       
     </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
-  
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
-<nav id="article-nav">
-  
-    <a href="/2015/04/05/e7-88-86-e6-96-99-ef-bc-9a-e8-8b-b9-e6-9e-9c-e6-9c-80-e6-96-b0-e7-9a-84-e7-9b-b8-e6-9c-ba-e8-ae-be-e8-ae-a1-e6-8a-80-e6-9c-af-e4-b9-9f-e8-ae-b8-e5-b0-86-e4-bc-9a-e9-a2-a0-e8-a6-86-e6-95-b4-e4-b8-aa/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
+  </div>
+
+
+        </div>
         
-          爆料：苹果最新的相机设计技术也许将会颠覆整个行业
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="kzlathander" />
+          <p class="site-author-name" itemprop="name">kzlathander</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">235</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">95</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2-获取反馈不应是一次性的"><span class="nav-number">1.</span> <span class="nav-text">2. 获取反馈不应是一次性的</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-偶发并不代表必然"><span class="nav-number">2.</span> <span class="nav-text">4. 偶发并不代表必然</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
         
       </div>
-    </a>
-  
-  
-    <a href="/2015/04/02/e4-b8-80-e5-bc-a0-e5-9b-be-e8-af-bb-e6-87-82-e7-b2-be-e7-9b-8a-e5-88-9b-e4-b8-9a-e4-b9-8b-e7-b2-be-e9-ab-93-1/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">一张图读懂精益创业之精髓</div>
-    </a>
-  
-</nav>
+    </main>
 
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
   
-</article>
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kzlathander</span>
+</div>
 
-</section>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
         
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/">Hacker News</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/Swift/">Swift</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/测试自动化/">测试自动化</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/《从0到1》/">《从0到1》</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/《从0到1》/创业/">创业</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/">产品</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/">创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/技术/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/设计/">设计</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/资讯/">资讯</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/风投/">风投</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/技术/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/设计/">设计</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/">创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/创业/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/资讯/">资讯</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/风投/">风投</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/技术/设计/">设计</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/资讯/">资讯</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/设计/">设计</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/设计/资讯/">资讯</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/风投/">风投</a></li></ul>
-    </div>
-  </div>
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ABR/">ABR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ADB/">ADB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/API/">API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Altair/">Altair</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHut/">GitHut</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GoDaddy/">GoDaddy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5/">HTML5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hacker-News/">Hacker News</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IoT/">IoT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JanOS/">JanOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenVPN/">OpenVPN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Phonegap/">Phonegap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React-Native/">React Native</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RethinkDB/">RethinkDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Silver/">Silver</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Startup/">Startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swift/">Swift</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ThinkDB/">ThinkDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/facebook/">facebook</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/">ios</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ownCloud/">ownCloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/paul-graham/">paul-graham</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/saas/">saas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sandstorm/">sandstorm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssl/">ssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows-10/">windows 10</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wireshark/">wireshark</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress/">wordpress</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/youtube/">youtube</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/三个木桶模型/">三个木桶模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/三星/">三星</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/主题/">主题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/云/">云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网/">互联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网创业/">互联网创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/产品/">产品</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/产品设计/">产品设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/从0到1/">从0到1</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/信息/">信息</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业/">创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业-先行者优势/">创业-先行者优势</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业使命/">创业使命</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业家/">创业家</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业教父/">创业教父</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业环境/">创业环境</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创意/">创意</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创投/">创投</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/初创企业/">初创企业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/利基应用/">利基应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/利益相关者/">利益相关者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/加密/">加密</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原生应用/">原生应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/命令行/">命令行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/大数据/">大数据</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/天使投资/">天使投资</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安全技术/">安全技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/展销/">展销</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/广播/">广播</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/应用/">应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/微软/">微软</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/技术趋势/">技术趋势</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/抓包/">抓包</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/智能设备/">智能设备</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派/">树莓派</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派2代/">树莓派2代</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模型/">模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模式/">模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/监控技术/">监控技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/破解/">破解</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/硅谷/">硅谷</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/私有云/">私有云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/科技/">科技</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/端口转发/">端口转发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/简书/">简书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程语言/">编程语言</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网络安全/">网络安全</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自主博客/">自主博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/芯片/">芯片</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虹膜扫描/">虹膜扫描</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/视频编辑/">视频编辑</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/跨平台/">跨平台</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/跨平台应用开发/">跨平台应用开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/迭代/">迭代</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/隐私/">隐私</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/项目构建/">项目构建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/风投/">风投</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/黑客/">黑客</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/ABR/" style="font-size: 10px;">ABR</a> <a href="/tags/ADB/" style="font-size: 10px;">ADB</a> <a href="/tags/API/" style="font-size: 10px;">API</a> <a href="/tags/Altair/" style="font-size: 10px;">Altair</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/GitHut/" style="font-size: 10px;">GitHut</a> <a href="/tags/GoDaddy/" style="font-size: 10px;">GoDaddy</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTML5/" style="font-size: 11.43px;">HTML5</a> <a href="/tags/Hacker-News/" style="font-size: 10px;">Hacker News</a> <a href="/tags/IoT/" style="font-size: 10px;">IoT</a> <a href="/tags/JanOS/" style="font-size: 10px;">JanOS</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/OpenVPN/" style="font-size: 10px;">OpenVPN</a> <a href="/tags/Phonegap/" style="font-size: 10px;">Phonegap</a> <a href="/tags/React-Native/" style="font-size: 10px;">React Native</a> <a href="/tags/RethinkDB/" style="font-size: 11.43px;">RethinkDB</a> <a href="/tags/Silver/" style="font-size: 10px;">Silver</a> <a href="/tags/Startup/" style="font-size: 10px;">Startup</a> <a href="/tags/Swift/" style="font-size: 10px;">Swift</a> <a href="/tags/ThinkDB/" style="font-size: 10px;">ThinkDB</a> <a href="/tags/docker/" style="font-size: 12.86px;">docker</a> <a href="/tags/facebook/" style="font-size: 11.43px;">facebook</a> <a href="/tags/ios/" style="font-size: 10px;">ios</a> <a href="/tags/ownCloud/" style="font-size: 10px;">ownCloud</a> <a href="/tags/paul-graham/" style="font-size: 10px;">paul-graham</a> <a href="/tags/saas/" style="font-size: 15.71px;">saas</a> <a href="/tags/sandstorm/" style="font-size: 15.71px;">sandstorm</a> <a href="/tags/ssl/" style="font-size: 10px;">ssl</a> <a href="/tags/windows-10/" style="font-size: 10px;">windows 10</a> <a href="/tags/wireshark/" style="font-size: 10px;">wireshark</a> <a href="/tags/wordpress/" style="font-size: 10px;">wordpress</a> <a href="/tags/youtube/" style="font-size: 10px;">youtube</a> <a href="/tags/三个木桶模型/" style="font-size: 11.43px;">三个木桶模型</a> <a href="/tags/三星/" style="font-size: 10px;">三星</a> <a href="/tags/主题/" style="font-size: 10px;">主题</a> <a href="/tags/云/" style="font-size: 14.29px;">云</a> <a href="/tags/互联网/" style="font-size: 14.29px;">互联网</a> <a href="/tags/互联网创业/" style="font-size: 12.86px;">互联网创业</a> <a href="/tags/产品/" style="font-size: 17.14px;">产品</a> <a href="/tags/产品设计/" style="font-size: 10px;">产品设计</a> <a href="/tags/从0到1/" style="font-size: 18.57px;">从0到1</a> <a href="/tags/信息/" style="font-size: 10px;">信息</a> <a href="/tags/创业/" style="font-size: 20px;">创业</a> <a href="/tags/创业-先行者优势/" style="font-size: 10px;">创业-先行者优势</a> <a href="/tags/创业使命/" style="font-size: 10px;">创业使命</a> <a href="/tags/创业家/" style="font-size: 10px;">创业家</a> <a href="/tags/创业教父/" style="font-size: 10px;">创业教父</a> <a href="/tags/创业环境/" style="font-size: 11.43px;">创业环境</a> <a href="/tags/创意/" style="font-size: 12.86px;">创意</a> <a href="/tags/创投/" style="font-size: 10px;">创投</a> <a href="/tags/初创企业/" style="font-size: 10px;">初创企业</a> <a href="/tags/利基应用/" style="font-size: 10px;">利基应用</a> <a href="/tags/利益相关者/" style="font-size: 10px;">利益相关者</a> <a href="/tags/加密/" style="font-size: 11.43px;">加密</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/原生应用/" style="font-size: 10px;">原生应用</a> <a href="/tags/命令行/" style="font-size: 10px;">命令行</a> <a href="/tags/大数据/" style="font-size: 10px;">大数据</a> <a href="/tags/天使投资/" style="font-size: 10px;">天使投资</a> <a href="/tags/安全技术/" style="font-size: 10px;">安全技术</a> <a href="/tags/展销/" style="font-size: 11.43px;">展销</a> <a href="/tags/广播/" style="font-size: 10px;">广播</a> <a href="/tags/应用/" style="font-size: 11.43px;">应用</a> <a href="/tags/微软/" style="font-size: 10px;">微软</a> <a href="/tags/技术趋势/" style="font-size: 10px;">技术趋势</a> <a href="/tags/抓包/" style="font-size: 10px;">抓包</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/智能设备/" style="font-size: 10px;">智能设备</a> <a href="/tags/树莓派/" style="font-size: 11.43px;">树莓派</a> <a href="/tags/树莓派2代/" style="font-size: 10px;">树莓派2代</a> <a href="/tags/模型/" style="font-size: 10px;">模型</a> <a href="/tags/模式/" style="font-size: 10px;">模式</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/监控技术/" style="font-size: 10px;">监控技术</a> <a href="/tags/破解/" style="font-size: 10px;">破解</a> <a href="/tags/硅谷/" style="font-size: 10px;">硅谷</a> <a href="/tags/私有云/" style="font-size: 10px;">私有云</a> <a href="/tags/科技/" style="font-size: 10px;">科技</a> <a href="/tags/端口转发/" style="font-size: 10px;">端口转发</a> <a href="/tags/简书/" style="font-size: 10px;">简书</a> <a href="/tags/编程语言/" style="font-size: 10px;">编程语言</a> <a href="/tags/网络安全/" style="font-size: 10px;">网络安全</a> <a href="/tags/自主博客/" style="font-size: 10px;">自主博客</a> <a href="/tags/芯片/" style="font-size: 10px;">芯片</a> <a href="/tags/虹膜扫描/" style="font-size: 10px;">虹膜扫描</a> <a href="/tags/视频编辑/" style="font-size: 10px;">视频编辑</a> <a href="/tags/跨平台/" style="font-size: 11.43px;">跨平台</a> <a href="/tags/跨平台应用开发/" style="font-size: 10px;">跨平台应用开发</a> <a href="/tags/迭代/" style="font-size: 10px;">迭代</a> <a href="/tags/隐私/" style="font-size: 10px;">隐私</a> <a href="/tags/项目构建/" style="font-size: 10px;">项目构建</a> <a href="/tags/风投/" style="font-size: 10px;">风投</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/04/13/create-new-business-model/">开辟新战场，打造新的商业模式</a>
-          </li>
-        
-          <li>
-            <a href="/2016/01/31/10-secret-facts-about-apples-product-design/">苹果产品设计中鲜为人知的10个细节</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/23/nodeos-the-javascript-based-operating-system/">NodeOS:一个用JavaScript写出来的操作系统</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/14/five-things-you-need-to-know-about-hadoop-v-apache-spark/">2分钟读懂大数据框架Hadoop和Spark的异同</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/13/its-actually-open-source-software-thats-eating-the-world-1/">究竟是谁在吞噬着这个世界</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>

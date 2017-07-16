@@ -1,93 +1,411 @@
 <!DOCTYPE html>
-<html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.proxy.ustclug.org/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="科技向前冲">
 <meta property="og:url" content="http://yoursite.com/page/13/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="科技向前冲">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="科技向前冲">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'kzlathander'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/13/"/>
+
+
+
+
+
+  <title>科技向前冲</title>
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">科技向前冲</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-e4-b8-94-e7-9c-8b-e7-bc-96-e7-a8-8b-e9-a9-ac-e6-8b-89-e6-9d-be-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e5-85-ac-e5-8f-b8-e6-96-87-e5-8c-96-e5-92-8c-e5-bc-95-e5-8f-91-e5-88-9b-e6-96-b0-2" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/14/e4-b8-94-e7-9c-8b-e7-bc-96-e7-a8-8b-e9-a9-ac-e6-8b-89-e6-9d-be-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e5-85-ac-e5-8f-b8-e6-96-87-e5-8c-96-e5-92-8c-e5-bc-95-e5-8f-91-e5-88-9b-e6-96-b0-2/" class="article-date">
-  <time datetime="2015-04-14T08:30:32.000Z" itemprop="datePublished">2015-04-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/产品/">产品</a>►<a class="article-category-link" href="/categories/产品/创业/">创业</a>►<a class="article-category-link" href="/categories/产品/创业/技术/">技术</a>
+        <p class="site-subtitle"></p>
+      
   </div>
 
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/14/e4-b8-94-e7-9c-8b-e7-bc-96-e7-a8-8b-e9-a9-ac-e6-8b-89-e6-9d-be-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e5-85-ac-e5-8f-b8-e6-96-87-e5-8c-96-e5-92-8c-e5-bc-95-e5-8f-91-e5-88-9b-e6-96-b0-2/">且看编程马拉松如何打造公司文化和引发创新</a>
-    </h1>
+</div>
+
+<nav class="site-nav">
   
 
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-startup">
+          <a href="/categories/创业" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-fire"></i> <br />
+            
+            创业
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-pm">
+          <a href="/categories/产品" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-mobile-phone"></i> <br />
+            
+            产品
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-oversea">
+          <a href="/categories/Hacker-News" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-leaf"></i> <br />
+            
+            海外
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-innovation">
+          <a href="/categories/创新" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />
+            
+            创新
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/14/e4-b8-94-e7-9c-8b-e7-bc-96-e7-a8-8b-e9-a9-ac-e6-8b-89-e6-9d-be-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e5-85-ac-e5-8f-b8-e6-96-87-e5-8c-96-e5-92-8c-e5-bc-95-e5-8f-91-e5-88-9b-e6-96-b0-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/04/14/e4-b8-94-e7-9c-8b-e7-bc-96-e7-a8-8b-e9-a9-ac-e6-8b-89-e6-9d-be-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e5-85-ac-e5-8f-b8-e6-96-87-e5-8c-96-e5-92-8c-e5-bc-95-e5-8f-91-e5-88-9b-e6-96-b0-2/" itemprop="url">且看编程马拉松如何打造公司文化和引发创新</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-14T16:30:32+08:00">
+                2015-04-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/" itemprop="url" rel="index">
+                    <span itemprop="name">产品</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p><figure id="c648" class="graf--figure graf--first"></figure></p>
+      
+
+      
+        
+          
+            <p><figure id="c648" class="graf--figure graf--first"></figure></p>
 <p><div class="aspectRatioPlaceholder is-locked"><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*1QH5lHMRIc7iUjtz2oNrew.jpeg" alt=""></div><br></p>
 <blockquote>
 <p>编者注: 本文来自Uber的技术总监Pedram Keyani的一篇<a href="https://medium.com/@pedramkeyani/hacking-company-culture-1daa3be1d769" target="_blank" rel="external">博文</a>，中文版由天地会珠海分舵进行编译。全文以Facebook为例子作为切入点，描述了在互联网和软件公司中，编程马拉松是如何起到了塑造公司文化并催生创新的作用的。</p>
@@ -118,46 +436,161 @@
 <p><strong>版权</strong>:本作品采用[<a href="http://creativecommons.org/licenses/by/3.0/cn/" target="_blank" rel="external">创作共用署名3.0中国大陆版许可证</a>], 若非授权，转发时切勿删除以下联系信息，否则追究相应责任。本文首发<a href="http://www.huxiu.com/article/112676/1.html" target="_blank" rel="external">虎嗅</a>。</p>
 <p><strong>提醒</strong>:更多相关文章将请关注微信公众号:<strong>techgogogo</strong>或官网<a href="http://techgogogo.com/" target="_blank" rel="external">www.techgogogo.com</a>。</p>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/14/e4-b8-94-e7-9c-8b-e7-bc-96-e7-a8-8b-e9-a9-ac-e6-8b-89-e6-9d-be-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e5-85-ac-e5-8f-b8-e6-96-87-e5-8c-96-e5-92-8c-e5-bc-95-e5-8f-91-e5-88-9b-e6-96-b0-2/" data-id="cj56dkqi8001wyqu28h11cmxo" class="article-share-link">Share</a>
+
+    <div>
       
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e4-b8-94-e7-9c-8b-e7-bc-96-e7-a8-8b-e9-a9-ac-e6-8b-89-e6-9d-be-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e5-85-ac-e5-8f-b8-e6-96-87-e5-8c-96-e5-92-8c-e5-bc-95-e5-8f-91-e5-88-9b-e6-96-b0" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/14/e4-b8-94-e7-9c-8b-e7-bc-96-e7-a8-8b-e9-a9-ac-e6-8b-89-e6-9d-be-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e5-85-ac-e5-8f-b8-e6-96-87-e5-8c-96-e5-92-8c-e5-bc-95-e5-8f-91-e5-88-9b-e6-96-b0/" class="article-date">
-  <time datetime="2015-04-14T08:30:32.000Z" itemprop="datePublished">2015-04-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/产品/">产品</a>►<a class="article-category-link" href="/categories/产品/创业/">创业</a>►<a class="article-category-link" href="/categories/产品/创业/技术/">技术</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/14/e4-b8-94-e7-9c-8b-e7-bc-96-e7-a8-8b-e9-a9-ac-e6-8b-89-e6-9d-be-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e5-85-ac-e5-8f-b8-e6-96-87-e5-8c-96-e5-92-8c-e5-bc-95-e5-8f-91-e5-88-9b-e6-96-b0-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/14/e4-b8-94-e7-9c-8b-e7-bc-96-e7-a8-8b-e9-a9-ac-e6-8b-89-e6-9d-be-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e5-85-ac-e5-8f-b8-e6-96-87-e5-8c-96-e5-92-8c-e5-bc-95-e5-8f-91-e5-88-9b-e6-96-b0/">且看编程马拉松如何打造公司文化和引发创新</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/04/14/e4-b8-94-e7-9c-8b-e7-bc-96-e7-a8-8b-e9-a9-ac-e6-8b-89-e6-9d-be-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e5-85-ac-e5-8f-b8-e6-96-87-e5-8c-96-e5-92-8c-e5-bc-95-e5-8f-91-e5-88-9b-e6-96-b0-1/" itemprop="url">且看编程马拉松如何打造公司文化和引发创新</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-14T16:30:32+08:00">
+                2015-04-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/" itemprop="url" rel="index">
+                    <span itemprop="name">产品</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p><figure id="c648" class="graf--figure graf--first"></figure></p>
+      
+
+      
+        
+          
+            <p><figure id="c648" class="graf--figure graf--first"></figure></p>
 <p><div class="aspectRatioPlaceholder is-locked"><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*1QH5lHMRIc7iUjtz2oNrew.jpeg" alt=""></div><br></p>
 <blockquote>
 <p>编者注: 本文来自Uber的技术总监Pedram Keyani的一篇<a href="https://medium.com/@pedramkeyani/hacking-company-culture-1daa3be1d769" target="_blank" rel="external">博文</a>，中文版由天地会珠海分舵进行编译。全文以Facebook为例子作为切入点，描述了在互联网和软件公司中，编程马拉松是如何起到了塑造公司文化并催生创新的作用的。</p>
@@ -188,46 +621,150 @@
 <p><strong>版权</strong>:本作品采用[<a href="http://creativecommons.org/licenses/by/3.0/cn/" target="_blank" rel="external">创作共用署名3.0中国大陆版许可证</a>], 若非授权，转发时切勿删除以下联系信息，否则追究相应责任。本文首发<a href="http://www.huxiu.com/article/112676/1.html" target="_blank" rel="external">虎嗅</a>。</p>
 <p><strong>提醒</strong>:更多相关文章将请关注微信公众号:<strong>techgogogo</strong>或官网<a href="http://techgogogo.com/" target="_blank" rel="external">www.techgogogo.com</a>。</p>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/14/e4-b8-94-e7-9c-8b-e7-bc-96-e7-a8-8b-e9-a9-ac-e6-8b-89-e6-9d-be-e5-a6-82-e4-bd-95-e6-89-93-e9-80-a0-e5-85-ac-e5-8f-b8-e6-96-87-e5-8c-96-e5-92-8c-e5-bc-95-e5-8f-91-e5-88-9b-e6-96-b0/" data-id="cj56dkqhr001kyqu2n14ydtn1" class="article-share-link">Share</a>
+
+    <div>
       
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e8-bf-98-e6-9c-89-e8-b0-81-ef-bc-81-ef-bc-81-ef-bc-81-ef-bc-9f-e8-b0-81-e6-98-afuber-e4-b8-8b-e4-b8-80-e4-b8-aa-e8-a6-81-e9-a2-a0-e8-a6-86-e7-9a-84-e8-a1-8c-e4-b8-9a-ef-bc-9f-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/14/e8-bf-98-e6-9c-89-e8-b0-81-ef-bc-81-ef-bc-81-ef-bc-81-ef-bc-9f-e8-b0-81-e6-98-afuber-e4-b8-8b-e4-b8-80-e4-b8-aa-e8-a6-81-e9-a2-a0-e8-a6-86-e7-9a-84-e8-a1-8c-e4-b8-9a-ef-bc-9f-1/" class="article-date">
-  <time datetime="2015-04-14T08:25:14.000Z" itemprop="datePublished">2015-04-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/产品/">产品</a>►<a class="article-category-link" href="/categories/产品/创业/">创业</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/14/e8-bf-98-e6-9c-89-e8-b0-81-ef-bc-81-ef-bc-81-ef-bc-81-ef-bc-9f-e8-b0-81-e6-98-afuber-e4-b8-8b-e4-b8-80-e4-b8-aa-e8-a6-81-e9-a2-a0-e8-a6-86-e7-9a-84-e8-a1-8c-e4-b8-9a-ef-bc-9f-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/14/e8-bf-98-e6-9c-89-e8-b0-81-ef-bc-81-ef-bc-81-ef-bc-81-ef-bc-9f-e8-b0-81-e6-98-afuber-e4-b8-8b-e4-b8-80-e4-b8-aa-e8-a6-81-e9-a2-a0-e8-a6-86-e7-9a-84-e8-a1-8c-e4-b8-9a-ef-bc-9f-1/">还有谁！！！？谁是Uber下一个要颠覆的行业？</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/04/14/e8-bf-98-e6-9c-89-e8-b0-81-ef-bc-81-ef-bc-81-ef-bc-81-ef-bc-9f-e8-b0-81-e6-98-afuber-e4-b8-8b-e4-b8-80-e4-b8-aa-e8-a6-81-e9-a2-a0-e8-a6-86-e7-9a-84-e8-a1-8c-e4-b8-9a-ef-bc-9f-1/" itemprop="url">还有谁！！！？谁是Uber下一个要颠覆的行业？</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-14T16:25:14+08:00">
+                2015-04-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/" itemprop="url" rel="index">
+                    <span itemprop="name">产品</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p><figure id="34fa" class="graf--figure"></figure></p>
+      
+
+      
+        
+          
+            <p><figure id="34fa" class="graf--figure"></figure></p>
 <p><div class="aspectRatioPlaceholder is-locked"><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*JyLc9xRnXVhD4FgmfashYA.jpeg" alt=""></div></p>
 <p><figcaption class="imageCaption"><br></figcaption></p>
 <blockquote>
@@ -248,46 +785,150 @@
 <p><strong>版权</strong>:本作品采用[<a href="http://creativecommons.org/licenses/by/3.0/cn/" target="_blank" rel="external">创作共用署名3.0中国大陆版许可证</a>], 若非授权，转发时切勿删除以下联系信息，否则追究相应责任。本文首发本人iDoNews专栏。</p>
 <p><strong>提醒</strong>:更多相关文章将请关注微信公众号:<strong>techgogogo</strong>或官网<a href="http://techgogogo.com/" target="_blank" rel="external">www.techgogogo.com</a>。</p>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/14/e8-bf-98-e6-9c-89-e8-b0-81-ef-bc-81-ef-bc-81-ef-bc-81-ef-bc-9f-e8-b0-81-e6-98-afuber-e4-b8-8b-e4-b8-80-e4-b8-aa-e8-a6-81-e9-a2-a0-e8-a6-86-e7-9a-84-e8-a1-8c-e4-b8-9a-ef-bc-9f-1/" data-id="cj56dkqt600i0yqu2wrj0quv8" class="article-share-link">Share</a>
+
+    <div>
       
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e8-bf-98-e6-9c-89-e8-b0-81-ef-bc-81-ef-bc-81-ef-bc-81-ef-bc-9f-e8-b0-81-e6-98-afuber-e4-b8-8b-e4-b8-80-e4-b8-aa-e8-a6-81-e9-a2-a0-e8-a6-86-e7-9a-84-e8-a1-8c-e4-b8-9a-ef-bc-9f" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/14/e8-bf-98-e6-9c-89-e8-b0-81-ef-bc-81-ef-bc-81-ef-bc-81-ef-bc-9f-e8-b0-81-e6-98-afuber-e4-b8-8b-e4-b8-80-e4-b8-aa-e8-a6-81-e9-a2-a0-e8-a6-86-e7-9a-84-e8-a1-8c-e4-b8-9a-ef-bc-9f/" class="article-date">
-  <time datetime="2015-04-14T08:25:14.000Z" itemprop="datePublished">2015-04-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/产品/">产品</a>►<a class="article-category-link" href="/categories/产品/创业/">创业</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/14/e8-bf-98-e6-9c-89-e8-b0-81-ef-bc-81-ef-bc-81-ef-bc-81-ef-bc-9f-e8-b0-81-e6-98-afuber-e4-b8-8b-e4-b8-80-e4-b8-aa-e8-a6-81-e9-a2-a0-e8-a6-86-e7-9a-84-e8-a1-8c-e4-b8-9a-ef-bc-9f/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/14/e8-bf-98-e6-9c-89-e8-b0-81-ef-bc-81-ef-bc-81-ef-bc-81-ef-bc-9f-e8-b0-81-e6-98-afuber-e4-b8-8b-e4-b8-80-e4-b8-aa-e8-a6-81-e9-a2-a0-e8-a6-86-e7-9a-84-e8-a1-8c-e4-b8-9a-ef-bc-9f/">还有谁！！！？谁是Uber下一个要颠覆的行业？</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/04/14/e8-bf-98-e6-9c-89-e8-b0-81-ef-bc-81-ef-bc-81-ef-bc-81-ef-bc-9f-e8-b0-81-e6-98-afuber-e4-b8-8b-e4-b8-80-e4-b8-aa-e8-a6-81-e9-a2-a0-e8-a6-86-e7-9a-84-e8-a1-8c-e4-b8-9a-ef-bc-9f/" itemprop="url">还有谁！！！？谁是Uber下一个要颠覆的行业？</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-14T16:25:14+08:00">
+                2015-04-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/" itemprop="url" rel="index">
+                    <span itemprop="name">产品</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p><figure id="34fa" class="graf--figure"></figure></p>
+      
+
+      
+        
+          
+            <p><figure id="34fa" class="graf--figure"></figure></p>
 <p><div class="aspectRatioPlaceholder is-locked"><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*JyLc9xRnXVhD4FgmfashYA.jpeg" alt=""></div></p>
 <p><figcaption class="imageCaption"><br></figcaption></p>
 <blockquote>
@@ -308,46 +949,139 @@
 <p><strong>版权</strong>:本作品采用[<a href="http://creativecommons.org/licenses/by/3.0/cn/" target="_blank" rel="external">创作共用署名3.0中国大陆版许可证</a>], 若非授权，转发时切勿删除以下联系信息，否则追究相应责任。本文首发本人iDoNews专栏。</p>
 <p><strong>提醒</strong>:更多相关文章将请关注微信公众号:<strong>techgogogo</strong>或官网<a href="http://techgogogo.com/" target="_blank" rel="external">www.techgogogo.com</a>。</p>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/14/e8-bf-98-e6-9c-89-e8-b0-81-ef-bc-81-ef-bc-81-ef-bc-81-ef-bc-9f-e8-b0-81-e6-98-afuber-e4-b8-8b-e4-b8-80-e4-b8-aa-e8-a6-81-e9-a2-a0-e8-a6-86-e7-9a-84-e8-a1-8c-e4-b8-9a-ef-bc-9f/" data-id="cj56dkqt900i4yqu2n9vkwzqt" class="article-share-link">Share</a>
+
+    <div>
       
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-88-9b-e4-b8-9a-e7-9a-84-e8-89-ba-e6-9c-af-e4-b9-8b-e5-88-9d-e5-88-9b-e5-85-ac-e5-8f-b8-e8-91-a3-e4-ba-8b-e4-bc-9a-e7-ae-a1-e7-90-86-e8-89-ba-e6-9c-af" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/11/e5-88-9b-e4-b8-9a-e7-9a-84-e8-89-ba-e6-9c-af-e4-b9-8b-e5-88-9d-e5-88-9b-e5-85-ac-e5-8f-b8-e8-91-a3-e4-ba-8b-e4-bc-9a-e7-ae-a1-e7-90-86-e8-89-ba-e6-9c-af/" class="article-date">
-  <time datetime="2015-04-11T06:08:18.000Z" itemprop="datePublished">2015-04-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/创业/">创业</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/11/e5-88-9b-e4-b8-9a-e7-9a-84-e8-89-ba-e6-9c-af-e4-b9-8b-e5-88-9d-e5-88-9b-e5-85-ac-e5-8f-b8-e8-91-a3-e4-ba-8b-e4-bc-9a-e7-ae-a1-e7-90-86-e8-89-ba-e6-9c-af/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/11/e5-88-9b-e4-b8-9a-e7-9a-84-e8-89-ba-e6-9c-af-e4-b9-8b-e5-88-9d-e5-88-9b-e5-85-ac-e5-8f-b8-e8-91-a3-e4-ba-8b-e4-bc-9a-e7-ae-a1-e7-90-86-e8-89-ba-e6-9c-af/">创业的艺术之 - 初创公司董事会管理艺术</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/04/11/e5-88-9b-e4-b8-9a-e7-9a-84-e8-89-ba-e6-9c-af-e4-b9-8b-e5-88-9d-e5-88-9b-e5-85-ac-e5-8f-b8-e8-91-a3-e4-ba-8b-e4-bc-9a-e7-ae-a1-e7-90-86-e8-89-ba-e6-9c-af/" itemprop="url">创业的艺术之 - 初创公司董事会管理艺术</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-11T14:08:18+08:00">
+                2015-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p><a href="http://techgogogo.com/wp-content/uploads/2015/04/funny-pictures-auto-facebook-meeting-468370.jpeg" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/funny-pictures-auto-facebook-meeting-468370.jpeg" alt="funny-pictures-auto-facebook-meeting-468370"></a></p>
+      
+
+      
+        
+          
+            <p><a href="http://techgogogo.com/wp-content/uploads/2015/04/funny-pictures-auto-facebook-meeting-468370.jpeg" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/funny-pictures-auto-facebook-meeting-468370.jpeg" alt="funny-pictures-auto-facebook-meeting-468370"></a></p>
 <blockquote>
 <p>编者注：本文由<a href="http://techgogogo.com/" target="_blank" rel="external">天地会珠海分舵</a>编译自苹果前首席宣传官盖伊·川崎2015年3月的新书《<a href="http://guykawasaki.com/books/the-art-of-the-start/" target="_blank" rel="external">创业的艺术2.0</a>》,原文刊自盖伊·川崎的最新<a href="http://guykawasaki.com/how-to-manage-your-board/" target="_blank" rel="external">博客</a>。作为一个初创企业家，董事会管理艺术是一项你必须掌握的技能，因为这是关乎贵初创公司生死存亡之大事，那么怎么样去组建和运作这个董事会才是行之有效的方法呢？下面我们来看看盖伊·川崎是怎么说的…<br>作为初创企业，董事会管理艺术是一项你必须掌握的技能，因为这是关乎贵初创公司生死存亡之大事，且能给你在公司管理上带来更多回旋的余地。</p>
 </blockquote>
@@ -380,126 +1114,438 @@
 <p><strong>版权</strong>:本作品采用[<a href="http://creativecommons.org/licenses/by/3.0/cn/" target="_blank" rel="external">创作共用署名3.0中国大陆版许可证</a>], 若非授权，转发时切勿删除以下联系信息，否则追究相应责任。</p>
 <p><strong>提醒</strong>:更多相关文章将请关注微信公众号:<strong>techgogogo</strong>或官网<a href="http://techgogogo.com" target="_blank" rel="external">www.techgogogo.com</a>。</p>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/11/e5-88-9b-e4-b8-9a-e7-9a-84-e8-89-ba-e6-9c-af-e4-b9-8b-e5-88-9d-e5-88-9b-e5-85-ac-e5-8f-b8-e8-91-a3-e4-ba-8b-e4-bc-9a-e7-ae-a1-e7-90-86-e8-89-ba-e6-9c-af/" data-id="cj56dkqmh006oyqu2uhej0dl2" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
-
-  
-    <article id="post-e5-8d-81-e4-ba-bf-e7-be-8e-e5-85-83-e7-ba-a7-e5-88-ab-e7-9a-84-e7-8b-ac-e8-a7-92-e5-85-bd-e4-bc-81-e4-b8-9a-e6-98-af-e6-80-8e-e4-b9-88-e5-85-bb-e6-88-90-e7-9a-84-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/10/e5-8d-81-e4-ba-bf-e7-be-8e-e5-85-83-e7-ba-a7-e5-88-ab-e7-9a-84-e7-8b-ac-e8-a7-92-e5-85-bd-e4-bc-81-e4-b8-9a-e6-98-af-e6-80-8e-e4-b9-88-e5-85-bb-e6-88-90-e7-9a-84-1/" class="article-date">
-  <time datetime="2015-04-10T06:00:26.000Z" itemprop="datePublished">2015-04-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/产品/">产品</a>►<a class="article-category-link" href="/categories/产品/创业/">创业</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/10/e5-8d-81-e4-ba-bf-e7-be-8e-e5-85-83-e7-ba-a7-e5-88-ab-e7-9a-84-e7-8b-ac-e8-a7-92-e5-85-bd-e4-bc-81-e4-b8-9a-e6-98-af-e6-80-8e-e4-b9-88-e5-85-bb-e6-88-90-e7-9a-84-1/">十亿美元级别的“独角兽”企业是怎么养成的</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <div class="section-inner layoutSingleColumn"><br>&gt; 编者注：本文源自<a href="https://medium.com/backchannel/here-are-the-secrets-of-unicorn-companies-c8951b99215b" target="_blank" rel="external">Medium</a>，本文发稿时原文在短短3天时间内已经获得了493个推荐，中文版本由<a href="http://techgogogo.com/about/" target="_blank" rel="external">天地会珠海分舵</a>进行编译。作者通过组织160位专家对100多个著名的企业的成功规律进行了深入的研究，然后对这些“独角兽“级别的企业的成功经验进行了史无前例的总结…<br><br><span class="token p">我们当前正处在一个创造着空前价值的时代，该时代的标志就是“独角兽”级别公司的逐渐增多，独角兽 - 一个可以迅速达到十亿级别以上市值的公司。当权威们再一次质疑“我们是否正处于泡沫之中?”时，企业家们提出的更多的是一个更实在的问题：“究竟有什么秘密可以让一个稚嫩的初创企业成长成一个独角兽级别的企业呢？“。如下图所示，当前已经有不少的创业者逐渐找到了破解该秘密的方法，因为这些公司大大缩短了从成立到成长为十亿级别市值的公司的时间。</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/独角兽时限图.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/独角兽时限图.png" alt="独角兽时限图"></a><br><br><span class="token p">“独角兽”这个对十亿市值级别公司的称谓来自于风投人物Aileen lee在2013年11月份的的一篇描述创业种子期该如何向市值十亿级别的公司学习的文章《欢迎加入独角兽俱乐部：从十亿级别公司身上学习创业》，所以从那时起，独角兽这个名字就开始渗入并风靡创业界。现在一个初创企业迅速变成一个独角兽级别的公司其实不再是一个天荒夜谈的神话，已经有不少如Slack这样的公司打破了这个神话，顺利的进入了独角兽行列。</span><br><br><span class="token p">当人们都挠破头皮的想打造出一个独角兽级别企业的时候，却很少有人理性的去认真进行全面的研究调查分析“对方究竟是如何成为独角兽级别企业的？”或者“为什么他们可以做的如此出色呢？”。 碰巧我和Mike Malone以及Yuri van Geest最近写的一本书上刚好对这个问题进行了深入的探索，并亲自总结出了一个扼要的关于如何成长成一个独角兽级别企业的创业指南。</span><br><br>&gt; <span class="token p">经过深入的调研，我们得出了这样的一个结论：<strong>独角兽级别企业已经找到一个可以将它们的组织架构以一种全新的方式进行扩展的方法。我们将这个方法叫做“指数级别企业”(编者注:扼要的说，就是如何让企业进行指数级别的增长和扩展的方法)</strong></span><br><br><span class="token p">在过去的数十年时间里，技术产业已经学会了如何对相应的技术进行扩展。一个初创企业可以眨眼间就获得成千上万个用户。用户有了，那么现在剩下的问题是如何将它们真正的组织架构进行相应的扩展以满足服务大量用户所带来的需求，这种组织的扩展从来都需要有一个线性的且循序渐进的迈进过程</span> 。<br><br><span class="token p">我们此前投入了3年时间对这种现象进行了深入的研究，期间我们找出了百多个我们认为够格的“指数级别企业“进行了深入的研究。从中我们得出的最基本的数据是这些公司的可扩展性(编者注：往下可以看到更多有关这种可扩展性的描述，比如Uber的将企业功能进行扩展，将乘客和司机的交互这种业务剥离出来，完全交给乘客和司机进行处理，从而大幅度的降低了边际成本)是同行其他企业的至少十倍。比如，一个典型的如美国强生和保洁这种做消费型包装产品的企业，它们从一个创意到新产品在沃尔玛上架所需要的时间是300天。而“指数级别企业“行列的领头羊之一Quirky，完成同样的过程只需要29天的时间。这很大的一部分原因就是Quirky将很大一部分业务功能进行了扩展，将那些并不是自己必须要做的事情交给了别人，甚至客户来解决，从而大大的提高了效率以及降低了边际成本。而这说的还只是传统产业的情况了，我们还没有提及那些新潮的互联网-软件-免费增值-社交-游戏类型的这些新型产业了，往下大家可以看到，它们的组织架构进行扩展后，很多关键的功能都交给了客户进行处理，从而大大的降低了编辑成本(编者注：比如国内的微信，将寻找用户这个传统产业需要公司自己做的事情完全转嫁给用户 - 用户需要跟别人沟通，自然就会将微信这个产品推荐给他的朋友)。</span><br><br><span class="token p">本文最后列出了我们花了很大心血进行调研所得出的100个满足“指数级别企业“要求的全球企业的排名。大家可以在需要的时候进行查看。</span><br><br><span class="token p">下面说说我们是如何进行排名的。我们首先开展一个调查来找出那些满足我们的核心扩展性指标的企业进行筛选 - 我们将该指标称为“指数级别系数”。然后我们会和我们散布在45个国家的160位专门研究“指数级别企业“的专家一块进行相应的研究。我们研究的对象都是2005年之后创建的那一大批重量级企业，然后根据调研结果对它们进行排名，过程中我们也许偶尔会对那些我们特别熟悉的公司增加相应的权重(比如我之前就在雅虎工作过，所以嘛…)，因为我们非常清楚它们的运作方式。最后我们还会考虑上其他的补充因素(位置，雇员数量，所覆盖的行业，等等)。</span><br><br># <span class="token p">究竟存在有哪些指数级别企业呢？</span><br><br><span class="token p">排在首位的非GitHub莫属了。满分84分，GitHub获得了最高的76分。对外，GitHub有着一个宏伟的变革性目标(MTP)，他们称之为“社会编程“，这个目标让他们深深的影响着它们的社区，并驱使他们闯劲十足的实现更好的算法来满足大量用户的需求。必要时，他们还可以驱使他们的员工/资源去拓展它们整个组织的疆域。对内，他们使用的是OKR(目标与关键成果法)管理架构，对此他们有着深厚的经验。他们乐于不断的接受挑战。他们的成员之间通常以匿名的方式并大量使用社群协作工具来进行合作。这个调查所权衡的排名因素(编者注：指的就是“数级别系数”，非常优秀的可扩展性。进可攻：大量的用户在为这个代码社区做贡献，要在Github的基础上扩展其他的业务根本不需要Github的员工自己费思量；退可守：大量的成员都是通过社群协作工具进行工作的，基本上不需要消耗其他额外的成本。)就非常显而易见，无需画蛇点睛了</span> 。<br><br><span class="token p">在这次调研过程中，我们发现“指数级别企业“和“独角兽级别企业“之间有着很高的重合度。在所有列出来的100家“指数级别企业“中，“独角兽级别企业“这些市值十亿美金以上的企业占据了35个席位。</span><br><br><span class="token p">也就是说，我们给出来的100个企业中，十亿级别的企业占据了整整35％的比例，这和Aileen Lee以及财富杂志所给出来的数据竟然是完全一致的。下面我们进行更进一步的分析。</span><br><br>## <span class="token p">按雇员数量来分</span><br><br><span class="token p">在我们调研的100家企业中，其中65家企业的雇员是在11到500个雇员的规模的，没有更低的了。</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/雇员规模.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/雇员规模.png" alt="雇员规模"></a><br><br>#<br><br>## <span class="token p">按地理位置分布来分</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/区域分布图.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/区域分布图.png" alt="区域分布图"></a><br><br>## <span class="token p">按成立时间来分</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/企业年龄图.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/企业年龄图.png" alt="企业年龄图"></a><br><br><span class="token p">各个主要的“指数级别企业“的成立时间都不会超过10年。这就意味着该列表中的大部分企业还没有完全处于他们的巅峰时期。而这同时也意味着初创企业更有机会成为“指数级别企业”，因为前面提到的这些楷模企业都还处于初创阶段。</span><br><br><span class="token p">这100个企业所覆盖的前5个代表性行业有：社交/博客/信息，电商，金融，IT&amp;云，游戏/娱乐，最后是以LinkedIn位代表的人才需求类行业。</span><br><br># <span class="token p">建立一个独角兽/指数级别的企业</span><br><br><span class="token p">如果正在查看本文的看官您是个创业者，毫无疑问您的下一个问题将会是，“如何才能做到这些呢？“ 根据我们的调研结果，我们给大家打造了一个10步走的机制来指引大家该如何建立一个高度可拓展的企业：</span><br><br>1.  <span class="token p">选择一个雄伟的变革性的目标，如谷歌的“将世界上的信息都组织起来“，或者如Quirky的“让发明创造变得触手可及“。所有这些我们发现的指数级别企业都有着这样一个雄伟且变革性的目标。</span><br>2.  <span class="token p">创建或者加入一个与你行业相关的优秀社区(请参考Meetup!)。Chris Anderson的DIY Drones社区就是一个非常好的例子。里面有超过50,000个喜欢DIY的成员。在一个初创公司初期，一个优秀的社区除了不能帮你设定你的目标之外，所有其他事情基本上都可以解决。</span><br>3.  <span class="token p">组建一个创业团队(4个人的初创团队应该是一个最优选择)。我们建议成员由一个有远见的人，一个用户体验专家，一个专家级别的工程师，以及一个业务/财务专家组成。</span><br>4.  <span class="token p">选择一个具有突破性的可以带来比起当前已有同类产品带来超过10倍大小改进的创意。</span><br>5.  <span class="token p">建立好你的商业模式画布(请参考精益创业)。这个简单的流程可以让你快速生成商业模式应该考虑的九个关键因素(包括合作关系，销售渠道, 独特价值主张(USP)等)。</span><br>6.  <span class="token p">找出你的商业模式 - 基本上就是找出你该如何从中获利的途径。仅供参考，现在很多初创公司都在推出一些专门针对传统公司的新型商业模式(如Netflix网飞公司的商业模式就是专门针对传统的电影行业)。</span><br>7.  <span class="token p">打造出你的最简可行产品(MVP)。怎么样的最简可行的功能可以让你快速将产品推向市场并快速获取用户的反馈？注意很多非常成功的互联网公司(如 Twitter, Foursquare, Facebook)在开始的时候他们的产品功能都是非常简陋的 - 从设计到用户交互，到处到充诉着各种问题。但是他们都从快速反馈并进行快速迭代的进程中将他们的产品做得异常的成功。</span><br>8.  <span class="token p">验证市场&amp;销售渠道。Groupon公司曾经在一个城市中投入了18个月的时间来反复试验并摸索出一条行得通得市场和销售渠道，然后快速的在其他城市进行拷贝并获得巨大的成功。</span><br>9.  <span class="token p">考虑尽量让关键性业务功能脱离公司独立运行(比如，Uber处理的关键性业务主要就是乘客的打车需求和司机的接收订单进行载客的需求。司机和乘客的业务交互就不是由Uber自身来进行处理的。顾客该打车还是需要自发的联系司机，讨价还价还是只是发生在他们两个身上，Uber只是给他们提供了个平台而已)</span><br>10.  <span class="token p">瞄准的目标应该是去打造一个平台。成功的“指数级别企业“(苹果, 谷歌, 亚马逊)做的都是平台。那些没有达成这个目标的企业(雅虎，黑莓，诺基亚)最终碰到的问题大家都有目共睹无需我多言了吧。</span><br>&nbsp;<br><br># <span class="token p">成为独角兽级别企业的关键</span><br><br><span class="token p">无论是“指数级别企业“还是“独角兽级别企业“，很明显的一点是他们做生意的手段都是非常新颖的。当运作一个公司的时候，你也许会常常担心寻找客户以及供货管理所需要投入的资金，你甚至尝试大刀阔斧的对实现这两者的平衡进行改革。但，在当今互联网首次变得如此盛行的时代，通过在线市场的方式大幅降低寻找客户的成本已经不是什么难事了 - 事实上，如果你能达到一个病毒式营销的条件的话(比如WhatsApp)，你寻找用户所需的投入基本为零。</span><br><br><span class="token p">将关键事务扩展出去，减少企业的参预，大幅度的降低供给的耗费。独角兽级别企业/指数级别企业的这种创举是史无前例的。Uber将一辆出租车加入到他们的舰队中所需要消耗的边际成本是非常低廉的。Airbnb将一个闲置的旅馆房间加入到它的库存中所消耗的成本也基本是可以忽略不计的。如果你是凯瑞酒店的话，你要在你的库存中在增加一个房间的话是不可能是事情，除非你考虑再打造一间新的旅馆出来。谷歌去完成网友的一次搜索请求所需要耗费的边际成本也是基本为零。所以，如果你现在能大幅度降低你的供给成本的话，你的市场价值自然就会大幅暴涨。</span><br><br><span class="token p">所以说，如果你想要发展成为一个独角兽级别的企业的话，将你的的组织架构扩展出你的核心团队之外，然后找到一个降低你的供给的边际成本的方式是势在必行的。</span><br><br>&nbsp;<br><br># <span class="token p">老牌的独角兽企业该学习一些新的技巧</span><br><br><span class="token p">虽然大部分独角兽级别/指数级别企业都很年轻，但是没有任何理由可以让老牌的大企业不去遵循以上的流程。事实上，我们认为所有这些老牌企业都应该强迫自己去接受这种思想。说到独角兽级别企业，苹果应该算是当今的一匹终极独角兽了。通过运用其平台的影响力，以漂亮的设计技术为先锋打头阵，苹果正在逐个进入一个个的传统产业，并每次都能从中获取数十亿美元级别的市场。这里我们非常期待它成为首个万亿级别的公司 - 这就真的是一个“独“角兽了！。</span><br><br><span class="token p">以下列出的就是排名前一百的“指数级别企业”的名单。更多详细的信息请查看<span class="token url"><a href="http://top100.exponentialorgs.com" target="_blank" rel="external">http://top100.exponentialorgs.com</a></span></span><br><div class="section-inner sectionLayout--outsetRow" data-paragraph-count="2"><figure id="366d" class="graf--figure blockLayout--outsetRow is-partialWidth"><br><div class="aspectRatioPlaceholder is-locked"><img src="https://d262ilb51hltx0.cloudfront.net/max/966/1*G1jASRmNHG1da92C5NZZgQ.png" alt=""><img src="https://d262ilb51hltx0.cloudfront.net/max/1054/1*1iFXDy0gq4iKENmvHVxglQ.png" alt=""></div><br><div class="aspectRatioPlaceholder is-locked"><br><br><em> </em> <em><br><br></em></div><br><div class="aspectRatioPlaceholder is-locked"><strong>版权</strong>:本作品采用[<a href="http://creativecommons.org/licenses/by/3.0/cn/" target="_blank" rel="external">创作共用署名3.0中国大陆版许可证</a>], 若非授权，转发时切勿删除以下联系信息，否则追究相应责任。</div><br><div class="aspectRatioPlaceholder is-locked"><br><br><em>*提醒</em>:更多相关文章将请关注官网<a href="http://techgogogo.com/about/" target="_blank" rel="external">www.techgogogo.com</a>和微信公众号:techgogogo。<br><br>本文首发DoNews 专栏。<br><br></div><br></figure></div><br></div>
+    <div>
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/10/e5-8d-81-e4-ba-bf-e7-be-8e-e5-85-83-e7-ba-a7-e5-88-ab-e7-9a-84-e7-8b-ac-e8-a7-92-e5-85-bd-e4-bc-81-e4-b8-9a-e6-98-af-e6-80-8e-e4-b9-88-e5-85-bb-e6-88-90-e7-9a-84-1/" data-id="cj56dkqnc0086yqu29le9y7mm" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
-
-  
-    <article id="post-e5-8d-81-e4-ba-bf-e7-be-8e-e5-85-83-e7-ba-a7-e5-88-ab-e7-9a-84-e7-8b-ac-e8-a7-92-e5-85-bd-e4-bc-81-e4-b8-9a-e6-98-af-e6-80-8e-e4-b9-88-e5-85-bb-e6-88-90-e7-9a-84" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/10/e5-8d-81-e4-ba-bf-e7-be-8e-e5-85-83-e7-ba-a7-e5-88-ab-e7-9a-84-e7-8b-ac-e8-a7-92-e5-85-bd-e4-bc-81-e4-b8-9a-e6-98-af-e6-80-8e-e4-b9-88-e5-85-bb-e6-88-90-e7-9a-84/" class="article-date">
-  <time datetime="2015-04-10T06:00:26.000Z" itemprop="datePublished">2015-04-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/产品/">产品</a>►<a class="article-category-link" href="/categories/产品/创业/">创业</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/10/e5-8d-81-e4-ba-bf-e7-be-8e-e5-85-83-e7-ba-a7-e5-88-ab-e7-9a-84-e7-8b-ac-e8-a7-92-e5-85-bd-e4-bc-81-e4-b8-9a-e6-98-af-e6-80-8e-e4-b9-88-e5-85-bb-e6-88-90-e7-9a-84/">十亿美元级别的“独角兽”企业是怎么养成的</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <div class="section-inner layoutSingleColumn"><br>&gt; 编者注：本文源自<a href="https://medium.com/backchannel/here-are-the-secrets-of-unicorn-companies-c8951b99215b" target="_blank" rel="external">Medium</a>，本文发稿时原文在短短3天时间内已经获得了493个推荐，中文版本由<a href="http://techgogogo.com/about/" target="_blank" rel="external">天地会珠海分舵</a>进行编译。作者通过组织160位专家对100多个著名的企业的成功规律进行了深入的研究，然后对这些“独角兽“级别的企业的成功经验进行了史无前例的总结…<br><br><span class="token p">我们当前正处在一个创造着空前价值的时代，该时代的标志就是“独角兽”级别公司的逐渐增多，独角兽 - 一个可以迅速达到十亿级别以上市值的公司。当权威们再一次质疑“我们是否正处于泡沫之中?”时，企业家们提出的更多的是一个更实在的问题：“究竟有什么秘密可以让一个稚嫩的初创企业成长成一个独角兽级别的企业呢？“。如下图所示，当前已经有不少的创业者逐渐找到了破解该秘密的方法，因为这些公司大大缩短了从成立到成长为十亿级别市值的公司的时间。</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/独角兽时限图.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/独角兽时限图.png" alt="独角兽时限图"></a><br><br><span class="token p">“独角兽”这个对十亿市值级别公司的称谓来自于风投人物Aileen lee在2013年11月份的的一篇描述创业种子期该如何向市值十亿级别的公司学习的文章《欢迎加入独角兽俱乐部：从十亿级别公司身上学习创业》，所以从那时起，独角兽这个名字就开始渗入并风靡创业界。现在一个初创企业迅速变成一个独角兽级别的公司其实不再是一个天荒夜谈的神话，已经有不少如Slack这样的公司打破了这个神话，顺利的进入了独角兽行列。</span><br><br><span class="token p">当人们都挠破头皮的想打造出一个独角兽级别企业的时候，却很少有人理性的去认真进行全面的研究调查分析“对方究竟是如何成为独角兽级别企业的？”或者“为什么他们可以做的如此出色呢？”。 碰巧我和Mike Malone以及Yuri van Geest最近写的一本书上刚好对这个问题进行了深入的探索，并亲自总结出了一个扼要的关于如何成长成一个独角兽级别企业的创业指南。</span><br><br>&gt; <span class="token p">经过深入的调研，我们得出了这样的一个结论：<strong>独角兽级别企业已经找到一个可以将它们的组织架构以一种全新的方式进行扩展的方法。我们将这个方法叫做“指数级别企业”(编者注:扼要的说，就是如何让企业进行指数级别的增长和扩展的方法)</strong></span><br><br><span class="token p">在过去的数十年时间里，技术产业已经学会了如何对相应的技术进行扩展。一个初创企业可以眨眼间就获得成千上万个用户。用户有了，那么现在剩下的问题是如何将它们真正的组织架构进行相应的扩展以满足服务大量用户所带来的需求，这种组织的扩展从来都需要有一个线性的且循序渐进的迈进过程</span> 。<br><br><span class="token p">我们此前投入了3年时间对这种现象进行了深入的研究，期间我们找出了百多个我们认为够格的“指数级别企业“进行了深入的研究。从中我们得出的最基本的数据是这些公司的可扩展性(编者注：往下可以看到更多有关这种可扩展性的描述，比如Uber的将企业功能进行扩展，将乘客和司机的交互这种业务剥离出来，完全交给乘客和司机进行处理，从而大幅度的降低了边际成本)是同行其他企业的至少十倍。比如，一个典型的如美国强生和保洁这种做消费型包装产品的企业，它们从一个创意到新产品在沃尔玛上架所需要的时间是300天。而“指数级别企业“行列的领头羊之一Quirky，完成同样的过程只需要29天的时间。这很大的一部分原因就是Quirky将很大一部分业务功能进行了扩展，将那些并不是自己必须要做的事情交给了别人，甚至客户来解决，从而大大的提高了效率以及降低了边际成本。而这说的还只是传统产业的情况了，我们还没有提及那些新潮的互联网-软件-免费增值-社交-游戏类型的这些新型产业了，往下大家可以看到，它们的组织架构进行扩展后，很多关键的功能都交给了客户进行处理，从而大大的降低了编辑成本(编者注：比如国内的微信，将寻找用户这个传统产业需要公司自己做的事情完全转嫁给用户 - 用户需要跟别人沟通，自然就会将微信这个产品推荐给他的朋友)。</span><br><br><span class="token p">本文最后列出了我们花了很大心血进行调研所得出的100个满足“指数级别企业“要求的全球企业的排名。大家可以在需要的时候进行查看。</span><br><br><span class="token p">下面说说我们是如何进行排名的。我们首先开展一个调查来找出那些满足我们的核心扩展性指标的企业进行筛选 - 我们将该指标称为“指数级别系数”。然后我们会和我们散布在45个国家的160位专门研究“指数级别企业“的专家一块进行相应的研究。我们研究的对象都是2005年之后创建的那一大批重量级企业，然后根据调研结果对它们进行排名，过程中我们也许偶尔会对那些我们特别熟悉的公司增加相应的权重(比如我之前就在雅虎工作过，所以嘛…)，因为我们非常清楚它们的运作方式。最后我们还会考虑上其他的补充因素(位置，雇员数量，所覆盖的行业，等等)。</span><br><br># <span class="token p">究竟存在有哪些指数级别企业呢？</span><br><br><span class="token p">排在首位的非GitHub莫属了。满分84分，GitHub获得了最高的76分。对外，GitHub有着一个宏伟的变革性目标(MTP)，他们称之为“社会编程“，这个目标让他们深深的影响着它们的社区，并驱使他们闯劲十足的实现更好的算法来满足大量用户的需求。必要时，他们还可以驱使他们的员工/资源去拓展它们整个组织的疆域。对内，他们使用的是OKR(目标与关键成果法)管理架构，对此他们有着深厚的经验。他们乐于不断的接受挑战。他们的成员之间通常以匿名的方式并大量使用社群协作工具来进行合作。这个调查所权衡的排名因素(编者注：指的就是“数级别系数”，非常优秀的可扩展性。进可攻：大量的用户在为这个代码社区做贡献，要在Github的基础上扩展其他的业务根本不需要Github的员工自己费思量；退可守：大量的成员都是通过社群协作工具进行工作的，基本上不需要消耗其他额外的成本。)就非常显而易见，无需画蛇点睛了</span> 。<br><br><span class="token p">在这次调研过程中，我们发现“指数级别企业“和“独角兽级别企业“之间有着很高的重合度。在所有列出来的100家“指数级别企业“中，“独角兽级别企业“这些市值十亿美金以上的企业占据了35个席位。</span><br><br><span class="token p">也就是说，我们给出来的100个企业中，十亿级别的企业占据了整整35％的比例，这和Aileen Lee以及财富杂志所给出来的数据竟然是完全一致的。下面我们进行更进一步的分析。</span><br><br>## <span class="token p">按雇员数量来分</span><br><br><span class="token p">在我们调研的100家企业中，其中65家企业的雇员是在11到500个雇员的规模的，没有更低的了。</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/雇员规模.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/雇员规模.png" alt="雇员规模"></a><br><br>#<br><br>## <span class="token p">按地理位置分布来分</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/区域分布图.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/区域分布图.png" alt="区域分布图"></a><br><br>## <span class="token p">按成立时间来分</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/企业年龄图.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/企业年龄图.png" alt="企业年龄图"></a><br><br><span class="token p">各个主要的“指数级别企业“的成立时间都不会超过10年。这就意味着该列表中的大部分企业还没有完全处于他们的巅峰时期。而这同时也意味着初创企业更有机会成为“指数级别企业”，因为前面提到的这些楷模企业都还处于初创阶段。</span><br><br><span class="token p">这100个企业所覆盖的前5个代表性行业有：社交/博客/信息，电商，金融，IT&amp;云，游戏/娱乐，最后是以LinkedIn位代表的人才需求类行业。</span><br><br># <span class="token p">建立一个独角兽/指数级别的企业</span><br><br><span class="token p">如果正在查看本文的看官您是个创业者，毫无疑问您的下一个问题将会是，“如何才能做到这些呢？“ 根据我们的调研结果，我们给大家打造了一个10步走的机制来指引大家该如何建立一个高度可拓展的企业：</span><br><br>1.  <span class="token p">选择一个雄伟的变革性的目标，如谷歌的“将世界上的信息都组织起来“，或者如Quirky的“让发明创造变得触手可及“。所有这些我们发现的指数级别企业都有着这样一个雄伟且变革性的目标。</span><br>2.  <span class="token p">创建或者加入一个与你行业相关的优秀社区(请参考Meetup!)。Chris Anderson的DIY Drones社区就是一个非常好的例子。里面有超过50,000个喜欢DIY的成员。在一个初创公司初期，一个优秀的社区除了不能帮你设定你的目标之外，所有其他事情基本上都可以解决。</span><br>3.  <span class="token p">组建一个创业团队(4个人的初创团队应该是一个最优选择)。我们建议成员由一个有远见的人，一个用户体验专家，一个专家级别的工程师，以及一个业务/财务专家组成。</span><br>4.  <span class="token p">选择一个具有突破性的可以带来比起当前已有同类产品带来超过10倍大小改进的创意。</span><br>5.  <span class="token p">建立好你的商业模式画布(请参考精益创业)。这个简单的流程可以让你快速生成商业模式应该考虑的九个关键因素(包括合作关系，销售渠道, 独特价值主张(USP)等)。</span><br>6.  <span class="token p">找出你的商业模式 - 基本上就是找出你该如何从中获利的途径。仅供参考，现在很多初创公司都在推出一些专门针对传统公司的新型商业模式(如Netflix网飞公司的商业模式就是专门针对传统的电影行业)。</span><br>7.  <span class="token p">打造出你的最简可行产品(MVP)。怎么样的最简可行的功能可以让你快速将产品推向市场并快速获取用户的反馈？注意很多非常成功的互联网公司(如 Twitter, Foursquare, Facebook)在开始的时候他们的产品功能都是非常简陋的 - 从设计到用户交互，到处到充诉着各种问题。但是他们都从快速反馈并进行快速迭代的进程中将他们的产品做得异常的成功。</span><br>8.  <span class="token p">验证市场&amp;销售渠道。Groupon公司曾经在一个城市中投入了18个月的时间来反复试验并摸索出一条行得通得市场和销售渠道，然后快速的在其他城市进行拷贝并获得巨大的成功。</span><br>9.  <span class="token p">考虑尽量让关键性业务功能脱离公司独立运行(比如，Uber处理的关键性业务主要就是乘客的打车需求和司机的接收订单进行载客的需求。司机和乘客的业务交互就不是由Uber自身来进行处理的。顾客该打车还是需要自发的联系司机，讨价还价还是只是发生在他们两个身上，Uber只是给他们提供了个平台而已)</span><br>10.  <span class="token p">瞄准的目标应该是去打造一个平台。成功的“指数级别企业“(苹果, 谷歌, 亚马逊)做的都是平台。那些没有达成这个目标的企业(雅虎，黑莓，诺基亚)最终碰到的问题大家都有目共睹无需我多言了吧。</span><br>&nbsp;<br><br># <span class="token p">成为独角兽级别企业的关键</span><br><br><span class="token p">无论是“指数级别企业“还是“独角兽级别企业“，很明显的一点是他们做生意的手段都是非常新颖的。当运作一个公司的时候，你也许会常常担心寻找客户以及供货管理所需要投入的资金，你甚至尝试大刀阔斧的对实现这两者的平衡进行改革。但，在当今互联网首次变得如此盛行的时代，通过在线市场的方式大幅降低寻找客户的成本已经不是什么难事了 - 事实上，如果你能达到一个病毒式营销的条件的话(比如WhatsApp)，你寻找用户所需的投入基本为零。</span><br><br><span class="token p">将关键事务扩展出去，减少企业的参预，大幅度的降低供给的耗费。独角兽级别企业/指数级别企业的这种创举是史无前例的。Uber将一辆出租车加入到他们的舰队中所需要消耗的边际成本是非常低廉的。Airbnb将一个闲置的旅馆房间加入到它的库存中所消耗的成本也基本是可以忽略不计的。如果你是凯瑞酒店的话，你要在你的库存中在增加一个房间的话是不可能是事情，除非你考虑再打造一间新的旅馆出来。谷歌去完成网友的一次搜索请求所需要耗费的边际成本也是基本为零。所以，如果你现在能大幅度降低你的供给成本的话，你的市场价值自然就会大幅暴涨。</span><br><br><span class="token p">所以说，如果你想要发展成为一个独角兽级别的企业的话，将你的的组织架构扩展出你的核心团队之外，然后找到一个降低你的供给的边际成本的方式是势在必行的。</span><br><br>&nbsp;<br><br># <span class="token p">老牌的独角兽企业该学习一些新的技巧</span><br><br><span class="token p">虽然大部分独角兽级别/指数级别企业都很年轻，但是没有任何理由可以让老牌的大企业不去遵循以上的流程。事实上，我们认为所有这些老牌企业都应该强迫自己去接受这种思想。说到独角兽级别企业，苹果应该算是当今的一匹终极独角兽了。通过运用其平台的影响力，以漂亮的设计技术为先锋打头阵，苹果正在逐个进入一个个的传统产业，并每次都能从中获取数十亿美元级别的市场。这里我们非常期待它成为首个万亿级别的公司 - 这就真的是一个“独“角兽了！。</span><br><br><span class="token p">以下列出的就是排名前一百的“指数级别企业”的名单。更多详细的信息请查看<span class="token url"><a href="http://top100.exponentialorgs.com" target="_blank" rel="external">http://top100.exponentialorgs.com</a></span></span><br><div class="section-inner sectionLayout--outsetRow" data-paragraph-count="2"><figure id="366d" class="graf--figure blockLayout--outsetRow is-partialWidth"><br><div class="aspectRatioPlaceholder is-locked"><img src="https://d262ilb51hltx0.cloudfront.net/max/966/1*G1jASRmNHG1da92C5NZZgQ.png" alt=""><img src="https://d262ilb51hltx0.cloudfront.net/max/1054/1*1iFXDy0gq4iKENmvHVxglQ.png" alt=""></div><br><div class="aspectRatioPlaceholder is-locked"><br><br><em> </em> <em><br><br></em></div><br><div class="aspectRatioPlaceholder is-locked"><strong>版权</strong>:本作品采用[<a href="http://creativecommons.org/licenses/by/3.0/cn/" target="_blank" rel="external">创作共用署名3.0中国大陆版许可证</a>], 若非授权，转发时切勿删除以下联系信息，否则追究相应责任。</div><br><div class="aspectRatioPlaceholder is-locked"><br><br><em>*提醒</em>:更多相关文章将请关注官网<a href="http://techgogogo.com/about/" target="_blank" rel="external">www.techgogogo.com</a>和微信公众号:techgogogo。<br><br>本文首发DoNews 专栏。<br><br></div><br></figure></div><br></div>
+    <div>
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/10/e5-8d-81-e4-ba-bf-e7-be-8e-e5-85-83-e7-ba-a7-e5-88-ab-e7-9a-84-e7-8b-ac-e8-a7-92-e5-85-bd-e4-bc-81-e4-b8-9a-e6-98-af-e6-80-8e-e4-b9-88-e5-85-bb-e6-88-90-e7-9a-84/" data-id="cj56dkqng008dyqu2zl1unnel" class="article-share-link">Share</a>
+
+    <div>
       
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-a6-82-e4-bd-95-e9-80-9a-e8-bf-87-e5-90-91-e4-b8-8a-e9-94-80-e5-94-ae-e5-92-8c-e4-ba-a4-e5-8f-89-e9-94-80-e5-94-ae-e6-8f-90-e9-ab-98-e4-bd-a0-e7-9a-84-e4-ba-a7-e5-93-81-e6-94-b6-e7-9b-8a" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/10/e5-a6-82-e4-bd-95-e9-80-9a-e8-bf-87-e5-90-91-e4-b8-8a-e9-94-80-e5-94-ae-e5-92-8c-e4-ba-a4-e5-8f-89-e9-94-80-e5-94-ae-e6-8f-90-e9-ab-98-e4-bd-a0-e7-9a-84-e4-ba-a7-e5-93-81-e6-94-b6-e7-9b-8a/" class="article-date">
-  <time datetime="2015-04-10T06:00:09.000Z" itemprop="datePublished">2015-04-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/产品/">产品</a>►<a class="article-category-link" href="/categories/产品/创业/">创业</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/10/e5-8d-81-e4-ba-bf-e7-be-8e-e5-85-83-e7-ba-a7-e5-88-ab-e7-9a-84-e7-8b-ac-e8-a7-92-e5-85-bd-e4-bc-81-e4-b8-9a-e6-98-af-e6-80-8e-e4-b9-88-e5-85-bb-e6-88-90-e7-9a-84-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/10/e5-a6-82-e4-bd-95-e9-80-9a-e8-bf-87-e5-90-91-e4-b8-8a-e9-94-80-e5-94-ae-e5-92-8c-e4-ba-a4-e5-8f-89-e9-94-80-e5-94-ae-e6-8f-90-e9-ab-98-e4-bd-a0-e7-9a-84-e4-ba-a7-e5-93-81-e6-94-b6-e7-9b-8a/">如何通过向上销售和交叉销售提高你的产品收益</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/04/10/e5-8d-81-e4-ba-bf-e7-be-8e-e5-85-83-e7-ba-a7-e5-88-ab-e7-9a-84-e7-8b-ac-e8-a7-92-e5-85-bd-e4-bc-81-e4-b8-9a-e6-98-af-e6-80-8e-e4-b9-88-e5-85-bb-e6-88-90-e7-9a-84-1/" itemprop="url">十亿美元级别的“独角兽”企业是怎么养成的</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-10T14:00:26+08:00">
+                2015-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/" itemprop="url" rel="index">
+                    <span itemprop="name">产品</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <blockquote>
+      
+
+      
+        
+          
+            <div class="section-inner layoutSingleColumn"><br>&gt; 编者注：本文源自<a href="https://medium.com/backchannel/here-are-the-secrets-of-unicorn-companies-c8951b99215b" target="_blank" rel="external">Medium</a>，本文发稿时原文在短短3天时间内已经获得了493个推荐，中文版本由<a href="http://techgogogo.com/about/" target="_blank" rel="external">天地会珠海分舵</a>进行编译。作者通过组织160位专家对100多个著名的企业的成功规律进行了深入的研究，然后对这些“独角兽“级别的企业的成功经验进行了史无前例的总结…<br><br><span class="token p">我们当前正处在一个创造着空前价值的时代，该时代的标志就是“独角兽”级别公司的逐渐增多，独角兽 - 一个可以迅速达到十亿级别以上市值的公司。当权威们再一次质疑“我们是否正处于泡沫之中?”时，企业家们提出的更多的是一个更实在的问题：“究竟有什么秘密可以让一个稚嫩的初创企业成长成一个独角兽级别的企业呢？“。如下图所示，当前已经有不少的创业者逐渐找到了破解该秘密的方法，因为这些公司大大缩短了从成立到成长为十亿级别市值的公司的时间。</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/独角兽时限图.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/独角兽时限图.png" alt="独角兽时限图"></a><br><br><span class="token p">“独角兽”这个对十亿市值级别公司的称谓来自于风投人物Aileen lee在2013年11月份的的一篇描述创业种子期该如何向市值十亿级别的公司学习的文章《欢迎加入独角兽俱乐部：从十亿级别公司身上学习创业》，所以从那时起，独角兽这个名字就开始渗入并风靡创业界。现在一个初创企业迅速变成一个独角兽级别的公司其实不再是一个天荒夜谈的神话，已经有不少如Slack这样的公司打破了这个神话，顺利的进入了独角兽行列。</span><br><br><span class="token p">当人们都挠破头皮的想打造出一个独角兽级别企业的时候，却很少有人理性的去认真进行全面的研究调查分析“对方究竟是如何成为独角兽级别企业的？”或者“为什么他们可以做的如此出色呢？”。 碰巧我和Mike Malone以及Yuri van Geest最近写的一本书上刚好对这个问题进行了深入的探索，并亲自总结出了一个扼要的关于如何成长成一个独角兽级别企业的创业指南。</span><br><br>&gt; <span class="token p">经过深入的调研，我们得出了这样的一个结论：<strong>独角兽级别企业已经找到一个可以将它们的组织架构以一种全新的方式进行扩展的方法。我们将这个方法叫做“指数级别企业”(编者注:扼要的说，就是如何让企业进行指数级别的增长和扩展的方法)</strong></span><br><br><span class="token p">在过去的数十年时间里，技术产业已经学会了如何对相应的技术进行扩展。一个初创企业可以眨眼间就获得成千上万个用户。用户有了，那么现在剩下的问题是如何将它们真正的组织架构进行相应的扩展以满足服务大量用户所带来的需求，这种组织的扩展从来都需要有一个线性的且循序渐进的迈进过程</span> 。<br><br><span class="token p">我们此前投入了3年时间对这种现象进行了深入的研究，期间我们找出了百多个我们认为够格的“指数级别企业“进行了深入的研究。从中我们得出的最基本的数据是这些公司的可扩展性(编者注：往下可以看到更多有关这种可扩展性的描述，比如Uber的将企业功能进行扩展，将乘客和司机的交互这种业务剥离出来，完全交给乘客和司机进行处理，从而大幅度的降低了边际成本)是同行其他企业的至少十倍。比如，一个典型的如美国强生和保洁这种做消费型包装产品的企业，它们从一个创意到新产品在沃尔玛上架所需要的时间是300天。而“指数级别企业“行列的领头羊之一Quirky，完成同样的过程只需要29天的时间。这很大的一部分原因就是Quirky将很大一部分业务功能进行了扩展，将那些并不是自己必须要做的事情交给了别人，甚至客户来解决，从而大大的提高了效率以及降低了边际成本。而这说的还只是传统产业的情况了，我们还没有提及那些新潮的互联网-软件-免费增值-社交-游戏类型的这些新型产业了，往下大家可以看到，它们的组织架构进行扩展后，很多关键的功能都交给了客户进行处理，从而大大的降低了编辑成本(编者注：比如国内的微信，将寻找用户这个传统产业需要公司自己做的事情完全转嫁给用户 - 用户需要跟别人沟通，自然就会将微信这个产品推荐给他的朋友)。</span><br><br><span class="token p">本文最后列出了我们花了很大心血进行调研所得出的100个满足“指数级别企业“要求的全球企业的排名。大家可以在需要的时候进行查看。</span><br><br><span class="token p">下面说说我们是如何进行排名的。我们首先开展一个调查来找出那些满足我们的核心扩展性指标的企业进行筛选 - 我们将该指标称为“指数级别系数”。然后我们会和我们散布在45个国家的160位专门研究“指数级别企业“的专家一块进行相应的研究。我们研究的对象都是2005年之后创建的那一大批重量级企业，然后根据调研结果对它们进行排名，过程中我们也许偶尔会对那些我们特别熟悉的公司增加相应的权重(比如我之前就在雅虎工作过，所以嘛…)，因为我们非常清楚它们的运作方式。最后我们还会考虑上其他的补充因素(位置，雇员数量，所覆盖的行业，等等)。</span><br><br># <span class="token p">究竟存在有哪些指数级别企业呢？</span><br><br><span class="token p">排在首位的非GitHub莫属了。满分84分，GitHub获得了最高的76分。对外，GitHub有着一个宏伟的变革性目标(MTP)，他们称之为“社会编程“，这个目标让他们深深的影响着它们的社区，并驱使他们闯劲十足的实现更好的算法来满足大量用户的需求。必要时，他们还可以驱使他们的员工/资源去拓展它们整个组织的疆域。对内，他们使用的是OKR(目标与关键成果法)管理架构，对此他们有着深厚的经验。他们乐于不断的接受挑战。他们的成员之间通常以匿名的方式并大量使用社群协作工具来进行合作。这个调查所权衡的排名因素(编者注：指的就是“数级别系数”，非常优秀的可扩展性。进可攻：大量的用户在为这个代码社区做贡献，要在Github的基础上扩展其他的业务根本不需要Github的员工自己费思量；退可守：大量的成员都是通过社群协作工具进行工作的，基本上不需要消耗其他额外的成本。)就非常显而易见，无需画蛇点睛了</span> 。<br><br><span class="token p">在这次调研过程中，我们发现“指数级别企业“和“独角兽级别企业“之间有着很高的重合度。在所有列出来的100家“指数级别企业“中，“独角兽级别企业“这些市值十亿美金以上的企业占据了35个席位。</span><br><br><span class="token p">也就是说，我们给出来的100个企业中，十亿级别的企业占据了整整35％的比例，这和Aileen Lee以及财富杂志所给出来的数据竟然是完全一致的。下面我们进行更进一步的分析。</span><br><br>## <span class="token p">按雇员数量来分</span><br><br><span class="token p">在我们调研的100家企业中，其中65家企业的雇员是在11到500个雇员的规模的，没有更低的了。</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/雇员规模.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/雇员规模.png" alt="雇员规模"></a><br><br>#<br><br>## <span class="token p">按地理位置分布来分</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/区域分布图.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/区域分布图.png" alt="区域分布图"></a><br><br>## <span class="token p">按成立时间来分</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/企业年龄图.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/企业年龄图.png" alt="企业年龄图"></a><br><br><span class="token p">各个主要的“指数级别企业“的成立时间都不会超过10年。这就意味着该列表中的大部分企业还没有完全处于他们的巅峰时期。而这同时也意味着初创企业更有机会成为“指数级别企业”，因为前面提到的这些楷模企业都还处于初创阶段。</span><br><br><span class="token p">这100个企业所覆盖的前5个代表性行业有：社交/博客/信息，电商，金融，IT&amp;云，游戏/娱乐，最后是以LinkedIn位代表的人才需求类行业。</span><br><br># <span class="token p">建立一个独角兽/指数级别的企业</span><br><br><span class="token p">如果正在查看本文的看官您是个创业者，毫无疑问您的下一个问题将会是，“如何才能做到这些呢？“ 根据我们的调研结果，我们给大家打造了一个10步走的机制来指引大家该如何建立一个高度可拓展的企业：</span><br><br>1.  <span class="token p">选择一个雄伟的变革性的目标，如谷歌的“将世界上的信息都组织起来“，或者如Quirky的“让发明创造变得触手可及“。所有这些我们发现的指数级别企业都有着这样一个雄伟且变革性的目标。</span><br>2.  <span class="token p">创建或者加入一个与你行业相关的优秀社区(请参考Meetup!)。Chris Anderson的DIY Drones社区就是一个非常好的例子。里面有超过50,000个喜欢DIY的成员。在一个初创公司初期，一个优秀的社区除了不能帮你设定你的目标之外，所有其他事情基本上都可以解决。</span><br>3.  <span class="token p">组建一个创业团队(4个人的初创团队应该是一个最优选择)。我们建议成员由一个有远见的人，一个用户体验专家，一个专家级别的工程师，以及一个业务/财务专家组成。</span><br>4.  <span class="token p">选择一个具有突破性的可以带来比起当前已有同类产品带来超过10倍大小改进的创意。</span><br>5.  <span class="token p">建立好你的商业模式画布(请参考精益创业)。这个简单的流程可以让你快速生成商业模式应该考虑的九个关键因素(包括合作关系，销售渠道, 独特价值主张(USP)等)。</span><br>6.  <span class="token p">找出你的商业模式 - 基本上就是找出你该如何从中获利的途径。仅供参考，现在很多初创公司都在推出一些专门针对传统公司的新型商业模式(如Netflix网飞公司的商业模式就是专门针对传统的电影行业)。</span><br>7.  <span class="token p">打造出你的最简可行产品(MVP)。怎么样的最简可行的功能可以让你快速将产品推向市场并快速获取用户的反馈？注意很多非常成功的互联网公司(如 Twitter, Foursquare, Facebook)在开始的时候他们的产品功能都是非常简陋的 - 从设计到用户交互，到处到充诉着各种问题。但是他们都从快速反馈并进行快速迭代的进程中将他们的产品做得异常的成功。</span><br>8.  <span class="token p">验证市场&amp;销售渠道。Groupon公司曾经在一个城市中投入了18个月的时间来反复试验并摸索出一条行得通得市场和销售渠道，然后快速的在其他城市进行拷贝并获得巨大的成功。</span><br>9.  <span class="token p">考虑尽量让关键性业务功能脱离公司独立运行(比如，Uber处理的关键性业务主要就是乘客的打车需求和司机的接收订单进行载客的需求。司机和乘客的业务交互就不是由Uber自身来进行处理的。顾客该打车还是需要自发的联系司机，讨价还价还是只是发生在他们两个身上，Uber只是给他们提供了个平台而已)</span><br>10.  <span class="token p">瞄准的目标应该是去打造一个平台。成功的“指数级别企业“(苹果, 谷歌, 亚马逊)做的都是平台。那些没有达成这个目标的企业(雅虎，黑莓，诺基亚)最终碰到的问题大家都有目共睹无需我多言了吧。</span><br>&nbsp;<br><br># <span class="token p">成为独角兽级别企业的关键</span><br><br><span class="token p">无论是“指数级别企业“还是“独角兽级别企业“，很明显的一点是他们做生意的手段都是非常新颖的。当运作一个公司的时候，你也许会常常担心寻找客户以及供货管理所需要投入的资金，你甚至尝试大刀阔斧的对实现这两者的平衡进行改革。但，在当今互联网首次变得如此盛行的时代，通过在线市场的方式大幅降低寻找客户的成本已经不是什么难事了 - 事实上，如果你能达到一个病毒式营销的条件的话(比如WhatsApp)，你寻找用户所需的投入基本为零。</span><br><br><span class="token p">将关键事务扩展出去，减少企业的参预，大幅度的降低供给的耗费。独角兽级别企业/指数级别企业的这种创举是史无前例的。Uber将一辆出租车加入到他们的舰队中所需要消耗的边际成本是非常低廉的。Airbnb将一个闲置的旅馆房间加入到它的库存中所消耗的成本也基本是可以忽略不计的。如果你是凯瑞酒店的话，你要在你的库存中在增加一个房间的话是不可能是事情，除非你考虑再打造一间新的旅馆出来。谷歌去完成网友的一次搜索请求所需要耗费的边际成本也是基本为零。所以，如果你现在能大幅度降低你的供给成本的话，你的市场价值自然就会大幅暴涨。</span><br><br><span class="token p">所以说，如果你想要发展成为一个独角兽级别的企业的话，将你的的组织架构扩展出你的核心团队之外，然后找到一个降低你的供给的边际成本的方式是势在必行的。</span><br><br>&nbsp;<br><br># <span class="token p">老牌的独角兽企业该学习一些新的技巧</span><br><br><span class="token p">虽然大部分独角兽级别/指数级别企业都很年轻，但是没有任何理由可以让老牌的大企业不去遵循以上的流程。事实上，我们认为所有这些老牌企业都应该强迫自己去接受这种思想。说到独角兽级别企业，苹果应该算是当今的一匹终极独角兽了。通过运用其平台的影响力，以漂亮的设计技术为先锋打头阵，苹果正在逐个进入一个个的传统产业，并每次都能从中获取数十亿美元级别的市场。这里我们非常期待它成为首个万亿级别的公司 - 这就真的是一个“独“角兽了！。</span><br><br><span class="token p">以下列出的就是排名前一百的“指数级别企业”的名单。更多详细的信息请查看<span class="token url"><a href="http://top100.exponentialorgs.com" target="_blank" rel="external">http://top100.exponentialorgs.com</a></span></span><br><div class="section-inner sectionLayout--outsetRow" data-paragraph-count="2"><figure id="366d" class="graf--figure blockLayout--outsetRow is-partialWidth"><br><div class="aspectRatioPlaceholder is-locked"><img src="https://d262ilb51hltx0.cloudfront.net/max/966/1*G1jASRmNHG1da92C5NZZgQ.png" alt=""><img src="https://d262ilb51hltx0.cloudfront.net/max/1054/1*1iFXDy0gq4iKENmvHVxglQ.png" alt=""></div><br><div class="aspectRatioPlaceholder is-locked"><br><br><em> </em> <em><br><br></em></div><br><div class="aspectRatioPlaceholder is-locked"><strong>版权</strong>:本作品采用[<a href="http://creativecommons.org/licenses/by/3.0/cn/" target="_blank" rel="external">创作共用署名3.0中国大陆版许可证</a>], 若非授权，转发时切勿删除以下联系信息，否则追究相应责任。</div><br><div class="aspectRatioPlaceholder is-locked"><br><br><em>*提醒</em>:更多相关文章将请关注官网<a href="http://techgogogo.com/about/" target="_blank" rel="external">www.techgogogo.com</a>和微信公众号:techgogogo。<br><br>本文首发DoNews 专栏。<br><br></div><br></figure></div><br></div>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/10/e5-8d-81-e4-ba-bf-e7-be-8e-e5-85-83-e7-ba-a7-e5-88-ab-e7-9a-84-e7-8b-ac-e8-a7-92-e5-85-bd-e4-bc-81-e4-b8-9a-e6-98-af-e6-80-8e-e4-b9-88-e5-85-bb-e6-88-90-e7-9a-84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/04/10/e5-8d-81-e4-ba-bf-e7-be-8e-e5-85-83-e7-ba-a7-e5-88-ab-e7-9a-84-e7-8b-ac-e8-a7-92-e5-85-bd-e4-bc-81-e4-b8-9a-e6-98-af-e6-80-8e-e4-b9-88-e5-85-bb-e6-88-90-e7-9a-84/" itemprop="url">十亿美元级别的“独角兽”企业是怎么养成的</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-10T14:00:26+08:00">
+                2015-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/" itemprop="url" rel="index">
+                    <span itemprop="name">产品</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div class="section-inner layoutSingleColumn"><br>&gt; 编者注：本文源自<a href="https://medium.com/backchannel/here-are-the-secrets-of-unicorn-companies-c8951b99215b" target="_blank" rel="external">Medium</a>，本文发稿时原文在短短3天时间内已经获得了493个推荐，中文版本由<a href="http://techgogogo.com/about/" target="_blank" rel="external">天地会珠海分舵</a>进行编译。作者通过组织160位专家对100多个著名的企业的成功规律进行了深入的研究，然后对这些“独角兽“级别的企业的成功经验进行了史无前例的总结…<br><br><span class="token p">我们当前正处在一个创造着空前价值的时代，该时代的标志就是“独角兽”级别公司的逐渐增多，独角兽 - 一个可以迅速达到十亿级别以上市值的公司。当权威们再一次质疑“我们是否正处于泡沫之中?”时，企业家们提出的更多的是一个更实在的问题：“究竟有什么秘密可以让一个稚嫩的初创企业成长成一个独角兽级别的企业呢？“。如下图所示，当前已经有不少的创业者逐渐找到了破解该秘密的方法，因为这些公司大大缩短了从成立到成长为十亿级别市值的公司的时间。</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/独角兽时限图.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/独角兽时限图.png" alt="独角兽时限图"></a><br><br><span class="token p">“独角兽”这个对十亿市值级别公司的称谓来自于风投人物Aileen lee在2013年11月份的的一篇描述创业种子期该如何向市值十亿级别的公司学习的文章《欢迎加入独角兽俱乐部：从十亿级别公司身上学习创业》，所以从那时起，独角兽这个名字就开始渗入并风靡创业界。现在一个初创企业迅速变成一个独角兽级别的公司其实不再是一个天荒夜谈的神话，已经有不少如Slack这样的公司打破了这个神话，顺利的进入了独角兽行列。</span><br><br><span class="token p">当人们都挠破头皮的想打造出一个独角兽级别企业的时候，却很少有人理性的去认真进行全面的研究调查分析“对方究竟是如何成为独角兽级别企业的？”或者“为什么他们可以做的如此出色呢？”。 碰巧我和Mike Malone以及Yuri van Geest最近写的一本书上刚好对这个问题进行了深入的探索，并亲自总结出了一个扼要的关于如何成长成一个独角兽级别企业的创业指南。</span><br><br>&gt; <span class="token p">经过深入的调研，我们得出了这样的一个结论：<strong>独角兽级别企业已经找到一个可以将它们的组织架构以一种全新的方式进行扩展的方法。我们将这个方法叫做“指数级别企业”(编者注:扼要的说，就是如何让企业进行指数级别的增长和扩展的方法)</strong></span><br><br><span class="token p">在过去的数十年时间里，技术产业已经学会了如何对相应的技术进行扩展。一个初创企业可以眨眼间就获得成千上万个用户。用户有了，那么现在剩下的问题是如何将它们真正的组织架构进行相应的扩展以满足服务大量用户所带来的需求，这种组织的扩展从来都需要有一个线性的且循序渐进的迈进过程</span> 。<br><br><span class="token p">我们此前投入了3年时间对这种现象进行了深入的研究，期间我们找出了百多个我们认为够格的“指数级别企业“进行了深入的研究。从中我们得出的最基本的数据是这些公司的可扩展性(编者注：往下可以看到更多有关这种可扩展性的描述，比如Uber的将企业功能进行扩展，将乘客和司机的交互这种业务剥离出来，完全交给乘客和司机进行处理，从而大幅度的降低了边际成本)是同行其他企业的至少十倍。比如，一个典型的如美国强生和保洁这种做消费型包装产品的企业，它们从一个创意到新产品在沃尔玛上架所需要的时间是300天。而“指数级别企业“行列的领头羊之一Quirky，完成同样的过程只需要29天的时间。这很大的一部分原因就是Quirky将很大一部分业务功能进行了扩展，将那些并不是自己必须要做的事情交给了别人，甚至客户来解决，从而大大的提高了效率以及降低了边际成本。而这说的还只是传统产业的情况了，我们还没有提及那些新潮的互联网-软件-免费增值-社交-游戏类型的这些新型产业了，往下大家可以看到，它们的组织架构进行扩展后，很多关键的功能都交给了客户进行处理，从而大大的降低了编辑成本(编者注：比如国内的微信，将寻找用户这个传统产业需要公司自己做的事情完全转嫁给用户 - 用户需要跟别人沟通，自然就会将微信这个产品推荐给他的朋友)。</span><br><br><span class="token p">本文最后列出了我们花了很大心血进行调研所得出的100个满足“指数级别企业“要求的全球企业的排名。大家可以在需要的时候进行查看。</span><br><br><span class="token p">下面说说我们是如何进行排名的。我们首先开展一个调查来找出那些满足我们的核心扩展性指标的企业进行筛选 - 我们将该指标称为“指数级别系数”。然后我们会和我们散布在45个国家的160位专门研究“指数级别企业“的专家一块进行相应的研究。我们研究的对象都是2005年之后创建的那一大批重量级企业，然后根据调研结果对它们进行排名，过程中我们也许偶尔会对那些我们特别熟悉的公司增加相应的权重(比如我之前就在雅虎工作过，所以嘛…)，因为我们非常清楚它们的运作方式。最后我们还会考虑上其他的补充因素(位置，雇员数量，所覆盖的行业，等等)。</span><br><br># <span class="token p">究竟存在有哪些指数级别企业呢？</span><br><br><span class="token p">排在首位的非GitHub莫属了。满分84分，GitHub获得了最高的76分。对外，GitHub有着一个宏伟的变革性目标(MTP)，他们称之为“社会编程“，这个目标让他们深深的影响着它们的社区，并驱使他们闯劲十足的实现更好的算法来满足大量用户的需求。必要时，他们还可以驱使他们的员工/资源去拓展它们整个组织的疆域。对内，他们使用的是OKR(目标与关键成果法)管理架构，对此他们有着深厚的经验。他们乐于不断的接受挑战。他们的成员之间通常以匿名的方式并大量使用社群协作工具来进行合作。这个调查所权衡的排名因素(编者注：指的就是“数级别系数”，非常优秀的可扩展性。进可攻：大量的用户在为这个代码社区做贡献，要在Github的基础上扩展其他的业务根本不需要Github的员工自己费思量；退可守：大量的成员都是通过社群协作工具进行工作的，基本上不需要消耗其他额外的成本。)就非常显而易见，无需画蛇点睛了</span> 。<br><br><span class="token p">在这次调研过程中，我们发现“指数级别企业“和“独角兽级别企业“之间有着很高的重合度。在所有列出来的100家“指数级别企业“中，“独角兽级别企业“这些市值十亿美金以上的企业占据了35个席位。</span><br><br><span class="token p">也就是说，我们给出来的100个企业中，十亿级别的企业占据了整整35％的比例，这和Aileen Lee以及财富杂志所给出来的数据竟然是完全一致的。下面我们进行更进一步的分析。</span><br><br>## <span class="token p">按雇员数量来分</span><br><br><span class="token p">在我们调研的100家企业中，其中65家企业的雇员是在11到500个雇员的规模的，没有更低的了。</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/雇员规模.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/雇员规模.png" alt="雇员规模"></a><br><br>#<br><br>## <span class="token p">按地理位置分布来分</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/区域分布图.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/区域分布图.png" alt="区域分布图"></a><br><br>## <span class="token p">按成立时间来分</span><br><br><a href="http://techgogogo.com/wp-content/uploads/2015/04/企业年龄图.png" target="_blank" rel="external"><img src="http://techgogogo.com/wp-content/uploads/2015/04/企业年龄图.png" alt="企业年龄图"></a><br><br><span class="token p">各个主要的“指数级别企业“的成立时间都不会超过10年。这就意味着该列表中的大部分企业还没有完全处于他们的巅峰时期。而这同时也意味着初创企业更有机会成为“指数级别企业”，因为前面提到的这些楷模企业都还处于初创阶段。</span><br><br><span class="token p">这100个企业所覆盖的前5个代表性行业有：社交/博客/信息，电商，金融，IT&amp;云，游戏/娱乐，最后是以LinkedIn位代表的人才需求类行业。</span><br><br># <span class="token p">建立一个独角兽/指数级别的企业</span><br><br><span class="token p">如果正在查看本文的看官您是个创业者，毫无疑问您的下一个问题将会是，“如何才能做到这些呢？“ 根据我们的调研结果，我们给大家打造了一个10步走的机制来指引大家该如何建立一个高度可拓展的企业：</span><br><br>1.  <span class="token p">选择一个雄伟的变革性的目标，如谷歌的“将世界上的信息都组织起来“，或者如Quirky的“让发明创造变得触手可及“。所有这些我们发现的指数级别企业都有着这样一个雄伟且变革性的目标。</span><br>2.  <span class="token p">创建或者加入一个与你行业相关的优秀社区(请参考Meetup!)。Chris Anderson的DIY Drones社区就是一个非常好的例子。里面有超过50,000个喜欢DIY的成员。在一个初创公司初期，一个优秀的社区除了不能帮你设定你的目标之外，所有其他事情基本上都可以解决。</span><br>3.  <span class="token p">组建一个创业团队(4个人的初创团队应该是一个最优选择)。我们建议成员由一个有远见的人，一个用户体验专家，一个专家级别的工程师，以及一个业务/财务专家组成。</span><br>4.  <span class="token p">选择一个具有突破性的可以带来比起当前已有同类产品带来超过10倍大小改进的创意。</span><br>5.  <span class="token p">建立好你的商业模式画布(请参考精益创业)。这个简单的流程可以让你快速生成商业模式应该考虑的九个关键因素(包括合作关系，销售渠道, 独特价值主张(USP)等)。</span><br>6.  <span class="token p">找出你的商业模式 - 基本上就是找出你该如何从中获利的途径。仅供参考，现在很多初创公司都在推出一些专门针对传统公司的新型商业模式(如Netflix网飞公司的商业模式就是专门针对传统的电影行业)。</span><br>7.  <span class="token p">打造出你的最简可行产品(MVP)。怎么样的最简可行的功能可以让你快速将产品推向市场并快速获取用户的反馈？注意很多非常成功的互联网公司(如 Twitter, Foursquare, Facebook)在开始的时候他们的产品功能都是非常简陋的 - 从设计到用户交互，到处到充诉着各种问题。但是他们都从快速反馈并进行快速迭代的进程中将他们的产品做得异常的成功。</span><br>8.  <span class="token p">验证市场&amp;销售渠道。Groupon公司曾经在一个城市中投入了18个月的时间来反复试验并摸索出一条行得通得市场和销售渠道，然后快速的在其他城市进行拷贝并获得巨大的成功。</span><br>9.  <span class="token p">考虑尽量让关键性业务功能脱离公司独立运行(比如，Uber处理的关键性业务主要就是乘客的打车需求和司机的接收订单进行载客的需求。司机和乘客的业务交互就不是由Uber自身来进行处理的。顾客该打车还是需要自发的联系司机，讨价还价还是只是发生在他们两个身上，Uber只是给他们提供了个平台而已)</span><br>10.  <span class="token p">瞄准的目标应该是去打造一个平台。成功的“指数级别企业“(苹果, 谷歌, 亚马逊)做的都是平台。那些没有达成这个目标的企业(雅虎，黑莓，诺基亚)最终碰到的问题大家都有目共睹无需我多言了吧。</span><br>&nbsp;<br><br># <span class="token p">成为独角兽级别企业的关键</span><br><br><span class="token p">无论是“指数级别企业“还是“独角兽级别企业“，很明显的一点是他们做生意的手段都是非常新颖的。当运作一个公司的时候，你也许会常常担心寻找客户以及供货管理所需要投入的资金，你甚至尝试大刀阔斧的对实现这两者的平衡进行改革。但，在当今互联网首次变得如此盛行的时代，通过在线市场的方式大幅降低寻找客户的成本已经不是什么难事了 - 事实上，如果你能达到一个病毒式营销的条件的话(比如WhatsApp)，你寻找用户所需的投入基本为零。</span><br><br><span class="token p">将关键事务扩展出去，减少企业的参预，大幅度的降低供给的耗费。独角兽级别企业/指数级别企业的这种创举是史无前例的。Uber将一辆出租车加入到他们的舰队中所需要消耗的边际成本是非常低廉的。Airbnb将一个闲置的旅馆房间加入到它的库存中所消耗的成本也基本是可以忽略不计的。如果你是凯瑞酒店的话，你要在你的库存中在增加一个房间的话是不可能是事情，除非你考虑再打造一间新的旅馆出来。谷歌去完成网友的一次搜索请求所需要耗费的边际成本也是基本为零。所以，如果你现在能大幅度降低你的供给成本的话，你的市场价值自然就会大幅暴涨。</span><br><br><span class="token p">所以说，如果你想要发展成为一个独角兽级别的企业的话，将你的的组织架构扩展出你的核心团队之外，然后找到一个降低你的供给的边际成本的方式是势在必行的。</span><br><br>&nbsp;<br><br># <span class="token p">老牌的独角兽企业该学习一些新的技巧</span><br><br><span class="token p">虽然大部分独角兽级别/指数级别企业都很年轻，但是没有任何理由可以让老牌的大企业不去遵循以上的流程。事实上，我们认为所有这些老牌企业都应该强迫自己去接受这种思想。说到独角兽级别企业，苹果应该算是当今的一匹终极独角兽了。通过运用其平台的影响力，以漂亮的设计技术为先锋打头阵，苹果正在逐个进入一个个的传统产业，并每次都能从中获取数十亿美元级别的市场。这里我们非常期待它成为首个万亿级别的公司 - 这就真的是一个“独“角兽了！。</span><br><br><span class="token p">以下列出的就是排名前一百的“指数级别企业”的名单。更多详细的信息请查看<span class="token url"><a href="http://top100.exponentialorgs.com" target="_blank" rel="external">http://top100.exponentialorgs.com</a></span></span><br><div class="section-inner sectionLayout--outsetRow" data-paragraph-count="2"><figure id="366d" class="graf--figure blockLayout--outsetRow is-partialWidth"><br><div class="aspectRatioPlaceholder is-locked"><img src="https://d262ilb51hltx0.cloudfront.net/max/966/1*G1jASRmNHG1da92C5NZZgQ.png" alt=""><img src="https://d262ilb51hltx0.cloudfront.net/max/1054/1*1iFXDy0gq4iKENmvHVxglQ.png" alt=""></div><br><div class="aspectRatioPlaceholder is-locked"><br><br><em> </em> <em><br><br></em></div><br><div class="aspectRatioPlaceholder is-locked"><strong>版权</strong>:本作品采用[<a href="http://creativecommons.org/licenses/by/3.0/cn/" target="_blank" rel="external">创作共用署名3.0中国大陆版许可证</a>], 若非授权，转发时切勿删除以下联系信息，否则追究相应责任。</div><br><div class="aspectRatioPlaceholder is-locked"><br><br><em>*提醒</em>:更多相关文章将请关注官网<a href="http://techgogogo.com/about/" target="_blank" rel="external">www.techgogogo.com</a>和微信公众号:techgogogo。<br><br>本文首发DoNews 专栏。<br><br></div><br></figure></div><br></div>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/10/e5-a6-82-e4-bd-95-e9-80-9a-e8-bf-87-e5-90-91-e4-b8-8a-e9-94-80-e5-94-ae-e5-92-8c-e4-ba-a4-e5-8f-89-e9-94-80-e5-94-ae-e6-8f-90-e9-ab-98-e4-bd-a0-e7-9a-84-e4-ba-a7-e5-93-81-e6-94-b6-e7-9b-8a-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/04/10/e5-a6-82-e4-bd-95-e9-80-9a-e8-bf-87-e5-90-91-e4-b8-8a-e9-94-80-e5-94-ae-e5-92-8c-e4-ba-a4-e5-8f-89-e9-94-80-e5-94-ae-e6-8f-90-e9-ab-98-e4-bd-a0-e7-9a-84-e4-ba-a7-e5-93-81-e6-94-b6-e7-9b-8a-1/" itemprop="url">如何通过向上销售和交叉销售提高你的产品收益</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-10T14:00:09+08:00">
+                2015-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/" itemprop="url" rel="index">
+                    <span itemprop="name">产品</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
 <p>编者注：作为一个企业家，我们辛辛苦苦的将产品给做出来了，但问题是怎么将它们给卖到客户手上呢？下面看看深受奥巴马赞誉的企业家<a href="http://www.quicksprout.com/blog/" target="_blank" rel="external">Neil Patel</a>是如何用信息图的形式告诉我们该如何去将我们的产品卖给客户。<br>在当今互联网技术飞速发展的时代，我们常用的两个提升收益的方法是什么？导入更多的流量到你的企业/产品网站和提高用户转化率，对吧？</p>
 </blockquote>
 <p>虽然这两个方法都非常行之有效，但别忘了还有一些其他方式可以帮助你提高收益…那就是增加你的平均订单价值(天地会珠海分舵注：一个顾客总订单价值除以购买产品的数量得出的就是“平均订单价值”。所以上面提及的常用的提升收益的导流等方法关注的更多是如何获取更多的用户进行购买；而本文要介绍的更多的是关注单个用户的购买行为)。而做到这一点的一个简单方法就是通过向上销售(upselling)和交叉销售(crossselling)这两种技巧来销售你的产品了。</p>
@@ -563,46 +1609,150 @@
 <p><strong>提醒</strong>:更多相关文章将请关注微信公众号:<strong>techgogogo</strong>或官网<a href="http://techgogogo.com/about/" target="_blank" rel="external">www.techgogogo.com</a>。</p>
 <p>&nbsp;</p>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/10/e5-a6-82-e4-bd-95-e9-80-9a-e8-bf-87-e5-90-91-e4-b8-8a-e9-94-80-e5-94-ae-e5-92-8c-e4-ba-a4-e5-8f-89-e9-94-80-e5-94-ae-e6-8f-90-e9-ab-98-e4-bd-a0-e7-9a-84-e4-ba-a7-e5-93-81-e6-94-b6-e7-9b-8a/" data-id="cj56dkqp900b3yqu21kf2126l" class="article-share-link">Share</a>
+
+    <div>
       
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e5-a6-82-e4-bd-95-e9-80-9a-e8-bf-87-e5-90-91-e4-b8-8a-e9-94-80-e5-94-ae-e5-92-8c-e4-ba-a4-e5-8f-89-e9-94-80-e5-94-ae-e6-8f-90-e9-ab-98-e4-bd-a0-e7-9a-84-e4-ba-a7-e5-93-81-e6-94-b6-e7-9b-8a-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/10/e5-a6-82-e4-bd-95-e9-80-9a-e8-bf-87-e5-90-91-e4-b8-8a-e9-94-80-e5-94-ae-e5-92-8c-e4-ba-a4-e5-8f-89-e9-94-80-e5-94-ae-e6-8f-90-e9-ab-98-e4-bd-a0-e7-9a-84-e4-ba-a7-e5-93-81-e6-94-b6-e7-9b-8a-1/" class="article-date">
-  <time datetime="2015-04-10T06:00:09.000Z" itemprop="datePublished">2015-04-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/产品/">产品</a>►<a class="article-category-link" href="/categories/产品/创业/">创业</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/10/e5-a6-82-e4-bd-95-e9-80-9a-e8-bf-87-e5-90-91-e4-b8-8a-e9-94-80-e5-94-ae-e5-92-8c-e4-ba-a4-e5-8f-89-e9-94-80-e5-94-ae-e6-8f-90-e9-ab-98-e4-bd-a0-e7-9a-84-e4-ba-a7-e5-93-81-e6-94-b6-e7-9b-8a/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/10/e5-a6-82-e4-bd-95-e9-80-9a-e8-bf-87-e5-90-91-e4-b8-8a-e9-94-80-e5-94-ae-e5-92-8c-e4-ba-a4-e5-8f-89-e9-94-80-e5-94-ae-e6-8f-90-e9-ab-98-e4-bd-a0-e7-9a-84-e4-ba-a7-e5-93-81-e6-94-b6-e7-9b-8a-1/">如何通过向上销售和交叉销售提高你的产品收益</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/04/10/e5-a6-82-e4-bd-95-e9-80-9a-e8-bf-87-e5-90-91-e4-b8-8a-e9-94-80-e5-94-ae-e5-92-8c-e4-ba-a4-e5-8f-89-e9-94-80-e5-94-ae-e6-8f-90-e9-ab-98-e4-bd-a0-e7-9a-84-e4-ba-a7-e5-93-81-e6-94-b6-e7-9b-8a/" itemprop="url">如何通过向上销售和交叉销售提高你的产品收益</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-10T14:00:09+08:00">
+                2015-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/" itemprop="url" rel="index">
+                    <span itemprop="name">产品</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <blockquote>
+      
+
+      
+        
+          
+            <blockquote>
 <p>编者注：作为一个企业家，我们辛辛苦苦的将产品给做出来了，但问题是怎么将它们给卖到客户手上呢？下面看看深受奥巴马赞誉的企业家<a href="http://www.quicksprout.com/blog/" target="_blank" rel="external">Neil Patel</a>是如何用信息图的形式告诉我们该如何去将我们的产品卖给客户。<br>在当今互联网技术飞速发展的时代，我们常用的两个提升收益的方法是什么？导入更多的流量到你的企业/产品网站和提高用户转化率，对吧？</p>
 </blockquote>
 <p>虽然这两个方法都非常行之有效，但别忘了还有一些其他方式可以帮助你提高收益…那就是增加你的平均订单价值(天地会珠海分舵注：一个顾客总订单价值除以购买产品的数量得出的就是“平均订单价值”。所以上面提及的常用的提升收益的导流等方法关注的更多是如何获取更多的用户进行购买；而本文要介绍的更多的是关注单个用户的购买行为)。而做到这一点的一个简单方法就是通过向上销售(upselling)和交叉销售(crossselling)这两种技巧来销售你的产品了。</p>
@@ -666,46 +1816,150 @@
 <p><strong>提醒</strong>:更多相关文章将请关注微信公众号:<strong>techgogogo</strong>或官网<a href="http://techgogogo.com/about/" target="_blank" rel="external">www.techgogogo.com</a>。</p>
 <p>&nbsp;</p>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/10/e5-a6-82-e4-bd-95-e9-80-9a-e8-bf-87-e5-90-91-e4-b8-8a-e9-94-80-e5-94-ae-e5-92-8c-e4-ba-a4-e5-8f-89-e9-94-80-e5-94-ae-e6-8f-90-e9-ab-98-e4-bd-a0-e7-9a-84-e4-ba-a7-e5-93-81-e6-94-b6-e7-9b-8a-1/" data-id="cj56dkqpc00b6yqu23zjkvidg" class="article-share-link">Share</a>
+
+    <div>
       
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
-  </div>
+  </article>
+
+
+    
+      
+
   
-</article>
-
 
   
-    <article id="post-e4-bb-8e-e5-a4-a7-e8-84-91-e7-bb-93-e6-9e-84-e5-88-86-e6-9e-90-e5-88-9b-e4-b8-9a-e4-ba-ba-e5-91-98-e5-ba-94-e8-af-a5-e5-a6-82-e4-bd-95-e5-81-9apitch-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/09/e4-bb-8e-e5-a4-a7-e8-84-91-e7-bb-93-e6-9e-84-e5-88-86-e6-9e-90-e5-88-9b-e4-b8-9a-e4-ba-ba-e5-91-98-e5-ba-94-e8-af-a5-e5-a6-82-e4-bd-95-e5-81-9apitch-1/" class="article-date">
-  <time datetime="2015-04-09T05:33:24.000Z" itemprop="datePublished">2015-04-09</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/产品/">产品</a>►<a class="article-category-link" href="/categories/产品/创业/">创业</a>
-  </div>
+  
+  
 
-  </div>
-  <div class="article-inner">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/09/e4-bb-8e-e5-a4-a7-e8-84-91-e7-bb-93-e6-9e-84-e5-88-86-e6-9e-90-e5-88-9b-e4-b8-9a-e4-ba-ba-e5-91-98-e5-ba-94-e8-af-a5-e5-a6-82-e4-bd-95-e5-81-9apitch-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kzlathander">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
     
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/09/e4-bb-8e-e5-a4-a7-e8-84-91-e7-bb-93-e6-9e-84-e5-88-86-e6-9e-90-e5-88-9b-e4-b8-9a-e4-ba-ba-e5-91-98-e5-ba-94-e8-af-a5-e5-a6-82-e4-bd-95-e5-81-9apitch-1/">从大脑结构分析创业人员应该如何做Pitch</a>
-    </h1>
-  
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/04/09/e4-bb-8e-e5-a4-a7-e8-84-91-e7-bb-93-e6-9e-84-e5-88-86-e6-9e-90-e5-88-9b-e4-b8-9a-e4-ba-ba-e5-91-98-e5-ba-94-e8-af-a5-e5-a6-82-e4-bd-95-e5-81-9apitch-1/" itemprop="url">从大脑结构分析创业人员应该如何做Pitch</a></h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-09T13:33:24+08:00">
+                2015-04-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/" itemprop="url" rel="index">
+                    <span itemprop="name">产品</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        <blockquote>
+      
+
+      
+        
+          
+            <blockquote>
 <p>编者注：本文由Neil Patel于2015-04-03 发布在<a href="http://www.quicksprout.com/blog/" target="_blank" rel="external">其个人博客</a>，中文版本由<a href="http://techgogogo.com/about/" target="_blank" rel="external">天地会珠海分舵</a>进行编译。这里值得一提的是，Neil是被美国总统奥巴马认为30岁以下最优秀的100个企业家之一，其非常引以为荣的一点是曾经帮助国外非常优秀的互联网媒体网站TechCrunch在60天时间内提升了30%的访问量！Neil通过结合自己多年的实战经验和自己的聪明才智，用信息图的形式将我们的大脑进行深入的解剖，从解剖学层面为我们解密初创企业应该如何才能说出一个出类拔萃的故事。</p>
 </blockquote>
 <h1 id="大脑对故事反应存在固定电路"><a href="#大脑对故事反应存在固定电路" class="headerlink" title="大脑对故事反应存在固定电路"></a><span style="color: #993300;">大脑对故事反应存在固定电路</span></h1><hr>
@@ -783,129 +2037,305 @@
 <p><strong>提醒</strong>:更多相关文章将请关注官网<a href="http://techgogogo.com/about/" target="_blank" rel="external">www.techgogogo.com</a>和微信公众号:techgogogo。</p>
 <p>本文首发iDoNews 专栏。</p>
 
+          
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/09/e4-bb-8e-e5-a4-a7-e8-84-91-e7-bb-93-e6-9e-84-e5-88-86-e6-9e-90-e5-88-9b-e4-b8-9a-e4-ba-ba-e5-91-98-e5-ba-94-e8-af-a5-e5-a6-82-e4-bd-95-e5-81-9apitch-1/" data-id="cj56dkqlb004dyqu2ac712o7c" class="article-share-link">Share</a>
+
+    <div>
       
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
       
     </footer>
-  </div>
+  </article>
+
+
+    
+  </section>
+
   
-</article>
-
-
-  
-
-
-  <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/page/12/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><a class="page-number" href="/page/15/">15</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/14/">__('next') &raquo;</a>
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/12/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/14/"><i class="fa fa-angle-right"></i></a>
   </nav>
-</section>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
         
-          <aside id="sidebar">
+          
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/">Hacker News</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/Swift/">Swift</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hacker-News/测试自动化/">测试自动化</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/《从0到1》/">《从0到1》</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/《从0到1》/创业/">创业</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/">产品</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/">创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/技术/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/设计/">设计</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/资讯/">资讯</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/创业/风投/">风投</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/技术/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/产品/设计/">设计</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/">创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/创业/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/资讯/">资讯</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/创业/风投/">风投</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/创新/">创新</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/技术/设计/">设计</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/资讯/">资讯</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/设计/">设计</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/设计/资讯/">资讯</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/风投/">风投</a></li></ul>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
 
-
-  
+  <aside id="sidebar" class="sidebar">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ABR/">ABR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ADB/">ADB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/API/">API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Altair/">Altair</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHut/">GitHut</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GoDaddy/">GoDaddy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5/">HTML5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hacker-News/">Hacker News</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IoT/">IoT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JanOS/">JanOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenVPN/">OpenVPN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Phonegap/">Phonegap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React-Native/">React Native</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RethinkDB/">RethinkDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Silver/">Silver</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Startup/">Startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swift/">Swift</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ThinkDB/">ThinkDB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/facebook/">facebook</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/">ios</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ownCloud/">ownCloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/paul-graham/">paul-graham</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/saas/">saas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sandstorm/">sandstorm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssl/">ssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows-10/">windows 10</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wireshark/">wireshark</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress/">wordpress</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/youtube/">youtube</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/三个木桶模型/">三个木桶模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/三星/">三星</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/主题/">主题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/云/">云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网/">互联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网创业/">互联网创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/产品/">产品</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/产品设计/">产品设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/从0到1/">从0到1</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/信息/">信息</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业/">创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业-先行者优势/">创业-先行者优势</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业使命/">创业使命</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业家/">创业家</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业教父/">创业教父</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创业环境/">创业环境</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创意/">创意</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/创投/">创投</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/初创企业/">初创企业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/利基应用/">利基应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/利益相关者/">利益相关者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/加密/">加密</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原生应用/">原生应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/命令行/">命令行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/大数据/">大数据</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/天使投资/">天使投资</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安全技术/">安全技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/展销/">展销</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/广播/">广播</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/应用/">应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/微软/">微软</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/技术趋势/">技术趋势</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/抓包/">抓包</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/智能设备/">智能设备</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派/">树莓派</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派2代/">树莓派2代</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模型/">模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模式/">模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/物联网/">物联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/监控技术/">监控技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/破解/">破解</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/硅谷/">硅谷</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/私有云/">私有云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/科技/">科技</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/端口转发/">端口转发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/简书/">简书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程语言/">编程语言</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网络安全/">网络安全</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自主博客/">自主博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/芯片/">芯片</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/虹膜扫描/">虹膜扫描</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/视频编辑/">视频编辑</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/跨平台/">跨平台</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/跨平台应用开发/">跨平台应用开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/迭代/">迭代</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/隐私/">隐私</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/项目构建/">项目构建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/风投/">风投</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/黑客/">黑客</a></li></ul>
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="kzlathander" />
+          <p class="site-author-name" itemprop="name">kzlathander</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">235</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">95</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
     </div>
-  </div>
+  </aside>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/ABR/" style="font-size: 10px;">ABR</a> <a href="/tags/ADB/" style="font-size: 10px;">ADB</a> <a href="/tags/API/" style="font-size: 10px;">API</a> <a href="/tags/Altair/" style="font-size: 10px;">Altair</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/GitHut/" style="font-size: 10px;">GitHut</a> <a href="/tags/GoDaddy/" style="font-size: 10px;">GoDaddy</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTML5/" style="font-size: 11.43px;">HTML5</a> <a href="/tags/Hacker-News/" style="font-size: 10px;">Hacker News</a> <a href="/tags/IoT/" style="font-size: 10px;">IoT</a> <a href="/tags/JanOS/" style="font-size: 10px;">JanOS</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/OpenVPN/" style="font-size: 10px;">OpenVPN</a> <a href="/tags/Phonegap/" style="font-size: 10px;">Phonegap</a> <a href="/tags/React-Native/" style="font-size: 10px;">React Native</a> <a href="/tags/RethinkDB/" style="font-size: 11.43px;">RethinkDB</a> <a href="/tags/Silver/" style="font-size: 10px;">Silver</a> <a href="/tags/Startup/" style="font-size: 10px;">Startup</a> <a href="/tags/Swift/" style="font-size: 10px;">Swift</a> <a href="/tags/ThinkDB/" style="font-size: 10px;">ThinkDB</a> <a href="/tags/docker/" style="font-size: 12.86px;">docker</a> <a href="/tags/facebook/" style="font-size: 11.43px;">facebook</a> <a href="/tags/ios/" style="font-size: 10px;">ios</a> <a href="/tags/ownCloud/" style="font-size: 10px;">ownCloud</a> <a href="/tags/paul-graham/" style="font-size: 10px;">paul-graham</a> <a href="/tags/saas/" style="font-size: 15.71px;">saas</a> <a href="/tags/sandstorm/" style="font-size: 15.71px;">sandstorm</a> <a href="/tags/ssl/" style="font-size: 10px;">ssl</a> <a href="/tags/windows-10/" style="font-size: 10px;">windows 10</a> <a href="/tags/wireshark/" style="font-size: 10px;">wireshark</a> <a href="/tags/wordpress/" style="font-size: 10px;">wordpress</a> <a href="/tags/youtube/" style="font-size: 10px;">youtube</a> <a href="/tags/三个木桶模型/" style="font-size: 11.43px;">三个木桶模型</a> <a href="/tags/三星/" style="font-size: 10px;">三星</a> <a href="/tags/主题/" style="font-size: 10px;">主题</a> <a href="/tags/云/" style="font-size: 14.29px;">云</a> <a href="/tags/互联网/" style="font-size: 14.29px;">互联网</a> <a href="/tags/互联网创业/" style="font-size: 12.86px;">互联网创业</a> <a href="/tags/产品/" style="font-size: 17.14px;">产品</a> <a href="/tags/产品设计/" style="font-size: 10px;">产品设计</a> <a href="/tags/从0到1/" style="font-size: 18.57px;">从0到1</a> <a href="/tags/信息/" style="font-size: 10px;">信息</a> <a href="/tags/创业/" style="font-size: 20px;">创业</a> <a href="/tags/创业-先行者优势/" style="font-size: 10px;">创业-先行者优势</a> <a href="/tags/创业使命/" style="font-size: 10px;">创业使命</a> <a href="/tags/创业家/" style="font-size: 10px;">创业家</a> <a href="/tags/创业教父/" style="font-size: 10px;">创业教父</a> <a href="/tags/创业环境/" style="font-size: 11.43px;">创业环境</a> <a href="/tags/创意/" style="font-size: 12.86px;">创意</a> <a href="/tags/创投/" style="font-size: 10px;">创投</a> <a href="/tags/初创企业/" style="font-size: 10px;">初创企业</a> <a href="/tags/利基应用/" style="font-size: 10px;">利基应用</a> <a href="/tags/利益相关者/" style="font-size: 10px;">利益相关者</a> <a href="/tags/加密/" style="font-size: 11.43px;">加密</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/原生应用/" style="font-size: 10px;">原生应用</a> <a href="/tags/命令行/" style="font-size: 10px;">命令行</a> <a href="/tags/大数据/" style="font-size: 10px;">大数据</a> <a href="/tags/天使投资/" style="font-size: 10px;">天使投资</a> <a href="/tags/安全技术/" style="font-size: 10px;">安全技术</a> <a href="/tags/展销/" style="font-size: 11.43px;">展销</a> <a href="/tags/广播/" style="font-size: 10px;">广播</a> <a href="/tags/应用/" style="font-size: 11.43px;">应用</a> <a href="/tags/微软/" style="font-size: 10px;">微软</a> <a href="/tags/技术趋势/" style="font-size: 10px;">技术趋势</a> <a href="/tags/抓包/" style="font-size: 10px;">抓包</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/智能设备/" style="font-size: 10px;">智能设备</a> <a href="/tags/树莓派/" style="font-size: 11.43px;">树莓派</a> <a href="/tags/树莓派2代/" style="font-size: 10px;">树莓派2代</a> <a href="/tags/模型/" style="font-size: 10px;">模型</a> <a href="/tags/模式/" style="font-size: 10px;">模式</a> <a href="/tags/物联网/" style="font-size: 10px;">物联网</a> <a href="/tags/监控技术/" style="font-size: 10px;">监控技术</a> <a href="/tags/破解/" style="font-size: 10px;">破解</a> <a href="/tags/硅谷/" style="font-size: 10px;">硅谷</a> <a href="/tags/私有云/" style="font-size: 10px;">私有云</a> <a href="/tags/科技/" style="font-size: 10px;">科技</a> <a href="/tags/端口转发/" style="font-size: 10px;">端口转发</a> <a href="/tags/简书/" style="font-size: 10px;">简书</a> <a href="/tags/编程语言/" style="font-size: 10px;">编程语言</a> <a href="/tags/网络安全/" style="font-size: 10px;">网络安全</a> <a href="/tags/自主博客/" style="font-size: 10px;">自主博客</a> <a href="/tags/芯片/" style="font-size: 10px;">芯片</a> <a href="/tags/虹膜扫描/" style="font-size: 10px;">虹膜扫描</a> <a href="/tags/视频编辑/" style="font-size: 10px;">视频编辑</a> <a href="/tags/跨平台/" style="font-size: 11.43px;">跨平台</a> <a href="/tags/跨平台应用开发/" style="font-size: 10px;">跨平台应用开发</a> <a href="/tags/迭代/" style="font-size: 10px;">迭代</a> <a href="/tags/隐私/" style="font-size: 10px;">隐私</a> <a href="/tags/项目构建/" style="font-size: 10px;">项目构建</a> <a href="/tags/风投/" style="font-size: 10px;">风投</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/04/13/create-new-business-model/">开辟新战场，打造新的商业模式</a>
-          </li>
-        
-          <li>
-            <a href="/2016/01/31/10-secret-facts-about-apples-product-design/">苹果产品设计中鲜为人知的10个细节</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/23/nodeos-the-javascript-based-operating-system/">NodeOS:一个用JavaScript写出来的操作系统</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/14/five-things-you-need-to-know-about-hadoop-v-apache-spark/">2分钟读懂大数据框架Hadoop和Spark的异同</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/13/its-actually-open-source-software-thats-eating-the-world-1/">究竟是谁在吞噬着这个世界</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
         
       </div>
-      <footer id="footer">
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kzlathander</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
