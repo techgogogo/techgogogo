@@ -102,12 +102,14 @@
 <meta property="og:site_name" content="科技向前冲">
 <meta property="og:description" content="谈到大数据，相信大家对Hadoop和Apache Spark这两个名字并不陌生。但我们往往对它们的理解只是提留在字面上，并没有对它们进行深入的思考，下面不妨跟我一块看下它们究竟有什么异同。 解决问题的层面不一样首先，Hadoop和Apache Spark两者都是大数据框架，但是各自存在的目的不尽相同。Hadoop实质上更多是一个分布式数据基础设施: 它将巨大的数据集分派到一个由普通计算机组成的集">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/264714-bd0ec567eee8a2b7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-07-17T01:55:32.000Z">
+<meta property="og:image" content="http://yoursite.com/images/hadoop%20vs%20spark/cover.jpg">
+<meta property="og:image" content="http://yoursite.com/images/saomedaytodo-qrcode.jpeg">
+<meta property="og:image" content="http://yoursite.com/images/coursebao-qrcode.jpg">
+<meta property="og:updated_time" content="2021-01-03T14:06:59.312Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2分钟读懂大数据框架Hadoop和Spark的异同">
 <meta name="twitter:description" content="谈到大数据，相信大家对Hadoop和Apache Spark这两个名字并不陌生。但我们往往对它们的理解只是提留在字面上，并没有对它们进行深入的思考，下面不妨跟我一块看下它们究竟有什么异同。 解决问题的层面不一样首先，Hadoop和Apache Spark两者都是大数据框架，但是各自存在的目的不尽相同。Hadoop实质上更多是一个分布式数据基础设施: 它将巨大的数据集分派到一个由普通计算机组成的集">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/264714-bd0ec567eee8a2b7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:image" content="http://yoursite.com/images/hadoop%20vs%20spark/cover.jpg">
 
 
 
@@ -386,7 +388,7 @@
       
 
       
-        <p><img src="http://upload-images.jianshu.io/upload_images/264714-bd0ec567eee8a2b7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Big Data"></p>
+        <p><img src="/images/hadoop vs spark/cover.jpg" alt="Big Data"></p>
 <p>谈到大数据，相信大家对Hadoop和Apache Spark这两个名字并不陌生。但我们往往对它们的理解只是提留在字面上，并没有对它们进行深入的思考，下面不妨跟我一块看下它们究竟有什么异同。</p>
 <h3 id="解决问题的层面不一样"><a href="#解决问题的层面不一样" class="headerlink" title="解决问题的层面不一样"></a><strong><span style="color: #993300;">解决问题的层面不一样</span></strong></h3><p>首先，Hadoop和Apache Spark两者都是大数据框架，但是各自存在的目的不尽相同。Hadoop实质上更多是一个分布式数据基础设施: 它将巨大的数据集分派到一个由普通计算机组成的集群中的多个节点进行存储，意味着您不需要购买和维护昂贵的服务器硬件。</p>
 <p>同时，Hadoop还会索引和跟踪这些数据，让大数据处理和分析效率达到前所未有的高度。Spark，则是那么一个专门用来对那些分布式存储的大数据进行处理的工具，它并不会进行分布式数据的存储。</p>
@@ -404,9 +406,14 @@
 <p>大部分机器学习算法都是需要多重数据处理的。此外，通常会用到Spark的应用场景有以下方面：实时的市场活动，在线产品推荐，网络安全分析，机器日记监控等。</p>
 <h3 id="灾难恢复"><a href="#灾难恢复" class="headerlink" title="灾难恢复"></a><strong><span style="color: #993300;">灾难恢复</span></strong></h3><p>两者的灾难恢复方式迥异，但是都很不错。因为Hadoop将每次处理后的数据都写入到磁盘上，所以其天生就能很有弹性的对系统错误进行处理。</p>
 <p>Spark的数据对象存储在分布于数据集群中的叫做弹性分布式数据集(RDD: Resilient Distributed Dataset)中。“这些数据对象既可以放在内存，也可以放在磁盘，所以RDD同样也可以提供完成的灾难恢复功能，”Borne指出。</p>
-<blockquote>
-<p><span style="color: #999999;">_注：更多文章请关注公众号:techgogogo或个人博客<a href="http://techgogogo.com/" target="_blank" rel="noopener">http://techgogogo.com</a>。当然，也非常欢迎您直接微信(zhubaitian1)勾搭。本文由天地会珠海分舵编译自<a href="http://www.infoworld.com/article/3014440/big-data/five-things-you-need-to-know-about-hadoop-v-apache-spark.html#tk.rss_all" target="_blank" rel="noopener">InforWorld</a>。转载请自觉。_</span></p>
-</blockquote>
+<div style="padding: 0 20px 0;  
+    margin: 1rem 0 -3rem 0;  
+    line-height: 1px;  
+    border-left: 240px solid #ddd;  
+    border-right: 240px solid #ddd;  
+    text-align: center;">我的更多产品</div>
+
+<p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:16rem; width: 16rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:15rem; width: 15rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
 
       
     </div>
