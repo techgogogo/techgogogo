@@ -296,741 +296,6 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/08/06/scrum-plus-kanban/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="朱佰添">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="科技向前冲">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/08/06/scrum-plus-kanban/" itemprop="url">Scrum vs. 看板，还是Scrum + 看板？</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-08-06T16:50:54+08:00">
-                2015-08-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/产品/" itemprop="url" rel="index">
-                    <span itemprop="name">产品</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/产品/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天想与大家分享一款敏捷开发工具“看板”，该词汇来自于岛国，当我看到看板的英文时，我真的惊呆了，看板竟然就是 Kanban？！</p>
-<p>我们可以结合 Scrum 与 Kanban，让项目管理更加有效，让资源分配更加合理，让绩效考核更加公平！</p>
-<ul>
-<li>对于项目经理而言，最担心的就是项目进度不可控，不知道每位开发人员具体的工作进度，有了 Kanban 一切都是那么地清晰。</li>
-<li>对于开发经理而言，最担心的就是资源分配不合理，忙的人忙死，闲的人闲死，有了 Kanban 一切都是那么地自然。</li>
-<li>对于开发人员而言，最担心的就是绩效考核不公平，“凭什么我做的比他多，拿的工资却比他少？不公平啊！”有了 Kanban 一切都是那么地公平。<br>可见，项目经理、开发经理、开发人员拥有了 Kanban，也就拥有了和谐与快乐！</li>
-</ul>
-<p>那么 Kanban 到底是什么呢？我们先来看看这张表格吧：</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174145_opXT.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174145_opXT.png" alt="image" title="image"></a></p>
-<p>下面我们来理解一下这个表格吧！</p>
-<ul>
-<li>这个表格有 5 列：Backlog（原始需求）、Selected（被选中的需求）、Develop（开发阶段）、Deploy（部署阶段）、Live（上线阶段）</li>
-<li>其中 Develop 阶段包括 2 个子阶段：Ongoing（进行中）、Done（已完成）</li>
-<li>包括 3 中角色：产品经理（红色小人）、开发人员（蓝色小人）、部署人员（绿色小人），其实还有项目经理，只是他/她贯穿于始终，所有就没有画出来了。<br>在 Backlog 中放置了许多小卡片，它们在 Kanban 中被称为 WIP（Work In Process，在制品）。对于产品经理而言，WIP 是需求，而对于开发人员与部署人员而言，WIP 却是任务。</li>
-</ul>
-<p>实际这些 WIP 卡片上都带有一些文字描述，包括：标题、描述、优先级等信息。</p>
-<p>需要注意的是，Selected、Develop、Deploy 下方有一个数字，该数字表示此阶段中最多可以放置的 WIP 数量。例如，在 Selected 中最多只能放 2 个 WIP；在 Develop 中（包括它的子阶段）最多只能放置 2 个 WIP。这里的数字只是一个示例，具体多少可根据团队实际情况而定。有一个经验公式可以参考“WIP 上限 = 团队规模 * 2 - 1”，减 1 表示大家需要协作，例如：4 人的团队，WIP 上限是 7。</p>
-<p>也许有人会提出，为什么没有 Test 阶段？—— 这个可以有，这里只是一个示例而已，你不妨自行加上去。</p>
-<p>对于多个项目而言，可以在这张表格中添加更多的泳道（行），每一行相当于一个项目，所有的项目进度清晰明了。</p>
-<p>好！继续我们的 Kanban，有意思的事情即将发生！</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174146_5Rfx.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174146_5Rfx.png" alt="image" title="image"></a></p>
-<p>产品经理挑选了 2 个 WIP 到 Selected 中，此时，由开发经理决定该任务的技术难度，并由项目经理将任务分配到指定的开发人员，也可将同一个任务分配给两个人，让他们去结对编程。</p>
-<p>开发人员（架构师与程序员）可对 Selected 中的需求进行工作量评估，可采用投票的方式进行，最终给出一个合理的评估值，整个估算过程，项目经理无需参与，主要是开发人员共同完成。</p>
-<p>开发经理可以对任务设置一个“分值”，这个分值可直接影响到后续的绩效考核，所以对大家来说，这个分值是公开可见的，谁做的多，谁做得少，一目了然。当然，开发人员也可以主动承担具有更具挑战的任务（为了锻炼自己，也为了多拿点钱），但任务分配的决定权始终在项目经理手中。</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174146_I8nB.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174146_I8nB.png" alt="image" title="image"></a></p>
-<p>现在假设 A、B 两个任务已经分别被不同的开发人员处理了，那么这些任务就应该移动到 Ongoing 中，同时，产品经理可以从 Backlog 中挑选出 2 个优先级较高的需求到 Selected 中。这样就保证 Selected 与 Develop 都达到了 WIP 的上限。</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174147_zwK8.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174147_zwK8.png" alt="image" title="image"></a></p>
-<p>有人已经把 A 做完了，那么 A 就可以移动到 Done 中了。随后，部署人员就可以开始干活了。</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174147_6DBu.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174147_6DBu.png" alt="image" title="image"></a></p>
-<p>部署人员就可以将 A 从 Done 中移动到 Deploy 中，表示部署人员正在做这件事情。同时，做完了 A 任务的开发人员可以再做其它新任务，只需从 Selected 中移动到 Ongoing 中，移动这件事情不是开发人员随意操作的，而是有项目经理负责的。产品经理发现 Selected 中只有一个 D，就可以考虑放入一些新的需求了。</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174147_6p0K.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174147_6p0K.png" alt="image" title="image"></a></p>
-<p>此时，部署人员遇到了问题，发现 A 部署的时候总是报错，跑不起来了。同时，其他开发人员也完成了 B 任务。</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174148_tU06.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174148_tU06.png" alt="image" title="image"></a></p>
-<p>完成了 B 任务的开发人员本来是可以做新需求的，但项目经理发现 Develop 中只能放 2 个任务，所以肯定是后面的阶段出现了问题，导致整个流程受阻了。项目经理可以灵活调度人力资源，集中火力解决现在所遇到的问题。</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174148_t0Cs.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174148_t0Cs.png" alt="image" title="image"></a></p>
-<p>所以项目经理不得不放弃新的任务，去让开发人员去帮助部署人员来解决问题。此时，其他的开发人员还在进行 C 任务。</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174149_PPXY.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174149_PPXY.png" alt="image" title="image"></a></p>
-<p>部署的问题还没来得及解决，此时 C 任务也完成了，同时，产品经理也放入了新的 K 需求，确保 Selected 这个水池是装满水的。</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174149_tnEr.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174149_tnEr.png" alt="image" title="image"></a></p>
-<p>整个部署问题看起来比较搞人，所有的开发人员全都上阵了，集中更多人的智慧，解决这个棘手的问题。此时，产品经理不能放入更多的需求，由于此时 Selected 已经满额了。其实，开发人员面对太多的需求时，往往都会倍感压力，身心憔悴。</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174150_yecn.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174150_yecn.png" alt="image" title="image"></a></p>
-<p>看来这个部署问题，确实够折腾的，连产品经理都过来了凑热闹了。但他或许不懂技术，但多个人多个头脑吧，正所谓“当局者迷，旁观者清”，最终经过大家的努力，肯定会攻克这座碉堡！</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174150_0Lhu.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174150_0Lhu.png" alt="image" title="image"></a></p>
-<p>几天之后，Kanban 流程依旧是稳定的，大家分工协作，人力资源合理利用。大家是一个团队，目标就是把项目做好，不会因为自己的事情做完了就闲置了。</p>
-<p>我们不妨将这张表格贴到墙上去吧！让每个员工都可以看到，让过路的老板们也可以看到我们的辛苦努力，这确实是一种非常好的项目管理方法！</p>
-<p><a href="http://static.oschina.net/uploads/img/201401/29174151_36wa.png" target="_blank" rel="noopener"><img src="http://static.oschina.net/uploads/img/201401/29174151_36wa.png" alt="image" title="image"></a></p>
-<p>&nbsp;</p>
-<div style="padding: 0 20px 0;  
-    margin: 1rem 0 -3rem 0;  
-    line-height: 1px;  
-    border-left: calc(20vw) solid #ddd;  
-    border-right: calc(20vw) solid #ddd;  
-    text-align: center;">我的更多产品</div>
-
-<p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/30/7-ways-to-build-a-better-business-model/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="朱佰添">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="科技向前冲">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/07/30/7-ways-to-build-a-better-business-model/" itemprop="url">七把利器助你打造充满竞争力的商业模式</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-30T00:22:18+08:00">
-                2015-07-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/创业/" itemprop="url" rel="index">
-                    <span itemprop="name">创业</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://img.blog.csdn.net/20150806191909265" target="_blank" rel="noopener"><img src="http://img.blog.csdn.net/20150806191909265" alt="七剑"></a></p>
-<p><span style="color: #999999;"><em>编者注：本文来自<a href="http://blog.strategyzer.com/posts/2015/4/7/why-are-some-business-models-better-than-others" target="_blank" rel="noopener">Strategyzer</a>，中文版由天地会珠海分舵编译。</em>在当今这个世道，跟竞争对手长期打产品/服务差异化这张牌已经变得越来越困难。但是如果你可以设计出一个比你的竞争对手更优秀的商业模式的话，情况又不一样了。下面请看Stategyzer是如何为看官您提供7种提升您的商业模式竞争力的方式的…</span></p>
-<p>一门生意之所以得以存活，前提必须是存在着一个客户需要的价值主张。但是如果你有的仅仅只是一个好的价值主张的话，这充其量只够你拿出去参加竞争而已(<em><span style="color: #999999;">还远远不能让你在竞争中脱颖而出</span></em>)。</p>
-<p>强大的商业模式通常会组合多种商业模式机制来提升商业竞争力，运用得好的话就能让你事业牢不可破。下面为你带来加强你的商业模式的7种商业模式机制。</p>
-<p>&nbsp;</p>
-<h3 id="1-切换成本"><a href="#1-切换成本" class="headerlink" title="1. 切换成本"></a><span style="color: #993300;">1. 切换成本</span></h3><hr>
-<p>这种商业模式机制主要是通过各种手段来提高你的客户的切换成本，在本人的上一篇文章《<a href="http://techgogogo.com/2015/07/switching_cost/" target="_blank" rel="noopener">锁定客户的六大策略：教你如何将切换成本嵌入商业模式</a>》中已经做了详尽的描述，所以这里就不再赘述了，有劳看官您移驾到该文章进行阅读。</p>
-<p>&nbsp;</p>
-<h3 id="2-经常性收益-Recurring-Revenues"><a href="#2-经常性收益-Recurring-Revenues" class="headerlink" title="2. 经常性收益(Recurring Revenues)"></a><span style="color: #993300;">2. 经常性收益(Recurring Revenues)</span></h3><hr>
-<p>请扪心自问，你敲定的每一笔生意是否都需要全新的努力才能完成？还是说这都是(自动的)后续营销(Follow-up Sales)和收益的结果。</p>
-<p>你也许并没有察觉到的是，其实你的很多购买行为都牵涉到后续营销。比如亚马逊给你卖了个Kindle的时候，它很清楚你后续很快就会回过头来跟他们购买相应的内容，产品或者电子书，这就是后续营销的体现。</p>
-<p>一个更典型的经常性收益的例子就是报纸和杂志的订阅。在当前以软件为载体的媒体行业中，我们可以看到现在的订阅模式正在从以前的通过交易型销售(transactional sales)一次过出售序列号的方式，转向按月或者按年进行订阅的经常性收益的新的订阅方式的商业模式。</p>
-<p>经常性收益的这种商业模式的一个特别的地方就是，第一笔生意所带来的后续销售或客户获取成本都是非常可观的。而在以往的交易型销售模式中，每一笔新的生意都需要全新的且成本高昂的销售成本的支撑。</p>
-<p>如果你还对其他更多的企业时如果将经常性收益潜入到它们的商业模式中的话，请查看我们之前的其他文章分析的“<a href="http://blog.strategyzer.com/posts/2015/4/2/amazons-value-proposition-never-run-out-of-toilet-paper" target="_blank" rel="noopener">亚马逊高级会员服务</a>” 以及 “<a href="http://blog.strategyzer.com/posts/2014/11/17/xiaomi-is-not-a-smartphone-company?rq=xiaomi" target="_blank" rel="noopener">小米</a>)“的例子。</p>
-<p>&nbsp;</p>
-<h3 id="3-先赚钱-vs-先花钱"><a href="#3-先赚钱-vs-先花钱" class="headerlink" title="3. 先赚钱 vs. 先花钱"></a><span style="color: #993300;">3. 先赚钱 vs. 先花钱</span></h3><hr>
-<p>戴尔在上世纪九十年代引入了这种商业模式机制，并革命性的将其应用到PC生产和销售上面。此前的做法是，PC制造商会先花钱生产计算机(从而导致要先支付大量的生产成本)，然后将这些计算机交到销售商手上，最后才由销售商在商店上架以卖给最终用户。期间这些计算机会在这些商店中逗留一段时间，随着时间的流逝，这些计算机就会慢慢贬值。所以在这个商业模式中，PC制造商是在花掉一大笔费用后很长的一段时间内才会有一分钱流进口袋的。</p>
-<p>戴尔通过引入“先赚钱”的商业模式机制，将老的商业模式进行彻底的颠覆。它的做法就是直接从最终用户手上接收订单，一旦顾客付钱后就立刻进行计算机的组装和发货。它们不断的将”零库存“这种生产实践进行优化，保证接单收钱和发货之间能够平滑的过度。跟上面的传统商业模式相比，戴尔并不需要在没有赚钱之前就砸一大笔钱到计算机生产上面，且同时避免了大量库存所带来的贬值。</p>
-<p>&nbsp;</p>
-<h3 id="4-改变游戏规则的成本结构"><a href="#4-改变游戏规则的成本结构" class="headerlink" title="4. 改变游戏规则的成本结构"></a><span style="color: #993300;">4. 改变游戏规则的成本结构</span></h3><hr>
-<p>这就是耐克为运动鞋发明了“飞梭(Flyknit)“技术后所成功做到的。在飞梭出现之前，血汗工厂需要将30-40件材料缝合在一起才能做出一双跑鞋，这是一个劳动密集型且成本高昂的任务。</p>
-<p>随后耐克发明了现在被称为”精微工程(<span style="color: #999999;"><em>micro-level precision engineering</em></span>)“的流程。在这个流程中，一个软件会指示一个针织机器用仅仅一件材料针织出一个跑鞋的鞋面。这项新技术让劳动力成本降到最低的同时，还会引发这样的一个结果：因为这再也不是劳动密集型的任务，再也不需要把这些任务交给血汗工厂，所以就可以将这些任务交给更接近销售市场的工厂，结果就会节省更多的运输成本。最终结果如何？结果就是，相比其他竞争对手，耐克的Flyknit运动鞋不仅生产成本低，且更加轻盈和更好。</p>
-<p>另外一个例子就是印度的巴帝电信(<em><span style="color: #999999;">Bharti Airtel</span></em>)公司，它是全球首家敢于将整个电信网络外包出去，从而将原本巨大的网络基础设施的搭建和维护的耗费变成可变成本。同行业的Skype则是通过提供完全免费的网络电话的方式来颠覆了整个市场，因为Skype是完全基于软件的OTT商业模式，根本不需要承受到电话网络的成本。</p>
-<p>&nbsp;</p>
-<h3 id="5-让客户帮你-免费-干活"><a href="#5-让客户帮你-免费-干活" class="headerlink" title="5. 让客户帮你(免费)干活"></a><span style="color: #993300;">5. 让客户帮你(免费)干活</span></h3><hr>
-<p>上世纪50年代到60年代期间，特百惠(<em>Tupperware</em>) 就将家庭主妇，它们的目标客户，转化成它们的直销大军。这家著名的厨具企业通过很好的运用这群用户进行口碑营销，并让这些客户在它们提倡的“特百惠派对”活动中，将它们的产品经这些家庭主妇客户之手销售给其他家庭主妇。通过这种策略，特百惠在完全没有花钱雇用额外的营销人员的情况下，大幅提升了它们的营业额。</p>
-<p>相比其他任何因素，Facebook的商业模式则是更依赖于其用户所生成的内容。从这个层面上看，事实上Facebook是有着10亿以上免费雇员的超级劳动力来为其进行信息、图片、和其他内容发布的企业。没有了这帮免费的劳动力，Facebook将是一文不值。</p>
-<p>另外一个让顾客为其免费服务的例子就是宜家家居（<span style="color: #999999;"><em>IKEA</em></span>）。客户(<em><span style="color: #999999;">多多少少是因为激情的原因</span></em>)从它们那里购买回来部件并亲自进行组装，而组装这个任务本来应该是宜家自己份内的事情。</p>
-<p>又或者拿信用卡公司来做例子。在它们的商业模式中，商家和买家其实帮它们完成了大部分的工作，而这些信用卡公司自己却只需要运营好它们的交易平台而已。</p>
-<p>&nbsp;</p>
-<h3 id="6-可扩展性"><a href="#6-可扩展性" class="headerlink" title="6. 可扩展性"></a><span style="color: #993300;">6. 可扩展性</span></h3><hr>
-<p>那些一开始就已经在它们的商业模式中考虑好它们的产品/服务在面向海量用户/客户时候的可扩展性的企业，相比那些因为用户量的改变而需要经常进行调整的企业，是有着巨大的优势的。</p>
-<p>以Uber为例，这是一个将的士司机和乘客连接在一起的应用平台。无论使用这个平台的客户的数量是5,000个还是50,000，Uber的商业模式都根本不需要进行任何的重置。更不可思议的是，越是多的士司机和乘客使用它们的平台，Uber的价值主张就越充满吸引力，因为乘客和司机都会因此而拥有更多的选择机会。</p>
-<p>所以说，数字化平台理所当然是最具有可扩展性的商业模式之一了。比如WhatsApp在以一百多亿美元卖给Facebook之前，只用60个雇员就可以为4亿多的用户进行服务。</p>
-<p>当然，实体性企业的商业模式同样也可以变得更具备可扩展性。比如，在麦当劳通过加盟店的方式大幅提升可扩展性之前，餐饮业的可扩展性其实是非常糟糕的。总的来说，许可经营的方式其实是一个可扩展性非常高的商业模式机制，且它能被应用到多种商业模式之上。</p>
-<p>&nbsp;</p>
-<h3 id="7-竞争壁垒"><a href="#7-竞争壁垒" class="headerlink" title="7. 竞争壁垒"></a><span style="color: #993300;">7. 竞争壁垒</span></h3><hr>
-<p>这最后一点则是这些机制的集大成者，它把所有上面提到的这些商业模式机制集成在一起，从而让你可以免受竞争对手的威胁。</p>
-<p>比如，苹果作为全球数一数二的智能手机制造商，但是它的产品却并不是面面具到的。比如，你也许会认为市面上其他智能手机比苹果提供的智能手机更优秀。但是苹果的商业模式有着自己的深深的护城河，其它竞争对手是很难逾越这条鸿沟来将其拉下神坛的。</p>
-<p>比如苹果的AppStore将无数的iOS用户和无数的软件开发者连在一起，提供了无数的应用来供用户搜索和使用。苹果的这条护城河所以深，不是说它的技术多么难以被超越，而是它的这个生态系统很难被复制。就算你有着最好的技术，你也很难在苹果的眼皮底下分一杯羹。当今也只有谷歌携着它的安卓操作系统，能在苹果的护城河外面硬生生的杀出一条血路，并另起炉灶打造出一个隔岸对峙的生态系统与之进行抗衡。</p>
-<p>最后请大家将自己的商业模式给摆到台面上，进行仔细的审查。你可以这样来做，只要你的商业模式每满足上面提到的商业模式机制的一项，你就可以为你的商业模式加一分，最终你就可以对你的商业模式的竞争力的健康状况进行很好的评估了。</p>
-<div style="padding: 0 20px 0;  
-    margin: 1rem 0 -3rem 0;  
-    line-height: 1px;  
-    border-left: calc(20vw) solid #ddd;  
-    border-right: calc(20vw) solid #ddd;  
-    text-align: center;">我的更多产品</div>
-
-<p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/28/switching-cost/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="朱佰添">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="科技向前冲">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/07/28/switching-cost/" itemprop="url">锁定客户的六大策略：教你如何将切换成本嵌入商业模式</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-28T23:32:45+08:00">
-                2015-07-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/创业/" itemprop="url" rel="index">
-                    <span itemprop="name">创业</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://upload-images.jianshu.io/upload_images/264714-816cd48f91ebb219.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener"><img src="http://upload-images.jianshu.io/upload_images/264714-816cd48f91ebb219.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="斗兽场"></a></p>
-<p><span style="color: #999999;"><em>编者注：本文来自<a href="http://blog.strategyzer.com/posts/2015/7/27/switching-costs-6-strategies-to-lock-customers-in-your-ecosystem" target="_blank" rel="noopener">strategyzer</a>，中文版由天地会珠海分舵编译。</em></span></p>
-<p>有一个很好的产品不代表你就能够俘获并锁定大量的客户，您还必须找到一个优秀的商业模式来把你的客户吸引过来并把它们锁定在你的产品的生态系统里面。谈到用户锁定，其中切换成本就是一个很好的方式，你可以看到Adobe，Salesforce，微软，劳斯莱斯这些龙头企业都是通过这种方法来锁定他们的用户，并以此来挟用户以令诸侯，把竞争者远远抛在身后。下面就让我们看看究竟有哪些常有的用户锁定策略。</p>
-<p>此前我曾经撰文阐述“<a href="http://blog.strategyzer.com/posts/2015/4/7/why-are-some-business-models-better-than-others" target="_blank" rel="noopener">打造优秀的商业模式的七种机制</a>”，而切换成本就是其中一个。切换成本让你可以降低你的用户获取成本，让你可以长期的从你的客户身上挤取经常性收益(<em><span style="color: #999999;">Recurring Revenue</span></em>)，同时它还是你在竞争这个战场中的护城河。</p>
-<p>有很多方法可以将切换成本嵌入到你的商业模式里面。如果你仔细研究Adobe，Salesforce，Google，或者劳斯莱斯的话，你就可以发现他们的垄断地位其实并非偶然，他们都有各自的杀手锏来将他们的客户牢牢锁定在他们的生态系统里面的。</p>
-<p>下面我们就看看这些企业常用的通过切换成本来锁定用户的6个招数吧：</p>
-<p><span class="pinContainer"><img src="http://static1.squarespace.com/static/51913f1ce4b07b22f5332872/t/55b4d822e4b0a06c6df16895/1437915172925/Switching_Costs_Business_Model?format=1000w" alt="Switching_Costs_Business_Model"></span></p>
-<h3 id="第一招-基础产品拉动消费"><a href="#第一招-基础产品拉动消费" class="headerlink" title="第一招: 基础产品拉动消费"></a><span style="color: #993300;">第一招: 基础产品拉动消费</span></h3><hr>
-<p>企业通过提供一个基础产品来吸引用户进入到他们的生态系统里面，然后兜售其他用户不得不买的配套‘消费品’来一步步把客户的利润给榨取出来。</p>
-<p>其中奈斯派索咖啡机(基础产品)的销售价格只是成本价，且在各大营销商都有售，所以大家都可以买到。但是与之搭配的高利润的咖啡粉囊包却只能通过奈斯派索的销售渠道才能购买到，所以它就可以从中赚取大量的利润。在2011年之前，人们是没有任何办法从其他渠道购买到这些咖啡粉囊包的，因为只有奈斯派索有权进行生产。这，就是奈斯派索锁定他们的客户的招式。</p>
-<p>除了奈斯派索之外，还有很多其他著名的企业也在用这一招，比如吉列公司(剃须刀拉动剃须刀片消费)，柯达(照相机拉动菲林的消费)，惠普(打印机拉动墨盒的消费)</p>
-<p>&nbsp;</p>
-<h3 id="第二招-‘数据陷阱’"><a href="#第二招-‘数据陷阱’" class="headerlink" title="第二招: ‘数据陷阱’"></a><span style="color: #993300;">第二招: ‘数据陷阱’</span></h3><hr>
-<p>企业通过鼓励用户在其专有的平台上生成或者购买内容或应用，以达到通过数据来锁定用户的效果。这些平台可以是一个网站，一个软件，或者是一个设备。如果一个用户想从这个平台转向另外一个平台的话，他们必须放弃在该平台上的所有数据和活动记录，因为这些内容都不能迁移到其他的平台上面去。</p>
-<p>比如，像AppStore和Google PlayStore这些应用商店上面的内容和应用就不能迁移到其他市场上面去。如果需要转到其他竞争者的平台上面去的话，苹果和安卓的用户必须放弃以前在这些商店上购买的音乐，应用，或者电影。</p>
-<p>我们再拿Spotify为例，它是一个音乐软件公司，它的应用提供了一张巨大的音乐清单，而上面的音乐可以从任何主流的平台进行下载。但是一旦你想要从Spotify转到其他音乐应用上面的话，你之前的那张巨大的音乐播放清单就相当于付之一炬了。这就是‘数据陷阱’的另外一种表现形式，而这种形式现在已经威胁到苹果和谷歌音乐的收入以及它们的切换成本方式。</p>
-<p>&nbsp;</p>
-<h3 id="第三招：‘学习曲线陷阱’"><a href="#第三招：‘学习曲线陷阱’" class="headerlink" title="第三招：‘学习曲线陷阱’"></a><span style="color: #993300;">第三招：‘学习曲线陷阱’</span></h3><hr>
-<p>客户对于需要从头学习该如何使用一个新的产品往往会很容易感到气馁。一个产品提供了一个极好的价值主张，但是这个产品需要经过专门的培训才能很好的对其进行使用，而‘学习曲线陷阱‘就是围绕着这样的一个价值主张起作用的。</p>
-<p>Salesforce和Adobe就是通过这种“学习曲线陷阱”来让他们的客户“上钩”的 – 一些用户努力成为了他们的产品的认证专家。这样的话，除非这个产品的使用已经让他们异常痛苦，否则他们轻易是不会放弃这个产品的。</p>
-<p>另外一个类似的例子就是Box这个面向企业的文件同步应用。重新由头开始构建一个共享和同步文件的基础设施是如此的繁杂，所以这些使用Box的企业宁愿继续使用Box。</p>
-<p>同时，切换到另外一个工具方案上的话，意味着你以前积累下来的该工具的使用经验就会完全无用武之地，这就让用户的逃离更加困难了。</p>
-<p>&nbsp;</p>
-<h3 id="第四招-‘行业标准陷阱’"><a href="#第四招-‘行业标准陷阱’" class="headerlink" title="第四招: ‘行业标准陷阱’"></a><span style="color: #993300;">第四招: ‘行业标准陷阱’</span></h3><hr>
-<p>有时候，人们被迫做一件事情完全是因为所有其他人都这样做。这就是企业用来锁定用户的另外一个方式。他们处于大家公认的行业领袖的地位。他们的产品，或者说他们的其中一个产品功能，成为了行业的标准，这就让客户很难选择使用其他的产品了。</p>
-<p>微软的Office Word应该在这里是一个很好的例子。.doc这种格式是由微软Office的Word应用专门处理的，当今基本上很难在没有doc这种格式的创建和支持的工具下进行正常的工作，所以用户的切换成本是非常高昂的。Adobe的PDF是另外一个类似的例子。</p>
-<p>&nbsp;</p>
-<h3 id="第五招-‘服务陷阱’"><a href="#第五招-‘服务陷阱’" class="headerlink" title="第五招: ‘服务陷阱’"></a><span style="color: #993300;">第五招: ‘服务陷阱’</span></h3><hr>
-<p>如果你的竞争对手使用上了‘服务陷阱’这一招的话，那么你就不仅仅是和他们提供的某个产品进行竞争，而是在跟他们所提供的完整的体验进行竞争了。在这个方法中，一个企业会将他们的产品和只提供给他们的客户的补充服务进行绑定。</p>
-<p>劳斯莱斯为航空公司提供飞机引擎，而他们提出了“按飞行小时计费”的条款来实现他们的切换成本。实质上，“按飞行小时计费”的条款囊括了飞机引擎租赁，维护和修理服务的一揽子收费。这里真正改变游戏规则的是他们只按照航空公司的飞机真正使用引擎的时间进行计费。这种体验对于航空公司来说是非常棒的，因为这将他们从因为引擎问题而不能进行正常起飞的巨大损失中解放出来。通过将高利润的服务和一流的飞机引擎绑定在一起进行捆绑销售，劳斯莱斯让它的航空公司客户很难切换到其他竞争者上面。</p>
-<p>另外一个很好的例子就是喜利得集团的做法，它通过为客户提供最好和最先进的建筑工具来建立他们的“服务陷阱”，这就让其他提供廉价产品的厂家很难跨越它们挖下的这条护城河。</p>
-<p>&nbsp;</p>
-<h3 id="第六招-’退出陷阱‘"><a href="#第六招-’退出陷阱‘" class="headerlink" title="第六招:’退出陷阱‘"></a><span style="color: #993300;">第六招:’退出陷阱‘</span></h3><hr>
-<p>“退出陷阱”，企业通过合同的方式迫使用户使用它们的产品一段指定的时间。如果客户想要退出这个合同的制约的话，必须缴纳一定的毁约费用。这是一个很常用的防止用户切换到其他竞争对手上面的一个手段。如AT&amp;和<span class="s1">威瑞森这些</span>电信运营商收取的毁约费用将高达350美刀，而T-Mobil正在尝试通过为切换过来的客户交付这笔费用的方式来尝试对这种商业模式造成威胁。</p>
-<p>除了上面提到的这些将切换成本嵌入到商业模式中的方式，相信肯定还有其他的方式，特别是国内的例子，比如“合约机”这些。如果大家有想到的话，不妨在评论中说出来，大家共同探讨。</p>
-<div style="padding: 0 20px 0;  
-    margin: 1rem 0 -3rem 0;  
-    line-height: 1px;  
-    border-left: calc(20vw) solid #ddd;  
-    border-right: calc(20vw) solid #ddd;  
-    text-align: center;">我的更多产品</div>
-
-<p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/26/pm-add-value/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="朱佰添">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="科技向前冲">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/07/26/pm-add-value/" itemprop="url">一个产品经理的得失小结</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-26T13:41:03+08:00">
-                2015-07-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/产品/" itemprop="url" rel="index">
-                    <span itemprop="name">产品</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://upload-images.jianshu.io/upload_images/264714-17795247a4bf866d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener"><img src="http://upload-images.jianshu.io/upload_images/264714-17795247a4bf866d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="封面"></a></p>
-<p>所谓时间飞逝、日月如梭，暮然回首，猛然发现自己出道伊始也将近十年了。回顾此前自己曾经担任过的角色，不可谓不繁杂。曾经做过翻译员、测试、开发、测试主管、项目经理、产品经理，甚至还做过销售，徒步的大街小巷的去拜访潜在客户。此间我觉得最让自己慨叹的是当年做产品经理的时候的一些得失。所以这里就打算写下来，与同行们共勉。</p>
-<p>其实之前所做的“产品经理”这个角色，我认为是应该打个引号的。因为真正去跑市场、去全世界到处飞、去挖掘需求的是德国那边的一个同事，只是开发团队在珠海这边，而我刚好英语沟通能力还算可以，所以就把我安排到这个所谓的“产品经理”的角色上来了。</p>
-<p>所以，如果把客户这个概念给抽象封装一下的话，我们也可以说德国那个同事其实就是我们这个产品的客户了。所以说，其实产品经理这个概念是比较泛的。你可以是一个产品型的产品经理，一个产品的创意的诞生到最终实现推向市场交到客户的手上，整个过程你都必须把控；你也可以是一个市场型的产品经理，针对已经在卖的产品，发掘市场的需求，然后交给开发团队来不断的迭代；等等等等。</p>
-<p>&nbsp;</p>
-<h3 id="技术债务"><a href="#技术债务" class="headerlink" title="技术债务"></a><span style="color: #800000;">技术债务</span></h3><hr>
-<p>这可能跟当时我做的这个“产品经理”的特殊性有关系吧，我当时花的绝大部分时间都是在我们的产品backlog和每个sprint的backlog上面，不断的跟德国那边进行需求的讨论，不停的和团队进行需求的细化，再紧张的去将功能进行优先级排序并和各路人马进行讨论，然后投放到相应的sprint backlog上面去…</p>
-<p>在一开始的一两个sprint里面其实整体状况也都还好，燃尽图也不算太难看。但是做到后来那条曲线就开始翘得越来越高，远远偏离了理想曲线了。最终不得不由原来计划的7个sprint调整成10个sprint。</p>
-<p>后来对这个问题有进行仔细的反思，究其原因，我觉得有好几个，但是其中最重要的应该就是没有及时的去对”技术债务“进行清理。</p>
-<p>其实这个道理看上去很简单，基本上跑过敏捷开发的人都知道技术债务给项目所带来的伤害。但是在真正项目开始的时候，我们往往又会因为赶时间而匆忙将新的功能进行实现，而忽略了代码的可扩展性和鲁棒性等，最终这些“技术债务”越累越高，越到后面越发觉尾大难掉，修改一个地方可能都会牵一发而动全身。</p>
-<p>这里看上去只是跟程序员有关系，事实上并非如此，这个更多是跟产品经理的理念有关系。像我之前，一心只想团队快速的把产品backlog里面的功能快速完成，而没有花足够的心思去思考产品表层下面的东西，没有去认真去抓实现的质量的问题。如果是将一个产品描述成一个建筑的话，那我觉得功能就是客户所看到的地面以上的这一部分，而质量就是隐藏在地底下的这个地基这一部分。也许你现在看到的这栋房子外观宏伟功能齐全连厕所都实现了自动化，但是一旦碰到大点的风吹雨打，或者说想要加建一两层的话，可能整栋楼立刻就坍塌了。</p>
-<p>所谓欲速则不达，一个产品经理不应该只是把眼光盯着那份功能列表，还应该多花点时间在解决“技术债务”这些事情上面来。</p>
-<p>&nbsp;</p>
-<h3 id="用户体验"><a href="#用户体验" class="headerlink" title="用户体验"></a><span style="color: #800000;">用户体验</span></h3><hr>
-<p>我相信没有哪个产品经理会忽视用户体验的重要性。用户买你的产品/软件的时候，其实他们真正买的是解决他们的痛点的方案。如果用了你的产品之后，原来的痛点解决了，但糟糕的使用体验却成为他们的新痛点，那用户的逃离也为时不远了。</p>
-<p>根据本人之前做产品经理的经验以及后来在一家创业公司的经历，我发现我们在用户体验方面很容易犯的错误主要有以下几个：</p>
-<ul>
-<li><strong>错把自己当用户</strong>：这特别容易发生在一个初创企业里面，因为企业自身的经验不足，以及产品经理的过于自负，同时也由于创业早期并没有把目标客户过早的关联到项目中来(其实在Scrum里面是很强调用户的参与的)，所以一个sprint下来开始demo的时候，往往demo的对象就是项目的同一帮人。而产品经理在考虑下一sprint的用户体验的时候，又往往觉得自己能够像周鸿祎一样能瞬间变小白。所以周而复始，几个sprint下来，产品拿出去一试水，发现就是石沉大海，结果就是再也没有结果了。这个错误在敏捷团队里面也可以叫做是“小瀑布”错误，这就是没有让用户过早参与进来的后果。看上去是在跑Scrum，事实上确是将原来的瀑布模式分解成几个小瀑布，然后套用了Scrum的概念，有名而无实。</li>
-<li><p><strong>忽视了首次使用体验</strong>：其实用户是很没有耐性的，特别是互联网产品用户。你的产品可能功能很强大，UI呈现也很惟妙惟肖，但用户却要花大时间，甚至要阅读你几十页的用户使用手册才能搞清楚怎么使用你的产品来解决他们的痛点，最终发现解决他们痛点的那个功能竟然埋藏在三级菜单甚至以下，那你还预期他们会爱上你的产品吗？<br>要解决这些问题的方法我认为也很简单：</p>
-</li>
-<li><p><strong>让用户尽早参与进来：</strong>比如我们当时在创业公司的做法是，因为我们当时做的是一个适合个人和小企业的私有云产品，所以我们就到附近大学里面找了些学生过来进行试玩以及给他们做demo，然后收集反馈。在他们试玩的过程中要有专人进行跟踪记录，且纪录人不能给对方任何提示。当然，最后别忘记了给学生们一些报酬，我们当时是送学生们100块左右的话费充值卡。</p>
-</li>
-<li><strong>竞品研究</strong>：除非你在做的这个产品是非常有突破性的，业界还没有同类产品出现，不然你肯定可以在海内外找到一些部分功能相近的产品出来的。这里也许你会说抄袭可耻之类的话语，这里我只能低调的说句，你丫少在我面前装圣人，有本事你现在别用QQ别用微信，再来跟老子谈抄袭可耻的问题！这里我们听下传奇人物史玉柱是怎么说的：“抄袭不但要厚脸皮，还要发展和优化。如果你抄后，还超越了对方，别人就不会说你抄了。“ 所以作为产品经理，你经常要做的事情还要是不断的去研究别人的产品，而不是只盯着产品backlog这一亩三分地，而这里说的还不仅仅只是用户体验上面，还包括其他功能点的调整，因为现在信息瞬间万变。关于这一点，下面还会有所阐述。<br>&nbsp;</li>
-</ul>
-<h3 id="支持销售团队"><a href="#支持销售团队" class="headerlink" title="支持销售团队"></a><span style="color: #800000;">支持销售团队</span></h3><hr>
-<p>这里还要由我们当时做的另外一个面向二手房的房源管理系统说起。当前二手房中介用的比较多的房xxx等商用房源管理软件(这里就不点名了)，会把他们的房源数据上传到软件供应商自己的数据中心上面去。而房源信息其实一个中介的命脉，所以他们更希望是这个数据中心放在自己公司里面。所以我们当时做的就是提供一个数据中心服务器，以及相应的一套房源管理软件，管理软件支持PC端和移动端。</p>
-<p>MVP出来后，开始去跑各种二手房中介进行demo以收集进一步信息。问题来了，正如上面所说的，用户是没有耐心的，无论你说的天花乱坠，还是眼见为实。但是将整个服务器架起来还是需要不少时间的，别人还需要特意给你腾出空间和提供网络接入等，且更尴尬的是，因为这还是很初期的产品，在你公司里面跑的时候一般很正常，跑到人家环境里面一跑的时候，不是这出问题就是那出问题。最终很多客户都是以有事忙为由，中断了该次演示。</p>
-<p>其实这里完全没有必要在初次demo的时候就把整个环境给架构起来，完全可以在数据控制层下面嫁接一个服务器模拟器，这样你的数据就不用非要通过网络和数据中心进行交互了(这里涉及到了MVC 分层架构-模型/视图/控制，如有不清楚的请自行百度)。这样做了之后，销售人员去demo的时候只需要给对方看下服务器的外观，就可以在不接入服务器的情况下直接在电脑上把软件装上进行演示了。过程只需要向对方表明真实情况下数据是通过网络存储在数据中心的，只是现在为了方便demo而临时存在本地而已。</p>
-<p>所以这里产品经理要考虑的不仅仅是真实的产品出来的情况，还需要考虑如何方便销售团队在外进行演示，特别是在产品早期获取用户反馈的时候。不然你没有足够的用户反馈支撑的话，最终还是走回了闭门造车的老路。</p>
-<p>别默认架构师或者项目经理会帮你考虑好销售团队遇到的这些困难，这个产品是你的(其实在Scrum里面，产品经理的名字叫做Product Owner，也就是产品拥有者)，项目经理和架构师等团队成员只是负责将你交给他们的产品backlog在预期时间内实现出来而已。</p>
-<p>&nbsp;</p>
-<h3 id="竞品分析"><a href="#竞品分析" class="headerlink" title="竞品分析"></a><span style="color: #800000;">竞品分析</span></h3><hr>
-<p>上面在谈用户体验的时候有谈到过这一点，一个产品经理要时刻注意着市场的动态，留意着竞争产品的动向。比如我们一开始做的云产品就犯了这样的错误，一开始市场上难觅竞争者，战线开始拉得太长，功能不断叠加，产品迟迟没有推出市场。某一天忽然跳出了个新闻，“百度云1T永久容量 率先进入云空间T时代“，我们的心几本上就已经凉了半截了。</p>
-<p>当然，事实上我们当时的产品迟迟没有推出市场的原因错综复杂，但是，毫无疑问，对市场动态和竞品的分析力度和把握的不够是其中一个不可忽视的原因。</p>
-<p>所以作为产品经理，要时刻的眼观八路耳听四方，也许竞品新版本的一个新功能的出现，你就需要立刻有针对性的调整自己的产品的实现策略。</p>
-<p>要知道，一个产品经理不应只是知道不停的往产品backlog中增加新的功能，更重要的是你要知道不停的为公司增加新的增值。</p>
-<p>除了上面说的这几点，其实我觉得以前做产品经理的时候还有很多地方值得优化的，比如功能点优先级排序的把握(这里特别要提到的事三个木桶原则，具体请查看本人之前翻译的一篇文章《<a href="http://techgogogo.com/2015/03/rethinkdb%E5%88%9B%E5%A7%8B%E4%BA%BA%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E6%89%93%E9%80%A0%E4%B8%80%E4%B8%AA%E4%BC%9F%E5%A4%A7%E7%9A%84%E4%BA%A7%E5%93%81/" target="_blank" rel="noopener">如何打造一个伟大的产品</a>》)，功能点优化，产品可扩展性的掌控，团队的互动，与项目经理的合作等等，但是限于篇幅和时间，暂时就先说这么多吧，也许今后会另外开篇继续进行阐述。当然，也希望各位看官能在评论中说出你们的观点。</p>
-<div style="padding: 0 20px 0;  
-    margin: 1rem 0 -3rem 0;  
-    line-height: 1px;  
-    border-left: calc(20vw) solid #ddd;  
-    border-right: calc(20vw) solid #ddd;  
-    text-align: center;">我的更多产品</div>
-
-<p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/22/CEO_and_Creator/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1121,168 +386,19 @@
       
         
           
-            <div id="HHt3UnsOIXnIPDzeAeTDAxydi3oiavGpvZ5wXC1Iq5A=_14eb02776fb:cdcb4b:d8c83505_entryBody" class="entryBody" title><br><div id="HHt3UnsOIXnIPDzeAeTDAxydi3oiavGpvZ5wXC1Iq5A=_14eb02776fb:cdcb4b:d8c83505_entryContent" class="content"><br><br><a href="http://upload-images.jianshu.io/upload_images/264714-4ef69dbf97cea770.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener"><img src="http://upload-images.jianshu.io/upload_images/264714-4ef69dbf97cea770.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="evernote"></a><br><br><span style="color: #999999;"><em>天地会珠海分舵注:本文由硅谷顶尖风投 Fred Wilson <a href="http://avc.com/2015/07/leaders-and-executives/" target="_blank" rel="noopener">发布在其著名的AVC博客</a>，中文版由天地会珠海分舵编译。<em><em>对于一直困扰很多人的“创始人是否非要兼任CEO“这个问题，我们看下Fred是怎么看待的…</em></em></em></span><br><br>不久前看新闻说<a href="http://recode.net/2015/07/20/evernote-taps-former-google-glass-executive-chris-oneill-as-new-ceo/" target="_blank" rel="noopener">印象笔记的创始人兼首席执行官Phil Libin将辞去其CEO职务而担任董事长，且印象笔记Evernote的董事会聘请了Chris O’Neill作为新任CEO</a>。我个人对印象笔记事实上是没有太多的印象，因为我没有用到他们的产品。但我对该企业的这次举措确实敬仰有加，对于创始人在不担任CEO的情况下对一家企业进行领导的这个想法，我其实是非常喜欢的。现实中这样的做法也有不少成功的例子。当中最为人知晓的可能要数Larry Ellison在Oracle的做法了，Larry虽然没有每时每刻的插手公司的事务，但是他对公司的影响力之深却是无人能企及的(<em><span style="color: #999999;">天地会珠海分舵注：这让我不由自主的想起此前唐骏对马云卸任阿里巴巴CEO的说法，只是味道可能有点变了：“因为中国人都知道，马云辞去CEO，不影响阿里巴巴的发展，做不做CEO，阿里巴巴还是马云说了算。这就是中国模式“</span></em>)。另外一个也很著名的例子就是LinkedIn里面的Red Hoffman和Jeff Weiner的做法。<br><br>&nbsp;<br><br>领导力其实和管理能力是不可等量齐观的。我在AVC这个博客上不止一次说过这样的话，这里不妨再强调一次，我相信这也是事实。如果说领导者就是魅力四射、精力充沛、善于沟通、充满愿景、善于倾听、镇定自若、消息灵通、值得信赖、信仰坚定这些形容词的化身，那么管理者就是去招聘、进行挽留、代理、做决策、去沟通、尤其是执行这些词的代言人。很多CEO在一个企业中既作为领导者，也作为管理者。但是将本由创始人一力承担的领导者兼执行者这个角色一分为二，同样也是一个可以很好运作的模式。<br><br>能让这种方式真正行之有效的关键点就是要创始人心甘情愿的将这个角色一分为二，并能心悦诚服的支持将要成为CEO的那个人去对企业进行日常的管理。所以这里创始人在领导权方面就必须进行一些让步，能够放权让该CEO能够顺利的对企业的事务进行管理。而当一旦企业需要创始人的领导力的时候，他又需要义无反顾的立刻站出来。通常这种情况是在公司遇到艰难的决策的时候，这时创始人的领导者本能就显得无比的重要了。<br><br>一个优秀的董事会能够很好的帮助创始人和CEO去判断究竟什么时候公司需要的是管理能力，什么时候又需要的是领导力。但是董事会不能像照看小孩一样去照看着两者的关系，他们两者必须能够自行处理好他们之间的关系并各自发挥其应有的功效。否则，其中一方必须滚蛋，而滚蛋的一方往往会是CEO。皆因创始人的领导力往往是非常难以替代的，一个优秀的管理者/执行者虽然也不是随处可见，但是市面上你总还是能找到这种有才能的人的。且这种才能是一种比较通用的才能，跟你的企业没有任何绑定关系，不像一个企业跟其创始人存在着息息相关的关系。<br><br>当然，如果一个创始人可以在其现有的企业内部找到该适合的管理者/执行者，这就最理想不过了。因为这种情况下，已经磨合好的已知关系相比完全陌生的从头开始的关系，会给将来的成功带来更大的可能。但要注意的是，你也不是非要这样做才行。Jeff Weiner就是LinkedIn外聘回来的，同时，我相信Chris O’Neill也是Evernote外聘回来的(<em><span style="color: #999999;">天地会珠海分舵注：Chris是谷歌前高管</span></em>)。这两种方式其实都能够，事实上也是可以工作的。但是如果你的企业里面真潜伏着这么一位优秀的CEO的话，我还是会建议你直接把他给用上，因为这样做的风险相对会更小点。<br><br>值得提醒的是，我也见到过当创始人不再担任CEO而成为董事长的时候，有不少人才流失的情况出现，且这通常还是发生在公司高层。这，也就是为什么创始人往往会因此而担忧的原因。这种情况下，我会建议你坚持你的决定。无论如何，新任CEO的第一年任期必然是异常苦难，甚至要重建整个高层团队。但这也许对你的事业的健康成长反而是个好事。<br><br>我很佩服Phil Libin能做出确信自己将不再适合出任Evernote下一阶段的CEO的判断。同时我也会鼓励他继续深入的参与进公司中来，给公司带来只有创始人才能提供的领导力。同时他所选择的这个新CEO需要到他的支持的情况肯定也不少。这里我祝愿他们两者都能在各自的新角色转换中获得成功。<br><div><br><br><br></div><br></div><br></div><br><div style="padding: 0 20px 0;  
+            <p><span style="color: #999999;"><em>天地会珠海分舵注:本文由硅谷顶尖风投 Fred Wilson <a href="http://avc.com/2015/07/leaders-and-executives/" target="_blank" rel="noopener">发布在其著名的AVC博客</a>，中文版由天地会珠海分舵编译。<em><em>对于一直困扰很多人的“创始人是否非要兼任CEO“这个问题，我们看下Fred是怎么看待的…</em></em></em></span></p>
+<p>不久前看新闻说<a href="http://recode.net/2015/07/20/evernote-taps-former-google-glass-executive-chris-oneill-as-new-ceo/" target="_blank" rel="noopener">印象笔记的创始人兼首席执行官Phil Libin将辞去其CEO职务而担任董事长，且印象笔记Evernote的董事会聘请了Chris O’Neill作为新任CEO</a>。我个人对印象笔记事实上是没有太多的印象，因为我没有用到他们的产品。但我对该企业的这次举措确实敬仰有加，对于创始人在不担任CEO的情况下对一家企业进行领导的这个想法，我其实是非常喜欢的。现实中这样的做法也有不少成功的例子。当中最为人知晓的可能要数Larry Ellison在Oracle的做法了，Larry虽然没有每时每刻的插手公司的事务，但是他对公司的影响力之深却是无人能企及的(<em><span style="color: #999999;">天地会珠海分舵注：这让我不由自主的想起此前唐骏对马云卸任阿里巴巴CEO的说法，只是味道可能有点变了：“因为中国人都知道，马云辞去CEO，不影响阿里巴巴的发展，做不做CEO，阿里巴巴还是马云说了算。这就是中国模式“</span></em>)。另外一个也很著名的例子就是LinkedIn里面的Red Hoffman和Jeff Weiner的做法。</p>
+<p>领导力其实和管理能力是不可等量齐观的。我在AVC这个博客上不止一次说过这样的话，这里不妨再强调一次，我相信这也是事实。如果说领导者就是魅力四射、精力充沛、善于沟通、充满愿景、善于倾听、镇定自若、消息灵通、值得信赖、信仰坚定这些形容词的化身，那么管理者就是去招聘、进行挽留、代理、做决策、去沟通、尤其是执行这些词的代言人。很多CEO在一个企业中既作为领导者，也作为管理者。但是将本由创始人一力承担的领导者兼执行者这个角色一分为二，同样也是一个可以很好运作的模式。</p>
+<p>能让这种方式真正行之有效的关键点就是要创始人心甘情愿的将这个角色一分为二，并能心悦诚服的支持将要成为CEO的那个人去对企业进行日常的管理。所以这里创始人在领导权方面就必须进行一些让步，能够放权让该CEO能够顺利的对企业的事务进行管理。而当一旦企业需要创始人的领导力的时候，他又需要义无反顾的立刻站出来。通常这种情况是在公司遇到艰难的决策的时候，这时创始人的领导者本能就显得无比的重要了。</p>
+<p>一个优秀的董事会能够很好的帮助创始人和CEO去判断究竟什么时候公司需要的是管理能力，什么时候又需要的是领导力。但是董事会不能像照看小孩一样去照看着两者的关系，他们两者必须能够自行处理好他们之间的关系并各自发挥其应有的功效。否则，其中一方必须滚蛋，而滚蛋的一方往往会是CEO。皆因创始人的领导力往往是非常难以替代的，一个优秀的管理者/执行者虽然也不是随处可见，但是市面上你总还是能找到这种有才能的人的。且这种才能是一种比较通用的才能，跟你的企业没有任何绑定关系，不像一个企业跟其创始人存在着息息相关的关系。</p>
+<p>当然，如果一个创始人可以在其现有的企业内部找到该适合的管理者/执行者，这就最理想不过了。因为这种情况下，已经磨合好的已知关系相比完全陌生的从头开始的关系，会给将来的成功带来更大的可能。但要注意的是，你也不是非要这样做才行。Jeff Weiner就是LinkedIn外聘回来的，同时，我相信Chris O’Neill也是Evernote外聘回来的(<em><span style="color: #999999;">天地会珠海分舵注：Chris是谷歌前高管</span></em>)。这两种方式其实都能够，事实上也是可以工作的。但是如果你的企业里面真潜伏着这么一位优秀的CEO的话，我还是会建议你直接把他给用上，因为这样做的风险相对会更小点。</p>
+<p>值得提醒的是，我也见到过当创始人不再担任CEO而成为董事长的时候，有不少人才流失的情况出现，且这通常还是发生在公司高层。这，也就是为什么创始人往往会因此而担忧的原因。这种情况下，我会建议你坚持你的决定。无论如何，新任CEO的第一年任期必然是异常苦难，甚至要重建整个高层团队。但这也许对你的事业的健康成长反而是个好事。</p>
+<p>我很佩服Phil Libin能做出确信自己将不再适合出任Evernote下一阶段的CEO的判断。同时我也会鼓励他继续深入的参与进公司中来，给公司带来只有创始人才能提供的领导力。同时他所选择的这个新CEO需要到他的支持的情况肯定也不少。这里我祝愿他们两者都能在各自的新角色转换中获得成功。</p>
+<div><br><br><br></div><br><br><br><div style="padding: 0 20px 0;  
     margin: 1rem 0 -3rem 0;  
     line-height: 1px;  
-    border-left: calc(20vw) solid #ddd;  
-    border-right: calc(20vw) solid #ddd;  
-    text-align: center;">我的更多产品</div>
-
-<p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/21/investment_env_and_internet_bubble/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="朱佰添">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="科技向前冲">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/07/21/investment_env_and_internet_bubble/" itemprop="url">融资环境数据解析我们当前距离互联网泡沫究竟有多近</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-21T07:48:48+08:00">
-                2015-07-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/创业/" itemprop="url" rel="index">
-                    <span itemprop="name">创业</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><span style="color: #999999;"><em>编者注：本文<a href="http://tomtunguz.com/how-close-to-2000/" target="_blank" rel="noopener">来自TOMASZ TUNGUZ</a>，中文版由天地会珠海分舵进行编译。</em></span></p>
-<p><a href="http://upload-images.jianshu.io/upload_images/264714-c561033fed2e199b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener"><img src="http://upload-images.jianshu.io/upload_images/264714-c561033fed2e199b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="vc_investment-2015-07-15"></a></p>
-<p>根据<a href="http://nvca.org/pressreleases/venture-capital-dollars-invested-exceeds-10-billion-for-fifth-consecutive-quarter-according-to-the-moneytree-report/" target="_blank" rel="noopener">NVCA披露的最新数据</a>，在2015年第二季度，VC总共进行了167亿美元的投资，大约是2000年互联网泡沫时候同期的66%，且这个势头看上去还会继续。而这些投资的很大一部分是由共同基金和对冲基金这些非传统的投资机构所贡献的，占了所有投资金额的40个百分比。尽管当前某些方面跟互联网泡沫时期很相似，但还是有不少地方是大相径庭的。</p>
-<p><a href="http://upload-images.jianshu.io/upload_images/264714-bcf396ed06ef8808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener"><img src="http://upload-images.jianshu.io/upload_images/264714-bcf396ed06ef8808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="top10q_investment"></a></p>
-<p>令人惊讶的是，在历来单季风投资金投入最高的前十名榜单中，从2014年第二、第四季度到2015年第一、第二季度这四个季度，以及互联网泡沫时期的1999年第四季度到2000年第四季度这连续四个季度，竟然同时榜上有名。</p>
-<p><a href="http://upload-images.jianshu.io/upload_images/264714-214a3ab1e5cee45a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener"><img src="http://upload-images.jianshu.io/upload_images/264714-214a3ab1e5cee45a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="vc_investment_count-2015-07-15"></a></p>
-<p>但是，单季投资项目数量却只有2000年的一半。参照上图，这就意味着现今获得大轮投资的初创企业相对变少了。同时也意味着在很多不同行业存在着“赢家吃掉大部分(winner-take-most)“或类似的情况。行业细分领域执牛耳者都在学习并应用着朱元璋的“广积粮，高筑墙”策略，都在大量的囤积着战争储备资金，大肆深挖着它们的护城河，防止后来者进入到它们的领域当中去。</p>
-<p><a href="http://upload-images.jianshu.io/upload_images/264714-f6e5aece69f803b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener"><img src="http://upload-images.jianshu.io/upload_images/264714-f6e5aece69f803b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2015-07-15-dpd"></a></p>
-<p>可以确定的是，上图展示的2015年第二季度每个项目平均投资额为1470万美元，超过了2000年同期的1310万美元。换个说法就是，平均每个初创企业获得的投资金额达到了前所未有的高度。</p>
-<p><a href="http://upload-images.jianshu.io/upload_images/264714-22d87e876e4cc918.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener"><img src="http://upload-images.jianshu.io/upload_images/264714-22d87e876e4cc918.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="avg_investment_size_stage_2015-07-15"></a></p>
-<p>通过分析上面不同时期的数据，在考虑了通胀因数的情况下，当前A轮和B轮的平均投资规模分别是1000万美元2000万美元，两者皆创了历史新高。晚轮的规模也是高居不下，但还没有超过2000年时期，尽管最近12到18个月期间共有大概10家左右的初创企业融了十亿美元以上的资金。</p>
-<p><a href="http://upload-images.jianshu.io/upload_images/264714-ad3cbec6260c6e62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener"><img src="http://upload-images.jianshu.io/upload_images/264714-ad3cbec6260c6e62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="count_by_stage-2015-07-15"></a></p>
-<p>随着平均投资额的增加，估值也是水涨船高，投资者也越来越早采取行动。不象互联网泡沫时期，现在的B轮和C轮就投资项目数量上看来还算平稳，但A轮的投资项目数量却比2005年翻了一倍。种子轮的数量虽然没有看到有实质性的太大波动，但不排除跟NVCA收集数据的方式有关系。</p>
-<p><a href="http://upload-images.jianshu.io/upload_images/264714-df19b3ef52614c34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener"><img src="http://upload-images.jianshu.io/upload_images/264714-df19b3ef52614c34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="dpi_sector-2015-07-16"></a></p>
-<p>当从不同的投资领域的角度来审视这些数据的时候，我们可以看到消费品和服务领域以及金融服务领域的初创企业获得的融资金额是最大的。金融服务领域企业在第二季度平均融资金额应到达三千万美元，上图只是因为手绘的关系没有看到最后那细细的延长线而已。消费品和服务领域的初创企业也达到了两千万美元的额度。</p>
-<p>当前投资者投资初创企业的的资金的规模越来越接近互联网泡沫时期的水平，根据上面的这些数据显示，尽管这两个时期有不少相似之处，但同时也存在很多重要的差别之处。现在的投资者们相对以往，对A轮的追逐变得越加狂热，这可能是因为大家都想在估值不断上升之前出手进行投资的原因吧。同时大家投资的目标也更集中，投资者们都在对每个领域有限的那几个可能的胜出者进行追逐。</p>
-<div style="padding: 0 20px 0;  
-    margin: 1rem 0 -3rem 0;  
-    line-height: 1px;  
-    border-left: calc(20vw) solid #ddd;  
-    border-right: calc(20vw) solid #ddd;  
+    border-left: calc(16vw) solid #ddd;  
+    border-right: calc(16vw) solid #ddd;  
     text-align: center;">我的更多产品</div>
 
 <p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
@@ -1419,24 +535,20 @@
       
         
           
-            <section class=" section--body section--bottomCenter section-image--aspectRatioViewport is-imageBackgrounded is-backgrounded is-darkBackgrounded section--first is-sectionUsingCanvas"><br><div class="section-doubleWidthTable u-table u-ignoreBlock"></div><br><div class="section-captionContent u-ignoreBlock"><span style="color: #999999;">_ 编者注：本文英文版由Andy Raskin<a href="https://medium.com/firm-narrative/want-a-better-pitch-watch-this-328b95c2fd0b" target="_blank" rel="noopener">发布于Medium</a>,中文版由天地会珠海分舵进行编译。_</span></div><br></section>
-
-<p>话说三周之前，来自旧金山的一家由多个优质风投公司投资的初创企业的CMO给我发了封邮件，并附上了她的最新销售宣传稿。</p>
+            <p><img src="/images/elonmaskpitch/cover.jpg" alt><br>话说三周之前，来自旧金山的一家由多个优质风投公司投资的初创企业的CMO给我发了封邮件，并附上了她的最新销售宣传稿。</p>
 <p>“这吸引力不够，”她说道，“信息量虽说是有了。幻灯片做的也很好。但是总觉得它没强有力的说出一个引人入胜的故事。希望您能帮忙指点迷津“。</p>
 <p>我最爱干的事情之一恰恰就是去帮助这些企业家们更好的去精雕细琢出这类pitch演讲稿— 包括募资，销售，招聘，如此之类的pitch。当时收到该封邮件的时候碰巧我有其他事情在忙，不能立刻亲自着手来帮她斧正她的稿子，所以我就给该演讲稿的作者Zack回复了一个链接。</p>
 <p>熟料五天之后，那个CMO给我发了个信息：“Andy，你给我们团队的Zack发的是什么玩意儿啊？他原来的稿子好多了，比起你那链接上的家伙所做的pitch简直就是天壤之别嘛。“</p>
 <h3 id="我究竟给Zack发了什么链接"><a href="#我究竟给Zack发了什么链接" class="headerlink" title="我究竟给Zack发了什么链接"></a><span style="color: #993300;">我究竟给Zack发了什么链接</span></h3><hr>
-<p>&nbsp;</p>
 <p>我发给Zack的其实就是不久前Elon Musk在发布特斯拉Powerwall电池的演示视频(本文后面会附上该链接)。同时邮件中还包含了已下我准备分享给大家的一些我个人的观点。</p>
 <p>总体来说，Musk的演讲技巧并不是一流的，过程中你会看到他显得有点不是很自然，且有点烦躁。但最后，所有听众都为了他的那一块电池而掌声雷动。</p>
 <p>为什么能有这样的效果呢？那是因为Musk在他的演说过程中做了已下这些我们每个人做pitch时都应该做到的五步曲，且这五步曲的顺序不能错乱:</p>
-<p>&nbsp;</p>
-<h3 id="第一步：指出共同的敌人，同仇敌忾"><a href="#第一步：指出共同的敌人，同仇敌忾" class="headerlink" title="第一步：指出共同的敌人，同仇敌忾"></a><span style="color: #993300;">第一步：指出共同的敌人，同仇敌忾</span></h3><div class="section-inner sectionLayout--outsetColumn"><figure id="c2c9" class="graf--figure graf--layoutOutsetCenter"><br><div class="aspectRatioPlaceholder is-locked"><br><br><img src="https://d262ilb51hltx0.cloudfront.net/max/1200/1*ap5uyOu3xPSHAB8eRStVrQ.jpeg" alt><br><br></div><br><figcaption class="imageCaption"></figcaption>做pitch的时候千万别一开始就太把自己当主角，喋喋不休的推销自己，你的团队，你的产品，以及你所处的市场。相反，你更应该在开始的时候把当前让你的客户不爽的“拦路虎”给搬出来。可以给大家展示出一幅可以挑起大家情感共鸣的，这个世界之所以让你的客户觉得糟糕透了的景象，让大家知道这只拦路虎究竟是哪个人/事物，并且说明白为什么是这样子。(天地会珠海分舵注：以下一句非原文例子，但我觉得更有代表性)所以当Musk展示出上面那幅矿物燃料燃烧图的时候，Michael Jackson的那首《<a href="http://www.iqiyi.com/w_19rra0ixax.html#vfrm=2-3-0-1" target="_blank" rel="noopener">地球之歌</a>》很有可能就会在你的脑海中回荡。<br><br></figure></div><br><div class="section-inner layoutSingleColumn"></div>
+<h3 id="第一步：指出共同的敌人，同仇敌忾"><a href="#第一步：指出共同的敌人，同仇敌忾" class="headerlink" title="第一步：指出共同的敌人，同仇敌忾"></a><span style="color: #993300;">第一步：指出共同的敌人，同仇敌忾</span></h3><div class="section-inner sectionLayout--outsetColumn"><figure id="c2c9" class="graf--figure graf--layoutOutsetCenter"><br><div class="aspectRatioPlaceholder is-locked"><br><br><img src="/images/elonmaskpitch/1.jpeg" alt><br><br></div><br><figcaption class="imageCaption"></figcaption>做pitch的时候千万别一开始就太把自己当主角，喋喋不休的推销自己，你的团队，你的产品，以及你所处的市场。相反，你更应该在开始的时候把当前让你的客户不爽的“拦路虎”给搬出来。可以给大家展示出一幅可以挑起大家情感共鸣的，这个世界之所以让你的客户觉得糟糕透了的景象，让大家知道这只拦路虎究竟是哪个人/事物，并且说明白为什么是这样子。(天地会珠海分舵注：以下一句非原文例子，但我觉得更有代表性)所以当Musk展示出上面那幅矿物燃料燃烧图的时候，Michael Jackson的那首《<a href="http://www.iqiyi.com/w_19rra0ixax.html#vfrm=2-3-0-1" target="_blank" rel="noopener">地球之歌</a>》很有可能就会在你的脑海中回荡。<br><br></figure></div><br><div class="section-inner layoutSingleColumn"></div>
 
-<h3 id="第二步：“为什么该出手了”"><a href="#第二步：“为什么该出手了”" class="headerlink" title="第二步：“为什么该出手了”"></a><span style="color: #993300;">第二步：“为什么该出手了”</span></h3><div class="section-inner sectionLayout--outsetColumn"><figure id="91c5" class="graf--figure graf--layoutOutsetCenter"><br><div class="aspectRatioPlaceholder is-locked"><br><br><img src="https://d262ilb51hltx0.cloudfront.net/max/1200/1*6ombB6XMmaNtFKFXW-zPlA.jpeg" alt><br><br></div><br><figcaption class="imageCaption"></figcaption></figure></div>
+<h3 id="第二步：“为什么该出手了”"><a href="#第二步：“为什么该出手了”" class="headerlink" title="第二步：“为什么该出手了”"></a><span style="color: #993300;">第二步：“为什么该出手了”</span></h3><div class="section-inner sectionLayout--outsetColumn"><figure id="91c5" class="graf--figure graf--layoutOutsetCenter"><br><div class="aspectRatioPlaceholder is-locked"><br><br><img src="/images/elonmaskpitch/2.jpeg" alt><br><br></div><br><figcaption class="imageCaption"></figcaption></figure></div>
 
 <p>这些听众— 特别是投资人— 都是怀疑论者。他们此时就会想，“大家在这种状况下生活已经多年— 现在真的需要做出改变吗？” Musk给大家指出当前世界正处在二氧化碳排放量不断上升导致的环境污染的关键时刻，如果我们还不迅速的采取行动，情况只会变得越来越恶劣。当Musk说到“我们该众志成城的做点事情了，”的时候，台下的观众们就大声呐喊出他们的共鸣和支持。</p>
-<h3 id="第三步：提供解决方案前先展现“乐土”"><a href="#第三步：提供解决方案前先展现“乐土”" class="headerlink" title="第三步：提供解决方案前先展现“乐土”"></a><span style="color: #993300;">第三步：提供解决方案前先展现“乐土”</span></h3><div class="section-inner u-sizeFullWidth"><figure id="2d0b" class="graf--figure graf--layoutFillWidth"><br><div class="aspectRatioPlaceholder is-locked"><br><br><img src="https://d262ilb51hltx0.cloudfront.net/max/2000/1*BT1zdhWfBCZB_Iv3XZMEUg.jpeg" alt><br><br></div><br></figure></div><br><div class="section-inner layoutSingleColumn"><br><br>在描述最终的电池解决方案之前，Musk先是搬出了他理想中的从此之后世界同乐的一个版本：一种“唾手可得的来自天空的聚变反应堆所带来的”文明的能量，名字叫做太阳。“在说出你的解决方案之前先给大家描述下共同的敌人的天敌是什么，这会让观众心里隐隐约约感觉有点不对劲，但又说不出在哪里— 就好像我们说笑话之前先妙语连珠的迷惑一下我们的听众，然后才一举将笑点给捅破。一旦听众们慢慢意识到你将要走的方向的时候，他们就很有可能立刻上车扣上安全带跟你同航了。<br><br></div><br><div class="section-inner layoutSingleColumn"></div>
+<h3 id="第三步：提供解决方案前先展现“乐土”"><a href="#第三步：提供解决方案前先展现“乐土”" class="headerlink" title="第三步：提供解决方案前先展现“乐土”"></a><span style="color: #993300;">第三步：提供解决方案前先展现“乐土”</span></h3><div class="section-inner u-sizeFullWidth"><figure id="2d0b" class="graf--figure graf--layoutFillWidth"><br><div class="aspectRatioPlaceholder is-locked"><br><br><img src="/images/elonmaskpitch/3.jpeg" alt><br><br></div><br></figure></div><br><div class="section-inner layoutSingleColumn"><br><br>在描述最终的电池解决方案之前，Musk先是搬出了他理想中的从此之后世界同乐的一个版本：一种“唾手可得的来自天空的聚变反应堆所带来的”文明的能量，名字叫做太阳。“在说出你的解决方案之前先给大家描述下共同的敌人的天敌是什么，这会让观众心里隐隐约约感觉有点不对劲，但又说不出在哪里— 就好像我们说笑话之前先妙语连珠的迷惑一下我们的听众，然后才一举将笑点给捅破。一旦听众们慢慢意识到你将要走的方向的时候，他们就很有可能立刻上车扣上安全带跟你同航了。<br><br></div><br><div class="section-inner layoutSingleColumn"></div>
 
 <h3 id="第四步：指出实现的障碍—然后才告诉大家你会如何解决它们"><a href="#第四步：指出实现的障碍—然后才告诉大家你会如何解决它们" class="headerlink" title="第四步：指出实现的障碍—然后才告诉大家你会如何解决它们"></a><span style="color: #993300;">第四步：指出实现的障碍—然后才告诉大家你会如何解决它们</span></h3><p>&nbsp;</p>
 <p>那么现在你已经给大家分享了你的愿景，那么你跟着需要做的事情就是:</p>
@@ -1450,10 +562,10 @@
 
 </div></figure></li>
 </ul>
-<p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*U2o87KxJwCinJAvvZAR1cw.jpeg" alt></p>
+<p><img src="/images/elonmaskpitch/4.jpeg" alt></p>
 <p><br></p>
 <ul>
-<li>很多人认为安置这些电池所需要的占用的空间会过于巨大(但根据Musk的说法，要取代美国现有的矿物燃料，所需要安置的电池所占用的地方仅仅是Texas州地图中的那个小红点而已)<br><figure id="c76b" class="graf--figure"><br><div class="aspectRatioPlaceholder is-locked"><br><div class="aspect-ratio-fill"></div><br><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*X2ZQIpaRlPueygrZaC06iQ.jpeg" alt></div></figure></li>
+<li>很多人认为安置这些电池所需要的占用的空间会过于巨大(但根据Musk的说法，要取代美国现有的矿物燃料，所需要安置的电池所占用的地方仅仅是Texas州地图中的那个小红点而已)<br><figure id="c76b" class="graf--figure"><br><div class="aspectRatioPlaceholder is-locked"><br><div class="aspect-ratio-fill"></div><br><img src="/images/elonmaskpitch/5.jpeg" alt></div></figure></li>
 </ul>
 <p><br></p>
 <ul>
@@ -1461,15 +573,15 @@
 
 </div></figure></li>
 </ul>
-<p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*zJaYD7l7KWZIjQGNpYpnWg.jpeg" alt></p>
+<p><img src="/images/elonmaskpitch/6.jpeg" alt></p>
 <p><br></p>
 <p>到了这个时候，Musk开始播放Powerwall这款产品的视频，台下的观众事实上已经对视频中所描述的这款产品垂涎三尺了。视频中展示了为什么Powerwall这款电池在刚才那七点中表现得如此优秀。但是大家应该注意的是：此时播放的这些精美的图片和戏剧性的音乐所以能鼓舞人心让人垂涎，是因为Musk在此前就给大家做了Powerwall是作为人类的救星而不只是一块电池的铺垫。</p>
 <p>&nbsp;</p>
-<h3 id="第五步：提供证据证明你并非纸上谈兵"><a href="#第五步：提供证据证明你并非纸上谈兵" class="headerlink" title="第五步：提供证据证明你并非纸上谈兵"></a><span style="color: #993300;">第五步：提供证据证明你并非纸上谈兵</span></h3><div class="section-inner u-sizeFullWidth"><figure id="c380" class="graf--figure graf--layoutFillWidth"><br><div class="aspectRatioPlaceholder is-locked"><br><br><img src="https://d262ilb51hltx0.cloudfront.net/max/2000/1*XBnZTMZbRBL06ACtUnP8TA.jpeg" alt><br><br></div><br></figure></div><br><div class="section-inner layoutSingleColumn"><br><br>再次强调：听众都是怀疑论者。所以你必须拿出证据来给大家证明你刚才给大家描绘的愿景现实中是切实可行的。Musk是通过告诉大家一个秘密来达到这一点的：当前演示场所其实就是Powerwall给供电的。(为了证实这一点，他给大家展示了该场所的两块电表的用电情况，其中来自电力网的电表是没有消耗任何电量的，证明现在用的不是电力网提供的电)<br><br>对于早期的初创企业和产品来说，这样的演示是完全可以作为一个强有力的证据的，虽然来自早期的客户更加难以说服，但这总比你什么都没有拿出手好。产品就是说服你的客户为什么他们需要这样的产品的最好的证词。<br><br>最后请点击这里查看Musk给特斯拉Powerwall所做的<a href="http://www.iqiyi.com/v_19rrnsbl4w.html#vfrm=2-3-0-1" target="_blank" rel="noopener">发布演示视频</a>。<br><br>当我们知道了编一个令人折服的故事所需要的这些关键元素的时候，写个优秀的pitch出来就再不是什么难事了！<br><br><em> </em> *<br></div><br><br><br><div style="padding: 0 20px 0;  
+<h3 id="第五步：提供证据证明你并非纸上谈兵"><a href="#第五步：提供证据证明你并非纸上谈兵" class="headerlink" title="第五步：提供证据证明你并非纸上谈兵"></a><span style="color: #993300;">第五步：提供证据证明你并非纸上谈兵</span></h3><div class="section-inner u-sizeFullWidth"><figure id="c380" class="graf--figure graf--layoutFillWidth"><br><div class="aspectRatioPlaceholder is-locked"><br><br><img src="/images/elonmaskpitch/7.jpeg" alt><br><br></div><br></figure></div><br><div class="section-inner layoutSingleColumn"><br><br>再次强调：听众都是怀疑论者。所以你必须拿出证据来给大家证明你刚才给大家描绘的愿景现实中是切实可行的。Musk是通过告诉大家一个秘密来达到这一点的：当前演示场所其实就是Powerwall给供电的。(为了证实这一点，他给大家展示了该场所的两块电表的用电情况，其中来自电力网的电表是没有消耗任何电量的，证明现在用的不是电力网提供的电)<br><br>对于早期的初创企业和产品来说，这样的演示是完全可以作为一个强有力的证据的，虽然来自早期的客户更加难以说服，但这总比你什么都没有拿出手好。产品就是说服你的客户为什么他们需要这样的产品的最好的证词。<br><br>最后请点击这里查看Musk给特斯拉Powerwall所做的<a href="http://www.iqiyi.com/v_19rrnsbl4w.html#vfrm=2-3-0-1" target="_blank" rel="noopener">发布演示视频</a>。<br><br>当我们知道了编一个令人折服的故事所需要的这些关键元素的时候，写个优秀的pitch出来就再不是什么难事了！<br><br><em> </em> *<br></div><br><br><br><div style="padding: 0 20px 0;  
     margin: 1rem 0 -3rem 0;  
     line-height: 1px;  
-    border-left: calc(20vw) solid #ddd;  
-    border-right: calc(20vw) solid #ddd;  
+    border-left: calc(16vw) solid #ddd;  
+    border-right: calc(16vw) solid #ddd;  
     text-align: center;">我的更多产品</div>
 
 <p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
@@ -1606,23 +718,24 @@
       
         
           
-            <blockquote>
-<p><em>编者注：<a href="http://venturebeat.com/2015/07/05/amazon-web-services-this-generations-berlin-wall-tear-down-deflationary-event/" target="_blank" rel="noopener">本文英文版来自VentureBeat</a>，作者Chris Haroun是美国著名风投<strong>公司<a href="http://www.artisventures.com/" target="_blank" rel="noopener">ARTIS Ventures</a>的</strong></em>合伙人。<em>中文版由天地会珠海分舵进行编译。1987年，里根总统曾呼吁戈尔巴乔夫推倒妨碍世界往前发展的那座柏林墙。2005年，亚马逊缔造者杰夫·贝索斯则通过AWS的发布，呼吁微软的鲍尔默先生等，推倒商业软件这座价格高的离谱的高墙…</em><br>亚马逊的网络服务AWS，通过其“类沃尔玛”式低价战略，凭借一己之力一举颠覆了商用软件的定价模式，并创造出本世纪最重要的“物美价廉”的年代。</p>
-</blockquote>
-<h2 id="”老技术”-vs-“新技术”"><a href="#”老技术”-vs-“新技术”" class="headerlink" title="###”老技术” vs. “新技术”"></a>###”老技术” vs. “新技术”</h2><p>那些基于”老技术“的商业模式的做法是，首先在一个产业中占据支配地位，然后开始以高昂的价格开始卖产品，随后加入最小价值的创新，却以相当的价格将这些表现平平的更新推给客户。</p>
+            <h3 id="“老技术”-vs-“新技术”"><a href="#“老技术”-vs-“新技术”" class="headerlink" title="“老技术” vs. “新技术”"></a>“老技术” vs. “新技术”</h3><hr>
+<p>那些基于”老技术“的商业模式的做法是，首先在一个产业中占据支配地位，然后开始以高昂的价格开始卖产品，随后加入最小价值的创新，却以相当的价格将这些表现平平的更新推给客户。</p>
 <p>而基于“新技术”的商业模式的做法是，以低廉的价格向客户提供非常有竞争力的产品和增值更新。而这，就是AWS所领衔的新模式。</p>
 <p>亚马逊的这种低价战略已经对很多其他科技公司产生影响，使得他们也对各自的平台解决方案的价格进行下调。比如微软参加竞争的网络云服务平台Azure，以及谷歌计算引擎Google Compute平台。事实上，我们能看出来Windows 10所以能让大量人免费使用(在其发布的头一年内可免费进行系统升级)，不能说不是因为受到了亚马逊的影响。</p>
 <p>我们已经有足够的条件可以预期在不久的将来可以免费，或者以几乎免费的价格，来使用操作系统平台了。我想不出来当今还有比这更物美价廉的其他趋势了。</p>
 <p>拜亚马逊所赐，当前我们有着如此之多的激动人心的免费互联网软件产品可以使用，而这在互联网产业的垂直领域是史无前例的。</p>
-<h2 id="推倒柏林墙"><a href="#推倒柏林墙" class="headerlink" title="###推倒柏林墙"></a>###推倒柏林墙</h2><p>作为一个乐观主义者，我相信当前(美国)的低利率某一种程度上也是因为亚马逊的AWS所带来的低价冲击所致，这种云端的低价计算平台将会导致很多垂直领域和软件公司在未来几年对它们的产品进行降价，从而，也会导致利率保持这种接近历史最低的水平。2015年的AWS导致的这种物美价廉的趋势，就好比1989年柏林墙推倒后所引起的通货紧缩事件。</p>
+<h3 id="推倒柏林墙"><a href="#推倒柏林墙" class="headerlink" title="推倒柏林墙"></a>推倒柏林墙</h3><hr>
+<p>作为一个乐观主义者，我相信当前(美国)的低利率某一种程度上也是因为亚马逊的AWS所带来的低价冲击所致，这种云端的低价计算平台将会导致很多垂直领域和软件公司在未来几年对它们的产品进行降价，从而，也会导致利率保持这种接近历史最低的水平。2015年的AWS导致的这种物美价廉的趋势，就好比1989年柏林墙推倒后所引起的通货紧缩事件。</p>
 <p>如今，商业软件应用和操作系统的价格大幅下跌，我们应该感激亚马逊这个引领降价潮流的领头羊。这种降价趋势因为微软和谷歌的加入而在加速，它们都大幅降低了它们的云服务平台的收费价格。Uber之所以能这么便宜的原因之一，也一定程度上是因为它们使用了如AWS般的廉价云服务平台方案而降低了成本。</p>
 <p>而这种廉价的趋势应该在可见的未来不会发生改变。现在已经有很多颠覆性的新公司不再使用如Oracle或者Microsoft这种基于“老技术”的公司的产品了，因为现在运行在AWS上面的免费(或者价格更低廉的)可替代软件随处可见。最终的结果就是，作为消费者，我们现在可以自由的使用或者订阅(比如，Netflix)那些几乎免费的产品。</p>
 <p>大家觉得为什么上世纪90年代的经济能够飞速发展呢？我个人认为当时技术领域的高速发展并非根本原因，柏林墙在1989年被推倒后，东欧过剩的那帮廉价的但掌握尖端科技的劳动力得以释放才是推动这种高速发展的最根本的原因。这同时也导致了当时的利率变得如此之低，这跟全球的经济发展也是息息相关的。</p>
 <p>AWS今天的效果大同小异。我们现在看到的低廉的科技成本，就相当于当时的低廉的劳动力成本。不一样的是，当时里根总统是在演讲中呼吁戈尔巴乔夫“推翻这座墙“，而亚马逊则是亲自通过自身的产品、自身的行动，迫使着整个商业软件市场大幅度的降低它们原本高的离谱的价格。还有一点不同的就是，当时在2005年AWS发布时，呼吁鲍尔默先生(微软前CEO)“推倒这座(离谱的价格)墙“的是杰夫·贝索斯（亚马逊缔造者）。但，两者所带来的廉价的冲击是惊人的相似的。</p>
-<h2 id="自我颠覆或者被人颠覆"><a href="#自我颠覆或者被人颠覆" class="headerlink" title="###自我颠覆或者被人颠覆"></a>###自我颠覆或者被人颠覆</h2><p>什么？你说你没有看到AWS带来的这种低廉的价格？你现在每个月的有线电视费用比此前便宜了多余50%了吧；你现在住酒店下榻的费用比以前便宜了50%不止了吧；你的服务器计算账单也比此前少交了不止50%了吧。现在做个生意的IT投入成本比以前也是便宜了50%以上了吧…这个清单还长着呢。</p>
+<h3 id="自我颠覆或者被人颠覆"><a href="#自我颠覆或者被人颠覆" class="headerlink" title="自我颠覆或者被人颠覆"></a>自我颠覆或者被人颠覆</h3><hr>
+<p>什么？你说你没有看到AWS带来的这种低廉的价格？你现在每个月的有线电视费用比此前便宜了多余50%了吧；你现在住酒店下榻的费用比以前便宜了50%不止了吧；你的服务器计算账单也比此前少交了不止50%了吧。现在做个生意的IT投入成本比以前也是便宜了50%以上了吧…这个清单还长着呢。</p>
 <p>Netflix很赚钱，但是它只收取非常便宜的7.99美元每个月的订阅费用，提供给你的却是非常精彩的专有授权的视频内容。为什么能做到这么便宜？皆因Netflix跑在AWS上面，从而节约了大量的成本。AirBnB让我们可以住酒店的价格非常低廉，皆因AirBnB也是跑在廉价的AWS上面。Dropbox也因为它们跑到AWS上面而将我们公司服务器的收费降低了超过50%的价格。</p>
 <p>随着AWS不断的降低它的平台以及应用的价格，我们可以预见更多的其他公司也会跟着降价，又或者是其他新的价格低廉的竞争对手的崛起，彻底的颠覆那些在它们各自领域盘踞了几十年的基于“老技术”的企业。令人难以置信的是，相比以前收费更高的时候，现在低廉的Netflix所提供的视频服务的质量却变得更高了，这都是因为Netflix跑在AWS上的原因啊。</p>
-<h2 id="引领降价潮的三驾马车"><a href="#引领降价潮的三驾马车" class="headerlink" title="###引领降价潮的三驾马车"></a>###引领降价潮的三驾马车</h2><p>在鲍尔默执政时期，微软的Windows系统自其面世起，在长达20多年的时间里只进行了3次降价。相反，贝索斯则在少于10年的时间里将AWS进行了惊人的接近50次的降价。</p>
+<h3 id="引领降价潮的三驾马车"><a href="#引领降价潮的三驾马车" class="headerlink" title="引领降价潮的三驾马车"></a>引领降价潮的三驾马车</h3><hr>
+<p>在鲍尔默执政时期，微软的Windows系统自其面世起，在长达20多年的时间里只进行了3次降价。相反，贝索斯则在少于10年的时间里将AWS进行了惊人的接近50次的降价。</p>
 <p>但现在，在新的CEO塞特亚·纳德拉(<em>SatyaNadella</em>)掌权之下，微软祭出了欲和AWS抗衡的Azure，这不仅仅是一个降价的追随者，而且还成为了降价的先锋官。而谷歌的云计算平台Google Compute，现在也成为了降价的急先锋。也就是说，我们现在有了三家难以置信的云服务提供商巨头一起来推动物美廉价的这种趋势。</p>
 <p>这些平台都是在云操作系统领域上名列前茅的，同时，由于AWS的推动，前面提到的这种廉价的平台的冲击是令人瞠目结舌且史无前例。这肯定不是非理性繁荣的现象。</p>
 <p>此前在任何行业都没有出现过这种物美价廉的先例。它所带来的冲击相当于福特，通用，以及丰田10年内进行50次降格；或者说相当于万豪国际酒店，假日酒店和华美达酒店在10年内进行50次降价。又或者是通用电气，Sub-Zero(冰箱奢侈品牌)，以及美泰克公司在10年内进行50次降价。</p>
@@ -1631,8 +744,8 @@
 <div style="padding: 0 20px 0;  
     margin: 1rem 0 -3rem 0;  
     line-height: 1px;  
-    border-left: calc(20vw) solid #ddd;  
-    border-right: calc(20vw) solid #ddd;  
+    border-left: calc(16vw) solid #ddd;  
+    border-right: calc(16vw) solid #ddd;  
     text-align: center;">我的更多产品</div>
 
 <p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
@@ -1679,7 +792,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/13/OCP将结束容器产业这个颠覆性产业的标准格式之争/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/10/relay_raise_and_creative/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="朱佰添">
@@ -1698,7 +811,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/07/13/OCP将结束容器产业这个颠覆性产业的标准格式之争/" itemprop="url">OCP将结束容器产业这个颠覆性产业的标准格式之争</a></h1>
+                <a class="post-title-link" href="/2015/07/10/relay_raise_and_creative/" itemprop="url">正确的三个交棒姿势将决定你是否能赢得创新这场接力赛</a></h1>
         
 
         <div class="post-meta">
@@ -1710,8 +823,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-13T18:49:33+08:00">
-                2015-07-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-10T07:59:05+08:00">
+                2015-07-10
               </time>
             
 
@@ -1733,8 +846,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
+                  <a href="/categories/创新/" itemprop="url" rel="index">
+                    <span itemprop="name">创新</span>
                   </a>
                 </span>
 
@@ -1769,19 +882,31 @@
       
         
           
-            <p>&nbsp;</p>
-<p><span class="pinContainer"><img src="http://i0.wp.com/venturebeat.com/wp-content/uploads/2014/10/containers-jim-bahn-flickr.jpg?fit=578%2C9999" alt="Containers Jim Bahn Flickr"></span></p>
+            <h3 id="创新是场接力赛"><a href="#创新是场接力赛" class="headerlink" title="创新是场接力赛"></a><span style="color: #993300;">创新是场接力赛</span></h3><hr>
+<p>与其说创新是一场旷日持久的马拉松或者是一场以速度制胜的短跑，倒不如说创新是一场团体的接力赛：每个阶段之间的交棒时刻才是从这场赛跑胜出的关键所在。你其中的一个阶段能快如闪电的完成，并不一定最终就能赢取这场接力赛。</p>
+<p>只有在整个过程中你的每次交棒都能顺利高效完成的时候，你团队中的飞毛腿才有可能在这场赛跑中，发挥真正对赢得比赛有价值的效用。</p>
+<p>如何将这些不同的交棒阶段磨练好以及管理好，将是一个创新项目从开始到最终获得成功的关键。我们看过太多的创意，因为该创意的产生者不能顺利的将其交接到下一个开发环节而难产甚至胎死腹中。</p>
+<p>这里的挑战主要就是几个关键环节的”交棒“阶段 – 比如，从创意概念到做出产品的“交棒”；从本地部署到全球部署阶段的“交棒”。你也许一开始的时候就有着一个杀手级的创意，以及该如何将这创意执行实现出来的看似无懈可击的策略，但是，如果你不能在你的产品或者服务需要进行扩张和商品化的时候高效的进行“交棒”的话，那么你将很有可能会输掉这场创新接力赛。</p>
 <p>&nbsp;</p>
-<p><span style="color: #999999;"><em>编者注：<a href="http://venturebeat.com/2015/07/11/the-open-container-project-why-standards-are-great-news-for-our-industry/" target="_blank" rel="noopener">本文英文版来自VentureBeat</a>，中文版由天地会珠海分舵编译。当以Docker为首的容器正在席卷全球，蔚然成风的颠覆着原来的应用开发和发布方式的时候，容器标准之争却从来没有消停过。而标准之争这场没有硝烟的战争又带来了对用户没有任何意义的巨大浪费，这时就很需要有一个统一的标准出来一统江湖，结束这场无谓的战争。此时，OCP就应运而生了…</em></span></p>
-<div></div><br>这几个星期对于容器以及互联网软件行业来说都是值得高兴的日子。在六月下旬的<a href="http://venturebeat.com/2015/06/22/everything-announced-at-dockercon-2015/" target="_blank" rel="noopener">DockerCon</a>大会上，Docker以及其他社区发布了大量的非常有意思的消息。<br><br>这其中最重要的消息应该算是公布了由Docker和CoreOS主导的，开始建立一个开放容器格式标准的“<a href="http://venturebeat.com/2015/06/22/docker-and-coreos-unite-to-start-the-open-container-project-and-standardize-runtime-image-format/" target="_blank" rel="noopener">开放容器项目</a>(OCP)“。<br><br>一个标准的建立过程是非常乏味的，起码对大部分人来说是这样的。但是如果没有一个统一的标准的情况下，标准之争的战火将会对容器这个新兴产业带来极端的破坏。大家可能还记得最近的一场关于DVD标准的蓝光vs.高清晰度DVD的格式标准之争。主要的视频生产商在DVD标准之争打得不可开交，消费者同时也在隔岸观火静观其变，而不是盲目的就去买一个所支持的格式不确定是否会成为标准的产品(如果大家再多等几年的话，可能他们就会直等到当今视频流媒体的出现了。至于流媒体，这又是另外一个故事了)<br><br>Docker的首席执行官Ben Golub打了个比方来形容这种格式标准之争所带来的浪费：这就好比火车轨道的宽度标准之争。与其无休止的为究竟多宽的轨道才是标准打得不可开交，大家不如(坐下来统一一个标准)关注应该如何打造处一个更好的引擎。<br><br>这就是为什么OCP能够得以诞生的原因了。下面就是对OCP标准的更详尽的一些描述。<br><br>&nbsp;<br><br>### <span style="color: #993300;">OCP详情</span><br><br><em> </em> <em><br><br>OCP存在的目的是打造一个“开放容器格式”的标准。这里的格式包括容器镜像格式以及运行时环境。<br><br>Docker为OCP组织贡献了他们的libcontainer项目，并更名为runC，正是这个项目为OCP奠定了技术基础。而来自CoreOS的“应用容器”项目，APPC， 也会是形成新的OCP格式的很大一部分。APPC往往是因为它的rkt格式而为世人所知晓(rkt是APPC的实现标准)。根据CoreOS的熟悉执行官Alex Polvi所述，“我相信来自APPC的很多核心概念都将会成为OCP新标准的一部分。“<br><br>OCP是在Linux基金会的资助下运行的项目，在本文撰写的时候已经有21个成员加入(<em>其中创始成员包含项目创始成员包括 CoreOS, AWS, Google, Redhat, VMware, EMC, 华为</em>)。<br><br>&nbsp;<br><br>### <span style="color: #993300;"> OCP究竟意味着什么</span>
-
-</em> <em> </em><br><br>OCP之所以对于我们是个振奋人心的消息主要体现在3个主要方面。<br><br>首先，尽早的为容器格式建立一个标准，这样用户就不大可能因为技术或者工具底层实现细节的差异而受困于容器提供商的封锁。大家如果有着从安卓手机切换到苹果手机(反之亦然)的经历的话，肯定对两者电源和数据线的标准的不统一而深恶痛绝，因为他们没有采取统一的开放标准，所以一方的数据线和电源是不能用于另外一方的。<br><br>其次，降低提供商的封锁对用户来说能够带来即时可见的好处。如我们前面所说的标准之争会让消费者迟疑不敢在运营商做出技术决定之前下手购买相关产品。如果标准定下来了，大家就无需徘徊观望了。从而用户就可以更快的应用上相关的技术，采取该技术的企业也可以加速的一往无前的向前推进自己产品的开发，而无需等到一大帮竞争者都跟自己站在同一起跑线上才开始往前推进。<br><br>最后，OCP的出现将会让围绕容器的工具加速的产生。否则，如果是标准之争还在持续的话，工具开发者也会和消费者一样会徘徊在应该选择哪个标准的两难境地。而最终确定谁是最终的赢家的分析过程是非常耗时且代价昂贵的，这里因等待而多消耗的每多一小时，就意味着你会晚一小时给用户提供解决方案来解决他们的痛点，那么就意味着更多的竞争者就会出现。如果开发人员看不清楚最终哪一方将会是标准之争的胜出者的话，他常常就迫于无奈需要对不同的格式都进行支持。我自己作为一个工具开发者，对于OCP的出现我是欢喜雀跃的。<br><br>&nbsp;<br><br>### <span style="color: #993300;">善意的提醒</span><br><br><em> </em> <em><br><br>OCP的出现确实是个好消息，但，这并不意味着所有问题都已经迎刃而解了。<br><br>这个开放标准也会存在一个阴暗面：成员之间因为各自利益的考虑而在订立该标准的过程中所引发的暗箱操作和无意义的复杂斗争。随着竞争对手Docker和CoreOS紧随其他19个成员加入到OCP的创始人行列，就意味着整个标准的订立过程中就会充满着陈枪舌战，大家为各自利益着想而对标准订立的分歧只会让拖慢标准订立的过程，甚至还会有人尝试改变整个标准订立的方向来迎合他们自身的利益。<br><br>就拿OpenStack来说吧，尽管它获得了快速的发展和解决了用户真正的痛点，但是它还是逃脱不了上面提及的这些问题。OpenStack结果是做的比本应该的还要复杂，最终是在用户采纳程度上付出了代价。在我看来，避免过于复杂对于OCP这个新标准来说就是至关重要的。<br><br>&nbsp;
-
-</em> <em> </em><br><br><div style="padding: 0 20px 0;  
+<h3 id="创新接力赛的三个赛段"><a href="#创新接力赛的三个赛段" class="headerlink" title="创新接力赛的三个赛段"></a><span style="color: #993300;">创新接力赛的三个赛段</span></h3><hr>
+<p>创新这场接力赛主要包含三个关键赛段，每个赛段的交棒点都有着与众不同的难点。</p>
+<p>这里的第一个阶段我们姑且称为“创新第一棒“。这是早期的一个头脑风暴满天飞的时期，一帮创满创意的家伙聚在一块进行创意碰撞，并对这些创意进行快速的验证。里面充满了各种各样的观点，碰撞，不停的尝试看哪些是可行的而哪些又是不可行的。这些在“创新第一棒”中的激进空想主义者常常在将其创意交棒到第二阶段(将创意变成产品的阶段)的时候不小心把接力棒掉地上去。这主要是关于该创意的不同的想法和观点太多，而在初始阶段又没有足够的资源和碰撞。结果就导致了，“第一棒”的思考家们的创意没有正确的交接到第二阶段而胎死腹中。</p>
+<p>下一个赛段就是中场阶段，就是一帮人将一个创新变得可行或者可工作的时候。这个阶段涉及到如何打造出正确的策略，如何招聘到正确的人员，以及如何将产品或者服务卖出去。这就牵涉到招聘，员工安置，销售，和市场。问题是这是整个创新接力赛中最长的一个赛段，所以创新的动量就很容易在这漫长的过程中消磨掉。这个赛段同时也是两组截然不同的类型的人员必须和谐共处通力合作的阶段：一帮是高度专注的事业心爆棚的追求利润的成员，而另外一帮是擅长精耕细作，进行协作，有着社区思维的成员。如果这两种力量不能学会如何一起协同工作的话，那么这个创新项目也就陷入僵局了。</p>
+<p>最后一个阶段就是冲刺阶段，这个阶段中组织开始对创新结果进行运作和扩张。在这个时间段你需要做的事情就是进行大量新产品的生产，或者是将你的服务推广到世界任何一个角落。在这个阶段，所有环节都需要同步有序的进行。这就需要涉及到流程的提升，技术的增强，以及供应链的协调。做这些事情的目的就是为了让整个系统更稳定，质量更好，效率更高。接手冲刺这一棒的人不但要技术功底深厚还必须要善于分析。为了建立这种可控的标准，这个阶段往往就会牺牲掉创新的速度和量级。所以某种程度上，相当于是把创新的元素从这个创新的过程中给剔除掉。也就是说这个阶段把创新拖得过慢，终将会让我们太晚到达创新的终点，而其他竞争者则早到达终点开始享受创新的果实。</p>
+<p>&nbsp;</p>
+<h3 id="接棒的三个正确姿势"><a href="#接棒的三个正确姿势" class="headerlink" title="接棒的三个正确姿势"></a><span style="color: #993300;">接棒的三个正确姿势</span></h3><hr>
+<p>那么我们怎样才能既跑得快又跑得稳呢？如何才能顺利高效的进行交棒呢？下面就是对这些创新中的关键阶段进行管理的三个策略。</p>
+<p><strong>超前的眼光</strong>：将下个赛段的一些人员安排到前一个赛段上面来，让他们清楚的知道今后进行交棒的时候需要注意一些什么样的事情，如何才能高效的接过上一赛段的同侪交过来的接力棒。让激进的思想家和发明家跟市场专家紧密的进行沟通。如果你的创新产品是一个软件应用，你就需要在你的团队中安排一些非IT专家类型但对客户非常了解的成员，这样你才能打造出一个客户大众认可的产品。同样，在完成交棒之后，需要安排前一赛段的人员到下一赛段上面去，以确保创新不会退化。确保设计出这个创新的人会跟进整个创新过程，以确保创新的愿景不会变质。</p>
+<p><strong>翻译大使</strong>：找出可以在不同部门之间进行“翻译”的大使。这对创新的中间赛段尤为重要，在这个时候业务和财政部门的领导必须与人力资源以及市场部门的领导通力合作。一个好的”翻译“大使将会在这些存在对立特性的部门之间穿梭，能够将一方的观点正确的翻译给对应一方知道，并找出一个可以平衡各方不同的视角的方法。</p>
+<p><strong>职能轮换</strong>：为各个领导安排一些不同赛段的临时任务，好让他们可以掌握创新过程中不同三个赛段的运作经验。现实中，在一个部门中的专家往往却会对另外一个部门的事情一窍不通。尝试将研发部的成员安排到工厂或者运营部门一段时间，这样他们才会真实体验到究竟需要怎么做，才能让他们的研发成果变成产品。反过来，也可以将工厂的成员安排到研发部一段时间，这样他们才能真正体验到，研发出有竞争力的产品究竟需要多大数量级的创新。让这些不同赛段的“参赛者”们对其他赛段有真实正确的认知。</p>
+<p>你应该不会想在创新接力赛的某个环节不小心把接力棒给掉地上。所以你应该不断的对这些交棒过程进行练习，改进，最终臻于完美。过程中确保别让你的接力棒掉到地上，顺利高效的完成你的交棒工作，那么就算竞争对手在某个赛段有个“飞毛腿”级别的快男，也不足为惧了。</p>
+<p>&nbsp;</p>
+<hr>
+<div style="padding: 0 20px 0;  
     margin: 1rem 0 -3rem 0;  
     line-height: 1px;  
-    border-left: calc(20vw) solid #ddd;  
-    border-right: calc(20vw) solid #ddd;  
+    border-left: calc(16vw) solid #ddd;  
+    border-right: calc(16vw) solid #ddd;  
     text-align: center;">我的更多产品</div>
 
 <p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
@@ -1828,7 +953,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/12/2015_inventment_trend/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/08/business-model-fit/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="朱佰添">
@@ -1847,7 +972,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/07/12/2015_inventment_trend/" itemprop="url">图解2015年初创企业风投资金走向趋势</a></h1>
+                <a class="post-title-link" href="/2015/07/08/business-model-fit/" itemprop="url">商业模式匹配乃同质化产品竞争终极大杀器</a></h1>
         
 
         <div class="post-meta">
@@ -1859,8 +984,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-12T13:11:23+08:00">
-                2015-07-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-08T08:05:39+08:00">
+                2015-07-08
               </time>
             
 
@@ -1893,8 +1018,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/创业/风投/" itemprop="url" rel="index">
-                    <span itemprop="name">风投</span>
+                  <a href="/categories/创业/创新/" itemprop="url" rel="index">
+                    <span itemprop="name">创新</span>
                   </a>
                 </span>
 
@@ -1929,23 +1054,959 @@
       
         
           
-            <p><a href="http://upload-images.jianshu.io/upload_images/264714-bd0fae1b82d1707a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240/q/100" target="_blank" rel="noopener"><img src="http://upload-images.jianshu.io/upload_images/264714-bd0fae1b82d1707a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240/q/100" alt="trend-graph"></a></p>
-<p>编者注：<a href="http://tomtunguz.com/startup-investment-trends-2015/" target="_blank" rel="noopener">本文来自红点投资TOMASZ TUNGUZ</a>，中文版由天地会珠海分舵进行编译。</p>
-<p>在过去的六个月里，根据<a href="http://mattermark.com/" target="_blank" rel="noopener">Mattermark data</a>披露，VC总共进行了570亿美元的投资，这让2015年大有超过史上风险投资投入最多的2000年的趋势。那么，当今哪些领域又是最受风投资金热捧的呢？</p>
-<p><img src="http://tomtunguz.com/images/investments_by_market.png" alt></p>
-<p>就以典型的美国作为参照吧，上图对美国风投资金最受青睐的12个领域进行了对比，并勾画出不同领域风投资金不同月份的投资所占份额。其中红线指的是每月风投资金投入的份额，蓝线则指出了大体的发展趋势，阴影部分则指的是相应的标准误差。</p>
-<p>大家可以看到，风投资金在生物科技，金融技术，医疗保健，以及社交网络领域的投入都有着持续增长的趋势。相反，分析和电子商务领域的相比以前的风光年代，现在吸引到的风投资金却越来越少了。</p>
-<p><a href="http://tomtunguz.com/images/share_of_seed_and_growth.png" target="_blank" rel="noopener"><img src="http://tomtunguz.com/images/share_of_seed_and_growth.png" alt></a></p>
-<p>如果我们对这些领域的初创企业的种子期投资和成长型投资进行比较的话，就会发现有不同的其他趋势将会浮现出来。比如，即使电子商务领域的初创企业在过去一年获得的风投资金超过了15个百分比的份额，却在成长阶段的投资获得少于11个百分比的份额。相对而言，企业商用软件公司在种子期所获得的风投看上去远没有他们应该获得的多，而在成长期获得的投资却又是远超过对他们的预期的。</p>
-<p>这里最让人诧异的是市场，教育和分析领域的初创企业在种子期和成长期所获得的风投资金的巨大区别，也就是说成长期的投资只占种子期的1/3左右的水平。这就预示着市场已经对这些领域由一开始的青睐转变成后来的不怎么看好。</p>
-<p>以上这些数据揭示了风投资金在不同的领域的流动趋势，但不幸的是，它们没有办法展示出哪个领域有着更高的投资回报率，或者说下一个伟大的初创企业将会诞生于哪个领域！</p>
+            <p><img src="/images/tzhjz/cover.jpg" alt="大杀器"></p>
+<p>David Pierce最近<a href="http://www.wired.com/2015/06/same-plans-tech/" target="_blank" rel="noopener">在连线杂志中写道</a>，当今的科技公司所打造的产品都是一样的，都是同样的流服务音乐，同样的效率应用(Productivity Apps)，甚至连最近炙手可热的可穿戴设备看上去也是有着同样的价值主张的。难道创新的硝烟从此就湮灭了吗？不尽然。在本文中，我将对Pierce的观点进行相应的扩展，向大家强调清楚，通过对成功的商业模式的探索和创新，胜出者将会把山寨它们的企业吞噬的骨头都不剩，并会与那些高度同质化的公司划清界限。</p>
+<h3 id="产品同质化竞争预示创新的终结？"><a href="#产品同质化竞争预示创新的终结？" class="headerlink" title="产品同质化竞争预示创新的终结？"></a><span style="color: #993300;">产品同质化竞争预示创新的终结？</span></h3><hr>
+<p>不可否认，David Pierece说的很对：现在的科技公司确实看上去都是在围绕着几近雷同的价值主张进行产品或服务的打造，都在努力的对着同一群用户抛媚眼，尝试获得大家的青睐。谷歌，苹果，微软，以及其他小点的玩家都声称他们在打造的产品是为了让客户生活的更轻松点。</p>
+<p>但是这种同质化就代表消费者科技领域的创新止步不前了吗？我不敢苟同。</p>
+<p>这里Pierce的论点唯一存在的漏洞就是，他没有提及清晰可辨的商业模式(的探索和创新)将会为这些公司带来利润，这将会让它们的服务在这些新领域进行扩张。请谨记：<a href="http://blog.strategyzer.com/posts/2014/7/25/great-ideas-need-great-business-models" target="_blank" rel="noopener">如果没有一个很好的商业模式–无论多伟大的价值主张都是镜中花水中月</a>。</p>
+<p>那么究竟谷歌或者微软将是如何<a href="http://www.theverge.com/2015/1/29/7937841/best-gmail-app-iphone-outlook" target="_blank" rel="noopener">通过免费的效率应用获利</a>的呢？苹果新出的Apple Music是否能够将Spotify正在做的基于订阅的流音乐模式撕破一道缺口呢？WhatsApp，Line，和Viber之间又是谁会最终赢得<a href="https://www.theinformation.com/Mobile-Messaging-Wars-Phase-Two" target="_blank" rel="noopener">移动信息这场大战</a>呢？现在为止还没看出来谁有办法能找到一种方式可以一招制敌(因为他们还没有完成下面提及的第三阶段的商业模式匹配)。</p>
+<h3 id="正确的“匹配”是终结解决方案"><a href="#正确的“匹配”是终结解决方案" class="headerlink" title="正确的“匹配”是终结解决方案"></a><span style="color: #993300;">正确的“匹配”是终结解决方案</span></h3><hr>
+<p>你也许会说：“那又如何？谷歌，苹果，以及微软都有着大把的钞票，有什么所谓呢？”是的，这些公司确实都有着一个已有的商业模式来围绕着一个已知且有效的“匹配”来赚取稳定的营收。但是这些商业模式并非永远有效的，这就是为什么那些企业<a href="http://blog.strategyzer.com/posts/2015/5/21/amazon-web-services-reinvents-company-video-successful" target="_blank" rel="noopener">在它们尚成功的时候就进行自我革命</a>的重要性所在了，否则它们就只能接受被人颠覆的命运了。苹果的iTunes被Spotify这些企业以及大势所趋的流音乐所颠覆就是一个很棒的例子。<br>我们应该将从现有的行之有效的商业模式中赚取的金钱，投入到企业未来增长引擎的探索之上，而这些未来增长引擎又将会有着截然不同的‘匹配’。</p>
+<p>在我们的《<a href="https://strategyzer.com/vpd" target="_blank" rel="noopener">价值主张设计</a>》一书中，我们提到的主要概念之一就是去寻找对应的“匹配”。这个“匹配”就是将你公司所能提供的产品或服务与你的客户的需求紧密联系在一起的纽带。总的来说，一个企业在探索它们的“匹配”的时候需要经历三个阶段。而现在，我们前面说到的这些产品同质化竞争的科技企业其实才走完这三个阶段中的前两两个阶段而已。</p>
+<p><img src="/images/tzhjz/psf.jpg" alt></p>
+<h3 id="阶段1-问题解决方案匹配"><a href="#阶段1-问题解决方案匹配" class="headerlink" title="阶段1: 问题解决方案匹配"></a><span style="color: #993300;">阶段1: 问题解决方案匹配</span></h3><hr>
+<p>在这个阶段，你并没有足够的证据来证明你的客户是否真的关心你的产品的价值主张。这写想法仅仅还是存在于书面上，还是纸上谈兵而已。</p>
+<p>比如，苹果“书面上”深信它们的Apple Music流服务将会比Spotify在筛选和个性化方面为客户提供更高的价值；苹果还深信它们可以通过Beats1频道来重塑整个无线广播行业。这些“匹配”其实在用户真正使用它们的产品进行尝试之前都是不确定的。</p>
 <p>&nbsp;</p>
+<h3 id="阶段2-产品-市场匹配"><a href="#阶段2-产品-市场匹配" class="headerlink" title="阶段2:产品/市场匹配"></a><span style="color: #993300;">阶段2:产品/市场匹配</span></h3><hr>
+<p>产品/市场匹配的探索和创新将会是一个漫长且迭代的过程，不会一蹴而就。你的团队将会围绕着你的价值主张不断的测试着猜想的正确与否。</p>
+<p>你也许还会有一天发现你“写在纸上”的那些想法其实根本不会如你设想那样产生客户价值。比如，随着接下来的这几个星期人们对Apple Music的使用进行测试反馈，苹果将会搞清楚它所声称的”筛选和个性化“是否真的提供了Spotify所没有的方式来和用户进行互联。</p>
+<p>但是它是否就能卖出去呢？那就要看下一个至关重要阶段的对“匹配”的探索了。</p>
+<p>&nbsp;</p>
+<h3 id="阶段3-商业模式匹配"><a href="#阶段3-商业模式匹配" class="headerlink" title="阶段3:商业模式匹配"></a><span style="color: #993300;">阶段3:商业模式匹配</span></h3><hr>
+<p>商业模式匹配对于这些科技公司来说还是一个没有走出来的迷宫。这些企业如何才能从它们提供的这些服务中获取利润将决定它们的生死存亡。</p>
+<p>设计一个价值主张来为你的客户创造价值和打造一个商业模式来为你的公司创造价值，这将是一个反反复复的累活。</p>
+<p>这里我们还是以苹果为例吧。在Apple Music三个月的试用期满了之后，我们就可以看到，大家是否会愿意注册一个每月付费订阅的账号呢？还是他们会继续呆在如Spotify这些原来的服务商的怀抱之中呢？</p>
+<p>到此为止，大家应该看到前面描述的看似相似的产品和服务的竞争，现在已经转变成是可持续的成功的商业模式的探索和创新的竞争。谷歌，苹果，微软，以及其他企业都必须继续马不停蹄的对正确的价值主张和可行的商业模式进行探索和创新。</p>
+<p><br><br>&nbsp;</p>
+<div style="padding: 0 20px 0;  
+    margin: 1rem 0 -3rem 0;  
+    line-height: 1px;  
+    border-left: calc(16vw) solid #ddd;  
+    border-right: calc(16vw) solid #ddd;  
+    text-align: center;">我的更多产品</div>
+
+<p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
+<hr>
+<p>&nbsp;</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/05/how-yc-is-created/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="朱佰添">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/07/05/how-yc-is-created/" itemprop="url">YC创立史：一次美丽邂逅的产物</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-05T09:54:39+08:00">
+                2015-07-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><span style="color: #999999;"><em>编者注：本文作者Jessica Livingston 是Y Combinator 创始合伙人，因为一次偶遇和创业教父Paul Graham共谐连理的同时，还跟初创企业领域喜结良缘。本文从那次偶遇开始娓娓道来，说穿了YC，也说穿了所有初创企业工作的真谛。<a href="https://medium.com/backchannel/the-little-known-story-behind-why-i-started-y-combinator-4f36cb18f74d" target="_blank" rel="noopener">文本英文版发布于Medium</a>，中文版由虎嗅翻译官天地会珠海分舵进行编译。</em></span></p>
+<p>我生命中最美好的时光是出于偶然。</p>
+<p>很多人不知道我对初创企业如此着迷的原因竟然是源于当年我编写《创业者访谈》这本书的经历。当年写这本书的时候采访各个创业大拿的经历，赋予了我应该去帮助更多初创企业的灵感 – 最终让我有了创建YC的想法。</p>
+<p>11年前，我当时还是在一家投资银行里面做市场副总。当时我感觉这份工作异常的乏味，对编写一些我不感兴趣的发布会材料也提不起任何兴趣。有一天晚上，我无意间参加了一个我谁都不认识的派对。其实我当时去那的原因是要去跟一朋友碰头的，但是到了的时候他才告诉我他还在阿肯色州参加着Wesley Clark的总统竞选活动。当发现这一点的时候我本来打算扭头就走，打道回府的了。但最后时刻我还是决定了留下来看看再说。</p>
+<p>随后，我开始和该派对的主人Paul Graham兴奋的进行交流。Paul是个程序员 – 他创建了一家叫做Viaweb的公司来让用户在上面开创和打造他们自己的小店。这是一个很早期的基于网页的应用。通过这次交谈我们擦出了爱的火花，并且开始交往。</p>
+<p>Paul和他的朋友们把我引入了初创企业的世界里面。此前我从没有在这个世界里曝过光，当然也对它们没有任何概念可言，或者说对它们是如何获得成功的原因一窍不通。这让我充满好奇心，然后我决定开始启动一个周边项目 – 写书，希望通过这本书来描述清楚初创企业这个疯狂的世界。希望可以帮助大家更好的了解那些成功的企业创始人究竟是如何获得成功的。模仿巴黎评论系列《作家访谈》，我把这本书命名为《创业者访谈》，然后我就开始了对早期初创企业创始人的走访之路了。</p>
+<p>最终我采访过Steven Wozniak(Apple), Craig Newmark (Craigslist), 以及 Max Levchin (PayPal) 等创始人。通过这次写书的经历我学到了很多东西，其中包含了以下几点：</p>
+<ol>
+<li>发现除了我之前认为理所当然的华尔街商业世界里的的做生意的方式之外，还有另外一种方式 – 而这两种方式在初创企业领域几乎是同时存在的。</li>
+<li>(初创企业)这个新的领域不仅充满激情，同时还让人长智慧长见识。</li>
+<li>大家都知道，苹果是在一个车库走出来并成长起来的大企业，后来获得异常的成功。但是它的创始人们一开始其实没有意识到它们所有犯过的错误的，而这些错误其实对后来苹果迈向今天的成功又事实上有着非常关键的影响的。</li>
+<li>最后，大部分的初创企业的创建其实都是出于偶然，一开始它们其实并没有什么伟大的想法，也没有多雄厚的基金的。</li>
+</ol>
+<p>我在这些采访过程中所发掘出来的信息是如此的有意思和让人惊讶，经过几轮采访下来，我就很清楚的知道我在做的其实是一件大事。最初，我仅仅是想写本书来启发人们该如何创建一个初创企业，让创业早期碰到的挑战变得更透明而已。</p>
+<p>我没有想到的是，在写书的过程中自己竟然也被这些创始人的故事给启发了，并因此想要创建我自己的初创企业。那时候我还没有意识到去帮助创始人去实现它们的创意梦想会赋予我人生如此巨大的意义，而一部分它们的这些创意事实上也获得了非常巨大的成功。(Paul和我联合Trevor [Blackwell] 以及 Robert [Morris] 创建了作为投资项目的YC，初衷就是为了给那些创始人们提供种子期融资的更标准的选择。但是我们当时并没有想到这事能成的。)</p>
+<p>其实期间还有很多意想不到的“意外”发生。比如，当我们在2005年创建YC的时候，我们联合8家初创企业举办了一个“创始人计划夏令营“的活动。我们当时决定要对一大批的初创企业一次过同时进行投资，因为我和Paul当时都对天使投资一窍不通，并误以为这样做是我们进行学习的最好的办法。我们原本的计划是每年举办一次这样的活动来对新的初创企业一次过进行投资。但我们很快就意识到其实分多批初创企业进行投资效果更佳 – 把多组的企业召集在一起，这样就不会像只是努力组织其中几家那样显得孤立和寂寥了。而这对于形成一个支持性的社区又是至关重要的，所以自此开始我们就开始对初创企业以多批次的形式进行投资了。</p>
+<p>如Bill Gates和Larry Page以及Sergey Brin等所有创始人其实都是从最小做起的。一开始的时候，大家其实都不认同它们的创意；他们直面闭门羹；他们曾经痛苦挣扎。但是他们都有着很多其他人没有的一往无前的坚定不移的决心。通过《创始人访谈》这本书，我希望能够帮助那些感觉被疏离被孤立的创始人，指引他们拨开迷雾开清楚初创企业究竟是如何运作的。我很清楚的知道，如果我能帮助他们达成他们的目标，就是帮助世界添加的更多的创新色彩。</p>
+<p>因为一次偶遇，Paul和我最终喜结良缘结为夫妻。我非常高兴当时因为一次偶然的机会而参加了那个派对。</p>
+<p></p>
+<div style="padding: 0 20px 0;  
+    margin: 1rem 0 -3rem 0;  
+    line-height: 1px;  
+    border-left: calc(16vw) solid #ddd;  
+    border-right: calc(16vw) solid #ddd;  
+    text-align: center;">我的更多产品</div>
+
+<p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/04/break_innovation_dilema/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="朱佰添">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/07/04/break_innovation_dilema/" itemprop="url">打破“创新困局”，让你的企业创意盎然的六个新角色</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-04T11:33:48+08:00">
+                2015-07-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/创新/" itemprop="url" rel="index">
+                    <span itemprop="name">创新</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <header>
+
+
+
+<p><em><span style="color: #999999;">编者注：本文由商业模式画布之父Alexander Osterwalder<a href="http://blog.strategyzer.com/posts/2015/7/2/6-roles-position-your-company-for-future" target="_blank" rel="noopener">发布于strategyzer</a>。中文版由天地会珠海分舵进行编译，是之前在国内著名的虎嗅媒体上发布的《<a href="http://wwww.huxiu.com/article/119042/1.html" target="_blank" rel="noopener">创新乏力？来一枚首席创业官如何？</a>》的姊妹篇。</span></em></p>
+<p>在上周的《<a href="http://techgogogo.com/2015/07/%e5%95%86%e4%b8%9a%e6%a8%a1%e5%bc%8f%e7%94%bb%e5%b8%83%e4%b9%8b%e7%88%b6%ef%bc%9a%e5%88%9b%e6%96%b0%e4%b9%8f%e5%8a%9b%ef%bc%9f%e6%9d%a5%e4%b8%80%e5%8f%a3%e9%a6%96%e5%b8%ad%e5%88%9b%e4%b8%9a%e5%ae%98c/" target="_blank" rel="noopener">商业模式画布之父：创新乏力？来一口首席创业官(CE)如何？</a>》中，我们为企业自我创新发明引进了一个新的角色”首席创业官“: 一个在大企业里面为创新实验文化保驾护航的笃守者。当时文中限于篇幅只对首席创业官(CE)这个角色进行了详细的描述，本文将延续该文，对CE所领导的团队角色进行详细分析。下图即是本人给大家描绘的创新组织的架构图。下面让我们看看一个企业内部探索新的价值主张和商业模式的创新团队的关键角色。<br><img src="http://static1.squarespace.com/static/51913f1ce4b07b22f5332872/t/559146f5e4b03ab3a9aab1ff/1435584259741/Chief_Entrpreneur_Org_Chart?format=1500w" alt="Org_Chart_Chief_Entrepreneur"></p>
+<h3 id="首席创业官-Chief-Entrepreneur"><a href="#首席创业官-Chief-Entrepreneur" class="headerlink" title="首席创业官(Chief Entrepreneur)"></a><span style="color: #993300;"><strong>首席创业官(Chief Entrepreneur)</strong></span></h3><hr>
+<p>大家快速<a href="http://techgogogo.com/2015/07/%e5%95%86%e4%b8%9a%e6%a8%a1%e5%bc%8f%e7%94%bb%e5%b8%83%e4%b9%8b%e7%88%b6%ef%bc%9a%e5%88%9b%e6%96%b0%e4%b9%8f%e5%8a%9b%ef%bc%9f%e6%9d%a5%e4%b8%80%e5%8f%a3%e9%a6%96%e5%b8%ad%e5%88%9b%e4%b8%9a%e5%ae%98c/" target="_blank" rel="noopener">回想下我在哈佛商业评论中对该角色的描述</a>。CE就是在大企业里面为创新实验文化保驾护航的笃守者，这些创新实验将允许一定程度失败的发生，并让大家从中进行学习。CE的目标就是要打造出10亿美元级别的可持续发展的新的增长引擎。</p>
+<p>&nbsp;</p>
+<h3 id="首席投资组合经理-Chief-Portfolio-Manager"><a href="#首席投资组合经理-Chief-Portfolio-Manager" class="headerlink" title="首席投资组合经理(Chief Portfolio Manager)"></a><span style="color: #993300;"><strong>首席投资组合经理(Chief Portfolio Manager)</strong></span></h3><hr>
+<p>首席组合经理是一个非常有意思的角色，其职责是要确保公司面向的是创造未来增长点的一系列机会和商业模式的组合。这里面的一些机会肯定存在着高风险，而另外一些机会风险则较低；一些机会的回报是潜在可能的，而另外一些则是肯定会有回报的。</p>
+<p>CPM的工作就是要保证有一个广泛的这些投资组合(不同的创新项目)的存在。这个人必须非常清楚公司所处的行业环境 – 这样才能看到是否有破坏性技术出现在视野里面，才能确定影响该特定领域的关键因素是什么，然后CPM才能将这些组合和行业环境衔接起来，从而让企业能够更好的在未来找到自己的位置。</p>
+<p>&nbsp;</p>
+<h3 id="首席风投官-Chief-Venture-Capitalist"><a href="#首席风投官-Chief-Venture-Capitalist" class="headerlink" title="首席风投官(Chief Venture Capitalist)"></a><span style="color: #993300;"><strong>首席风投官(Chief Venture Capitalist)</strong></span></h3><hr>
+<p>首席风投官负责分配预算和管理企业内部创新项目的融资轮，其与内部企业家们的创新项目有着最直接的联系。</p>
+<p>企业内部的创新项目不可能一开始就获得所有的融资(预算)，它们必须犹如初创企业一般在充满战火和硝烟的迈进过程中赢得风投的青睐。</p>
+<p>首席风投官将会提供天使投资来对创新项目进行早期投资，让项目团队可以用很少的资金进行前期的验证。当这些试验成功证明可行之后，VC就会投入更多的资金。</p>
+<p>如果大家认真对比下上面的组织架构的话，你会察觉首席风投官这个角色其实和企业内部的CFO这个角色是对应的，CFO为已有的业务分配预算；而在图的左边，首席执行官则是为发掘未来的事业分配预算。</p>
+<p>&nbsp;</p>
+<h3 id="首席风险官-Chief-Risk-Officer"><a href="#首席风险官-Chief-Risk-Officer" class="headerlink" title="首席风险官(Chief Risk Officer)"></a><span style="color: #993300;"><strong>首席风险官(Chief Risk Officer)</strong></span></h3><hr>
+<p>企业内部的一些团队的创新项目也许会为企业的品牌受损，并且引发法律纠纷。保证合法性将会是对一个企业内部的创新项目很重大的一个制约。而首席风险官的工作就是为这些创新团队解决这些麻烦。首席风险官(CRO)的角色是去帮助企业内部的企业家们弄清楚应该如何运作他们的创新项目才不会触及法律的火线，以免将企业陷入危险之中。</p>
+<p>&nbsp;</p>
+<h3 id="首席内部大使-Chief-Internal-Ambassador"><a href="#首席内部大使-Chief-Internal-Ambassador" class="headerlink" title="首席内部大使(Chief Internal Ambassador)"></a><span style="color: #993300;"><strong>首席内部大使(Chief Internal Ambassador)</strong></span></h3><hr>
+<p>首席内部大使对上图中左右两个企业内部的组织架构都非常熟悉。其对企业内部存在的资源，活动，专利等了如指掌，同时也深受掌控这些资源的管理层所信任。</p>
+<p>首席内部大使通过和相关人员就如何运用公司的客户、销售团队、企业品牌、企业技能的权限方面进行磋商，来确保首席创业官和整个团队能够很好的运用上这些资源。</p>
+<p>这个角色将会是图中左边显示的关注已有商业模式执行的组织，和右边的探索新的价值主张和商业模式的组织的桥梁。让两边的组织进行顺畅的进度沟通，对让两边找到正确的关系将会是至关重要的。</p>
+<p>&nbsp;</p>
+<h3 id="企业家-Entrepreneurs"><a href="#企业家-Entrepreneurs" class="headerlink" title="企业家(Entrepreneurs)"></a><span style="color: #993300;"><strong>企业家(Entrepreneurs)</strong></span></h3><hr>
+<p>企业家创造新事业，每个企业家都对自己各自的创新项目负责。这个角色比起我们正常认知的产品经理还要强大：他们是真正的企业家，有着非常清晰的激励，真正把宝压在了公司的发展上面。</p>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<div style="padding: 0 20px 0;  
+    margin: 1rem 0 -3rem 0;  
+    line-height: 1px;  
+    border-left: calc(16vw) solid #ddd;  
+    border-right: calc(16vw) solid #ddd;  
+    text-align: center;">我的更多产品</div>
+
+<p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
+</header>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/04/ipv4_using_out/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="朱佰添">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/07/04/ipv4_using_out/" itemprop="url">全球IP将告罄，美国已摇号限购</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-04T09:33:18+08:00">
+                2015-07-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/资讯/" itemprop="url" rel="index">
+                    <span itemprop="name">资讯</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="IPv4地址即将耗尽"><a href="#IPv4地址即将耗尽" class="headerlink" title="IPv4地址即将耗尽"></a><span style="color: #993300;">IPv4地址即将耗尽</span></h2><hr>
+<p>&nbsp;</p>
+<p>记得十年前我就跟大家说过<a href="http://arstechnica.com/gadgets/2007/03/ipv6/" target="_blank" rel="noopener">IPv4地址即将耗尽的事情</a>吧？虽然，这个过程花了点时间，但是，今天这个时刻还是到来了：随亚洲，欧洲，拉丁美洲在最近这一年多来已经慢慢将残剩的IPv4地址给分配殆尽之后，现在负责给美国，加拿大，北大西洋地区，和加勒比群岛区域的<a href="http://arstechnica.com/business/2015/05/get-ready-to-wait-in-line-for-more-ipv4-addresses/" target="_blank" rel="noopener">ARIN也宣称新IP申请将需要排队等候</a>。那么现在就只剩下非洲那边还能按需申请IPv4地址了。</p>
+<p>ARIN是美国Internet号码注册中心，负责北美、南美、加勒比以及非洲撒哈拉部分的IP分配，已经开始启动“IPv4未满足需求策略“。在此之前，在ARIN所覆盖区域的范围内的组织还能按需申请新的IPv4地址，但是昨天(2015年07月02日)开始，ARIN不再能够满足这些合理的申请需求了。这留给了那些来ARIN申请新IPv4地址的ISP们3个选择：</p>
+<ul>
+<li>可以选择一些更小的地址块(ARIN当前还有限量供应的512和256地址块)</li>
+<li>可以选择加入等待名单，等待满足需求的地址块将来变得可用再作分配</li>
+<li>可以选择从一些IP地址过剩的组织手上进行购买<br>“如果你选择的是更小的地址块的话，你在此后的90天内就不能再进行申请，“ ARIN的首席执行官ARIN跟Ars说。“当前我们还有将近500个小地址块，但是每个月会有300到400个申请请求进来，［所以］这剩余的地址根本就不能维持2到4个星期。”</li>
+</ul>
+<p>难道这里就ISP就不可以玩些战略手段吗？比如ISP不可以在加入等待名单之后继续进行一次数量更少点的地址块的申请吗？“等待名单里面等候的IP地址本来就是ARIN回收回来的很少量的地址，” Curran说道。“从等待名单中获取更多的地址其实并不能算是个好的策略，尝试找出该如何使用上IPv6才是大家应该考虑的战略方向了。“</p>
+<p>“ ISP们应该要尽快适应这种市场的转变。如果你还是需要IPv4的地址的话，悉听尊便，“ Curran继续说道。“但是我不敢保证这个市场还能维持多久。试想下，70亿的人们在用着智能手机和家庭网络接入，工作网络，再加上谷歌，YouTube，Facebook，Bing又消耗了一大批的地址…所以就算在一个工作完美的市场上面，只能分配出40亿个左右地址的IPv4也很快就玩不转的了。“</p>
+<p>同时我们也跟IPv4地址代理商Avennue4的副总Janine Goodman就近期的一些走向进行了意见的交流。</p>
+<p>“IPv6的年代迟早会到来的，这是未来的方向，“她说道。”但是还得花点时间。很多组织还没有准备好明天就往IPv6进行转变；这个过程肯定还需要几年的时间。市场的转移将会在负责的情况下进行IPv4到IPv6的迁移，而不是对人们造成一种恐慌。“</p>
+<p>&nbsp;</p>
+<h2 id="IPv6闪亮登场"><a href="#IPv6闪亮登场" class="headerlink" title="IPv6闪亮登场"></a><span style="color: #993300;">IPv6闪亮登场</span></h2><hr>
+<p>IETF组织其实早在上世纪90年代初就看到了IPv4地址将会耗尽的情况，所以他们很早就开始考虑用一个新的网络协议来解决这个问题了。老的IP地址是版本4，而他们想到这种新的IP地址就是版本6了。IPv6将IP地址的长度增加到不少于128位 – 这就好比将10位的电话号码增加到40位一样。结果就是，就实际用途上来说，总共有效的可分配IPv6地址可以说是无限的。</p>
+<p>但是问题来了，老的那一套操作系统只能处理IPv4的32位地址。而这个问题其实在上几年也基本解决了的，今天基本上所有的操作系统都能够处理128位的IPv6地址 – <a href="http://arstechnica.com/apple/2015/06/apple-to-ios-devs-ipv6-only-cell-service-is-coming-soon-get-your-apps-ready/" target="_blank" rel="noopener">尽快还是有些应用不能正确的对IPv6进行处理</a>。</p>
+<p>这里的主要问题就是，很多组织和地方的网络根本就没有<a href="http://arstechnica.com/business/2011/02/ask-ars-how-should-my-organization-approach-the-ipv6-transition/" target="_blank" rel="noopener">启动IPv6的支持</a>，尽管启动IPv6的支持并不是如大家想像的那么困难，在一些大型网络里面也并不见得就是非常错综复杂的事情。</p>
+<p>要达成这个转变，网络服务提供商，路由，防火墙，负载均衡，以及DNS服务器应该都加进IPv6的支持以及进行重新配置。然后一些支持企业商业运作的软件也需要继续进行相应的配置。无论如何，将IPv6应用上的一个新计划是必不可少的了，期间还要注意的就是IPv6和IPv4的DHCP工作方式是不一样的。</p>
+<p>谷歌分析报告宣称，在2009到2001年间，它们的用户中使用了IPv6连接的数量仅占了总用户数的百分之零点几，到2012年才达到了1%，到了一年前，到了3.5%。而今天则达到6.5%(工作日)和7.5%(周末)。</p>
+<p>如果大家去看下<a href="http://www.google.com/intl/en/ipv6/statistics.html#tab=per-country-ipv6-adoption" target="_blank" rel="noopener">谷歌针对每个国家的IPv6使用状态分析</a>的话，会发现一些非常有意思的事情。在2013年早期，美国和比利时是IPv6最主要的两个玩家，IPv6的普及率分别达到2.17%和0.04%。今天，比利时则成为世界上普及IPv6最广的国家，达到了35%，而美国则紧随瑞士排到第三位(两者都是接近21%)。根据<a href="https://www.stateoftheinternet.com/trends-visualizations-ipv6-adoption-ipv4-exhaustion-global-heat-map-network-country-growth-data.html" target="_blank" rel="noopener">阿卡麦公司提供的数据</a>，当今世上有7个国家的IPv6普及率是达到10%以上的：比利时，瑞斯，美国，秘鲁，德国，卢森堡，以及葡萄牙。希腊很快就会成为第八个。有16个国家的IPv6普及率是到了5%以上的，而1%以上的则有32个国家。</p>
+<p>令人惊讶的是，毗邻的国家的普及率却存在着呈数量级别的差距。比如美国是21%，而邻居加拿大却只有0.5%的IPv6用户。比利时是35%，而隔壁的荷兰却只有3%。爱尔兰是2.4%，而应该却只有0.2%。</p>
+<div class="centered-figure-container"><figure class="image center large full-width"><img src="http://cdn.arstechnica.net/wp-content/uploads/2015/07/googleipv6worldjuly20125-640x415.jpg" alt><br><figcaption class="caption"><br><div class="caption-text"></div><br></figcaption></figure></div><br>上图中的白色区域代表是没有普及上IPv6的地区；其次是绿色区域，绿色越深代表IPv6越普及；而红色则代表的是一个糟糕的情况，这些区域不但是基本没有普及IPv6，而且它们的IPv6的访问速度比起IPv4要慢；橙色代表正在大力发展IPv6的地区，而那里的IPv6连接速度还是比IPv4要慢。当然，也会有些地方的IPv6比IPv4还快的，比如比利时和俄罗斯。<br><br>所以，看来IPv4一统江湖的的状况将不会维持太久，通过动态IP分配的方式来解决IP地址不够用的方案也不是最终的解决办法。我们很清楚的知道，让一个国家的百分之十的网民采用IPv6还是可以实现的。一旦有一部分人带头开始采用，那么，根据<a href="https://en.wikipedia.org/wiki/Metcalfe" target="_blank" rel="noopener">梅特卡夫定律</a>，将来就只会越来越多人使用。<br><br>&nbsp;<br><br><div style="padding: 0 20px 0;  
+    margin: 1rem 0 -3rem 0;  
+    line-height: 1px;  
+    border-left: calc(16vw) solid #ddd;  
+    border-right: calc(16vw) solid #ddd;  
+    text-align: center;">我的更多产品</div>
+
+<p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/01/chief_enterprener/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="朱佰添">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/07/01/chief_enterprener/" itemprop="url">商业模式画布之父：创新乏力？来一口首席创业官(CE)如何？</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-01T08:12:04+08:00">
+                2015-07-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/创新/" itemprop="url" rel="index">
+                    <span itemprop="name">创新</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><header></header></p>
+<div class="meta"><span class="author">编者注：<a href="http://blog.strategyzer.com/posts/2015/6/29/the-c-suite-needs-a-chief-entrepreneur" target="_blank" rel="noopener">本文英文原文由</a></span><span class="author"><a href="http://blog.strategyzer.com/posts/2015/6/29/the-c-suite-needs-a-chief-entrepreneur" target="_blank" rel="noopener"> 商业模式画布之父Alexander Osterwalder发布于strategyzer</a>。中文版由天地会珠海分舵进行编译。</span></div><br><br><div class="meta"></div>
+
+<h2 id="引荐首席创业官-CE"><a href="#引荐首席创业官-CE" class="headerlink" title="引荐首席创业官-CE"></a><span style="color: #993300;">引荐首席创业官-CE</span></h2><hr>
+<p>众所周知，首席执行官(CEO)非常说擅长在一个已知的商业模式中推动企业的成长和运作。但是对于如何进行创新并发动未来成长的引擎上面却又往往是捉襟见肘的。当然，像乔布斯这种攻守兼备的天才总会存在，但是，你要想想这个世上又有多少个乔布斯呢。</p>
+<div id="yui_3_17_2_1_1435666559204_286" class="body entry-content"><br><div id="item-5590dad7e4b004f41ba922a3" class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1435557893896"><br><div id="yui_3_17_2_1_1435666559204_285" class="row sqs-row"><br><div id="yui_3_17_2_1_1435666559204_284" class="col sqs-col-12 span-12"><br><div id="block-4507ad942095edc79e78" class="sqs-block html-block sqs-block-html" data-block-type="2"><br><div id="yui_3_17_2_1_1435666559204_720" class="sqs-block-content"><br><br>所以，在本文中，我将会提出一个大家也许闻所未闻新的角色：首席创业官。在一个企业里面，首席创业官负责如何引领公司进行内部创新并走向未来，而首席执行官则负责如何将已有的生意给处理好。<br><br>其实我之前就跟精益创业之父Steve Blank和其他一些如<a href="https://twitter.com/ypigneur" target="_blank" rel="noopener">Yves Pigneur</a>, <a href="https://twitter.com/HenryChesbrough" target="_blank" rel="noopener">Henry Chesbrough</a>, 以及 <a href="https://twitter.com/rgmcgrath" target="_blank" rel="noopener">Rita McGrath</a>等商业思考家有针对这个问题进行深入的探讨：“如果CEO不是那个公司里面最善于创新的家伙，那么究竟谁能担此重任呢？“。我们得出一致的结论就是，CEO需要有一个拍档来为企业内部带来创新，这个人将会创造出新的流程，新的激励机制，以及新的指标，并对此进行义不容辞的捍卫，来鼓励激进的创新思想，为企业找到新的增长点。这是一个可以帮助企业在本身已经成功的情况下继续进行内部自我创新的执行官，是一个排列在首席职位上的角色。<br><br>你可以把这个人叫做首席创业官(CE/ChiefEntrepreneur)。这个角色的介入，也许会让大家对传统的首席xx官(CEO,CIO,CTO,CFO等)的认知产生分歧，但是这个角色的加入对一个公司的创新起着至关重要的作用的。<br><br><img src="http://static1.squarespace.com/static/51913f1ce4b07b22f5332872/t/559146f5e4b03ab3a9aab1ff/1435584259741/Chief_Entrpreneur_Org_Chart?format=1500w" alt="The org chart where CEO and CE lead the charge. I"><br><br>从上面的公司组织架构中可以看到，CEO和CE应该同时掌管着一个企业。至于CE下面的角色，本人将会在今后的文章中进行详细的阐述。<br><br>现在我们先关注的是我们应该如何去招聘充当CE这个角色的人才？到哪里去找？这个角色应该具备哪些素质？下面请看我为财富50强的公司所准备的这方面的职位描述。<br><br>&nbsp;<br><br></div><br></div><br><div id="block-yui_3_17_2_3_1435558134398_10462" class="sqs-block html-block sqs-block-html" data-block-type="2"><br><div class="sqs-block-content"><br><br>## <span style="color: #993300;"><strong>首席创业官招募简介及能力要求</strong></span><br><br><em> </em> <em><br><br>招聘简介：<br><br></em></div><br><div class="sqs-block-content"><br><br>财富50强企业诚聘可以打造未来的首席创业官。首席创业官的职责将会是管理和带领一帮对新商业模式和价值主张进行探索的公司内部的创业者组合团队。候选人必须有敢于承受并挑战预期风险的激情。该职位跟CTO不一样，不需要向CEO报告。该职位如CEO一样有着强大的权力，有着清晰的在公司内部进行重大创新的领导权。<br><br>能力要求：
+
+   <strong>你必须对创新充满激情。</strong>你可以通过既定的预算来为企业找到新的增长引擎，但不能无的放矢。<br><em>   <strong>你坚信一切皆有可能。</strong>你是一个坚韧不拔的人，你有着非凡的领导能力，市场思维，充满激情，工作努力，能够鼓励和推动你的团队和你一样坚信一切皆有可能。
+</em>   <strong>你曾经从零开始为一家企业打造出10亿美元以上的生意</strong>。如果这个企业是现在的一个很大的企业帝国的话，优先录取。<br><em>   <strong>你可以从容应对各种不确定性</strong>。你对失败毫不畏惧，你将失败视作最终找到问题解决方案的一个机会。
+</em>   <strong>你有着强悍的外交手腕</strong>。在处理可能的冲突的时候你能坚持：必须牢牢握紧对你的创意进行验证所需要用到的资金和资源。<br>&nbsp;<br><br>## <span style="color: #993300;"><strong>首席创业官的工作职责</strong></span><br><br><em> </em> <em><br><br>以下是作为首席创业官的工作职责：
+
+</em>   <strong>为公司打造未来</strong>。这一条我们怎么强调都不为过。CE的责任就是为公司未来的增长进行新的商业模式和价值主张的探索和开发。<br><em>   <strong>对你的的团队进行指导和支持</strong>。你之前曾经有这个方面的工作经验，所以你必然有这方面的知识给大家进行分享。你的团队必须围绕公司增长的商机方面进行商业模式和价值主张的探索和验证。意味着你必须带领大家去驾驭行业趋势和市场走势。
+</em>   <strong>设计/构建一个进行创造发明的环境</strong>。你必须为你的团队打造出一个进行创新实验，体验失败，并从中学习这样的一个环境。为企业带来额外的创新文化，在这个文化中你的创意可以得到彻底的验证。一旦这个这个文化，流程，激励机制，以及指标给创造出来，你必须义无反顾的进行捍卫。<br><em>   <strong>引进创新的考核方式</strong>。你必须开发出一套新的流程来考核你在商业创新方面的进展程度。考核你是如何在你的团队的学习，降低不确定性和风险，向前迈进方面提供帮助的。
+</em>   <strong>建立并培养和CEO的合伙关系</strong>。你必须和CEO保持良好的合作以确保你有足够的资源和资产来验证你的创意是有效还是无效的。你必须负责建立一个良好的合作关系来进行进度讨论和创意分享。这里你必须要有着出色的沟通技巧，因为CEO可以在财务上面对你将来的试验提供支持。同时你也必须认识到将一个已经验证过的，有着可扩展商机的商业模式进行交接的重要性。<br><em>   <strong>直接向董事会执行总裁和总裁汇报</strong>。你不是在CEO手下工作，也不是和CTO，CIO，以及CFO在同一个方向上并肩作战。那些角色的战场是在如何让现有的商业模式保持良好的发展上面，你有着属于自己的新开辟的战场。试想下，如果CE直接向CEO汇报的话，CEO为了保留资源来保证公司不用直面某种情况的失败，就有权否决掉那些可能是颠覆性的潜在创意。<br>&nbsp;<br><br>## <strong><span style="color: #993300;">现有商业模式的执行和创新应双管齐下</span></strong>
+
+</em> <em> </em><br><br>今天的企业界需要更多的“灵巧组织(ambidextrous organizations)“(关于“灵巧组织”的描述，请看《<a href="http://techgogogo.com/2015/06/%e7%b2%be%e7%9b%8a%e5%88%9b%e4%b8%9a%e4%b9%8b%e7%88%b6steve-blank-%e5%a6%82%e4%bd%95%e8%ae%a9%e4%bc%81%e4%b8%9a%e5%86%85%e9%83%a8%e5%88%9b%e6%96%b0%e8%8e%b7%e5%be%9750%e5%80%8d%e5%a2%9e%e9%80%9f/" target="_blank" rel="noopener">精益创业之父Steve Blank: 如何让企业内部创新获得50倍增速</a>》): 企业的现有商业模式的执行和创新应该双管齐下。<br><br>可想而知，很多人将难以理解和意识到为什么要建立这种组织架构，因为几十年来人们对CEO这种一枝独大的权力架构已经习以为常了。<br><br>但是正如创新大师Steve Blank<a href="http://steveblank.com/2012/12/03/the-future-of-corporate-innovation-and-entrepreneurship/" target="_blank" rel="noopener">指出</a>的那样，逆水行舟，不进则退。每个大企业，不是不断的进行持续创新和颠覆，就是直面死亡的威胁。<br><br>毫无疑问，CE和CEO这两个角色肯定会产生冲突。但是给点耐心和不屈不挠的坚持吧，CE这个新的角色迟早会在融入到你已经发展起来的企业里面的。其实具有CE潜质的角色在很多企业里面都已经呈现出来了，只是我们还没有意识到需要对他们进行进一步的培养，或者给他们一个创造一个带领公司进行创新的机会而已。说不定正在阅读这篇文章的你就是那么一个人了。<br><br></div><br></div><br></div><br></div><br></div><br></div><br>&nbsp;<br><br><br><div style="padding: 0 20px 0;  
+    margin: 1rem 0 -3rem 0;  
+    line-height: 1px;  
+    border-left: calc(16vw) solid #ddd;  
+    border-right: calc(16vw) solid #ddd;  
+    text-align: center;">我的更多产品</div>
+
+<p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/06/29/steve_blank_50_speed_of_creative/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="朱佰添">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="科技向前冲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/06/29/steve_blank_50_speed_of_creative/" itemprop="url">精益创业之父Steve Blank: 如何让企业内部创新获得50倍增速</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-29T09:20:24+08:00">
+                2015-06-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/" itemprop="url" rel="index">
+                    <span itemprop="name">创业</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/创业/创新/" itemprop="url" rel="index">
+                    <span itemprop="name">创新</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><span style="color: #999999;"><em>编者注：<a href="http://steveblank.com/2015/06/26/lean-innovation-management-making-corporate-innovation-work/" target="_blank" rel="noopener">本文英文版来自创新大师Steve Blank的个人博客</a>，中文版由天地会珠海分舵进行编译。应用在初创企业打造上面的精益创业相信我们已经耳熟能详，但是如果我们面对的是一个已经发展起来的企业，或者是一个政府部门，那么我们又应该怎么进行创新呢？下面且看创新大师Steve Blank的耳提面命…</em></span></p>
+<p>我曾经帮助很多大企业甚至美国政府，来让它们能够更快速的进行创新 – 还不是一般的快，只用了原来的1/5时间，我就帮助他们在组织内部打造出10倍的创新项目，也就是50倍的增速。</p>
+<p>下面我就跟大家说说我是怎么做到的。</p>
+<h2 id="精益创新管理"><a href="#精益创新管理" class="headerlink" title="精益创新管理"></a><span style="color: #993300;"><strong>精益创新管理</strong></span></h2><hr>
+<p>最过去的这5年时间里，”<a href="https://hbr.org/2013/05/why-the-lean-start-up-changes-everything/ar/1" target="_blank" rel="noopener">精益创业</a>“理念让很多企业家在进行创业时不再是盲人摸象，而是让大家可以通过寻找产品/市场匹配度来高效的打造一个初创企业。追求创新的企业可以通过购买，打造，合伙，或者使用<a href="http://openinnovation.net/" target="_blank" rel="noopener">开放创新</a>的方式来进行初创企业的打造。但是，如果想找到一个统一方法论，来让那些已经发展起来的企业和政府机构，能够以初创企业的速度和迫切感来从内部发起创新，单靠精益创业的方法论是力所不能逮的。</p>
+<p>此前曾经有一帮创新先烈尝试像对待初创企业一样，运用精益创业工具和技术来对一个已经发展起来的企业发起创新，结果那是造成一片惊慌，混乱和挫败，最终结果可想而知，皆以失败而告终。最终落下了一个叫做“戏剧化创新“的笑柄：有着优秀的项目，关于企业创新的媒体曝光也是精彩绝伦，但最终整个企业发展的轨道却没有任何实质性的变化。</p>
+<p>通过和来自<a href="http://www.gore.com/en_xx/" target="_blank" rel="noopener">戈尔公司</a>的创新中心的老大<a href="https://www.linkedin.com/pub/dir/Greg/Hannon" target="_blank" rel="noopener">Greg Hannon</a>进行合作，我发现了由其他天才人物早就开发出来的两个可以将精益创业和企业创新衔接起来的企业战略工具。第一个就是由<a href="http://www.gsb.stanford.edu/faculty-research/faculty/charles-oreilly" target="_blank" rel="noopener">O’Reilly</a> 和 <a href="http://www.hbs.edu/faculty/Pages/profile.aspx?facId=6584" target="_blank" rel="noopener">Tushman</a>发明的著名的“<a href="https://hbr.org/2004/04/the-ambidextrous-organization" target="_blank" rel="noopener">灵巧组织</a>(ambidextrous organization)“，它指出如果企业需要进行持续创新的话，就必然需要双管齐下 – 在有效的执行它们的核心商业模式的同时，还需要并行的从内部发起创新。换句话说，在一个“灵巧组织”里面，你必须能做到“一心二用”。</p>
+<p>第二个关于企业创新的伟大理念就是来自<a href="http://www.alchemygrowth.com/team.html" target="_blank" rel="noopener">Baghai</a>, Coley 和 White的“<a href="http://www.amazon.com/gp/product/0738203092/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0738203092&amp;linkCode=as2&amp;tag=wwwsteveblank-20&amp;linkId=6DL2L3MYML7GXVNH" target="_blank" rel="noopener">创新的三个视野</a>”。他们认为一个企业的创新应该落入到三个他们称作“视野”的范畴里面。</p>
+<p><a href="http://image.woshipm.com/wp-files/2015/06/18f31f48b067106f7d68ca141aad7659.jpg" target="_blank" rel="noopener"><img src="http://image.woshipm.com/wp-files/2015/06/18f31f48b067106f7d68ca141aad7659.jpg" alt="3-Horizons"></a></p>
+<ul>
+<li>视野1描述的是成熟的生意的情况。</li>
+<li>视野2描述的是快速增长的生意的情况。</li>
+<li>视野3描述的是刚浮出水面的商业机会的情况。<br>其中每一个视野都要求有不同的关注点，不同的管理方式，以及不同的工具和目标。</li>
+</ul>
+<p>这三个视野进行了难以置信的有用的分类，但是，很多企业在运用的时候却错误的把这三个视野简单的当成是对相同的商业模式的增量执行。</p>
+<p>事实上，三个视野的理论只是告诉了我们应该如何对一个企业的创新进行思考，而没有提供给我们应该如何将之实现的指南。</p>
+<p>那我们快进到今时今日。为了让创新可以更加快速，我们现在已经有了21世纪的新工具 – 由<a href="https://www.youtube.com/watch?v=QoAOzMTLP5s" target="_blank" rel="noopener">商业模式画布</a>，<a href="https://www.youtube.com/watch?v=xr2zFXblSRM" target="_blank" rel="noopener">客户开发</a>，敏捷工程所组成的<a href="https://hbr.org/2013/05/why-the-lean-start-up-changes-everything/ar/1" target="_blank" rel="noopener">精益创业</a>，我们完全可以对这些创业工具进行调整以应用到我们的已经发展起来的企业里面去。</p>
+<p>为了达到这个目标，我们将会在保留上面提到的那三个创新视野的核心的基础上，应用上我们通过<a href="https://hbr.org/2013/05/why-the-lean-start-up-changes-everything/ar/1" target="_blank" rel="noopener">精益创业</a>所学到的知识，对其进行重新构造和整合。结果就会变成以下的样子：</p>
+<ul>
+<li>一个新的精益版本的“创新的三个视野”</li>
+<li>一个“灵巧组织”的企业，以及</li>
+<li>已发展起来的企业通过闪电般的速度进行新创意打造和检验的方法。<br>&nbsp;</li>
+</ul>
+<h2 id="创新三视野的精益定义"><a href="#创新三视野的精益定义" class="headerlink" title="创新三视野的精益定义"></a><span style="color: #993300;"><strong>创新三视野的精益定义</strong></span></h2><hr>
+<p>在这个新模型中，创新的不同视野将通过该商业模式是否正在被执行或者被探索而进行定义。</p>
+<p><a href="http://image.woshipm.com/wp-files/2015/06/f69ba6b9537ce91f16c3bc1135f54bd3.jpg" target="_blank" rel="noopener"><img src="http://image.woshipm.com/wp-files/2015/06/f69ba6b9537ce91f16c3bc1135f54bd3.jpg" alt="revised-Horizons"></a></p>
+<ul>
+<li>视野1的活动支持的是已有的商业模式</li>
+<li>视野2关注的是通过部分已知的商业模式对已有商业模式进行扩展</li>
+<li>视野3关注的是未知的商业模式的探索<br>视野1围绕的是公司的已有的商业核心。在这里，公司执行的是一个已知的商业模式(已知的客户，已知的产品功能，已知的竞争对手，已知的价格，已知的分销渠道，已知的供应链，等等…)，它运用的是企业已有的能力，在这种情况下打造出下一个产品并投放到市场的风险是很低的。在视野1这个范畴里的可行管理方式主要有：打造可复用和可扩展的流程，工序，奖励机制，以及KPI来执行以及衡量该商业模式。</li>
+</ul>
+<p>在视野1进行的创新和改进主要表现在流程，工序，成本等上面。在这个视野里进行创新所需要用到的产品管理工具和以前一样，比如<a href="http://www.stage-gate.com/" target="_blank" rel="noopener">StageGate</a>以及其他同等工具<span style="font-size: 13.3333330154419px; line-height: 20px;">。</span></p>
+<p><a href="http://image.woshipm.com/wp-files/2015/06/09157ee610bf13907c7675d189072f53.jpg" target="_blank" rel="noopener"><img src="http://image.woshipm.com/wp-files/2015/06/09157ee610bf13907c7675d189072f53.jpg" alt="managing-Horizon-11"></a></p>
+<p>在视野2中，一个公司将会拓展它的核心业务。在这里，公司将会在已有的商业模式的基础上寻找新的机会(如尝试一个新的分销渠道，通过在新客户身上运用相同的技术，或者尝试将新产品推给老客户，等等)。视野2运用的大部分是企业已有的能力，在获取新能力并将产品推出市场所存在的风险是中等程度。在视野2里的主要可行管理方式有：在当前商业模式中进行“模式识别”和实验。</p>
+<p>视野3就是一个公司应该将他们疯狂的具有企业家精神的“标新立异”的员工(<span style="color: #999999;"><em>在一个成熟企业里面，这些人就是你亟待解雇的那部分独立独行老是提出质疑声音的人；在一个初创企业中，这些人往往指得就是那个疯狂的创始人兼CEO</em></span>)投放到的地方。这些创新者们想要<a href="http://steveblank.com/2010/01/25/whats-a-startup-first-principles/" target="_blank" rel="noopener">打造出新的且有破坏性潜力的商业模式</a>。这在一个已有的企业里面其实就相当于正在孕育着一个初创企业团队，他们通过快速和迫切的运作来寻找一个可复用并可扩展的商业模式。视野3里面的团队应该和其他业务部门物理上分而治之，他们应该有着和视野1截然不同的，属于他们自己的计划，流程，政治，奖励机制，以及KPI.</p>
+<p>视野2和视野3的产品管理使用的是已有的精益创新管理工具，比如Lean LaunchPad<sup>®</sup>, NSF I-Corps™ 或其他等同工具.</p>
+<p><a href="http://image.woshipm.com/wp-files/2015/06/dadeb6721bf806f0ecca621a6918fbfe.jpg" target="_blank" rel="noopener"><img src="http://image.woshipm.com/wp-files/2015/06/dadeb6721bf806f0ecca621a6918fbfe.jpg" alt="Managing-Horizon-2-and-31"></a></p>
+<p>在一个成熟企业内部用上这些工具的话将会让该企业获得如初创企业般的速度和紧迫感。视野3里面的组织架构应该是一个小型的(&lt;5人)的核心团队，该团队应该可以在10周内和100+个用户进行交流，并且有能力交付一系列通过迭代和增量方式打造出来的最小可行产品(MVP)。通过将这些核心团队以及相应的支出进行最小化，一个企业就能够同时打造出大量的这种创新项目团队出来。</p>
+<p>&nbsp;</p>
+<h2 id="视野1必须给视野2和3提供支持"><a href="#视野1必须给视野2和3提供支持" class="headerlink" title="视野1必须给视野2和3提供支持"></a><span style="color: #993300;">视野1必须给视野2和3提供支持</span></h2><hr>
+<p>视野2和视野3的活动并不是完全和企业架构脱离的。</p>
+<p><a href="http://image.woshipm.com/wp-files/2015/06/962b260aaca61186a2ef406bc5d98bb2.jpg" target="_blank" rel="noopener"><img src="http://image.woshipm.com/wp-files/2015/06/962b260aaca61186a2ef406bc5d98bb2.jpg" alt="get-to-yes"></a></p>
+<p>为了协助视野2和视野3的组织能够顺利走完公司原本为视野1的活动而打造的整个流程，工序和指标，应该将来自支持团队(法律部门，财政部门，采购部门，等等)的成员安排到视野3进行共事。<a href="http://steveblank.com/2015/03/17/getting-to-yes-for-corporate-innovation/" target="_blank" rel="noopener">目的就是为了帮助视野2和视野3的组织的创造能够最终获得成功</a>。</p>
+<p>视野1是以目标和激励进行运作的。公司应该激励视野1里面的管理人员拥抱和支持视野2和视野3里面的创新活动。公司需要视野1里面的管理人员鼓励那些“标新立异”的人提出更多的好项目，同时也需要这些管理人员支持这些“标新立异”的成员，并最终让视野3的项目可以吸纳他们从而得到扩展。</p>
+<p>如果视野1并没有把对视野2和3的支持作为他们的目标和激励机制的一部分的话，那么企业内部的创新将无从谈起！</p>
+<p>&nbsp;</p>
+<h2 id="成功之后"><a href="#成功之后" class="headerlink" title="成功之后"></a><strong><span style="color: #993300;">成功之后</span></strong></h2><hr>
+<p>如果视野2和3的创新项目获得成功的话，那么将会有什么事情发生呢？</p>
+<p><a href="http://image.woshipm.com/wp-files/2015/06/66409f1c1bd1bcbdce46049cef09d36e.jpg" target="_blank" rel="noopener"><img src="http://image.woshipm.com/wp-files/2015/06/66409f1c1bd1bcbdce46049cef09d36e.jpg" alt="follow-through"></a></p>
+<p>这些人员或者终将会被视野1的组织吸纳过来，或许就是他们自身已经足够强大到可以独立出来自成一个团队或部门，甚至是整个团队考虑打包出售/失去控制。所以视野1的执行团队和管理团队应该需要提供相应的激励机制和工作描述来对视野2和3的活动进行支持。</p>
+<p>其中一个视野1的管理人员最大的抱怨就是，在视野3成功的创新项目之后，往往会留下一大堆<a href="http://techgogogo.com/2015/05/%e5%a4%a9%e6%ac%b2%e4%ba%a1%e6%88%91%ef%bc%8c%e9%9d%9e%e6%88%98%e4%b9%8b%e7%bd%aa%ef%bc%81%e6%80%aa%e5%90%be%e5%88%9b%e4%b8%9a%e5%89%8d%e6%9c%aa%e9%98%85%e3%80%8a%e4%b8%89%e5%9b%bd%e3%80%8b%e7%9f%a3/" target="_blank" rel="noopener">技术和组织债务</a>的烂摊子来给视野1的人来收拾。</p>
+<p><a href="http://image.woshipm.com/wp-files/2015/06/0eed1299d7d710901617e2f82ac7c935.jpg" target="_blank" rel="noopener"><img src="http://image.woshipm.com/wp-files/2015/06/0eed1299d7d710901617e2f82ac7c935.jpg" alt="refactoring"></a></p>
+<p>其实这并不算是一种例外情况，事实上这是企业内部创新的一种自然现象。</p>
+<p>这里缺少的一点就是，我们需要意识到企业必须要有一个专门的团队来帮成功的创新项目进行<a href="http://www.c2.com/cgi/wiki?WhatIsRefactoring" target="_blank" rel="noopener">重构</a>(收拾)。</p>
+<p>&nbsp;</p>
+<h2 id="重来？"><a href="#重来？" class="headerlink" title="重来？"></a><span style="color: #993300;"><strong>重来？</strong></span></h2><hr>
+<p>当视野2和3的项目最终获得成功，他们不是独立出来自我成长，就是这些项目的发起人和早期雇员会被回流到将会对该项目进行扩展的视野1的组织里面。其实这些对视野2和3的成员来说都是个糟糕的结局，他们很快就会对这个短视的企业感觉到很失望和失意，然后就会将辞职信给奉上。</p>
+<p><a href="http://image.woshipm.com/wp-files/2015/06/7abcb319c210ad8e05ad61d1481b9854.jpg" target="_blank" rel="noopener"><img src="http://image.woshipm.com/wp-files/2015/06/7abcb319c210ad8e05ad61d1481b9854.jpg" alt="ramifications2"></a></p>
+<p>而有着长远眼光的公司的做法应该是，让这些人继续进行下一轮的破坏性创新。</p>
+<p>&nbsp;</p>
+<h2 id="精益是企业创新的语言"><a href="#精益是企业创新的语言" class="headerlink" title="精益是企业创新的语言"></a><span style="color: #993300;"><strong>精益是企业创新的语言</strong></span></h2><hr>
+<p>对于执行来说，我们有着共同的语言和流程: 产品管理工具和财政报告等。但是对于创新和对新商业模式的探索，我们却没有一个共同的语言和流程。</p>
+<p>这里其实我们可以采用这些“精益词汇”来作为“探索 vs. 执行“的企业共同语言: 商业模式画布，<a href="https://www.youtube.com/watch?v=xr2zFXblSRM" target="_blank" rel="noopener">客户开发</a>，<a href="http://techgogogo.com/2015/05/%e5%88%9b%e6%96%b0%e5%a4%a7%e5%b8%88steve-blank-%e4%bd%a0%e7%9c%9f%e7%9a%84%e7%9f%a5%e9%81%93%e4%bb%80%e4%b9%88%e6%98%af%e7%9c%9f%e6%ad%a3%e7%9a%84%e7%b2%be%e7%9b%8a%e5%88%9b%e4%b8%9a%e5%90%97/" target="_blank" rel="noopener">假想</a>(Hypothese)，<a href="https://www.youtube.com/watch?v=wIjKA3CoQhQ" target="_blank" rel="noopener">新方向发掘</a>(Pivots)，<a href="http://steveblank.com/2013/07/22/an-mvp-is-not-a-cheaper-product-its-about-smart-learning/" target="_blank" rel="noopener">MVP</a>，和<a href="http://steveblank.com/2013/11/25/its-time-to-play-moneyball-the-investment-readiness-level/" target="_blank" rel="noopener">基于事实的企业家精神</a>。同时我们可以用”精益指标“(<a href="http://steveblank.com/2013/11/25/its-time-to-play-moneyball-the-investment-readiness-level/" target="_blank" rel="noopener">投资敏捷度</a>和<a href="https://www.nasa.gov/content/technology-readiness-level/" target="_blank" rel="noopener">技术敏捷度</a>)以及精益组合管理工具来对融资决定提供精确的采纳/放弃的决定。最后，我们可以用来自美国<a href="http://venturewell.org/i-corps/team-materials/" target="_blank" rel="noopener">国家科学基金会</a>的”<a href="https://www.udacity.com/course/how-to-build-a-startup--ep245" target="_blank" rel="noopener">开源精益课程</a>“和来自斯坦福/巴克利的“<a href="http://www.slideshare.net/sblank/educators-guide-jan-2014" target="_blank" rel="noopener">精益启动课程</a>“来指导视野3中的项目运作。</p>
+<p>&nbsp;</p>
+<h2 id="精益是“灵巧组织”的引擎"><a href="#精益是“灵巧组织”的引擎" class="headerlink" title="精益是“灵巧组织”的引擎"></a><span style="color: #993300;"><strong>精益是“灵巧组织”的引擎</strong></span></h2><hr>
+<p>一个“灵巧”的企业，必然会在运作着大量的视野2和3的项目的同时，还会不断的提高当前的商业模式和对客户进行服务的执行方式。而要将这些变成现实，那些C级的领导(CEO,CFO之类)就必须共享同一个战略意图，共同的使命，清晰且一致的价值观，并且他们必须让执行当前商业模式和探索新模式两者达到平衡。他们同时必须意识到，如果要将这三个视野都运作起来的话，必须要他们进行通力合作，以及对一些矛盾和碰撞进行容忍和进行解决。</p>
+<p>&nbsp;</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a><span style="color: #993300;"><strong>小结</strong></span></h2><hr>
+<p>&nbsp;</p>
+<blockquote>
+<ul>
+<li>成熟企业和组织的创新需要精益工具</li>
+<li>“创新的三个视野”结合商业模式画布，将会生成一个企业创新的新框架</li>
+</ul>
+<p><a href="http://image.woshipm.com/wp-files/2015/06/lean-innovation-mgmt.jpg" target="_blank" rel="noopener"><img src="http://image.woshipm.com/wp-files/2015/06/lean-innovation-mgmt.jpg" alt="lean-innovation-mgmt"></a></p>
+<ul>
+<li>视野2和视野3(新的/破坏性的创新)以精益创业的速度和组织架构进行运作。</li>
+<li>精益创新管理结合精益创业的“创新的三个视野”，将会形成一个“灵巧组织(Ambidextrous Organization)“</li>
+<li>激励整个组织不仅要重视和拥抱对已有商业模式的持续改进，同时还要进行成功的创新</li>
+<li>结果就是：用原来1/5的时间打造出10倍的创新项目。<br>&nbsp;</li>
+</ul>
+</blockquote>
 <hr>
 <div style="padding: 0 20px 0;  
     margin: 1rem 0 -3rem 0;  
     line-height: 1px;  
-    border-left: calc(20vw) solid #ddd;  
-    border-right: calc(20vw) solid #ddd;  
+    border-left: calc(16vw) solid #ddd;  
+    border-right: calc(16vw) solid #ddd;  
     text-align: center;">我的更多产品</div>
 
 <p><div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"><br>    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/saomedaytodo-qrcode.jpeg"><br>      </div><br>      <div style="margin-top: -2rem"><a href="http://somedaytodo.com" target="_blank" rel="noopener">三日清单</a> - 把握今天，放眼未来</div><br>    </div><br>    <div style="display: flex; flex-direction: column;justify-content:center; align-items: center;"><br>      <div style><br>        <img style="height:8rem; width: 8rem; border:none;" src="/images/coursebao-qrcode.jpg"><br>      </div><br>      <div style="margin-top: -2rem;"><a href="http://coursebao.com" target="_blank" rel="noopener">好学街</a> - 记录学习点滴、分享才艺人生</div><br>    </div><br>  <div></div></div></p>
@@ -1987,7 +2048,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -2031,7 +2092,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">147</span>
+                <span class="site-state-item-count">137</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
